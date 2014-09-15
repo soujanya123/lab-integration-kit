@@ -103,7 +103,7 @@ The command to do it articulately are given in following subsections:
 use cd command followed by path name.
 *** Download a blank repository having the desired theme 
 > svn co svn+ssh://<username>@svn.virtual-labs.ac.in/labs/<labname>/svn/<Repository Name>
-*** Transfr the content into blue icon theme format
+*** Transfer the content into blue icon theme format
 Give execute permissions to the python script "transfer.py" and then run the following commands
 > ./transfer.py Input the source filename and the destination filenames.
 
