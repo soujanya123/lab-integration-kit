@@ -1,0 +1,161 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linear Prediction Analysis  (Assignment) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Linear Prediction Analysis " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Linear Prediction Analysis </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Linear Prediction Analysis </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1088"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1108"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1109"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=2032"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1780"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=616&cnt=1112"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=2990"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1113"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1744"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h2><span style="background-color: rgb(51, 102, 255);">Basics of LP analysis</span></h2>
+<p>&nbsp;</p>
+<ol>
+    <li style="text-align: justify;">Write a Scilab program for computing the Linear Prediction Coefficients  (LPCs) by autocorrelation method using direct matrix solving approach.  The inputs should be the windowed segment of speech and order of  prediction, and the output will be the computed LPCs.</li>
+    <p>&nbsp;</p>
+    <li style="text-align: justify;">Take a 20 ms segment of voiced speech sampled at 8 kHz. Hamming window  the speech segment. Compute the LPCs using direct matrix solving for 10<sup>th</sup>  order prediction. Plot the poles of all-pole transfer function obtained  using the LPCs of each case and comment on the stability of the  resulting LP filters.</li>
+    <p>&nbsp;</p>
+    <li style="text-align: justify;">Write a Scilab program for computing the LP residual. The input to the  program should be the windowed segment of speech and its LPCs. Take a  20ms segment of voiced speech, hamming window it, compute its LPCsusing  10<sup>th</sup> order prediction. Pass the speech segment and its LPCs  to the LP residual computation program and obtain the LP residual.  Comment on the nature of LP residual plot obtained. Plot the speech  segment, its residual, LP magnitude spectrum, inverse filter magnitude  spectrum and STFT magnitude spectrum. Comment on the various speech  parameters observed in each of the case.</li>
+    <p>&nbsp;</p>
+    <li style="text-align: justify;">Write a scilab program to show the effect of a range of values of P, the  LP order, on the lpc log magnitude spectrum. Select a voiced speech  frame of 40 ms sampled at 8 kHz and then perform LP analysis for a range  of P={4, 8, 12, 16, 20, 24, 30}. Plot the log magnitude spectrum (in  dB) for the original speech frame, along with the LP log magnitude  spectrums for different values of P. What happens to the spectrum as P  increases?</li>
+</ol>
+<p>&nbsp;</p>
+<h2><span style="background-color: rgb(51, 102, 255);">Formants and Pitch Estimation</span></h2>
+<p>&nbsp;</p>
+<ol>
+    <li style="text-align: justify;">Write a Scilab program for estimating the formants from a given segment  of speech using LP analysis. The input to the program will be a windowed  segment of speech and the order of prediction. The LPCs are first  estimated. The transfer function H(z) is constructed using the LPCs. The  frequency response of the LP filter is obtained by using z=e<sup>jw</sup>  in H(z) and the magnitude response is plotted to get what is known is  LP spectrum. A peak picking algorithm may be used to pick 4 largest  peaks, which are assumed as estimated formant values. Obtain the formant  bandwidths, which is the range of frequencies 3dB down from the formant  frequency peak.</li>
+    <p>&nbsp;</p>
+    <li style="text-align: justify;">Verify the formant frequency and bandwidth estimated from the LP  spectrum with that obtained from LP-pole representation of the all-pole  model where formant frequency is the angle that a conjugate pair of pole  makes with the positive real axis and bandwidth is computed from the  magnitude of the respective complex conjugate pole.</li>
+    <p>&nbsp;</p>
+    <li style="text-align: justify;">Write a Scilab program for estimating the pitch from a given voiced  segment of speech using LP analysis. The input to the program will be a  windowed voiced segment of speech and the order of prediction. The LPCs  are the first estimated and LP residual is then obtained using the  inverse filter. The LP residual is subjected to autocorrelation analysis  to estimate the pitch. The location of the first largest peak from the  center peak gives the estimate of pitch period.</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>To perform Blocked Rotor test of three phase induction motor (Theory) : Remote Triggered Electromechanical Conversion Laboratory : Electrical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To perform Blocked Rotor test of three phase induction motor" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=61">Electrical Engineering</a>-><a href="?sub=61&brch=293">Remote Triggered Electromechanical Conversion Laboratory</a>-><a href="">To perform Blocked Rotor test of three phase induction motor</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">To perform Blocked Rotor test of three phase induction motor</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=61&brch=293&sim=1537&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;">&nbsp;</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;">&nbsp;</p>
+<h1><span style="color: rgb(51, 153, 102);"><u><em><strong><span style="font-size: 10pt; font-family: Verdana, sans-serif;">LIST OF SYMBOLS</span></strong></em></u></span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">f<sub>bl</sub>=&nbsp; rated electrical frequency of the motor</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">V1,bl &nbsp;=&nbsp; the line-to-neutral voltage</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">I<sub>1,bl </sub>&nbsp;=&nbsp; the line current</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">P<sub>bl</sub> =&nbsp; the poly phase electrical input power</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;S<sub>bl</sub>=&nbsp; total blocked rotor apparent power</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;Q<sub>bl</sub>=&nbsp; blocked rotor reactive power</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;X<sub>bl</sub>=&nbsp; blocked rotor reactance</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;Z<sub>bl</sub>=&nbsp; stator input impedence</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<h1><span style="color: rgb(51, 153, 102);"><u><em><strong><span style="font-size: 10pt; font-family: Verdana, sans-serif;">THEORY</span></strong></em></u></span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">Like the short-circuit test on a transformer, the Blocked-Rotor test on an induction motor gives information with respect to the leakage impedances. The rotor is blocked so that it cannot rotate (hence the slip is equal to unity), and balanced polyphase voltages are applied to the stator terminals.</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<a href="/userfiles/7/image/Electrical%20Machines/Expt%203/Blocked_Rotor_Eq_Ph_diagram.jpg"><img src="/userfiles/7/image/Electrical%20Machines/Expt%203/Blocked_Rotor_Eq_Ph_diagram.jpg" width="641" height="308" alt=""></a></span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In some cases, the blocked-rotor torque also is measured. The equivalent circuit for blocked-rotor conditions is identical to that of a short circuited transformer. An induction motor is more complicated than a transformer, however, because its leakage impedance may be affected by magnetic saturation of the leakage-flux paths and by rotor frequency. The blocked-rotor impedance may also be affected by rotor position, although this effect generally is small with squirrel-cage rotors. The guiding principle is that the blocked-rotor test should be performed under conditions for which the current and rotor frequency are approximately the same as those in the machine at the operating condition for which the performance is later to be calculated. For example, if one is interested in the characteristics at slips near unity, as in starting, the blocked-rotor test should be taken at normal frequency and with currents near the values encountered in starting. If, however, one is interested in normal running characteristics, the blocked-rotor test should be taken at a reduced voltage which results in approximately rated current; the frequency also should be reduced, since the values of rotor effective resistance and leakage inductance at the low rotor frequencies corresponding to small slips may differ appreciably from their values at normal frequency, particularly with double-cage or deep-bar rotors.</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The total leakage reactance at normal frequency can be obtained from this test value by considering the reactance to be proportional to frequency. The effects of frequency often are negligible for normal motors of less than 25-hp rating, and the blocked impedance can then be measured directly at normal frequency. The importance of maintaining test currents near their rated value stems from the fact that these leakage reactances are significantly affected by saturation. Based upon blocked-rotor measurements, the blocked-rotor reactance can be found from the blocked-rotor reactive power</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/1.png" width="164" height="41" alt=""></span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">where&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/2.png" width="164" height="41" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">is the total blocked-rotor apparent power. The blocked-rotor reactance, corrected to rated frequency, can then be calculated as</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/3.png" width="191" height="62" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp; The blocked-rotor resistance can be calculated from the blocked-rotor input power as</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/4.png" width="164" height="62" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once these parameters have been determined, the equivalent circuit parameters can be determined. Under blocked-rotor conditions, an expression for the stator input impedance can be obtained (with s = 1) as</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/5.png" width="202" height="41" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/6.png" width="465" height="70" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp; &nbsp; &nbsp; Here we have assumed that the reactances are at their rated-frequency values. Making appropriate approximations (e.g., assuming</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">),</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/7.png" width="369" height="68" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp; &nbsp; &nbsp; Thus the apparent resistance under blocked-rotor conditions is given by</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/8.png" width="195" height="68" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;and the apparent rated-frequency blocked-rotor reactance by</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/9.png" width="190" height="62" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The rotor leakage reactance X</span><span style="font-size: 10pt; font-family: &#039;Cambria Math&#039;, serif;">₂</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;"> and resistance R</span><span style="font-size: 10pt; font-family: &#039;Cambria Math&#039;, serif;">₂</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;"> can be found as</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/10.png" width="244" height="148" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">In order to achieve maximum accuracy as with the no-load test, if possible the value of the stator resistance should be corrected to the value corresponding to the temperature of the blocked-rotor test. Thus</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/11.png" width="214" height="62" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equation (xi) expresses the rotor leakage reactance X</span><span style="font-size: 10pt; font-family: &#039;Cambria Math&#039;, serif;">₂</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;in terms of the measured quantities X</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><sub><span style="font-size: 10pt; font-family: Verdana, sans-serif;">nl</span></sub><sub><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span></sub><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>bl</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and the unknown stator leakage reactance X<sub>1</sub>. It is not possible to make an additional measurement from which X<sub>1</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">can be determined uniquely.Fortunately, the performance of the motor is affected relatively little by the way in which the total leakage reactance is distributed between the stator and rotor.&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">If the motor class is unknown, it is common to assume that X<sub>1</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">are equal.</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once the fractional relationship between X<sub>1</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">has been determined, X<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">(and hence X<sub>1</sub>) can be found in terms of X<sub>nl</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>bl</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">by solving the resultant quadratic equation. The magnetizing reactance X<sub>m</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">can then be determined.</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/blocked%20rotor/12.png" width="164" height="41" alt=""></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finally, using the known stator resistance and the values of X<sub>m</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">and X<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">which are now known, the rotor resistance R<sub>2</sub></span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana, sans-serif;">can now be determined .</span><span style="font-size: 9pt; font-family: Verdana, sans-serif;"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 13.5pt; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 9pt; font-family: Verdana, sans-serif;">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p>&nbsp;</p>
+<p class="MsoNormal"><o:p></o:p></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,515 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introduction to Ergonomics  (Statistical methods) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="General Theory, methods and its application" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">Introduction to Ergonomics </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Introduction to Ergonomics </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1511"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Home&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=171&sim=816&cnt=1470"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Statistical methods&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1584"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1583"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_95.png" alt=""/></div><div id="tab_name" >People&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1630"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><div>&nbsp;</div>
+<div>&nbsp;</div>
+<table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="top"></a></td>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="sta"></a>Statistical treatment of anthropometric data</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="4" valign="top" width="200"><span class="CLS_Headin"><big>&nbsp;<span style="background-color: Lime;">Content</span></big><bdo dir="rtl"><span dir="rtl"><big>             <hr>
+            </big></span></bdo></span>
+            <p><a href="#sta"><span style="background-color: Yellow;"><small>1</small></span><small>.Statistical treatment of anthropometric data</small></a></p>
+            <p><a href="#per"><span style="background-color: Yellow;"><small>2.</small></span><small>Percentile</small></a></p>
+            <p><a href="#stat"><span style="background-color: Yellow;"><small>3.</small></span><small>Statistical analysis of data for percentile calculation</small></a></p>
+            <p><a href="#perc"><span style="background-color: Yellow;"><small>4</small></span><small>.Percentile calculation by arithmetic process</small></a></p>
+            <p><a href="#cal"><span style="background-color: Yellow;"><small>5.</small></span><small>Percentile calculation by using graph</small></a></p>
+            <p><a href="#for"><span style="background-color: Yellow;"><small>6.</small></span><small>Percentile calculation by using formula</small></a></p>
+            <p><a href="#smo"><span style="background-color: Yellow;"><small>7</small></span><small>.Smoothening a frequency distribution</small></a></p>
+            <p><a href="#stan"><span style="background-color: Yellow;"><small>8. </small></span><small>Standard deviation (<u>+</u>SD)</small></a></p>
+            <p><a href="#statis"><span style="background-color: Yellow;"><small>9.</small></span><small>Statistical implication of collected data</small></a></p>
+            <p>&nbsp;</p>
+            <span class="CLS_Headin"><big>
+            <p>&nbsp;</p>
+            </big><bdo dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big></span></bdo></span><span class="CLS_Headin"><bdo dir="rtl"><span dir="rtl"><span dir="ltr"><big><br>
+            </big></span></span></bdo></span>
+            <p>&nbsp;</p>
+            <span class="CLS_Headin"><big>
+            <p>&nbsp;</p>
+            </big><bdo dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="ltr"><big>
+            <p><code><small><br>
+            </small></code></p>
+            </big></span></span></bdo></span>
+            <p>&nbsp;</p>
+            <span class="CLS_Headin"><big>
+            <p>&nbsp;</p>
+            </big><bdo dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big></span></bdo></span><span class="CLS_Headin"><bdo dir="rtl"><span dir="rtl"><span dir="ltr"><big><br>
+            </big></span></span></bdo></span>
+            <p>&nbsp;</p>
+            <span class="CLS_Headin"><big>
+            <p>&nbsp;</p>
+            </big><bdo dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="rtl"><big>
+            <p>&nbsp;</p>
+            </big><span dir="ltr"><big><br>
+            </big></span></span></bdo></span>
+            <p><span dir="ltr"><bdo dir="rtl"><span class="CLS_Headin"><big><small>&nbsp;</small><br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;</big></span></bdo></span></p>
+            </td>
+            <td valign="top" width="350">
+            <div>Designing for a single person demands his dimensional variations to be well accommodated. When designing for mass use</div>
+            </td>
+            <td valign="top" width="350">
+            <div>and for unknown individuals, one of the most relevant statistical interpretations and considerations is the percentile value of the collected data.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="per"></a>Percentiles</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="350">
+            <div>Percentiles are the statistical values of a distribution of variables transferred into a hundred scales. The population is divided into 100 percentage categories, ranked from least to highest, with respect to some specific types of body measurements. The first percentile of any height indicates that 99 percent of the population would have the heights of greater dimensions than that.</div>
+            </td>
+            <td valign="top" width="350">
+            <p>Similarly, a 95th percentile height would indicate that only 5% of the study population would have greater heights and that 95th percent of the body population would have the same or lesser heights. The 50th percentile value represents closely the average which divides the whole study population into two similar halves with one half higher and another half with lower values in relation to the average value.</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><em><strong>&lt;Back to Content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/procedure-b4c_clip_image002.jpg" alt="" height="266" width="668"></p>
+            <p>Schematic presentation of percentile distribution with the  help of stature value of a selected population</p>
+            <p>&nbsp;</p>
+            <p style="text-align: center;"><a href="#top"><em><strong>&lt;Back to Content&gt;<br>
+            <embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/userfiles/7/flash/Ergonomics/ex7/dc%20class/percentile%281%29.swf" play="true" loop="true" menu="true" height="380" width="380"><br>
+            </strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: right;" valign="top" width="350">Video tutorial</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="stat"></a>Statistical analysis of data for percentile calculation</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>The calculation process is described here is an example, taking the stature values of a group of 50 individuals. This might help designers in the compilation of special data collected by them for</div>
+            </td>
+            <td valign="top" width="350">
+            <div>special purposes, where ready sources are not available. It will also help them understand the method. Below is a reference data set to get aquaint with the calculation procedure.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro4image1.jpg" alt="" height="199" width="553"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div><strong>Stage I</strong></div>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>Identification of two end values. The lowest score* is 1396 and the highest score** is 1940.</div>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div><strong>Stage II</strong></div>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <p>Arrangement of classes. The difference between the highest and the lowest value, 1940 - 1396 = 544 may be divided into manageable blocks, say if 50 individuals are in this group then, 544&nbsp;/ 50 = 10.88n - 11class of each class interval having 50 scores. For ease of calculation a round figure</p>
+            </td>
+            <td valign="top" width="350">
+            <div>&nbsp;of 350 instead of 1396 may be consideredas the lowest value of the lower class. Starting from 1350 with class intervals of 50, classes should be arranged till the uppermost class attends the highest score obtained in the original data. Here we get 12 classes as the following class distribution.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro4image2.jpg" alt="" height="432" width="592"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div><strong>Stage III</strong></div>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>Refinement of the class intervals and frequency distribution of scores are according to the classes and calculation of cumulative frequency (Cum. f) for each class. The &#039;Cum f&#039; for the lowest score containing class will be in the same original frequency and the rest will be by adding</div>
+            </td>
+            <td valign="top" width="350">
+            <div>&nbsp; gradually the lower class interval&#039;s Cum. f&#039; will be the total number of the sample size. Cumulative percentage frequency (Cum% f) is the next step to calculate, corresponding to the &#039;Cum f&#039; considering the highest &#039;Cum. f&#039; value as 100.</div>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro4image3.jpg" alt="" height="493" width="602"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div><strong>Stage IV</strong></div>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>If we look at the bar diagram of this distribution, then if any individual score is between 1399 and 1400, it is not counted either in class 1st or in 2nd. To accommodate this in the proper group, the mid1-1 point between the upper value of the lower class and lower value of the next higher class may be considered as the true limit of these two class intervals. Hence, the true lowest value of the class 1400 - 1449, would be 1349.5. The same would also be the true highest value</div>
+            </td>
+            <td valign="top" width="350">
+            <div>&nbsp;of the class 1350 – 1399. If there is no possibility of its happening in manner or if that minute consideration is not required, this step may be avoided in calculation. <br>
+            To sort out the true lower value and higher value of any class, this would be 0.5 less than the original lower value and 0.5 more than the original higher value. By this it could be said that an individual score of 1399.4 would be counted in the true class of 1349.5, and 1399.7 would be in the class of 1399.5 - 1449.5.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro6image1.jpg" alt="" height="407" width="585"></p>
+            <p>Bar diagram of a score distribution showing the true upper and lower limits of   the regular score classes</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro6image2.jpg" alt="" height="444" width="628"></p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="perc"></a>Percentile calculation by arithmetic process</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>P25, the 25th percentile value corresponding to &#039;Cum% f&#039; falls in the class of 1550 -1599, i.e. the true class of 1549.5 - 1599.5 and correspondingly to the &#039;Cum% f&#039;, 25th percent position of the cum f, will be the 25% of the total N, 50 = 12.5th &#039;cum f&#039; ranl score. Below 1549.5 score limit there are 11 person say, 22% of the population. To get the 25th percentile figure of this score we have to go to the score that corresponds to the 12.5 cumulative corresponds</div>
+            </td>
+            <td valign="top" width="350">
+            <div>to the 12.5 cumulative frequency levels, that means, 12.5 - 11= 1.5 f score in this class. The class 1549.5 - 1599.5 has a frequency of six. Each frequency carries 50 + 6 = 8.33 score value. Hence, adding 12.50 to the lowest value of this class 1549.5, 1549.5 + 12.5 = 1562 mm would be the 25th percentile score of this population group 75% of this survey of the population mentioned above will have larger stature than this value and the rest will lie below this level.</div>
+            <div style="text-align: right;"><a href="#top"><em><strong><br>
+            </strong></em></a></div>
+            <div style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="cal"></a>Percentile calculation by using graph</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>A curve with Y axis of cumulative percentage frequency and an X axis of the true limits of the score group as shown in below Fig, can also be used as a graphical method of getting the required percentile values. Drawing a horizontal</div>
+            </td>
+            <td valign="top" width="350">
+            <div>line from the required percentile point of Y axis to the curve and from that meeting a vertical line to the x axis would give a corresponding score and that would be the respective percentile value.</div>
+            <div>&nbsp;</div>
+            <div style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<img src="/userfiles/7/image/ergonomics/pro6image3.jpg" alt="" height="459" width="596"></p>
+            <p>Percentile calculations by cumulative percentage frequency curve</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <p>&nbsp;<img src="/userfiles/7/image/ergonomics/formula.GIF" style="width: 299px; height: 96px;" alt=""></p>
+            <p><strong>Pp</strong> <strong><span>=</span></strong> <strong>required percentile rank</strong></p>
+            <p><strong>I </strong>= lowest value of the class intervals&nbsp;</p>
+            <p><strong>PN</strong> = cumulative frequency in relation to the Pp point</p>
+            <p><strong>F</strong> = cumulative frequency below the lowest value of Pp class</p>
+            <p><strong>fp</strong> = actual frequency of Pp class</p>
+            <p><strong>i&nbsp;</strong> = class interval score</p>
+            </td>
+            <td valign="top" width="350">&nbsp;<a name="for"></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro7image1.jpg" alt="" height="222" width="564"></p>
+            <p>The median is the midpoint of a score of a score arrangement from the lowest to the highest order, which would be the 50th percentile figure. In the above case, it id 1632.8, and its graphical representation is shown in Fig below</p>
+            <p>Roughly, for the purpose of a survey of anthropometric data, the subject number is vast and hence, in references, when addressing the 50th percentile value, the term &#039;average&#039; is also used.</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro7image3.jpg" alt="" height="413" width="628"></p>
+            <p>Graphical representation of the distribution patern of scores of a sample surveyed (reference data used here in ).<br>
+            (A) Class mid point,<br>
+            (B) Bar diagramme with class true limits and original frquency,<br>
+            (C) curve using class mid points and original frequency,<br>
+            (D) Smooth curve using class mid points and smooth frequency.</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top" name="smo"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p><img src="/userfiles/7/image/ergonomics/pro7image4.jpg" alt="" height="415" width="628"></p>
+            <p>*Calculation for smooth frequency of a corresponding group: (2 times the original frequency of the original group + Frequency of the group just above the original group + Frequency of the group just below thw original group) divided by 4</p>
+            <p style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">&nbsp;&nbsp;<a name="stan"></a><br>
+            <img src="/userfiles/7/image/ergonomics/pro7image5.jpg" alt="" height="852" width="630"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<img src="/userfiles/7/image/ergonomics/pro7image6.jpg" alt="" height="490" width="628"></p>
+            <p>Bell-shaped "Gaussian Curve", the ideal sample distribution, showing Mean value and +SD relations.</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <h2><span style="color: rgb(51, 102, 255);"><a name="statis"></a>Statistical implications of collected data</span></h2>
+            </td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>When the distribution of variables perfectly produces a symmetrical appearance, then only the Mean and 50th percentile value would coincide at the center of the curve. But normally, due to the Unevenness of the collected data, the arithmetic</div>
+            </td>
+            <td valign="top" width="350">
+            <div>mean and median the 50 th percentile value do not match and the center is skewed (Fig below), negatively and positively. Depending on the width and height, the curve follows <em>Kurtosis, </em>Figure below.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">
+            <p>&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/pro8image1.jpg" alt="" height="225" width="628"></p>
+            <p style="text-align: center;"><em>Probable skewed distribution</em></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>If most of the scores concentrate near the mean value then the curve points upwards and is termed as Leptokurtic. If the curve follows a short</div>
+            </td>
+            <td valign="top" width="350">
+            <div>height and spreads towards both the ends it is termed as a platikurtic curve. The normal bilaterally symmetric curve termed as Gaussian curve would always be mesokurtic.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="350">&nbsp;&nbsp;<br>
+            <img alt="" src="/userfiles/7/image/ergonomics/pro8image2.jpg" height="228" width="386"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">
+            <div>Anthropometric data are normally presented in percentile figures with range of minimum and maximum values, and sometimes with Mean ±</div>
+            </td>
+            <td valign="top" width="350">
+            <div>SD understands the data distribution pattern in a particular study population group. It helps in selecting the required data of design relevance.</div>
+            <div>&nbsp;</div>
+            <div style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="350">&nbsp;</td>
+            <td valign="top" width="350">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

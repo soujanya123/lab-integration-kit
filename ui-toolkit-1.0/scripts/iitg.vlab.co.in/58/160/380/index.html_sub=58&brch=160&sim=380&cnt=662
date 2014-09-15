@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Forced draft tray dryer  (Theory) : Virtual mass transfer lab : Chemical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To study the drying characteristics of a solid under forced draft condition ." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=58">Chemical Engineering</a>-><a href="?sub=58&brch=160">Virtual mass transfer lab</a>-><a href="">Forced draft tray dryer </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Forced draft tray dryer </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=58&brch=160&sim=380&cnt=662"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=628"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Expt calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=629"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Labvw calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=1978"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=661"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=620"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=1979"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=638"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Help&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=380&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1 style="text-align: center;">FORCED DRAFT TRAY DRYER</h1>
+<p>&nbsp;</p>
+<h3>INTRODUCTION</h3>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Drying of solids is considered to occur in  two stages , a constant rate period followed by a falling rate period.  In the constant rate period the rate of drying corresponds to the  removal of water from the surface of solid. The falling rate period  corresponds to the removal of water from the interior of the solid.The  rate in either case is dependent on :</p>
+<p style="text-align: justify;">1.Flow rate of air</p>
+<p style="text-align: justify;">2. Solid characteristics</p>
+<p style="text-align: justify;">3. Tray material.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><img src="/userfiles/7/image/che4/Q.png" alt="" height="135" width="539"></strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;">Drying can be described in terms of gas mass transfer and  heat mass transfer co-effecients.</p>
+<p style="text-align: justify;">Rate of drying is given by :<strong> </strong></p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»N«/mi»«mi mathvariant=¨bold¨»C«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»y«/mi»«/msub»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»Y«/mi»«mrow»«mi mathvariant=¨bold¨»S«/mi»«mo»§nbsp;«/mo»«/mrow»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«mi mathvariant=¨bold¨»Y«/mi»«mo»)«/mo»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mi mathvariant=¨bold¨»q«/mi»«msub»«mi mathvariant=¨bold¨»§#955;«/mi»«mi mathvariant=¨bold¨»S«/mi»«/msub»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=dc651d98a30a3d4efd7fe81e6e2f54e1.png" align="middle"></strong>.................................................1</p>
+<p>&nbsp;</p>
+<p>Where Q is the total heat supplied by the gas stream to the  solid and is given by :</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨bold¨»q«/mi»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mrow»«mi mathvariant=¨bold¨»g«/mi»«mo»§nbsp;«/mo»«/mrow»«/msub»«mo»-«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mrow»«mi mathvariant=¨bold¨»r«/mi»«mo»§nbsp;«/mo»«/mrow»«/msub»«mo»-«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»k«/mi»«/msub»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mrow»«mi mathvariant=¨bold¨»g«/mi»«mo»§nbsp;«/mo»«/mrow»«/msub»«mo»-«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=afed113f872c3d623c14e370bb10bb64.png" align="middle"></strong>.....................................2</p>
+<p>&nbsp;</p>
+<p>Total heat supplied = Convective heat + Radiation heat +  Conduction heat</p>
+<p>Where hc , hr , hk are the heat transfer  co-effecient for convection , radiation , and conduction respectively.</p>
+<p>These co -effecients are given by :</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mn»14«/mn»«mo».«/mo»«mn»6«/mn»«msup»«mi mathvariant=¨bold¨»G«/mi»«mrow»«mn»0«/mn»«mo».«/mo»«mn»8«/mn»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9f5c4217e1d9a312e6d8c5fac48485c8.png" align="middle"></strong>...................................................3</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mi mathvariant=¨bold¨»§#949;§#963;«/mi»«mfrac»«mrow»«mo»(«/mo»«msup»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«mn»4«/mn»«/msup»«mo»-«/mo»«mo»§nbsp;«/mo»«msup»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mn»4«/mn»«/msup»«mo»)«/mo»«/mrow»«mrow»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«mo»-«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=78f6bf6f1e4cf235c9bfd66db39150db.png" align="middle"></strong>.......................................4</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»k«/mi»«/msub»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mn»1«/mn»«mfenced»«mrow»«mfrac»«mn»1«/mn»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«/mfrac»«mfrac»«mi mathvariant=¨bold¨»A«/mi»«msub»«mi mathvariant=¨bold¨»A«/mi»«mi mathvariant=¨bold¨»U«/mi»«/msub»«/mfrac»«mo»+«/mo»«mfrac»«msub»«mi mathvariant=¨bold¨»Z«/mi»«mi mathvariant=¨bold¨»m«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»m«/mi»«/msub»«/mfrac»«mfrac»«mi mathvariant=¨bold¨»A«/mi»«msub»«mi mathvariant=¨bold¨»A«/mi»«mi mathvariant=¨bold¨»U«/mi»«/msub»«/mfrac»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»Z«/mi»«mi mathvariant=¨bold¨»S«/mi»«/msub»«mfrac»«mi mathvariant=¨bold¨»K«/mi»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»m«/mi»«/msub»«/mfrac»«mfrac»«mi mathvariant=¨bold¨»A«/mi»«msub»«mi mathvariant=¨bold¨»A«/mi»«mi mathvariant=¨bold¨»U«/mi»«/msub»«/mfrac»«/mrow»«/mfenced»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d125696c2d26be0406ac0a625d17ff55.png" align="middle"></strong>...........................................5</p>
+<p>&nbsp;</p>
+<p>Putting the value gives</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«mrow»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»y«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»C«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«/mrow»«/mfrac»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msup»«mfenced»«mfrac»«mrow»«mi mathvariant=¨bold¨»S«/mi»«mi mathvariant=¨bold¨»c«/mi»«/mrow»«mrow»«mi mathvariant=¨bold¨»P«/mi»«mi mathvariant=¨bold¨»r«/mi»«/mrow»«/mfrac»«/mfenced»«mrow»«mn»0«/mn»«mo».«/mo»«mn»567«/mn»«/mrow»«/msup»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msup»«mi mathvariant=¨bold¨»Le«/mi»«mrow»«mn»0«/mn»«mo».«/mo»«mn»567«/mn»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=19c2670f8a5a8a928e79a6ea1032641b.png" align="middle"></strong>..........................................6</p>
+<p>&nbsp;</p>
+<p>Ratio of (hc/ky) = Lewis number (Le) and is given by</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»Y«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«mi mathvariant=¨bold¨»Y«/mi»«mo»)«/mo»«msub»«mi mathvariant=¨bold¨»§#955;«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«/mrow»«mfrac»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»y«/mi»«/msub»«/mfrac»«/mfrac»«mo»=«/mo»«mfenced»«mrow»«mn»1«/mn»«mo»+«/mo»«mfrac»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»k«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«/mfrac»«/mrow»«/mfenced»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»g«/mi»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«mo»§nbsp;«/mo»«mo»+«/mo»«mo»§nbsp;«/mo»«mfrac»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»h«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«/mfrac»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»r«/mi»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»s«/mi»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=14e32c8149ad162b0e2ae72b22869b6f.png" align="middle"></strong>.......................................7</p>
+<p>&nbsp;</p>
+<p>C<sub>s</sub> is the specific heat of saturated gas at T<sub>s</sub></p>
+<p>For an air water system Le is approximately  equal to 1</p>
+<p>Equqtions (3) and (7) yields h<sub>c</sub> and k<sub>y</sub>  respectively.</p>
+<p style="text-align: justify;">Simultaneously iterative solutions of eqn.  (6) with saturation humidity curve provides the the solid surface  temperature ,T<sub>s</sub> and the corresponding value of humidity Y<sub>s</sub>.</p>
+<p>Knowing Y<sub>s</sub> eqn. (1) is used to find out the  drying rate Nc.</p>
+<p>&nbsp;</p>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOMENCLATURE:</h3>
+<p class="style13">A : Drying surface area, m<sup>2</sup></p>
+<p class="style13" style="text-align: justify;">A<sub>U </sub>: Non drying surface area  of drying solid , m<sup>2</sup></p>
+<p class="style13" style="text-align: justify;">A<sub>m</sub> : Average solid surface  area , m<sup>2</sup></p>
+<p class="style13" style="text-align: justify;">C<sub>S</sub> : Saturated specific heat  of air, J/kg<sup>0</sup>C</p>
+<p class="style13" style="text-align: justify;">G : Mass velcity of gas,  kg/m<sup>2</sup>-sec</p>
+<p class="style13" style="text-align: justify;">N : Drying rate</p>
+<p class="style13" style="text-align: justify;">N<sub>C</sub> : Constant drying rate ,  kg/m^2-sec</p>
+<p class="style13" style="text-align: justify;">S : Mass of dry solid</p>
+<p class="style13" style="text-align: justify;">T<sub>g</sub> : Absolute temperature of  gas (dry bulb),K</p>
+<p class="style13" style="text-align: justify;">Z<sub>m</sub> : Metal thickness</p>
+<p class="style13" style="text-align: justify;">T<sub>r</sub> : Absolute temperature of  radiating surface ,K</p>
+<p class="style13" style="text-align: justify;">T<sub>s</sub> : Absolute temperature of  solid surface ,K</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

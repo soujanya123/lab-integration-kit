@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>	Control of Inverted Pendulum System (Real Time) (Theory) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Control of Inverted Pendulum System (Real Time)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">	Control of Inverted Pendulum System (Real Time)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">	Control of Inverted Pendulum System (Real Time)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1024"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=555&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1069"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1070"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1815"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<h3>&nbsp;1. ROTPENT: Gantry Crane</h3>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">This experiment illustrates some control tasks for gantry  cranes. The gantry is a moving platform or trolley that transports the crane  about the factory floor or harbour. The load hangs from the crane using wires  and is moved by the gantry crane. Typically the problem is to move the load  quickly and move it to the correct position. The fast motion necessary for  production makes it more difficult to move the load to the correct location  given the swinging motions of the crane. This problem can be mimicked using the  rotary pendulum system&nbsp;by viewing the tip of the L-shaped arm as the moving  trolley and the pendulum tip as the load being carried.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal">In this experiment we will begin by modeling the system and  determine strategies to dampen the oscillations of the system.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/4.jpg" style="width: 280px; height: 404px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig 4.Free-body diagram of pendulum assembly.</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"> <strong>Figure 4</strong>. shows the free-body  diagram of the pendulum assembly that is composed of two rigid bodies: the  pendulum link with mass <em>M<sub>p1</sub></em> and length  <em>L<sub>p1</sub></em>, and the pendulum weight with mass  <em>M<sub>p2</sub></em> and a length <em>L<sub>p2</sub></em>. The center of mass  of the the pendulum link and the pendulum weight are calculated separately using  the general expression</mshelp:attr></p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/5.jpg" alt="" width="105" height="80"></p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">where <em>x </em>is the linear distance from the pivot axis and  <em>p </em>is the density of the body. The circle in the top-left corner of&nbsp;<strong> Figure 4</strong>. represents the axis of rotation or the  pivot axis that goes into the page.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">The pendulum system is then expressed as one rigid body with a  single center of mass, as shown in <strong>Figure 5</strong> below.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/6.jpg" style="width: 281px; height: 332px;" alt=""></p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig 5.Free-body diagram of composite pendulum.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">The center of mass of a composite object that contains  <em>n</em> bodies can be calculated using&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/7.jpg" style="width: 142px; height: 129px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">where <em>x<sub>cm,i</sub> </em>is the known center of mass of  body <em>i </em>and <em>m<sub>i</sub> </em>is the mass of body <em>i</em> .</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">From the free-body diagram in<strong> Figure 5</strong><u>,</u> the resulting nonlinear equation of motion of the pendulum is</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/8.jpg" style="width: 327px; height: 53px;" alt="">....................[1.1]</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">where <em>J<sub>p</sub> </em>is the moment of inertia of the  pendulum at the pivot axis <em>z<sub>0</sub></em>, <em>M<sub>p</sub> </em>is the  total mass of the pendulum assembly, <em>u </em>is the linear acceleration of  the pivot axis, and <em>l<sub>p</sub> </em>is the center of mass position as  depicted in Figure5 <a href="#fbd_composite">.</a> Thus as the pivot  accelerates towards the left, the inertia of the pendulum causes it to swing  upwards while the gravitation force <em>M<sub>p</sub>g </em>and the applied  force <em>M<sub>p</sub>u </em>(the left-hand terms in <u>Equation[1.1</u>] ) pull the pendulum downwards.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">The moment of inertia of the pendulum can be found  experimentally. Assuming the pendulum is unactuated, linearizin&nbsp;<span style="text-decoration: underline;"> Equation[1.1]</span> and solving for the differential  equation gives the expression</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/9.jpg" style="width: 100px; height: 63px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">where <em>f </em>is the measured frequency of the pendulum as  the arm remains rigid. The frequency is calculated using</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/10.jpg" alt="" width="63" height="52"></p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">where <em>n<sub>cyc</sub> </em>is the number of cycles and <em>Dt</em> is the  duration of these cycles. Alternatively, <em>J<sub>p</sub> </em>can be  calculated analytically using the moment of inertia expression</p>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;<img src="/userfiles/7/image/pend_hard/11.jpg" style="width: 74px; height: 43px;" alt=""></p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">where <em>r </em>is the perpendicular distance between the  element mass, <em>dm</em> , and the axis of rotation.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: justify;">In addition to finding the moment of inertia, this laboratory  investigates the <em>stiction </em>that is present in the system. The rotor of  the DC motor that moves the ROTPEN system requires a certain amount of current  to begin moving. In addition, the mass from the pendulum system requires even  more current to actually begin moving the system. The friction is particularly  severe for velocities around zero because friction changes sign with the  direction of rotation.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">The virtual instrument for studying the physics of the pendulum  when in the gantry configuration is shown in Figure 6 below.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/modeling.JPG" style="width: 731px; height: 493px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig.6 LabVIEW virtual instrument for ROTPENT&nbsp;simple modeling</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;"><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=163&amp;sim=555&amp;cnt=2">The procedure to run the gantry crane experiment&nbsp; can be accessed here .</a></p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;"><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=163&amp;sim=555&amp;cnt=1#t1" &gt;click="" here="" to="" see="" the="" simple="" modeling="" vi="" description.=""></a></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<h3>2. QNET-ROTPENT: Balancing&nbsp;</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: justify;">Balancing is a common control task. In this experiment we will  find control strategies that balance the pendulum in the upright position while  maintaining a desired position of the arm. When balancing the system the  pendulum angle, <em>alpha</em> , is small and balancing can be accomplished  simply with a <strong>PD</strong> controller. Since we are also  interested in keeping the arm in a fixed position, a feedback from the arm  position will also be introduced. The control law can then be expressed as</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/12.jpg" alt="" width="430" height="39">&nbsp; .................[2.1]</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: justify;">where <em>k<sub>p,theta</sub> </em>is the arm angle proportional  gain, <em>k<sub>p,alpha</sub> </em>is the pendulum angle proportional gain,  <em>k<sub>d,theta</sub> </em>is the arm angle derivative gain, and  <em>k<sub>d,alpha</sub> </em>is the pendulum angle derivative gain. The desired  angle of the arm is denoted by <em>theta<sub>r</sub></em> and there is no  reference for the pendulum angle because the desired position is zero.</p>
+<p>&nbsp;</p>
+<p class="normal" style="text-align: justify;">When balancing the pendulum over a fixed point,&nbsp;the arm tends to  oscillate about that reference because of the friction present in the motor. Due  to friction, the motor will not move until the control signal is sufficiently  large and the generated torque is larger than the stiction.This means that  the pendulum has to fall a certain angle before the motor moves and&nbsp;the net  result is an oscillating motion.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">Friction can be compensated by introducing a Dither signal at  the input voltage of the DC motor. The Dither signal used has the form</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/13.jpg" alt="" width="155" height="24">......................[2.2]</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">where <em>A<sub>d</sub></em> is the voltage amplitude,  <em>f<sub>d</sub></em> is the sinusoid frequency, and <em>V<sub>d0</sub></em> is  the offset voltage of the signal.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<h3>3. ROTPENT: Energy Control</h3>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p>&nbsp;</p>
+<p class="normal" style="text-align: justify;">If the arm angle is kept constant and the pendulum is given an  initial position it would swing with constant amplitude. Because of friction  there will be damping in the oscillation. The purpose of energy control is to  control the pendulum in such a way that the friction is constant. The potential  energy of the pendulum is</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/pend_hard/14.jpg" alt="" width="194" height="21">.......................[3.1]</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: left;">and the kinetic energy is</p>
+<p class="normal" style="text-align: left;">&nbsp;</p>
+<p class="normal" style="text-align: left;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/15.jpg" alt="" width="137" height="50">.........................................[3.2]</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: justify;">The potential energy is zero when the pendulum is at rest at  <em>alpha </em>= 0 in Equation [3.1], and equals 2M<sub>p</sub>gl<sub>p</sub> when the pendulum is upright at  <em>alpha = ±pi</em> . The sum of the potential and kinetic energy of the  pendulum is</p>
+<p>&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/pend_hard/17%20-%20Copy.jpg" alt="" width="305" height="55">.......................[3.3]</p>
+<p class="normal" style="text-align: justify;">&nbsp;&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">Differentiating Expression [3.3] results in  the differential equation</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/pend_hard/17.jpg" alt="" width="355" height="62">.....................[3.4]</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">Substituting Equation [3.1] for pendulum acceleration  into Equation [3.4] gives</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/pend_hard/18.jpg" alt="" width="238" height="43">....................[3.5]</p>
+<p class="normal">&nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">Since the acceleration of the pivot is proportional to current  driving the arm motor and thus also proportional to the drive voltage we find  that it is easy to control the energy of the pendulum. The proportional control  law</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/pend_hard/19.jpg" alt="" width="224" height="43">.........................[3.6]</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">&nbsp;</p>
+<p class="normal">drives the energy towards the reference energy  <em>E<sub>r</sub></em>. Notice that the control law is nonlinear because the  proportional gain depends on the pendulum angle, <em>alpha</em>, also notice  that the control changes sign when <em>dalpha /dt </em>changes sign and when the  angle is ±90°.&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: justify;">However, for energy to change quickly the magnitude of the  control signal must be large</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/pend_hard/20.jpg" style="width: 349px; height: 44px;" alt="">...................[3.7]</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">where <em>mu </em>is a tunable control gain and&nbsp;the  <em>sat<sub>umax</sub> </em>function saturates the control signal at the maximum  acceleration of the pendulum pivot, <em>u<sub>max</sub></em> .</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<h3>4.ROTPENT: Hybrid Swing-Up Control</h3>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;The energy swing-up control in Equation[3.5] can be combined with the  balancing control law in Equation[2.1] to obtain a control law  which performs the dual tasks of swinging up the pendulum and balancing it. As  illustrated in <strong>Figure 7</strong>, this can be  accomplished by switching between the two control systems.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/pend_hard/21%282%29.jpg" style="width: 511px; height: 286px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig&nbsp; 7. Swing-up hybrid contro1.</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: justify;">This system can be modeled as a hybrid system. Hybrid systems  are systems with both continuous and discrete parts. There are two continuous  parts: the closed-loop system using the swing-up energy controller and the  closed-loop system using the PD balance controller. The switching strategy is  the discrete element that chooses which controller, or system, to run. The  switching logic can be obtained by determining a region in state space where the  balancing works well. Balancing control is then used inside this region and  energy control is used outside the region.<strong> Figure 8</strong>  is a called a hybrid automaton and, for this specific task, can be  used to describe the system model and the switching logic.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/22.jpg" alt="" width="597" height="165"></p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig 8.Hybrid swing-up controller automaton.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: justify;">The circles in <strong>Figure 8</strong> are  called locations and represent the two different continuous system. The arrows  are called edges and represent the discrete jumps taken when certain condition  are satisfied. The angle used in the switching logic in<strong> Figure 8</strong>&nbsp; is called the upright angle. It is  defined as zero when the pendulum is about its upright vertical position&nbsp;and is  expressed mathematically with the expression</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/23.jpg" alt="" width="171" height="25"></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: left;">The various switching parameters can then be set as :</p>
+<p class="normal" style="text-align: left;">&nbsp;</p>
+<table width="200" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img src="/userfiles/7/image/pend_hard/24.jpg" alt="" width="79" height="18"></td>
+        </tr>
+        <tr>
+            <td><img src="/userfiles/7/image/pend_hard/25.jpg" alt="" width="99" height="43">&nbsp;&nbsp;&nbsp; and</td>
+        </tr>
+        <tr>
+            <td><img src="/userfiles/7/image/pend_hard/26.jpg" alt="" width="86" height="16"></td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal" style="text-align: left;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">Given that the pendulum starts in the downward vertical  position, it is in the swing-up location of the hybrid automaton. The swing-up  controller pumps energy into the pendulum until it swings within ±2° of its  upright vertical position. Once the pendulum is within that that range and does  not exceed 720 °/s in either direction, the edge is taken to engage the balance  controller. It remain in the <strong>Balance PD control</strong><em> </em>location until the  pendulum goes beyond the ±30° position range or beyond ±720 °/s.</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: justify;">The virtual instrument used to run the balance and swing-up  controllers on the QNET rotary pendulum system is shown in<strong> Figure 9</strong> below</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/pend_hard/swing.JPG" style="width: 756px; height: 540px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp; Fig 9. LabVIEW virtual instrument&nbsp;for ROTPENT&nbsp;swing-up control.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal"><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=163&amp;sim=555&amp;cnt=2#p2">&nbsp;The procedure to run this experiment can be accessed here.</a></p>
+<p class="normal">&nbsp;</p>
+<p class="normal"><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=163&amp;sim=555&amp;cnt=1#t2" &gt;click="" here="" to="" see="" the="" swing-up="" control&nbsp;="" vi="" description.=""></a></p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<h2 style="text-align: center;">&nbsp;<a name="t1"></a>ROTPENT Simple Modeling VI Description</h2>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType">Table1.&nbsp; lists and describes the main  elements of the QNET-ROTPENT Simple Modeling virtual instrument user interface.  Every element is uniquely identified through an ID number and located in <strong>Figure 10</strong> below.<br>
+</mshelp:attr></p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/desc_mod.jpg" style="width: 750px; height: 539px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Fig 10 ROTPENT Simple Modeling virtual instrument.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<table style="width: 479px; height: 688px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);">ID</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Label</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Parameter</span></td>
+            <td style="text-align: center;"><span style="color: rgb(255, 0, 0);">Description</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Unit</span></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Theta</td>
+            <td>&nbsp;θ</td>
+            <td>Arm angle measured by encoder on motor.</td>
+            <td>deg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Alpha</td>
+            <td>&nbsp;α</td>
+            <td>
+            <p class="normal">Pendulum angle measured by encoder on pendulum pivot.</p>
+            </td>
+            <td>deg</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Current</td>
+            <td>I<sub>m</sub></td>
+            <td>Motor armature current numeric display</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Voltage</td>
+            <td>V<sub>m</sub></td>
+            <td>Motor input voltage numeric display</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Signal Type</td>
+            <td rowspan="4">&nbsp;</td>
+            <td>Type of signal generated for the input voltage.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Amplitude</td>
+            <td>Generated signal amplitude input box.</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Frequency</td>
+            <td>Generated signal frequency input box.</td>
+            <td>Hz</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Offset</td>
+            <td>Generated signal offset input box.</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&nbsp;Disturbance</td>
+            <td>&nbsp;V<sub>sd</sub></td>
+            <td>&nbsp;Apply simulated disturbance voltage.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&nbsp;h</td>
+            <td>&nbsp;h</td>
+            <td>&nbsp;Sampling time interval of virtual instrument input box.</td>
+            <td>&nbsp;s</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&nbsp;Mp1</td>
+            <td>&nbsp;M<sub>p1</sub></td>
+            <td>&nbsp;Mass of pendulum link.</td>
+            <td>&nbsp;kg</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&nbsp;Mp2</td>
+            <td>&nbsp;M<sub>p2</sub></td>
+            <td>&nbsp;Mass of pendulum weight.</td>
+            <td>&nbsp;kg</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&nbsp;Lp1</td>
+            <td>&nbsp;L<sub>p1</sub></td>
+            <td>&nbsp;Length from pendulum axis of rotation to start of pendulum weight.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&nbsp;Lp2</td>
+            <td>&nbsp;L<sub>p2</sub></td>
+            <td>&nbsp;Length of pendulum weight.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&nbsp;Calculate</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;Triggers the x_cm1, x_cm2, lp, and Jp calculation.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>&nbsp;x_cm1</td>
+            <td>x<sub>cm,1</sub></td>
+            <td>&nbsp;Pendulum link center of mass calculated from Lp1.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>&nbsp;x_cm2</td>
+            <td>&nbsp;x<sub>cm,2</sub></td>
+            <td>&nbsp;Pendulum weight center of mass calculated from Lp1 and Lp2.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>&nbsp;lp</td>
+            <td>&nbsp;l<sub>p</sub></td>
+            <td>&nbsp;Center of mass of pendulum assembly (link+weight) output box calculated from Lp1  and Lp2.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>&nbsp;Jp</td>
+            <td>&nbsp;J<sub>p</sub></td>
+            <td>&nbsp;Pendulum moment of inertia calculated from Mp1, Mp2, Lp1, and Lp2.</td>
+            <td>&nbsp;kg.m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>&nbsp;cycle</td>
+            <td rowspan="3">&nbsp;<br>
+            &nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Number of pendulum cycles to take into account when performing auto-model  procedure.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>&nbsp;Modeling OFF</td>
+            <td>&nbsp;Click on this button to begin auto-model procedure.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>&nbsp;Status</td>
+            <td>&nbsp;Output box that reports the current result of the auto-modeling procedure.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>&nbsp; <em>Δ t</em></td>
+            <td>&nbsp; <em>Δ t</em></td>
+            <td>&nbsp;Total time duration of cyles used for auto-modeling.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>&nbsp;Frequency</td>
+            <td rowspan="2">&nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Frequency of pendulum.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Jp</td>
+            <td>&nbsp;Experimentally derived pendulum moment of inertia.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>&nbsp;Angle</td>
+            <td>&nbsp;θ,α</td>
+            <td>&nbsp;Scope with measured arm angle (in red) and pendulum angle (in blue).</td>
+            <td>&nbsp;deg</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>&nbsp;Voltage</td>
+            <td>&nbsp;V<sub>m</sub></td>
+            <td>&nbsp;Scope with applied motor voltage (red).</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>&nbsp;Pause Plots</td>
+            <td rowspan="4">&nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Pauses the <em>Angle </em>and <em>Voltage </em>scopes.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>&nbsp;Start Generator</td>
+            <td>&nbsp;When not pressed, the generator output is ignored and a voltage of zero is  applied to the motor.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>&nbsp;EXIT</td>
+            <td>&nbsp;Stops the LabView virtual instrument from running.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>&nbsp;Real-Time?</td>
+            <td>&nbsp;The green light indicates that the sampling rate is being maintained.</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="caption" style="text-align: center;">Table 1 Nomenclature of ROTPENT Simple Modeling  VI.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<h2 style="text-align: center;"><a name="t2"></a>ROTPENT Swing-Up Control VI Description</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="normal">As a quick module description,Table2.   lists and describes the main elements composing the ROTPENT Swing-Up  Control virtual instrument user interface. Every element is uniquely identified  through an ID number and located in <strong>Figure 11.</strong></p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/desc_swing.JPG" style="width: 749px; height: 487px;" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal" style="text-align: center;">Figure 11. ROTPENT Swing-Up Control virtual instrument.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<table style="width: 684px; height: 808px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);">ID</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Label</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Parameter&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp; <span style="color: rgb(255, 0, 0);">Description</span></td>
+            <td>&nbsp;<span style="color: rgb(255, 0, 0);"> Unit</span></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&nbsp;Theta</td>
+            <td>&nbsp;θ</td>
+            <td>&nbsp;Arm angle measured by encoder on motor.</td>
+            <td>&nbsp; deg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&nbsp;Alpha</td>
+            <td>&nbsp;α</td>
+            <td>Pendulum angle measured by encoder on pendulum pivot.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&nbsp;Current</td>
+            <td>&nbsp;I<sub>m</sub></td>
+            <td>&nbsp;Motor armature current numeric display</td>
+            <td>&nbsp;A</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&nbsp;Voltage</td>
+            <td>&nbsp;V<sub>m</sub></td>
+            <td>&nbsp;Motor input voltage numeric display.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&nbsp;Signal Type</td>
+            <td rowspan="4">&nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Type of signal generated for the input voltage.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&nbsp;Amplitude</td>
+            <td>&nbsp;Generated signal amplitude input box.</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&nbsp;Frequency</td>
+            <td>&nbsp;Generated signal amplitude input box.</td>
+            <td>&nbsp;Hz</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&nbsp;Offset</td>
+            <td>&nbsp;Generated signal offset input box.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&nbsp;Disturbance</td>
+            <td>&nbsp;V<sub>sd</sub></td>
+            <td>&nbsp;Apply simulated disturbance voltage.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&nbsp;kp_theta</td>
+            <td>&nbsp;k<sub>p,</sub>θ</td>
+            <td>&nbsp;Arm angle proportional gain input box</td>
+            <td>&nbsp;V/rad</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&nbsp;kp_alpha</td>
+            <td>&nbsp;k<sub>p,</sub>α</td>
+            <td>&nbsp;Pendulum angle proportional gain input box.</td>
+            <td>&nbsp; V/rad</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&nbsp;kd_theta</td>
+            <td>&nbsp;k<sub>d,</sub>θ</td>
+            <td>&nbsp;Arm angle derivative gain input box.</td>
+            <td>&nbsp;V.s/rad</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&nbsp;kd_alpha</td>
+            <td>&nbsp;k<sub>d,</sub>α</td>
+            <td>&nbsp;Pendulum angle derivative gain input box</td>
+            <td>&nbsp;V.s/rad</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&nbsp;mu</td>
+            <td>&nbsp;μ</td>
+            <td>&nbsp;Proportional gain for energy controller.</td>
+            <td>&nbsp;m/(s<sup>2</sup>.J)</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&nbsp;Er</td>
+            <td>&nbsp;E<sub>r</sub></td>
+            <td>&nbsp;Reference energy for energy controller</td>
+            <td>&nbsp;mJ</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>&nbsp;Activate Swing Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td rowspan="2">&nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;When pressed down the energy controller that swings-up the pendulum is engaged</td>
+            <td rowspan="2">&nbsp;<br>
+            &nbsp;</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>&nbsp;Update Control</td>
+            <td>&nbsp;Applies the control gains <em>kp_theta</em>, <em>kp_alpha</em>,  <em>kd_theta</em>, and <em>kd_alpha </em>in the <em>Control Parameters </em>to  the running controller (note: <em>mu </em>and <em>Er </em>are updated  automatically).</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>&nbsp;h</td>
+            <td>&nbsp;h</td>
+            <td>&nbsp;Sampling time interval of virtual instrument input box.</td>
+            <td>&nbsp;s</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>&nbsp;Mp</td>
+            <td>&nbsp;M<sub>p</sub></td>
+            <td>&nbsp;Mass of pendulum assembly (link + weight).</td>
+            <td>&nbsp;kg</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>&nbsp;lp</td>
+            <td>&nbsp;l<sub>p</sub></td>
+            <td>&nbsp;Center of mass of pendulum assembly (link+weight) input box.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>&nbsp;Marm</td>
+            <td>&nbsp;M<sub>arm</sub></td>
+            <td>&nbsp;Mass of rotary arm.</td>
+            <td>&nbsp;kg</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>&nbsp;r</td>
+            <td>&nbsp;r</td>
+            <td>&nbsp;Length from motor shaft to pendulum pivot.</td>
+            <td>&nbsp;m</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>&nbsp;Jp</td>
+            <td>&nbsp;J<sub>p</sub></td>
+            <td>&nbsp;Pendulum moment of inertia relative to pivot.</td>
+            <td>&nbsp;kg.m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>&nbsp;Jeq</td>
+            <td>&nbsp;J<sub>eq</sub></td>
+            <td>&nbsp;Equivalent moment of inertia acting on the DC motor shaft.</td>
+            <td>&nbsp;kg.m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>&nbsp;Kt</td>
+            <td>&nbsp;K<sub>t</sub></td>
+            <td>&nbsp;Current-torque or back-emf constant: they are equivalent in SI units.</td>
+            <td>&nbsp;N.m/A</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>&nbsp;Update Model/Design</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;Updates the ROTPEN model that is used in the energy calculation and simulations  in the Open-loop Analysis and Control Design tabs.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>&nbsp;Amplitude</td>
+            <td>&nbsp;A<sub>d</sub></td>
+            <td>&nbsp;Dither signal amplitude input box.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Frequency</td>
+            <td>&nbsp;f<sub>d</sub></td>
+            <td>&nbsp;Dither signal frequency input box</td>
+            <td>&nbsp;Hz</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>&nbsp;Offset</td>
+            <td>&nbsp;V<sub>d0</sub></td>
+            <td>&nbsp;Dither signal offset input box.</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>&nbsp;In Range?</td>
+            <td rowspan="3">&nbsp;<br>
+            &nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Balance controller is engaged when this LED is turns bright green.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>&nbsp;Energy</td>
+            <td>&nbsp;Numeric display of the pendulum energy</td>
+            <td>&nbsp;mj</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>&nbsp;Swing-Up Control Tab</td>
+            <td>&nbsp;Tab control that contains the scopes and simulations for the open-loop and  closed-loop ROTPEN system.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>&nbsp;Angle / Energy</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;Scope with measured arm angle (in red), measured pendulum angle (in blue), and  pendulum energy (in green).</td>
+            <td>&nbsp;deg/mJ</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>&nbsp;Voltage</td>
+            <td>&nbsp;V<sub>m</sub></td>
+            <td>&nbsp;Scope with applied motor voltage (red).</td>
+            <td>&nbsp;V</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>&nbsp;Pause Plots</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;Pauses the <em>Angle </em>and <em>Voltage </em>scopes.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>&nbsp;Start Control</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;When not pressed, both the energy and balance control output are ignored and a  voltage of zero is applied to the motor.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>&nbsp;EXIT</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;Stops the LabView virtual instrument from running.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>&nbsp;Real-Time?</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;The green light indicates that the sampling rate is being maintained.</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="caption" style="text-align: center;">Table 2.&nbsp; Nomenclature of&nbsp; ROTPENT Swing-Up Control  VI.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="heading4">Remark:</p>
+<p class="heading4">&nbsp;</p>
+<ul>
+    <li>
+    <div class="normal">The energy control proportional control gain, <em>mu</em>, and  the reference energy, <em>Er</em>, are automatically applied to the implemented  controller as they are changed. The <em>Update Control </em>button does not have  to be pressed to update the running controller with new values of <em>mu  </em>and <em>Er</em>.</div>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p class="normal">The tab control in the front panel of the ROTPENT Swing-Up  Control VI, shown in <strong>Figure 11 </strong>with identification number  34, is depicted in <strong>Figure</strong> <strong>11.1, 11.2&nbsp; </strong>and&nbsp;<strong> 11.3.</strong>&nbsp; The identification  labels for the <em>Open-loop Analysis , Control Design - Frequency Analysis,  </em>and&nbsp; <em>Control Design - Time Analysis</em>tabs are described in the Table 2.1 ,2.2 and 2.3</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/pend_hard/11_1.jpg" alt=""></p>
+<p class="normal" style="text-align: center;">&nbsp;Fig 11.1 ROTPENT Swing-Up Control VI: Open-loop Analysis tab.</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<table style="width: 489px; height: 163px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);">ID</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Label</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Parameter</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Description</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Unit</span></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>A</td>
+            <td>A</td>
+            <td>Linear state-space matrix A.</td>
+            <td rowspan="7">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>B</td>
+            <td>B</td>
+            <td>Linear state-space matrix B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>C</td>
+            <td>C</td>
+            <td>Linear state-space matrix C</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>D</td>
+            <td>D</td>
+            <td>Linear state-space matrix D</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Open-loop Pole-Zero Map Plot</td>
+            <td rowspan="3">&nbsp;</td>
+            <td>Phase plot showing poles and zeros of the open-loop ROTPEN system.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Poles</td>
+            <td>Open-loop poles of ROTPEN system numeric display.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Zeros</td>
+            <td>Open-loop zeros of ROTPEN system numeric display.</td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal" style="text-align: center;">&nbsp;Table 2.1 Nomenclature of ROTPENT Swing-Up Control VI: Open-loop Analysis tab.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/pend_hard/11_2.jpg" alt=""></p>
+<p class="normal" style="text-align: center;">Fig 11.2 ROTPENT Swing Up Control VI: Control Design - Frequency Analysis tab.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<table style="width: 583px; height: 223px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);">ID</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Label</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Parameter</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Description</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Unit</span></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&nbsp;Q</td>
+            <td>&nbsp;R</td>
+            <td>&nbsp;Linear-quadratic weighting matrix that defines a penalty on the state.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&nbsp;Q</td>
+            <td>&nbsp;R</td>
+            <td>&nbsp;Linear-quadratic weighting matrix that defines a penalty on the control action.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&nbsp;kp_theta</td>
+            <td rowspan="8">&nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            <br>
+            &nbsp;<br>
+            &nbsp;</td>
+            <td>&nbsp;Arm angle proportional gain calculated using LQR.</td>
+            <td>&nbsp;V/rad</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&nbsp;kp_alpha</td>
+            <td>&nbsp;Pendulum angle proportional gain calculated using LQR.</td>
+            <td>&nbsp;V/rad</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&nbsp;kd_theta</td>
+            <td>Arm angle derivative gain calculated using LQR.</td>
+            <td>&nbsp;V.s/rad</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&nbsp;kd_alpha</td>
+            <td>&nbsp;Pendulum angle derivative gain calculated using LQR.</td>
+            <td>&nbsp;V.s/rad</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&nbsp;Set Desired</td>
+            <td>&nbsp;Copies the control gains calculated to the implementable gains in the  <em>Control Parameters </em>section of the VI.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&nbsp;Closed-loop Pole-Zero Map Plot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;Phase plot showing poles and zeros of the closed-loop ROTPEN system.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&nbsp;Poles</td>
+            <td>&nbsp;Closed-loop poles of ROTPEN system numeric display.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&nbsp;Zeros</td>
+            <td>&nbsp;Closed-loop poles of ROTPEN system numeric display.</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="caption" style="text-align: center;">Table 2.2 Nomenclature of -ROTPENT Swing-Up Control VI: Control Design - Frequency  Analysis tab.</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;"><img src="/userfiles/7/image/pend_hard/11_3%281%29.jpg" alt="" width="572" height="469"></p>
+<p class="normal">&nbsp;</p>
+<p class="normal" style="text-align: center;">&nbsp;Fig 11.3 ROTPENT Swing-Up Control VI: Control Design - Time Analysis tab.</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<table style="width: 707px; height: 197px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);">ID</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Label</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Parameter<br>
+            </span></td>
+            <td><span style="color: rgb(255, 0, 0);">Description</span></td>
+            <td><span style="color: rgb(255, 0, 0);">Unit</span></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Q</td>
+            <td>Q</td>
+            <td>Linear-quadratic weighting matrix that defines a penalty on the state.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>R</td>
+            <td>R</td>
+            <td>Linear-quadratic weighting matrix that defines a penalty on the control action.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kp_theta</td>
+            <td rowspan="7">&nbsp;</td>
+            <td>Arm angle proportional gain calculated using LQR.</td>
+            <td>V/rad</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>kp_alpha</td>
+            <td>Pendulum angle proportional gain calculated using LQR.</td>
+            <td>V/rad</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>kd_theta</td>
+            <td>Arm angle derivative gain calculated using LQR.</td>
+            <td>V.s/rad</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>kd_alpha</td>
+            <td>Pendulum angle derivative gain calculated using LQR.</td>
+            <td>V.s/rad</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Set Desired</td>
+            <td>Copies the control gains calculated to the implementable gains in the  <em>Control Parameters </em>section of the VI.</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Step Reference Amplitude</td>
+            <td>Amplitude of the position reference step given to the closed-loop ROTPEN  simulation.</td>
+            <td>deg</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Step Response</td>
+            <td>Plot showing the simulated arm and pendulum step response.</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p class="normal" style="text-align: center;">Table 2.3 Nomenclature of ROTPENT Swing-Up Control VI: Control Design - Time Analysis  tab.</p>
+<p class="normal" style="text-align: center;">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

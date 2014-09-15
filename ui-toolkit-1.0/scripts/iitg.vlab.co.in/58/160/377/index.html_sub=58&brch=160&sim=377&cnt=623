@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>  Binary vapor liquid equilibrium  (Help) : Virtual mass transfer lab : Chemical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To determine the composition of components in vapor phase and plot graph between temperature and mole fraction and to determine the relative volatility." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=58">Chemical Engineering</a>-><a href="?sub=58&brch=160">Virtual mass transfer lab</a>-><a href="">  Binary vapor liquid equilibrium </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">  Binary vapor liquid equilibrium </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=58&brch=160&sim=377&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=336"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Labvw calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=1986"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=624"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=617"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=460"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=1987"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post expt quiz&nbsp;</div></span></a></li><li class="current"><a href="?sub=58&brch=160&sim=377&cnt=623"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Help&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=377&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h3 style="text-align: center;"><a class="style7" href="http://125.20.82.167:8080/Chem_vlab/HELP.htm#1">GENAREAL  HELP FOR USING LABVIEW (PERFORM EXPERIMENT)</a></h3>
+<p>&nbsp;</p>
+<p>Always begin the experiment page in the simulator tab from the &#039;HOME&#039;   .If it is not at the &#039;HOME &#039;page then stop the  experiment and  restart again.</p>
+<table style="width: 755px; height: 401px;" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>
+            <p><a href="javascript:void(0);/*1298940829990*/"><img src="/userfiles/7/file/help/1.PNG" alt="" style="width: 197px; height: 62px;"></a></p>
+            </td>
+            <td style="text-align: justify;">
+            <p>Click the<span class="style8"> highlighted</span> button to <span class="style8">start and run</span> the program. Once the start button  is pressed you need not need to press it again after you change the  input values.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><a href="/userfiles/7/file/help/2.PNG"><img src="/userfiles/7/file/help/2.PNG" alt="" style="width: 196px; height: 70px;"></a></p>
+            </td>
+            <td>
+            <p style="text-align: justify;">Click the<span class="style8"> highlighted</span> button to <span class="style8">stop</span> the program after you have finished with the  experiment. Or if you want to restart the whole experiment press stop  and then run again.</p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><a href="/userfiles/7/file/help/3.PNG"><img src="/userfiles/7/file/help/3.PNG" style="width: 194px; height: 30px;" alt=""></a></p>
+            </td>
+            <td style="text-align: justify;" rowspan="2">
+            <p>Slide showing the percentage of experiment completed.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><a href="/userfiles/7/file/help/4.PNG"><img src="/userfiles/7/file/help/4.PNG" style="width: 199px; height: 27px;" alt=""></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><a href="/userfiles/7/file/help/6.JPG"><img src="/userfiles/7/file/help/6.JPG" alt=""></a></p>
+            </td>
+            <td style="text-align: justify;">
+            <p>To enter the next value wait for this dialog box to appear.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

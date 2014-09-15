@@ -1,0 +1,168 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Design of binary distillation column (Expt calc) : Virtual mass transfer lab : Chemical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To study  a Mathematical program for the design of distillation columns for binary mixtures and the diameter and cost calculations." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=58">Chemical Engineering</a>-><a href="?sub=58&brch=160">Virtual mass transfer lab</a>-><a href="">Design of binary distillation column</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Design of binary distillation column</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class="current"><a href="?sub=58&brch=160&sim=777&cnt=1323"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Expt calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1324"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Cost calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1590"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Labview calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1988"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1587"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1989"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=1588"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Help&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=777&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p class="style6"><strong><u><big>DIAMETER CALCULATIONS</big></u></strong></p>
+<p class="style6">&nbsp;</p>
+<p class="style5" style="text-align: justify;">For diameter calculations initially we begin with  the calculations of physical properties of feed components. Then we go for vapor  velocity calculation as shown in eqn 1. A correlation that includes the effect  of surface tension is given below; values of K<span class="style8">v</span> for  use with this equation are shown in Fig 1. The correlation is not recommended  for liquids of very low surface tension or for systems that foam easily using  the value of kv the allowable vapor velocity u<sub>c</sub> can be determined using eqn1.</p>
+<p class="style5" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»u«/mi»«mi mathvariant=¨bold¨»c«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»K«/mi»«mi mathvariant=¨bold¨»v«/mi»«/msub»«msqrt»«mfrac»«mrow»«msub»«mi mathvariant=¨bold-italic¨»§#929;«/mi»«mi mathvariant=¨bold-italic¨»L«/mi»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold-italic¨»§#929;«/mi»«mi mathvariant=¨bold-italic¨»V«/mi»«/msub»«/mrow»«mrow»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold-italic¨»§#929;«/mi»«mi mathvariant=¨bold-italic¨»V«/mi»«/msub»«/mrow»«/mfrac»«/msqrt»«msup»«mfenced»«mfrac»«mi mathvariant=¨bold¨»§#963;«/mi»«mn»20«/mn»«/mfrac»«/mfenced»«mrow»«mn»0«/mn»«mo».«/mo»«mn»2«/mn»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=66d71e0c32efc445e464fc182fb0af84.png" align="middle">........................eqn (2.3)</p>
+<p class="style5" align="justify">&nbsp;</p>
+<p class="style5" align="justify">&nbsp;</p>
+<p>Then the vapor flow rate can be further calculated using eqn 2 .</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨bold¨»V«/mi»«mo»§nbsp;«/mo»«mo»=«/mo»«mi mathvariant=¨bold¨»D«/mi»«mo»(«/mo»«mi mathvariant=¨bold¨»R«/mi»«mo»+«/mo»«mn»1«/mn»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=041b905d8cd4a85692fd63252453e731.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .......................eqn (2.4)</p>
+<p>&nbsp;</p>
+<div class="style4" align="justify">The cross sectional area of the column can be  determined by calculating the bubbling area and the column area. Bubbling area =  (vapor flow rate /allowable vapor velocity). If the bubbling area is 70% of the  total column area then column area = bubbling area / 0.7 . finally the column  diameter can be calculated by using eqn 3.</div>
+<div class="style4" align="justify">&nbsp;</div>
+<div class="style4" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»D«/mi»«mi mathvariant=¨bold¨»C«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msup»«mfenced»«mfrac»«mrow»«mn»4«/mn»«mo»*«/mo»«mo»§nbsp;«/mo»«mi mathvariant=¨bold¨»c«/mi»«mi mathvariant=¨bold¨»o«/mi»«mi mathvariant=¨bold¨»l«/mi»«mi mathvariant=¨bold¨»u«/mi»«mi mathvariant=¨bold¨»m«/mi»«mi mathvariant=¨bold¨»n«/mi»«mo»§nbsp;«/mo»«mi mathvariant=¨bold¨»a«/mi»«mi mathvariant=¨bold¨»r«/mi»«mi mathvariant=¨bold¨»e«/mi»«mi mathvariant=¨bold¨»a«/mi»«/mrow»«mi mathvariant=¨bold¨»§#928;«/mi»«/mfrac»«/mfenced»«mrow»«mn»0«/mn»«mo».«/mo»«mn»5«/mn»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=6b4d277b3547749cd4fb5a93e220c6a4.png" align="middle"><span class="style2"><span class="style5">.................................eqn (2.5)</span></span></div>
+<div class="style4" align="justify">&nbsp;</div>
+<div class="style4" align="justify">&nbsp;</div>
+<div class="style4" align="justify">&nbsp;</div>
+<div class="style4" align="justify"><img src="/userfiles/7/image/ch9/k%2520graph.JPG" alt="" width="800" height="333"></div>
+<p>&nbsp;</p>
+<p align="center">(Fig 2.4 gives the value of K<span class="style8">v</span> at  flooding conditions , L/V = Ratio of mass flow rate of liquid to vapor, u is in  ft/s, and sigmais in dyne/cm).</p>
+<p align="center">&nbsp;</p>
+<p class="style6"><big><strong><u>COLUMN HEIGHT CALCULATIONS</u></strong></big></p>
+<p class="style6">&nbsp;</p>
+<div align="justify">
+<p style="text-align: justify;">The height of a trayed column is calculated by multiplying the number of  (actual) stages by the tray separation. Tray spacing can be determined<span class="style7"> as a cost optimum, but is usually set by mechanical factors. The  most common tray spacing is 24 inches .It allows enough space to work on the  trays whenever the column is big enough around (&gt;5 ft diameter). </span></p>
+<p style="text-align: justify;"><br>
+In addition to the space occupied by the trays, height is needed at the  top and bottom of the column. Space at the top typically an additional 5 to 10  ft is needed to allow for disengaging space. The bottom of the tower must be  tall enough to serve as a liquid reservoir.</p>
+<p style="text-align: justify;">Depending on our needs we will probably design the base for about 5 minutes  of holdup, so that the total material entering the base can be contained for at  least 5 minutes before reaching the bottom tray. The total of height added to  the top and bottom will usually amount to about 15% or so added to that required  by the trays.</p>
+<p style="text-align: justify;">&nbsp;</p>
+</div>
+<p class="style5" align="justify">&nbsp;</p>
+<p class="style5" align="justify">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

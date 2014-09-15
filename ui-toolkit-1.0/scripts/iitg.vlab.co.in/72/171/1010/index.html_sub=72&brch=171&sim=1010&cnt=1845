@@ -1,0 +1,709 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>9. Squatting posture (Reference data sheet) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="This experiment focuses on various dimension in squatting postures." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">9. Squatting posture</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">9. Squatting posture</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=171&sim=1010&cnt=1845"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference data sheet&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1873"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Practical experience&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1864"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Application and Tutorial video&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1872"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1844"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=1010&cnt=1851"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td style="text-align: left;">
+            <p>&nbsp;</p>
+            <table border="0" cellpadding="1" cellspacing="1" width="950">
+                <tbody>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2" valign="top" width="375">
+                        <h3><samp><span class="CLS_Headin"><b><font size="3"><b><b><font size="5">The   datasheet relevant to Indian arm reach  dimension in squatting posture  at  lower most, middle and upper most  position i.e. , heights from floor   and length from vertical axis at  the heel points are presented here in   followed by the key mentioned  below.</font></b></b></font></b></span></samp></h3>
+                        <div>&nbsp;</div>
+                        <div>The   source reference :- Chakrabarti, D.,1997: Indian Anthropometric   Dimensions for Ergonomic design Practice, NID, Ahmedabad, India</div>
+                        <div>&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="200">&nbsp;</td>
+                        <td colspan="2" valign="top" width="375">
+                        <div><strong>Key to follow the datasheet.</strong></div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div><strong>The   below key structure showing landmarks, definitions and data table   structure is used in all the data sheets incorporated in this   presentation under different experiment heads.</strong></div>
+                        <div>&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="200">&nbsp;</td>
+                        <td valign="top" width="375">
+                        <div>The   compiled data (with relevant descriptions of anthropometric  terminology  and illustrative descriptions with the respective  measurement  landmarks) are presented herewith as INDIAN ANTHROPOMETRIC  DIMENSIONS  separately for Males, Females and Combined (males and  females both  considering a single study</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" valign="top" width="200">
+                        <div><br>
+                        &nbsp;                             <img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/5.gif" style="width: 206px; height: 209px;" alt=""></div>
+                        </td>
+                        <td colspan="2" valign="top" width="375">&nbsp;<img src="../../../userfiles/7/image/ergonomics/key/key%20table1.gif" alt="" height="120" width="602"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" valign="top" width="375">&nbsp;&nbsp;<br>
+                        <img src="../../../userfiles/7/image/ergonomics/key/key%20table2.gif" alt="" height="196" width="628"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><br>
+            &nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/1.gif" alt="" height="282" width="378"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width: 928px; height: 261px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr height="19">
+                    </tr>
+                    <tr height="32">
+                        <td height="32" width="80">
+                        <div><strong>R. No.  </strong></div>
+                        </td>
+                        <td width="217">
+                        <div><strong>Parameters </strong></div>
+                        </td>
+                        <td width="559">
+                        <div><strong>Definition (brief)</strong></div>
+                        </td>
+                    </tr>
+                    <tr height="37">
+                        <td height="37" width="80">&nbsp;</td>
+                        <td width="217">&nbsp;</td>
+                        <td width="559">
+                        <h3><strong>Squatting posture<br>
+                        </strong></h3>
+                        </td>
+                    </tr>
+                    <tr height="26">
+                        <td height="26" width="80">&nbsp;</td>
+                        <td width="217">&nbsp;</td>
+                        <td width="559">
+                        <div>Subject  sits erect   and stretched (except in normal slouched squatting  position) on heels in a   low position with legs drawn up closely in  front of the body, weight equally   distributed on both the   feet, arms rested on the knees and looking straight ahead.</div>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td height="19" width="80">&nbsp;</td>
+                        <td width="217">&nbsp;</td>
+                        <td width="559">
+                        <h3><b><font size="3">Heights <br>
+                        </font></b></h3>
+                        </td>
+                    </tr>
+                    <tr height="40">
+                        <td height="40" width="80">
+                        <div>240.</div>
+                        </td>
+                        <td width="217">
+                        <div>Normal squatting height</div>
+                        </td>
+                        <td width="559">
+                        <div>Maximum vertical distance from the   floor to the top of the head, while sitting comfortably in squatting posture.</div>
+                        </td>
+                    </tr>
+                    <tr height="24">
+                        <td height="24" width="80">
+                        <div>241.</div>
+                        </td>
+                        <td width="217">
+                        <div>Erect squatting height</div>
+                        </td>
+                        <td width="559">
+                        <div>Maximum vertical distance from the   floor to the top of the head, squatting in erect stretched posture.</div>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td height="19" width="80">
+                        <div>242.</div>
+                        </td>
+                        <td width="217">
+                        <div>Mid shoulder height</div>
+                        </td>
+                        <td width="559">
+                        <div>Maximum vertical distance from the   floor to the top of the mid shoulder.</div>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td height="19" width="80">
+                        <div>243.</div>
+                        </td>
+                        <td width="217">
+                        <div>Right knee height</div>
+                        </td>
+                        <td width="559">
+                        <div>Maximum vertical distance from the floor to the upper most surface of the   right knee.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20table/1.jpg" alt="" height="309" width="669">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/2.gif" alt="" style="width: 431px; height: 266px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: left;">
+            <table border="0" cellpadding="0" cellspacing="0" width="856">
+                <colgroup><col width="80">  <col width="240">  <col width="536">  </colgroup>
+                <tbody>
+                    <tr height="32">
+                        <td height="32" width="80">
+                        <div><strong>R. No.  </strong></div>
+                        </td>
+                        <td width="240">
+                        <div><strong>Parameters </strong></div>
+                        </td>
+                        <td width="536">
+                        <div><strong>Definition (brief) </strong></div>
+                        </td>
+                    </tr>
+                    <tr height="37">
+                        <td height="37" width="80">
+                        <div>244.</div>
+                        </td>
+                        <td width="240">
+                        <div>Left knee height</div>
+                        </td>
+                        <td width="536">
+                        <div>Maximum vertical distance from the   floor to the upper most surface of the left knee.</div>
+                        </td>
+                    </tr>
+                    <tr height="26">
+                        <td height="26" width="80">
+                        <div>245.</div>
+                        </td>
+                        <td width="240">
+                        <div>Crotch height</div>
+                        </td>
+                        <td width="536">
+                        <div>Maximum vertical   distance from the floor to the crotch, i.e. the lowermost point of the trunk between the legs.</div>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td height="19" width="80">&nbsp;</td>
+                        <td width="240">&nbsp;</td>
+                        <td width="536">
+                        <p><strong>Breadths</strong></p>
+                        </td>
+                    </tr>
+                    <tr height="57">
+                        <td height="57" width="80">
+                        <div>246.</div>
+                        </td>
+                        <td width="240">
+                        <div>Elbow to elbow distance, relaxed</div>
+                        </td>
+                        <td width="536">
+                        <div>Maximum horizontal distance across   the lateral surfaces of the elbows.</div>
+                        </td>
+                    </tr>
+                    <tr height="24">
+                        <td height="24" width="80">
+                        <div>247.</div>
+                        </td>
+                        <td width="240">
+                        <div>Knee to knee distance, relaxed</div>
+                        </td>
+                        <td width="536">
+                        <div>Maximum horizontal distance across   the lateral surfaces of the knees in relaxed   squatting posture.</div>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td height="19" width="80">
+                        <div>248.</div>
+                        </td>
+                        <td width="240">
+                        <div>Heel to heel distance</div>
+                        </td>
+                        <td width="536">
+                        <div>Maximum horizontal distance across the lateral surface of the heels.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20table/2.jpg" alt="">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/3.gif" alt="" height="307" width="474"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: left;">
+            <table style="width: 761px; height: 172px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="73">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="175">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="73">
+                        <div>249.</div>
+                        </td>
+                        <td valign="top" width="175">
+                        <div>Big   toe to big toe distance</div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div>Maximum   horizontal distance between the lateral surfaces of the right and the left   big toes.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="73">&nbsp;</td>
+                        <td valign="top" width="175">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div><b>Depths </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="73">
+                        <div>250.</div>
+                        </td>
+                        <td valign="top" width="175">
+                        <div>Buttock   to knee length</div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div>Maximum   horizontal distance from the rearmost point of the uncompressed buttocks to   the most anterior point on the knee.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="73">
+                        <div>251.</div>
+                        </td>
+                        <td valign="top" width="175">
+                        <div>Buttock   to foot distance</div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div>Maximum   horizontal distance from the rearmost point of the uncompressed buttocks to   the foremost point of the foot.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="73">
+                        <div>252.</div>
+                        </td>
+                        <td valign="top" width="175">
+                        <div>Buttock   to heel distance</div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div>Maximum   horizontal distance from the rearmost point of the uncompressed buttock to   the rearmost point of the heels.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/3.jpg" alt="" height="317" width="683"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/4.gif" alt="" height="351" width="243"></td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width: 714px; height: 109px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="79">
+                        <div><b>R. No. </b></div>
+                        </td>
+                        <td valign="top" width="149">
+                        <div><b>Parameters </b></div>
+                        </td>
+                        <td valign="top" width="381">
+                        <div><b>Definition (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="79">&nbsp;</td>
+                        <td valign="top" width="149">&nbsp;</td>
+                        <td valign="top" width="381">
+                        <div><b>Arm   reach lengths and heights </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="79">&nbsp;</td>
+                        <td valign="top" width="149">&nbsp;</td>
+                        <td valign="top" width="381">
+                        <div><b>Arm   reach lengths and heights in different postural variations while squatting on   the floor </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="79">
+                        <div>253.</div>
+                        </td>
+                        <td valign="top" width="149">&nbsp;</td>
+                        <td valign="top" width="381">
+                        <div>Squatting   in erect posture, vertical arm height from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/4.jpg" alt="" height="118" width="679"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/5.gif" style="width: 377px; height: 385px;" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table border="0" cellpadding="0" cellspacing="0" width="664">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>254-258</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in erect posture, forward comfortable arm reaches from rearmost point of back   and heights from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/5.jpg" alt="" height="355" width="657"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/6.gif" style="width: 356px; height: 319px;" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table border="0" cellpadding="0" cellspacing="0" width="664">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>259-263</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in front leaning posture, forward comfortable arm reaches from rearmost point   of back and heights from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/6.jpg" alt="" height="364" width="687"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/7-final.gif" style="width: 394px; height: 343px;" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table border="0" cellpadding="0" cellspacing="0" width="664">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>264-268</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in erect posture, comfortable arm reaches sideways from spine centre and   heights from floor</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/7.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/8-final.gif" style="width: 426px; height: 316px;" alt="">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width: 743px; height: 54px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>269-273</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in side leaning posture, comfortable arm reaches sideways from original erect   spine position and heights from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/8.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/7.gif" style="width: 349px; height: 340px;" alt=""></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width: 749px; height: 54px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>274-278</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in erect posture, backward comfortable arm reaches from spine (buttock centre   axis) and heights from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/9.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><img src="/userfiles/7/image/ergonomics/ex%209/final%20reference%20image/8.gif" style="width: 331px; height: 327px;" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width: 741px; height: 54px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div><b>R.   No. </b></div>
+                        </td>
+                        <td valign="top" width="151">
+                        <div><b>Parameters   </b></div>
+                        </td>
+                        <td valign="top" width="416">
+                        <div><b>Definition   (brief) </b></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="97">
+                        <div>279-283</div>
+                        </td>
+                        <td valign="top" width="151">&nbsp;</td>
+                        <td valign="top" width="416">
+                        <div>Squatting   in back leaning posture, backward comfortable arm reaches from original erect   spine position and heights from floor.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">&nbsp;<img src="/userfiles/7/image/ergonomics/ex%209/final%20table/10.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Identification of Prehistoric handaxe (Theory) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Reconstruction of a handaxe & identification of shape of flakes" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Identification of Prehistoric handaxe</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Identification of Prehistoric handaxe</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=173&sim=714&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=1782"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=714&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1>&nbsp;</h1>
+<h1><span style="color: rgb(153, 51, 0);">Stone Tool Manufacture</span></h1>
+<p>&nbsp;</p>
+<p>Stone tools are made  by removing material from a pebble or `core` until the desired shape of  the core has been attained. The first flakes struck off (primary flakes)  bear traces of the outer surface (cortex). Trimming flakes are then  struck off to achieve the final shape, and certain edges may then be  `retouched` by further removal of tiny secondary flakes.</p>
+<p class="content">Although the core is  the main implement thus produced, the flakes themselves may well be used  as knives, scrapers, etc. The toolmaker’s work will have varied in  accordance with the type and amount of raw material available.</p>
+<p class="content">&nbsp;</p>
+<p>The History of Stone Tool TechnologyThe history of stone tool technology shows a sporadically increasing degree of refinement. &nbsp;</p>
+<ul>
+    <li>
+    <p class="content"><span style="font-size: small;">The first  recognizable tools are simply choppers and flakes made by Knocking  pieces off pebbles to obtain sharp edges. The best known examples are  the so- called Oldowan tools from Olduvai Gorge, Tanzania.</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">After hundreds of  thousands of years, people progressed to flaking both surfaces of tool,  eventually producing the symmetrical Acheulian hand-axe shape, with its  finely worked sharp edges.</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">The next improvement,  around 100,000 years ago, came with the introduction of the `Levalloise  techniques` named after a site in a Paris suburb where the core was  knapped in such a way that large flakes of predetermined size and shape  could be removed.</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">The next improvement,  around 35,000 years ago, with the Upper Paleolithic period, blade  technology became dominant in some parts of the world. Long,  parallel-sided blades were systematically removed with a punched and  hammer-stone from a cylindrical core.</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">This was a great  advances, not only because it produced large numbers of blanks that  could be further trimmed and retouched into a wide range of specialized  tools (scrapers, burins, borers), but also because it was far less  wasteful of the raw material, obtaining a much greater total length of  working edges than ever before from a given amount of stone. The stone  itself was normally a homogeneous easily-worked type such as chert or  obsidian.</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">Loren Eiseley has  worked out a helpful summery of this increasing efficiency, estimated  assuming the use of 500g ( 1 Ib 1 oz) of high-quality chert:</span></p>
+    </li>
+    <li>
+    <p class="content"><span style="font-size: small;">This trend toward greater economy reached its peak in the&nbsp;<strong>Mesolithic</strong>,  around 10,000 years ago, with the rise to dominance of microliths, tiny  stone tools many of which were probably used as barbs on composite  weapons.</span></p>
+    </li>
+    <br>
+</ul>
+<p class="content">The types of tools  found at a site can also provide clues to the site’s function: a hunting  kit with projectile points might be expected in a temporary camp or a  permanent settlement.</p>
+<p class="content">Some techniques of  manufacture can be inferred from traces left on the tools, and many  techniques can still be observed among the few living peoples, such as  some Australian or highland of Maya./p&gt;</p>
+<p class="content">There are two principal approaches to assessing what decisions the knapper made: Replication and Refitting</p>
+<p class="content">&nbsp;</p>
+<h2><span style="color: rgb(153, 51, 0);">Stone Tool Replication:</span></h2>
+<p>&nbsp;</p>
+<p class="content">This is a type of  experimental archaeology that involves making exact copies of different  types of stone tool – using only the technology available to the  original makers – in order to assess the processes entailed, and the  amount of time and effort required. In the past only remarkable work has  done by&nbsp;<strong>Francois Bordes</strong>&nbsp;in the Old World and Donald Crabtree in New World.</p>
+<p class="content">American  archaeologist Nicholas Toth, for example, has made and used the entire  range of early stone tools, as found at sites such as Koobi Fora, Kenya,  and dating to about 1.5 to 2 million years ago- hammer stone, choppers,  scrapers, and flakes. His work provides evidence to suggest that simple  flakes may have been the primary tools, while the more impressive cores  were an incidental by - product of flake manufacture. Previously,  scholars tended to see the flakes as waste products and the cores as the  intentional end – product.</p>
+<p class="content">Donald Crabtree was  able to solve one specific problem that the Paleo - Indians of North  America had made their fluted stone tools known as Folsom points, dating  to some 11,000 – 10,000 years ago. In particular, how had they managed  to remove the “flute” or channel flake?</p>
+<p class="content">The correct method,  as new experiments proved, involves pressing the flake out, downwards,  by means of a T – shaped crutch placed against the chest; the crutch’s  tip is forced down against a precise point on the core which is clamped  firm.</p>
+<p class="content">Archaeologist can  also use replication and experiment to discover whether certain flint  tools had been deliberately heated during manufacture. Purdy and Brooks  investigated the differences between unheated and heated chert. Petro-  graphic thin – sections failed to detect any differences in structure,  but in the scanning electron microscope it became clear that heated  chert had a far smoother appearance. Furthermore, a study of rock  mechanics showed that after heating chert had an increase in compressive  strength of 25 – 40 percent, but a decrease of 45percent in the force  needed to break it.</p>
+<p class="content">Replication cannot  usually prove conclusively which techniques were used in the past, but  it does narrow the possibilities and often points to the most likely  method, as in the Folsom example above. Refitting, on other hand,  involves working with the original tools and demonstrates clearly the  chain of actions of the knapper.</p>
+<p class="content">&nbsp;</p>
+<h2><span style="color: rgb(153, 51, 0);">Refitting of Stone Tools:</span></h2>
+<p>&nbsp;</p>
+<p class="content">This type of work,  which can be traced back to F. C. J.Spurrell at the Paleolithic site of  Crayford, England, in 1880, has really come into its own efforts of  Andre Leroi –Gourhan at the Megdalenian (Late Upper Paleolithic) camp of  Pincevent, Paris.</p>
+<p class="content">Refitting, or  conjoining as it is sometimes called, entails attempting to put tools  and flakes back together again, like a 3-D jigsaw puzzle. The work is  tedious and time – consuming, but can produce spectacular results.</p>
+<p class="content">Refitting allows us  to follow the stages of the knapper’s craft and – where pieces from one  core have been found in different areas – even the knapper’s (or the  core’s) movement around the site.</p>
+<p class="content">Refitting provides a  dynamic perspective on the spatial distribution of tools, and produces a  vivid picture of actual movement and activity in an ancient site. Where  these observations can be supplemented by information on the functions  of the tools, the site really comes to life.</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,566 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>7. Hand dimension (Home) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="This experiment focuses on hand dimension measurement landmarks, reference data pack and animated experiments." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">7. Hand dimension</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">7. Hand dimension</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=171&sim=842&cnt=1572"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Home&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=1574"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference datasheet&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=1573"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Practical experience&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=1576"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Application and Tutorial video&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=1577"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=842&cnt=1637"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td valign="top" width="200">
+            <p>&nbsp;<a name="top"></a></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" colspan="2" rowspan="2" valign="top" width="375">
+            <h2>&nbsp;<br>
+            <span style="color: rgb(51, 102, 255);">Hand dimension<br>
+            </span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td><span style="background-color: Lime;">Content</span><hr>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="10" valign="top" width="200">
+            <p><a href="#top">1.Theory</a></p>
+            <p><a href="#about">2.About experiment</a></p>
+            <p><a href="#Procedure">3.Procedure</a></p>
+            <ul>
+                <li>Measuring procedure</li>
+                <li>Step by step procedure</li>
+            </ul>
+            <p><a href="#animated">4.Animated demonstration</a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td rowspan="4" valign="top" width="375">
+            <div>Those physical human body dimensions which have an impact on design dimensions are static when structural. Structural body measurements include direct measurements of various body parts; say heights, lengths, depths, breadths and the circumferences of head, neck, trunk, hands and External human body dimensional measurements i.e. heights, lengths, breadths,</div>
+            </td>
+            <td rowspan="4" valign="top" width="375">
+            <div>depths and circumferences, taken when a man is placed in a legs in some standard positions. As standard practice, the collection of body structural data in static body positions is easier than the collection of body functional data in dynamic body positions. When these dimensions are taken in sitting static posture it is called sitting static anthropometry.</div>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;" rowspan="6" valign="top" width="375"><a name="about"></a><img src="/userfiles/7/image/ergonomics/ex7/Ex_7_Theory_1.jpg" style="width: 429px; height: 199px;" alt=""></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td rowspan="2" valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">About Experiment </span></h2>
+            <p>&nbsp;</p>
+            </td>
+            <td rowspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>This Study aims at understanding the various hand dimension which also involves measuring techniques and equipment used and to maintained and measurements of body parts in</div>
+            <div>&nbsp;</div>
+            <div><strong>The presentation acquaints</strong></div>
+            <div>&nbsp;</div>
+            <div>1.To understand the common anthropometric terms (with appropriate illustrations) in a standing posture and arm reach values.</div>
+            <div><a name="Procedure"></a></div>
+            </td>
+            <td valign="top" width="375">
+            <div><span>1.</span>To understand the basic measuring technique using low cost devices.</div>
+            <div>&nbsp;</div>
+            <div>2.To acquaint with the standing anthrpometric dimensions in a holistic presentation, the tabular flow interlinking the definition, measuring land marks illustrations and data set being provided. <!--[if gte mso 9]><xml>
+            <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+            DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+            LatentStyleCount="267">
+            <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+            <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+            <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+            <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Title" />
+            <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+            <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+            <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+            <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+            <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Table Grid" />
+            <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+            <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 1" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+            <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+            <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+            <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+            <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 1" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 2" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 2" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 3" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 3" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 4" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 4" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 5" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 5" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 6" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 6" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+            <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+            <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+            <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+            <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+            <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+            <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+            <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+            </w:LatentStyles>
+            </xml><![endif]--><!--[if gte mso 10]>
+            <style>
+            /* Style Definitions */
+            table.MsoNormalTable
+            {mso-style-name:"Table Normal";
+            mso-tstyle-rowband-size:0;
+            mso-tstyle-colband-size:0;
+            mso-style-noshow:yes;
+            mso-style-priority:99;
+            mso-style-qformat:yes;
+            mso-style-parent:"";
+            mso-padding-alt:0in 5.4pt 0in 5.4pt;
+            mso-para-margin:0in;
+            mso-para-margin-bottom:.0001pt;
+            mso-pagination:widow-orphan;
+            font-size:10.0pt;
+            font-family:"Times New Roman","serif";}
+            </style>
+            <![endif]-->such positions should be taken with extension and flexing movements so that various reach values in different positions are normally taken care of.</div>
+            <div style="text-align: right;">&nbsp;</div>
+            <div style="text-align: right;"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Procedure</span></h2>
+            <p>&nbsp;</p>
+            </td>
+            <td valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div><strong>Measuring procedures </strong></div>
+            <div>Direct measuring procedures are followed to collect anthropometric data from selected subjects in a particular population. Direct body&nbsp;</div>
+            </td>
+            <td valign="top" width="375">
+            <div>&nbsp;</div>
+            <div>measuring procedures may be considered separately or taken both simultaneously, depending on the context of the dimensional requirement and the suitability of the study.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div><strong>Step by step procedure</strong></div>
+            <div><strong>Measuring dimensions:&nbsp; technique</strong></div>
+            <div>&nbsp;</div>
+            <div>The measuring methods has been illustrations presented herein may be followed with the relevant experimental set up using (A) Caliper.</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;<a name="animated"></a></div>
+            </td>
+            <td valign="top" width="375">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p style="text-align: right;"><a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" style="text-align: left;" valign="top" width="375"><span style="color: rgb(128, 0, 0);"><span style="background-color: rgb(153, 204, 255);">CLICK&nbsp;THE&nbsp;IMAGE</span></span>&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" colspan="2" valign="top" width="375">
+            <h3><strong><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/userfiles/7/flash/Ergonomics/ex7/main%20gauge%20ty.swf" play="true" loop="true" menu="true" height="556" width="719"><br>
+            </strong></h3>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" colspan="2" valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" colspan="2" valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" colspan="2" valign="top" width="375"><em><strong><a href="#top"><em><strong><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/userfiles/7/flash/Ergonomics/calliper.swf" play="true" loop="true" menu="true" height="537" width="745"><br>
+            </strong></em></a></strong></em></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: right;" colspan="2" valign="top" width="375"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

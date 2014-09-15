@@ -1,0 +1,794 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fiber Optic Analog and Digital Link (Introduction) : Remote Triggered Fiber Optic Communication Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Fiber Optic Analog and Digital Link" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=269">Remote Triggered Fiber Optic Communication Laboratory</a>-><a href="">Fiber Optic Analog and Digital Link</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Fiber Optic Analog and Digital Link</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=59&brch=269&sim=1317&cnt=2780"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=2781"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Set Up&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=2782"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=2783"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=2784"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=269&sim=1317&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--></p>
+<p style="text-align:justify" class="MsoNormal">&nbsp;</p>
+<p style="text-align:justify" class="MsoNormal"><span style="mso-bidi-font-family:
+Arial">Fiber-optic communications is the method of transmitting data from one point to another by sending pulses of light through an optical fiber. Optical fiber is a waveguide made of very thin tubes of glass whose diameter is of the order of a few micrometers. Here the optical fiber works on the principle of ‘Total Internal Reflection’.</span></p>
+<p style="text-align:justify" class="MsoNormal"><span style="mso-bidi-font-family:
+Arial"><span style="mso-spacerun:yes">&nbsp;</span>A block diagram of a fiber-optic communication system is shown below.</span></p>
+<p style="text-align:justify" class="MsoNormal">&nbsp;</p>
+<p style="text-align: center;" class="MsoNormal"><img alt="" src="data:image/png;base64,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tdsz6mQfrLEECb9hMlV2+eo7gfu9kLHv13Vd4/AqkHLM+Kb333//ySef3NNEfSrGy8hUz/MymYw6dajneb/5fL5QKMhWo2xByuMHn/erXkJ28HrayjzMeb/yMM5RAhRmfJOZqdSnYuwqlYo6rilc15W9u8PUp+rHXwfXp+qvqG+k9nuhZrNp7GSu1Wr5fF5yGgAzvmlPplKfCgAYGjO+aTdTqU8FAITBjG/azlTqUwEAITHjm7bP+6U+FQAQEjO+ifpUAMBomPFN1KcCAEbDjG+iPhUAMBpmfBP1qQCA0TDjm1Jen7qyspLbUSqVOp2O6lpdXVVdxWJxc3NTdd2/f39+fl66lpeXNzY2VNeDBw8WFhaka3FxsdFoqK719fXFxUXpWlhY0C/is7Gxsby8rLoePHigulqtluqan59fW1tTXZ1Op1gsqje5srKid5VKJdV19+5d1bW1tXX37l39U29tbTEgDAgDogZEHw0MNmEz/hikuT61Vqtl9vryl7/8wQcffPDBB++9957RdeHCBen627/924cffljv+uxnPytdP//5z42uubm5D3Y8/fTTetcTTzyhuubm5vSuhx9++Oc//7l0nT9/3ngnP/7xj6WrWCwaXd///vel68tf/rLR9b3vfU+6vvGNbxhdb7/9tnR973vfY0AYEAYkk8noIY0BJmnGH48016cGZ4FXX3315s2bN2/evHbt2pEjR/SuXC53c8fRo0f1rpdeekl1Pf7443rX7Oys6pqZmdG7Tpw4obpmZ2f1rieffFJ1nTlzRu86evTo9evXpevcuXN615EjR4rFonS98sorxke7fPmydC0tLRldFy5ckK7Lly8zIAwIA5LJZFZXV23PT5Nhkmb88UhtfWqn01laWvr1X//113eoOUXNEarrjTfe0LuuX78+TNfS0tLNvV7XGF1LS0uqS00B4o033lBd165d07suX748TJeaOMTVq1dV19WrV/WuYrHIgDAgqR2QXC4nmarvncYAEzPjj01q61Nv3LghPzzBn1UAqeW6rn4kGINNzIw/NqmtT1W/kM7Pz9v+KQYQF9zLL5SJmfHHJrX1qWQqgCAyNZSJmfHHJrX1qWQqAMP169d/8zd/k1qa4U3MjD82qa1PvXfvnmSqcQoGgNRSv2pTSzOkiZnxxybN9anvvvsugQpAOXnyJLU0oUzSjD8eaa5P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"></p>
+<p style="text-align: center;" class="MsoNormal">&nbsp;</p>
+<p style="text-align: center;" class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--></p>
+<p class="MsoNormal">The process of communicating using an optical fiber involves the following -</p>
+<p style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpFirst"><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">a)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Converting electrical signal to optical signal at the transmitter.</p>
+<p style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpMiddle"><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">b)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Transmission of optical signal to the cable.</p>
+<p style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpMiddle"><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">c)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Relaying the signal through the optical-fiber.</p>
+<p style="margin-left:.75in;mso-add-space:
+auto;text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpMiddle"><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">d)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Receiving the optical signal at the detector.</p>
+<p style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpLast"><span style="mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">e)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Converting the optical signal back to the electrical signal at the receiver.</p>
+<p style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpLast">&nbsp;</p>
+<p style="margin-left:.75in;mso-add-space:auto;
+text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpLast">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

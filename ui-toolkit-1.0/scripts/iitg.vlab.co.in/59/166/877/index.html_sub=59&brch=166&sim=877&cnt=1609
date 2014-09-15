@@ -1,0 +1,376 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exp-5 Analysis of LTI system response. (Theory) : Signals and Systems Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Convolution and correlation of signals." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=166">Signals and Systems Laboratory</a>-><a href="">Exp-5 Analysis of LTI system response.</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Exp-5 Analysis of LTI system response.</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=166&sim=877&cnt=1610"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Objective&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=166&sim=877&cnt=1609"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=1608"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=1811"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=877&cnt=1994"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<h2><a name="link11"><blink></blink></a><a name="link5"></a><a name="link6"></a><a name="link7"></a><a name="link8">&nbsp;<big><span style="color: rgb(51, 153, 102);">Theory</span></big><span style="color: rgb(51, 153, 102);"><big>:<br>
+</big></span></a></h2>
+<p>&nbsp;<span style="color: rgb(51, 153, 102);"><br>
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link1"><span style="color: rgb(0, 0, 255);"><big>Convolution</big></span></a></p>
+<p>&nbsp;<a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link9"><span style="color: rgb(0, 0, 255);"><big>Convolution properties</big></span></a></p>
+<p>&nbsp;<a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link2"><big><span style="color: rgb(0, 0, 255);">Correlation</span></big></a><big><br>
+</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link3"><big><span style="color: rgb(0, 0, 255);">(a)Cross-correlation</span></big></a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link4"><span style="color: rgb(0, 0, 255);"><big>(b)Auto-correlation</big></span></a></p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link10"><span style="color: rgb(0, 0, 255);"><big>&nbsp;Properties of Auto-correlation</big></span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(0, 128, 128);"><span>--&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦   --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦   --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --&nbsp;♦ --</span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="link1"><strong><span style="color: rgb(0, 0, 255);"><big>Convolution:</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(0, 0, 255);"><big><span style="color: rgb(0, 0, 0);">C</span></big></span><big>onvolution is a mathematical operation which can be perform on two signals <em>&#039;f&#039;</em> and <em>&#039;g</em>&#039; to produce a third signal which is typically viewed as the modified version of one of the original signals. A convolution is an integral that express the overlap of one signal <em>&#039;g&#039;</em> as it is shifted over another signal <em>&#039;f&#039;.</em><br>
+</big></p>
+<p><big>Convolution of two signals <em>&#039;f&#039;</em> and<em> &#039;g&#039;</em> over a finite range <em>[0 → t]</em> can be defined as</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=1809e36a9cb0c0dca3459ea44681665d.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»[«/mo»«mi»f«/mi»«mo»*«/mo»«mi»g«/mi»«mo»]«/mo»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mn»0«/mn»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»g«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»§#964;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></p>
+<p><big>Here the symbol <em>[f*g](t)</em> denotes the convolution of </big><em><big>&#039;f&#039;</big></em> <big>and <em>&#039;g</em>&#039;. Convolution is more often taken over an infinite range like,</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=45ae9db20c0dcf1b480700b6dd8153df.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»[«/mo»«mi»f«/mi»«mo»*«/mo»«mi»g«/mi»«mo»]«/mo»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»g«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»§#964;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big><big><br>
+</big></p>
+<p><big>&nbsp;The convolution of two discrete time signals <em>f(n)</em> and <em>g(n)</em> over an infinite range can be defined as</big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=8fd8ae8429a8c9d980db6ddeefe797a1.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»[«/mo»«mi»f«/mi»«mo»*«/mo»«mi»g«/mi»«mo»]«/mo»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»g«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp; &nbsp;</big><big><br>
+</big></p>
+<p>&nbsp;<big>The convolution of two continuous time signals are shown in the Figure 1.<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/b.jpg" align="absMiddle" height="159" width="270"></big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig1/a.jpg" alt="" align="absMiddle" height="143" width="250"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/c.jpg" align="absMiddle" height="158" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/e.jpg" align="absMiddle" height="157" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/exact.jpg" align="absMiddle" height="154" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/g.jpg" align="absMiddle" height="156" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/j.jpg" align="absMiddle" height="157" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/arrow.jpg" alt="" align="absMiddle" height="33" width="10"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig1/k.jpg" align="absMiddle" height="157" width="270"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<big> Fig.1 Convolution of two signals</big><big><br>
+</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link5"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p><a name="link9"><span style="color: rgb(0, 0, 255);"><big><strong>Convolution properties:</strong></big></span></a></p>
+<p>&nbsp;</p>
+<p><big>There are some important properties of convolution that perform on continuous time signal which we have listed below. The commutativity, associativity, distributivity properties are given below.</big><big><br>
+</big><big><br>
+</big></p>
+<p>&nbsp;</p>
+<table style="width: 562px; height: 88px;" align="center" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><em><strong><big>Commutativity</big></strong></em></td>
+            <td><em><strong><big>f(t) * g(t) = g(t) * f(t)</big></strong></em></td>
+        </tr>
+        <tr>
+            <td><em><strong><big>Associativity</big></strong></em></td>
+            <td><strong><em><big>[f(t) * g(t)] * h(t) = f(t) * [g(t) * h(t)]</big></em></strong></td>
+        </tr>
+        <tr>
+            <td><em><strong><big>Distributivity</big></strong></em></td>
+            <td><big><strong><em>f(t) * [g(t) + h(t)]</em></strong></big> <big><strong><em>= f(t) * g(t) + f(t) * h(t)</em></strong></big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link6"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p><a name="link2"><strong><span style="color: rgb(0, 0, 255);"><big>Correlation:</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>So far in the above discussion we have discussed about the convolution of two continous time signals</big><big> which is used to find the output <em>y(t)</em> of a system.</big><big> Correlation is a mathematical operation that closely resembles convolution. </big><big>Correlation is basically used to compare two signals. Correlation is the measure of the degree </big><big>to</big> <big>which </big><big>two signals are similar. The correlation of two signals is divided into two ways: (i) Cross-correlation, (ii) Auto-correlation.<br>
+</big></p>
+<p><big>&nbsp;</big></p>
+<p>&nbsp;<a name="link3"><strong><big><span style="color: rgb(0, 0, 255);">Cross-correlation:</span></big></strong><big><span style="color: rgb(0, 0, 255);">&nbsp;</span></big></a></p>
+<p>&nbsp;</p>
+<p><big>Cross correlation is a measure of similarity between two waveforms as a function of time gap or delay applied to one of them. The cross correlation between a pair of continuous time signals <em>f(t)</em> and <em>g(t) </em>is given by&nbsp;<em> </em><br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=11e32e8054aa63cbf728c7514802fc75.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»g«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> &nbsp; where &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»-«/mo»«mo»§#8734;«/mo»«mo»§#10877;«/mo»«mi»§#964;«/mi»«mo»§#10877;«/mo»«mo»§#8734;«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=10840743162955aafbc2656ba543af85.png" align="middle">&nbsp; --------- (1) </big></p>
+<p><big>and it can be derived for discrete time signal <em>f(n)</em> and <em>g(n)</em></big> <big>as</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=51177a5298ba3819cf61f8de812d43f6.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»g«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp; &nbsp; <big>where &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=01a00cf07d308f59bfeb7d5d04f977ea.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»k«/mi»«mo»=«/mo»«mn»0«/mn»«mo»,«/mo»«mo»§nbsp;«/mo»«mo»§#177;«/mo»«mn»1«/mn»«mo»,«/mo»«mo»§nbsp;«/mo»«mo»§#177;«/mo»«mn»2«/mn»«mo»,«/mo»«mo»§nbsp;«/mo»«mo»§#177;«/mo»«mn»3«/mn»«mo»,«/mo»«mo».«/mo»«mo».«/mo»«mo».«/mo»«mo».«/mo»«mo».«/mo»«mo».«/mo»«mo».«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>The index <img src="/userfiles/7/image/sig1/tau1.jpg" alt="" align="absMiddle" height="18" width="12">and <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=78dd0990ee77111b379e70891759ae7c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»k«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> are the shift parameters for continuous time and discrete time signals respectively. The order of subscripts </big><em><big>&#039;fg</big></em>&#039;&nbsp; <big>indicates that <em>f(t)</em></big> <big>or </big><em><big>f(n) </big></em><big>are the reference sequence in continuous-time and discrete-time respectively that remains unshifted in time whereas the sequence <em>g(t)</em> or <em>g(n)</em> are shifted &#039;<img src="/userfiles/7/image/sig1/tau1.jpg" alt="" align="absMiddle" height="18" width="12">&#039; or &#039;<em>k&#039;</em> units in time with respect to <em>f(t)</em> or <em>f(n)</em> respectively.<br>
+</big></p>
+<p><big>If we want to fix <em>g(t)</em></big> <big>and to shift </big><em><big>f(t)</big></em><big>, then the correlation of two sequences can be written as </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=2ca775f1182579b07fb15d33b9f6309e.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»g«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=417573b19fec86f5dfb43ae98dda53b5.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»g«/mi»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> &nbsp; -----------------------(2) </big><big><br>
+</big></p>
+<p><big>and for discrete time signals, the cross-correlation can be written as</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=624eb0d9372ae12570fc48127b9eba6a.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»g«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=665498f1ff33f3afa44f64981eb31c28.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»g«/mi»«mo»[«/mo»«mi»n«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></p>
+<p><big>Now comparing eq<sup>n</sup></big>. <big>(1) and eq<sup>n</sup>. (2)</big> <big>we find that </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=7517d06fce3320267e373e91515a4c26.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>and similarly for discrete time signal&nbsp;</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=60c3386fecca92bfba2111ab9537a5dc.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>Where for continuous time signals <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=dfe2081256510c0d204fd98f3aaca48b.png" align="middle"> is the folded version of <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4e70f15eab6c83ac529613b40f97018d.png" align="middle"> about <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»§#964;«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=260ded358324fdef854db2a48a7552a5.png" align="middle"><em>=0 </em>and for </big><big>discrete time signal&nbsp;<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9d353834a6d50008e5ddde7778e13ebf.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»g«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> is the </big><big>folded version of&nbsp;<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=a63fe31d84b306eeeb3776a271043e43.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> about <em>k=0.</em></big></p>
+<p><big>Now we can rewrite the eq<sup>n</sup>. (1)</big> <big>as &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </big></p>
+<table style="" align="center" border="0" cellpadding="1" cellspacing="1" width="468">
+    <tbody>
+        <tr>
+            <td><big>&nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=07e128371cdbccb070f9578eada2f68f.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»g«/mi»«mo»[«/mo»«mo»-«/mo»«mo»(«/mo»«mi»§#964;«/mi»«mo»-«/mo»«mi»t«/mi»«mo»)«/mo»«mo»]«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big><big>-----------------(3)</big><big> </big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big> <br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d678663b50edb4aab1b5789a25a13d51.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«mi»f«/mi»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»*«/mo»«mi»g«/mi»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> &nbsp;&nbsp;&nbsp; </big></p>
+<p><big>and similarly for discrete time signal</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td>
+            <p><big> <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c5fba8ff175dec0a9bd69771aedef98d.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»g«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»g«/mi»«mo»[«/mo»«mo»-«/mo»«mo»(«/mo»«mi»k«/mi»«mo»-«/mo»«mi»n«/mi»«mo»)«/mo»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><big> </big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=712a8dcd1adc1bb9a5a3923ed2327d3e.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«mi»f«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»*«/mo»«mi»g«/mi»«mo»[«/mo»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><big>From the above equation(3) we find that the correlation process is essentially the convolution of two data sequence in which one of the sequence has been reversed.</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link7"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;</p>
+<p><a name="link4"><span style="color: rgb(0, 0, 255);"><big><strong>Auto-correlation:</strong></big></span>&nbsp;</a></p>
+<p>&nbsp;</p>
+<p><big>Auto correlation of a continuous time signal is the correlation of the signal with itself. The auto correlation of a </big><big>continuous time </big><big>signal <em>f(t)</em> is defined as</big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=828e9f459d14a2f3c6b9e493e8e890bc.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p><big>for </big><big>discrete time signal <em>f(n) </em>it is defined as<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td>
+            <p><big> <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=7dda18b0b0bb1ea1402dd01d7a882a8e.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><big> <br>
+</big></p>
+<p><big>or equivalently we can write &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=33535f14ac8d19589ae18e180d713f24.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big>&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p><big>and similarly for </big><big>discrete time signal <em>f(n)&nbsp;</em>we can write</big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</big></p>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td><big> <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=676babf490eb9467bb9eee0d7f771f6c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big> </big><big>&nbsp;&nbsp;</big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link8"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span><big> </big></a></blink><blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link8"><big><br>
+</big></a></blink></p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(0, 0, 255);"><strong><big>Relation to Signal energy and Signal power:</big></strong></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<big>The auto-correlation function of a periodic signal is itself a periodic signal with a period the same as that of the original signal.</big></p>
+<p><big>&nbsp;If <em>f(t)</em> is an energy signal, its auto-correlation is<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=2eedd29db2cbdbe30b4719c11f17abe2.png" align="middle"></big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=3cabde46a5bb81becf480343a74e511b.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>for continuous-time and discrete-time signals respectively.</big></p>
+<p><big>After applying a zero shift it becomes<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=737d2ac8c01218aa7acfaffbca550169.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mtable columnalign=¨left¨ rowspacing=¨0¨»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mn»0«/mn»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«msup»«mi»f«/mi»«mn»2«/mn»«/msup»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«mo»§nbsp;«/mo»«/mtd»«/mtr»«mtr»«mtd/»«/mtr»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mn»0«/mn»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msup»«mi»f«/mi»«mn»2«/mn»«/msup»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/mtd»«/mtr»«/mtable»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;<big>which is the total signal energy of the signal.</big></p>
+<p><big>If </big><em><big>f(t)</big></em><big> or </big><em><big>f[n]</big></em> <big>is a power signal, the auto-correlation at zero shift is</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=7f1250281757106794414f6403aad380.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mtable columnalign=¨left¨ rowspacing=¨0¨»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mn»0«/mn»«mo»)«/mo»«mo»=«/mo»«munder»«mi mathvariant=¨normal¨»lim«/mi»«mrow»«mi»T«/mi»«mo»§#8594;«/mo»«mo»§#8734;«/mo»«/mrow»«/munder»«mfrac»«mn»1«/mn»«mi»T«/mi»«/mfrac»«msubsup»«mo»§#8747;«/mo»«mi»T«/mi»«mo»§nbsp;«/mo»«/msubsup»«msup»«mi»f«/mi»«mn»2«/mn»«/msup»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/mtd»«/mtr»«mtr»«mtd/»«/mtr»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mn»0«/mn»«mo»]«/mo»«mo»=«/mo»«munder»«mi mathvariant=¨normal¨»lim«/mi»«mrow»«mi»N«/mi»«mo»§#8594;«/mo»«mo»§#8734;«/mo»«/mrow»«/munder»«mfrac»«mn»1«/mn»«mi»N«/mi»«/mfrac»«munder»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»§lt;«/mo»«mi»N«/mi»«mo»§gt;«/mo»«/mrow»«/munder»«msup»«mi»f«/mi»«mn»2«/mn»«/msup»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/mtd»«/mtr»«/mtable»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>for continuous-time and discrete-time respectively which is the average signal power of the signal.<br>
+</big></p>
+<p>&nbsp;</p>
+<p><a name="link10"><span style="color: rgb(0, 0, 255);"><strong><big>Properties of Auto-correlation:</big></strong></span></a></p>
+<p>&nbsp;</p>
+<p><big>The auto-correlation depends on the choice of the amount of shift applied. we can say from the observation that the value of the auto-correlation can never be bigger than it is at zero shift.</big> <big>That is,</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d3c7f5d1fb83f184efb5eece33b059d4.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mn»0«/mn»«mo»)«/mo»«mo»§#10878;«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mi mathvariant=¨normal¨»or«/mi»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mn»0«/mn»«mo»]«/mo»«mo»§#10878;«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>It will happen because at a zero shift, the correlation with itself is obviously as large as it can get since the shifted and unshifted versions coincide.</big></p>
+<p>&nbsp;<big>Another property of auto-correlation function is that all auto-correlation functions are even functions (but not all correlation functions). <br>
+</big></p>
+<p><big>&nbsp; or&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=34719aff618871f1b87ca622c6af13f0.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mtable columnalign=¨left¨ rowspacing=¨0¨»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/mtd»«/mtr»«mtr»«mtd/»«/mtr»«mtr»«mtd»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«munder»«mi mathvariant=¨normal¨»lim«/mi»«mrow»«mi»T«/mi»«mo»§#8594;«/mo»«mo»§#8734;«/mo»«/mrow»«/munder»«mfrac»«mn»1«/mn»«mi»T«/mi»«/mfrac»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«mrow»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«/mtd»«/mtr»«/mtable»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp;If we make the change of variable</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=ad399eb37b1def469cbf8567d4531c26.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»t«/mi»«mo»§apos;«/mo»«/msup»«mo»=«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big>and &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=317d515d63b8046d3c86789a8a54c137.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»d«/mi»«msup»«mi»t«/mi»«mo»§apos;«/mo»«/msup»«mo»=«/mo»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>We can show that&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=65fd5b8c520f83cdaed699d18aa44ae5.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»(«/mo»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>It can be shown by a similar technique for discrete-time signal also</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=b6c0dfa1686453d1526db6fc8e891449.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mo»-«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;<big>Another characteristic of auto-correlation function is that a time shift of a signal does not make any change of its auto-correlation.</big></p>
+<p>&nbsp;<big>Let<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=fd037028eab3ec5d8b07184f5a184652.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">be the auto-correlation function of a discrete-time energy signal <em>f[n].</em> Then&nbsp;</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=3cabde46a5bb81becf480343a74e511b.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp;Now let </big><em><big>y[n] = f [n-n<sub>0</sub>]</big></em> . <big>Then</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=44aaa7f453f921cbba35c50863ebbb62.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»y«/mi»«mi»y«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=7b6497642a94588ecbe4ce84e95d6392.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></p>
+<p><big>Now we can make a change of variable </big><em><big>q = n-n<sub>0</sub></big></em> <big>. Then</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=5321aade8c4bf5d0240c95184a6b5d89.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mrow»«mi»y«/mi»«mi»y«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»q«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»f«/mi»«mo»[«/mo»«mi»q«/mi»«mo»]«/mo»«mi»f«/mi»«mo»[«/mo»«mi»q«/mi»«mo»+«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mrow»«mi»f«/mi»«mi»f«/mi»«/mrow»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;</p>
+<p><big>Another characteristic of auto-correlation function is that the auto-correlation of a sum of sinusoids of different frequencies is the sum of auto-correlation of the individual sinusoids. To demonstrate this idea let a continuous-time power signal <em>f(t)</em> </big><big>be a sum of two sinusoids </big><em><big>f<sub>1</sub></big><big>(t)</big></em><big> and </big><em><big>f<sub>2</sub></big><big>(t)</big></em>, <big>where</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4847bee123b836b274a7bcba3b20bc82.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mtable columnalign=¨left¨ rowspacing=¨0¨»«mtr»«mtd»«msub»«mi»f«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»Z«/mi»«mn»1«/mn»«/msub»«mi mathvariant=¨normal¨»cos«/mi»«mo»(«/mo»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»f«/mi»«mn»01«/mn»«/msub»«mi»t«/mi»«mo»+«/mo»«msub»«mi»§#952;«/mi»«mn»1«/mn»«/msub»«mo»)«/mo»«/mtd»«/mtr»«mtr»«mtd»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mi»a«/mi»«mi»n«/mi»«mi»d«/mi»«/mtd»«/mtr»«mtr»«mtd»«msub»«mi»f«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»Z«/mi»«mn»2«/mn»«/msub»«mi mathvariant=¨normal¨»cos«/mi»«mo»(«/mo»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»f«/mi»«mn»02«/mn»«/msub»«mi»t«/mi»«mo»+«/mo»«msub»«mi»§#952;«/mi»«mn»2«/mn»«/msub»«mo»)«/mo»«/mtd»«/mtr»«/mtable»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>The auto-correlation of this signal is</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=fcbbce76edc3bd54ca3e69fc2788bfca.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«munder»«mi mathvariant=¨normal¨»lim«/mi»«mrow»«mi»T«/mi»«mo»§#8594;«/mo»«mo»§#8734;«/mo»«/mrow»«/munder»«mfrac»«mn»1«/mn»«mi»T«/mi»«/mfrac»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«mrow»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«/msubsup»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mi»d«/mi»«mi»§#964;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=26d57fb40a5e5ca4bba092b256e2dd3f.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«munder»«mi mathvariant=¨normal¨»lim«/mi»«mrow»«mi»T«/mi»«mo»§#8594;«/mo»«mo»§#8734;«/mo»«/mrow»«/munder»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«mrow»«mi»T«/mi»«mo»/«/mo»«mn»2«/mn»«/mrow»«/msubsup»«mo»[«/mo»«msub»«mi»f«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msub»«mi»f«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»+«/mo»«msub»«mi»f«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msub»«mi»f«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»+«/mo»«msub»«mi»f«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msub»«mi»f«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»+«/mo»«msub»«mi»f«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msub»«mi»f«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»+«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»]«/mo»«mi»d«/mi»«mi»§#964;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"><br>
+</big></p>
+<p><big>&nbsp;Therefore,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»§#947;«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»§#947;«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«mo»+«/mo»«msub»«mi»§#947;«/mi»«mn»2«/mn»«/msub»«mo»(«/mo»«mi»§#964;«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=941033b624d12925692e48654839ab89.png" align="middle"></big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=877&amp;cnt=1609#link11"><span style="color: rgb(0, 0, 255);"><big>Top<img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a></blink></p>
+<p><big>&nbsp;</big></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

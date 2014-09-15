@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exp-4 Sampling and signal reconstruction. (Quiz) : Signals and Systems Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Demonstration of sampling/ reconstruction of signals and spectral analysis using DFT. There are FIVE sub-experiments within this experiment." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=166">Signals and Systems Laboratory</a>-><a href="">Exp-4 Sampling and signal reconstruction.</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Exp-4 Sampling and signal reconstruction.</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1597"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Objective&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=166&sim=820&cnt=1429"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1706"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1993"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">With increasing sampling frequency fs, the mean square error of the reconstructed output w.r.t the original signal</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3388" style="vertical-align:middle" type="radio" name="ans0"  value="3388"> </input><label for="ans3388" id="textAnsChoice">increases.</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3389" style="vertical-align:middle" type="radio" name="ans0"  value="3389"> </input><label for="ans3389" id="textAnsChoice">remains uneffected.</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3390" style="vertical-align:middle" type="radio" name="ans0"  value="3390"> </input><label for="ans3390" id="textAnsChoice">almost zero.</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3391" style="vertical-align:middle" type="radio" name="ans0"  value="3391"> </input><label for="ans3391" id="textAnsChoice">remains constant after initial decrease.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">From the observation in exp-4(c) what can you say about the delay introduced in the reconstructed output w.r.t original signal by the first order hold ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3695" type="radio" name="ans1"  value="3695"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3695">No delay is introduced</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3696" type="radio" name="ans1"  value="3696"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3696">A delay of one sample period is introduced</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3697" type="radio" name="ans1"  value="3697"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3697">A delay of two sample periods is introduced</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The main cause of aliasing distortion observed in frequency domain in sampling of a continuous time signal is</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3692" type="radio" name="ans2"  value="3692"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3692">the signal spectra being band-limited.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3693" type="radio" name="ans2"  value="3693"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3693">the signal spectra being non band-limited.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3694" type="radio" name="ans2"  value="3694"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3694">sampling in time domain.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Linear interpolation based reconstruction process</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3689" type="radio" name="ans3"  value="3689"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3689">maintains the value of the previous sampling instant till next sampling instant.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3690" type="radio" name="ans3"  value="3690"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3690">joins the adjacent sampling points by a straight line.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3691" type="radio" name="ans3"  value="3691"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3691">joins the adjacent sampling points by a second-order polynomial.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The role of zero padding in DFT based signal analysis is</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3686" type="radio" name="ans4"  value="3686"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3686">to reduce the aliasing distortion.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3687" type="radio" name="ans4"  value="3687"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3687">to increase the frequency resolution</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3688" type="radio" name="ans4"  value="3688"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3688">to reduce the picket fence effect</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is over sampling ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3618" type="radio" name="ans5"  value="3618"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3618">Sampling a signal with sampling frequency significantly higher than the bandwidth of the signal being sampled.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3619" type="radio" name="ans5"  value="3619"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3619">Sampling a signal with sampling frequency significantly lower than the bandwidth of the signal being sampled.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3620" type="radio" name="ans5"  value="3620"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3620">Sampling a signal with sampling frequency significantly higher than twice the bandwidth of the signal being sampled.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3621" type="radio" name="ans5"  value="3621"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3621">Sampling a signal with sampling frequency three times higher than the bandwidth of the signal being sampled.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">From the observation in exp-4(c) what can you make out about delay introduce by zero order hold ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3392" type="radio" name="ans6"  value="3392"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3392">Zero.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3393" type="radio" name="ans6"  value="3393"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3393">One.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3394" type="radio" name="ans6"  value="3394"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3394">Two.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What do you mean by under sampling ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3713" type="radio" name="ans7"  value="3713"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3713">Sampling the signal at Nyquist rate.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3714" type="radio" name="ans7"  value="3714"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3714">Sampling the signal below the Nyquist rate.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans3715" type="radio" name="ans7"  value="3715"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans3715">Sampling the signal greater than or equal to Nyquist rate.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">9)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is the use of anti-aliasing filter ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans6319" type="radio" name="ans8"  value="6319"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans6319">It is used for reconstruction of a signal.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans6320" type="radio" name="ans8"  value="6320"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans6320">It is used to restrict the bandwidth of a signal to satisfy the sampling theorem and to prevent aliasing.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint18" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">10)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">A signal can be reconstructed from its samples by using which method?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans8740" type="radio" name="ans9"  value="8740"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans8740">Filtering.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans8741" type="radio" name="ans9"  value="8741"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans8741">Resampling.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans8742" type="radio" name="ans9"  value="8742"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans8742">Auto-correlation.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint19" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">11)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Computation of DFT involves</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans8743" style="vertical-align:middle" type="radio" name="ans10"  value="8743"> </input><label for="ans8743" id="textAnsChoice">Sampling in time domain.</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans8744" style="vertical-align:middle" type="radio" name="ans10"  value="8744"> </input><label for="ans8744" id="textAnsChoice">Sampling in frequency domain.</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans8745" style="vertical-align:middle" type="radio" name="ans10"  value="8745"> </input><label for="ans8745" id="textAnsChoice">No sampling.</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans8746" style="vertical-align:middle" type="radio" name="ans10"  value="8746"> </input><label for="ans8746" id="textAnsChoice">Sampling in both time and frequency domain.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint110" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">12)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What should be done to resolve two very closely spaced sinusoids presents in a signal?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans8747" type="radio" name="ans11"  value="8747"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans8747">Small data length with appropriate zero padding must be done.</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans8748" type="radio" name="ans11"  value="8748"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans8748">Length of data sufficiently large should be taken.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint111" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383132328/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

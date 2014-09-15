@@ -1,0 +1,176 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Frequency Modulation(Simulation experiment) (Theory) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Frequency Modulation(Simulation experiment)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Frequency Modulation(Simulation experiment)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Frequency Modulation(Simulation experiment)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=261&cnt=474"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=261&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=261&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=261&cnt=475"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=261&cnt=1623"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=261&cnt=2386"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=261&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">T<span style="font-family: arial,helvetica,sans-serif;">he  classic  definition of FM is that the instantaneous output  frequency  of a  transmitter is varied in accordance with the modulating  signal.  Recall  that we can write an equation for a sine wave as follows:  e(t) =  E<sub>p</sub> sin(ωt + φ)</span></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">While amplitude modulation is achieved by varying E<sub>p</sub>,    frequency modulation is realized by varying ω in accordance with the    modulating signal or message. Notice that one can also vary φ to  obtain   another form of angle modulation known as phase modulation  (PM).</span></p>
+<p style="text-align: justify;"><span style="font-size: small;" class="style9">An important concept in the understanding of FM is that of <strong>frequency deviation</strong>.  The amount of frequency deviation a signal experiences is a measure of  the change in transmitter output frequency from the  rest  frequency of  the transmitter. The rest frequency of a transmitter  is  defined as the  output frequency with no modulating signal applied.  For a  transmitter  with linear modulation characteristics, the frequency   deviation of  the carrier is directly proportional to the amplitude  of the applied   modulating signal. Thus an FM transmitter is said to  have a modulation   sensitivity,represented by a constant, kf, of so many kHz/V, kf =  frequency deviation/V = kf kHz/V.</span></p>
+<p style="text-align: justify;"><span style="color: rgb(153, 51, 0); font-size: small;"><em>FM analysis</em></span></p>
+<p style="text-align: justify;"><span style="color: rgb(153, 51, 0); font-size: small;"><em><br>
+</em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">From   the definition of frequency deviation, an equation can be written  for   the signal frequency of an FM wave as a function of time&nbsp; <em>: &nbsp;</em></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><em> V(t) = A sin(<span class="style16">2π</span>(f<sub>c </sub>+m(sin<span class="style16">2π</span>f<sub>m</sub>t))t+ Θ)</em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The constant is the modulation index for FM. It is defined  as follows: <em>m=  <span class="style21">δ</span>/f<sub>m</sub></em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The Greek letter δ represents the frequency deviation  and f<sub>m</sub>  represents the modulating frequency that causes the deviation.  As in    the case of AM, this time domain representation of the FM signal can be     converted to an equivalent frequency-domain expression that includes    the carrier  and sidebands.&nbsp; Because the  mathematics required for  this   conversion are quite complex, we will only  consider the result:</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/fm/fmanal8.gif" style="width: 446px; height: 71px;" alt=""></span></p>
+<p style="text-align: justify;">T<span style="font-size: small;">he J<sub>n</sub>(x) functions are known as Bessel Functions of First kind. Graphs of&nbsp;J<sub>n</sub>(x)  look like slowly decreasing sine and cosine functions. The J<sub>n</sub>(x)    functions are a closely related family of functions in the same way   that sin(nx)  and cos(nx) for a family of similar functions. </span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The zeroth order Bessel Functions, J<sub>0</sub>(m)  determines the amplitude of the carrier. The nth Bessel function J<sub>n</sub>(m)    determines the amplitude of the nth pair of sidebands. There are two   important  concepts contained in the expression shown above.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The  amplitude of the carrier depends on m. the  modulation  index. This is  quite different from AM, where the amplitude  of the carrier was   independent of the value of m.There are an infinite  number of  sidebands. Thus the  theoretical bandwidth of FM is infinite.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/fm/fmanal9.gif" alt="" width="223" height="177"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">An  infinite bandwidth signal would be very difficult  to  transmit.  Fortunately, the higher order sidebands in FM have  extremely low   amplitude and may be ignored.&nbsp; For  example: if the  modulation index is  5, only the first 7 sidebands are  significant in  value.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">There is  a rule of thumb, known as Carson’s  Rule, that  predicts the bandwidth  occupied by the significant sidebands  of an FM signal,  based on the  maximum modulation frequency and its  corresponding modulation  index:</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><em>B = 2 f<sub>m</sub>(m+1) = 2( δ<sub>max</sub>+ f<sub>m</sub>)&nbsp; </em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Parameter <em>f<sub>m</sub></em> is the frequency of the modulating  signal, <em>δ<sub>max</sub></em> is the maximum deviation, and <em>m</em>  is the corresponding modulation index. If a range of  frequencies is   used to modulate the carrier, the maximum modulating frequency  and its   corresponding modulation index are used.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Commercial  FM broadcasting uses a maximum  deviation of 75  KHz and a maximum  modulating frequency of 15 KHz.  Substituting these values into   Carson’s Rule gives:</span></p>
+<p style="text-align: center;"><span style="font-size: small;">B = 2*(75+15) = 180 KHz.</span></p>
+<p style="text-align: justify;" class="style23"><span style="color: rgb(153, 51, 0);"><em><span style="font-size: small;">Applications&nbsp;</span></em></span></p>
+<p style="text-align: justify;" class="style23"><span style="color: rgb(153, 51, 0);"><em><span style="font-size: small;"><br>
+</span></em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">FM applications are divided into two  broad categories:</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wideband FM (WFM)</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Narrowband FM (NBFM)</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The  primary  difference between the two types  of FM is the number of  sidebands in the  modulated signal. Wideband FM  has a large number&nbsp;  (theoretically infinite)  number of sidebands.  Narrowband FM has only a  single pair of significant  sidebands.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">It is  possible to  determine if a particular FM  signal will be wide or narrow  band by looking at a  quantity called the  Deviation Ratio (DR). It is  defined as the ratio of the  maximum  deviation of the FM signal to the  maximum modulating frequency:</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><em>DR= δ/f<sub>max</sub></em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The DR  is also the  modulation index of the  highest modulating frequency. If  the DR ≥ 1.0 it is called wideband FM   (WFM) and DR&lt; 1.0 the   modulation is narrow band FM (NBFM).&nbsp;</span><span style="font-size: small;"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">One of  the  drawbacks of wideband FM is the  large bandwidth  required.Commercial FM  broadcasting requires 150 KHz of  bandwidth&nbsp; to  transmit a15 KHz audio  signal, 5 times the bandwidth  required for an  AM signal.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><strong>Commercial WBFM</strong>  broadcasts  occur in the VHF range, between 88  and 108 MHz.&nbsp; The  carrier   frequencies start at 88.1 MHz and are separated by 200 KHz  intervals.  The  maximum audio bandwidth allowed is 15 KHz and the  deviation is  limited to +/- 75  KHz. Limiting the deviation to this  value leaves a 25  KHz guard band at each end  of the channel that  limits inter-channel  interference. The DR for  commercial FM  broadcasting is 75/15 = 5.0.  This is clearly a wideband FM signal.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><strong>NBFM</strong>  is widely used in  business and public  service communications.The  DR  for NBFM is  restricted to values between 0.5 and 1.0. By holding the DR  to such  small values, only the carrier and the  first sideband are of   significant amplitude. When only one sideband and the  carrier are   transmitted, the NBFM signal occupies the same bandwidth as an AM    signal. This overcomes one of the drawbacks of wideband FM, the large   bandwidth  required.&nbsp;The FCC permits the bandwidth of  NBFM signals to   be from 10 to 30 KHz, depending on the assigned carrier  frequency and   the type of operation authorized.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The   figure below compares the spectra of a WFM  signal (DR = 5) and a NBFM  signal (DR  = 0.5). The separation between  sidebands  is equal to the  modulating frequency. Thus the bandwidth for  NBFM is 2*fm  , which is  the same as for AM. However, for WFM, the  bandwidth is approximately   2N* fm  , where N = the number of sidebands.</span></p>
+<p style="text-align: center;"><img src="/userfiles/7/image/fm/fmbroa13.gif" alt="" width="480" height="254"></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,507 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exp-4 Sampling and signal reconstruction. (Procedure) : Signals and Systems Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Demonstration of sampling/ reconstruction of signals and spectral analysis using DFT. There are FIVE sub-experiments within this experiment." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=166">Signals and Systems Laboratory</a>-><a href="">Exp-4 Sampling and signal reconstruction.</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Exp-4 Sampling and signal reconstruction.</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1597"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Objective&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=166&sim=820&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1429"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1706"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=820&cnt=1993"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<h3><a name="link10"></a><a name="link9"></a><a name="link6"></a><a name="link7"></a><a name="link8"><span style="color: rgb(0, 0, 255);"><big>Procedure for Sampling experiment</big></span></a></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link1"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(a) Sampling of band limited signal : Nyquist theorem</big></span></strong></em><strong><span style="color: rgb(0, 0, 255);"><big><br>
+</big></span></strong></a></p>
+<p><span style="color: rgb(0, 0, 255);"><big><big>&nbsp;</big></big></span></p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link2"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(b) Sampling of non bandlimited signal : Anti aliasing filter</big></span></strong></em></a></p>
+<p>&nbsp;</p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link4"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(c) Signal reconstruction from its samples</big></span></strong></em></a></p>
+<p>&nbsp;</p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link3"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(d) Frequency domain sampling : DFT</big></span></strong></em></a></p>
+<p>&nbsp;</p>
+<p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link5"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(e) Spectral analysis using DFT</big></span></strong></em></a></p>
+<p>&nbsp;<span style="color: rgb(0, 0, 255);"><big><br>
+</big></span></p>
+<p><span style="color: rgb(0, 0, 255);"><big><big>&nbsp;</big></big></span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig2/sig7/line.jpg" align="absMiddle" height="5" width="642"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp; <a name="link1"><em><span style="color: rgb(0, 0, 255);"><big><strong>Exp-4(a) Sampling of band limited signal : Nyquist theorem</strong></big></span></em></a></p>
+<p>&nbsp;</p>
+<ul type="square">
+    <li><big>&nbsp;&nbsp; &nbsp;&nbsp; Run the experiment by pressing "<img alt="" src="/userfiles/7/image/sig1/run.jpg" align="absMiddle" height="29" width="25">" button.</big><big><br>
+    </big></li>
+    <p>&nbsp;</p>
+</ul>
+<ul type="square">
+    <li>
+    <p><big>In this experiment we verify the Nyquist sampling theorem.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Select a continuous-time signal <em>x(t)</em> by pressing "up/down" arrows. By default "signal 1" is selected. The selected signal is shown in scope1 and its corresponding Fourier transform is shown in scope 2.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>d(t) is the impulse train with period</big> <em><span style="color: rgb(0, 0, 0);"><big>Ts = 1/fs</big></span></em><big> </big><big>which is multiplied to the continuous-time signal <em>x(t)</em> to produce the impulse sampled signal <em>X<sub>d</sub>(t) = x(t).d(t)</em>. The rate of the impulse train </big><em><big>fs</big></em><big> can be modified by the "up/down" arrows. </big><em><big>X<sub>d</sub>(t)</big></em><big> is shown in scope 3 and its CTFT is shown in scope 4. Note that the spectra of the impulse sampled signal is a periodic repetition of the original signal&#039;s spectra at a rate of <em>fs</em>. <br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now modify </big><em><big>fs</big></em><big> such that the spectra of the sampled signal just begins to overlap and this will be indicated by appropriate message in the message board.</big><big> </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Observe the maximum frequency of&nbsp; the signal and the minimum rate at which there is no overlapping in the spectra.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now change the signal from the selection menu and observe the maximum frequency of the signal <em>x(t)</em> and the minimum rate at which the</big><big>re is no overlapping in the spectra for each of these signal.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>From the above observations verify that the minimum value of </big><em><big>fs</big></em><big> in case of no overlapping in the frequency domain happens to be just greater than twice of <em>fm</em>.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>This value of sampling rate is known as Nyquist rate. Sampling rate lower than Nyquist rate would result in overlapping or aliasing in frequency domain.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Further if we create a discrete time sequence having values same as that of the continuous-time impulse sampled signal is shown in scope 5, then its DTFT spectra is shown in scope 6 is identical to the CTFT spectra of the impulse sampled signal. This demonstrates the basic principle behind the sampling of the continuous-time signal.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>To stop the experiment press the "<img src="/userfiles/7/image/sig1/stop.jpg" alt="" align="absMiddle" height="28" width="25">" button.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link6"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<h4><big>&nbsp;&nbsp;&nbsp; </big><span style="color: rgb(0, 0, 255);"><big><br>
+</big></span></h4>
+<p>&nbsp;&nbsp; <a name="link2"><em><span style="color: rgb(0, 0, 255);"><big><strong>Exp-4(b) Sampling of non bandlimited signal: Anti-aliasing filter</strong></big></span></em><span style="color: rgb(0, 0, 255);"><big><br>
+</big></span></a></p>
+<p>&nbsp;</p>
+<h4><span style="color: rgb(0, 0, 255);"><big> </big></span></h4>
+<ul type="square">
+    <li>
+    <p><big>Run the experiment by pressing "<img alt="" src="/userfiles/7/image/sig1/run%281%29.jpg" align="absMiddle" height="29" width="25">" button.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The signal selector enables the selection of different types of signals. Rectangular signal is the default selection.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The use of anti-aliasing filter block will be made later. To begin with it deactivated by using a bypass loop </big><big>controlled by a switch which is in&nbsp; &#039;ON&#039; condition by default.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The selected signal is shown in scope 1 and its corresponding Fourier transform is shown in scope 4. Note the signal is time-limited and therefore its Fourier spectra is not band limited.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The continuous time signal is impulse sampled and the rate of the sampling can be varied with the help of the knob marked as&nbsp; </big><em><big>&#039;T<sub>s</sub>&#039;</big></em>&nbsp; <big>and its default value is set as 0.04 sec. </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The impulse sampled signal is shown in scope 2 and its corresponding Fourier transform is shown in scope 3. Note the spectra in scope 3 is not mere repetition of spectra shown in scope 4 as it should have been for an appropriately sampled signal according to Nyquist criteria. This is aliasing which is caused due to the non-bandlimited nature of the signal.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now switch off the bypass loop to insert the anti-aliasing filter. A cut off frequency can be set by the knob provided. Change the cut off frequency of the anti-aliasing filter and observe its effect on the signal in particularly in frequency domain from scope 4.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Observe the effect of the anti-aliasing filter on the sampled signal in particularly in frequency domain from scope 3</big> <big>and note reduction of the aliasing distortion for the sampled signal. Determine the maximum cut off frequency for which the aliasing distortion are minimum for the choosen sampling rate</big>.</p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Stop the experiment by pressing "<img alt="" src="/userfiles/7/image/sig1/stop.jpg" align="absMiddle" height="28" width="25">" button.</big></p>
+    </li>
+</ul>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/lightbulb.gif" alt="" align="absMiddle"><span style="color: rgb(0, 0, 255);"><span style="color: rgb(128, 0, 128);"><strong><big><blink>Observations:</blink></big></strong></span></span></p>
+<p>&nbsp;</p>
+<ol>
+    <li>
+    <p><big> For non-bandlimited signal for all sampling rate aliasing distortion  cannot be avoided although it does reduce with increasing sampling rate.  </big></p>
+    </li>
+    <li>
+    <p><big>The choice of cut off frequency of anti-aliasing filter is higher for higher sampling rate then that for lower sampling rate. As result of this the distortion caused to the signal is reduced.</big></p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link9"><span style="color: rgb(0, 0, 255);"><big>Top<img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a name="link4"><big> <em><span style="color: rgb(0, 0, 255);"><strong>Exp-4(c) Signal reconstruction from its samples:</strong></span><span style="color: rgb(0, 128, 128);">&nbsp;</span></em></big></a></p>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Run the experiment by pressing "<img alt="" src="/userfiles/7/image/sig1/run%281%29.jpg" align="absMiddle" height="29" width="25">" button.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The signal generator generates a signal which is shown in scope 1.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The signal is sampled at a rate which can be set </big><big>by the slider marked as <em>"fs"</em>. Default sampling rate is set to be 2 samples/second. The sampled signal is shown in scope 2.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>T</big><big>he reconstructor interpolates the discrete samples of the signal to get back the continuous-time signal which resembles the original signal shown in scope 1. The type of interpolator can be selected by pressing the "up/&nbsp; down" </big><big>arrows. Two types of interpolator provided are zero-order hold and </big><big>first-order hold. The default selection is zero-order hold.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The reconstructed signal is shown in scope 3 along with a delayed version of the original continuous-time signal. The delay of the original continuous-time signal is set by pressing "up/down" arrow keys marked as "Delay in samples". The corresponding delay in seconds is shown in an adjacent indicator box marked as "Delay in seconds". </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The mean square error between the reconstructed signal and the delayed original signal is displayed by the mean square error indicator gauge.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Keeping the sampling frequency and the type of the interpolator fixed, adjust delay within the provided limits</big> <big>and note the delay for which the mean square error is minimum.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p>&nbsp;<big>Change the interpolator type and repeat the previous step.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Increase the sampling frequency keeping the delay and the type of interpolator fixed. Note the change in mean square error.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Repeat the above step for different delay and interpolator type. </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Stop the experiment by pressing "<img alt="" src="/userfiles/7/image/sig1/stop.jpg" align="absMiddle" height="28" width="25">" button.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link7"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;&nbsp; <a name="link3"><em><span style="color: rgb(0, 0, 255);"><big><strong>Exp-4(d) Frequency domain sampling : DFT</strong></big></span></em><big><span style="color: rgb(0, 128, 128);"><br>
+</span></big></a></p>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>R</big><big>un the experiment by pressing "<img src="/userfiles/7/image/sig1/run%281%29.jpg" alt="" align="absMiddle" height="29" width="25">" button.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The signal selector enables the selection of different types of signals. Gaussian signal is the default selection.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Scope 1 shows the discrete time signal and the corresponding DTFT magnitude plot is shown in scope 2.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>To sample the Fourier transform we multiply it by a frequency domain impulse train whose period can be varied by the knob supplied. The default period of the normalized frequency is set to be 0.1.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The impulse sampled Fourier transform along with the original Fourier transform (in red) is shown in the scope 3. On decreasing the period of the impulse train the number of samples taken in frequency domain increases.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The inverse Fourier transform of the samples of the Fourier transform is shown in scope 4. Observe that it turns out to be the periodic repetition of the aperiodic discrete-time signal with period corresponding to the reciprocal of the period of the frequency domain impulse train</big>.</p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now reduce the number of samples/period to a value less than  the number of samples of the original aperiodic signal. The green light  glows in such a situation indicating aliasing. </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Stop the experiment by pressing "<img src="/userfiles/7/image/sig1/stop.jpg" alt="" align="absMiddle" height="28" width="25">" button.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p><big>&nbsp;&nbsp; &nbsp;&nbsp; </big><strong><span style="color: rgb(128, 0, 128);"><big><img alt="" src="/userfiles/7/image/sig1/r_hand.gif" align="absMiddle" height="13" width="30"><blink>Note:</blink> </big></span></strong><big>The number of sample point of the Fourier transform correspond to the reciprocal of the period of the impulse train.</big></p>
+<p>&nbsp;</p>
+<p><big>&nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig1/r_hand.gif" align="absMiddle" height="13" width="30"></big><strong><span style="color: rgb(128, 0, 128);"><big><blink>Note:</blink> </big></span></strong><big>The Fourier  transform of a discrete time signal is continuous function of frequency.  To represent with finite precision it need to be first sampled in the  frequency domain.&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(128, 0, 128);"><strong><big>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/lightbulb.gif" alt="" style="width: 19px; height: 19px;" align="absMiddle"><blink>Observations:</blink></big></strong></span></p>
+<ol>
+    <li>
+    <p><big>From scope 4, we can note that for denser sampling of the Fourier  transform of the aperiodic discrete-time signal, the original signal  happens repeat with greater period in time domain.</big></p>
+    </li>
+    <li>
+    <p><big>Conversely, we can conclude that on repeating an aperiodic signal  with greater period, which involves adding aditional zeros to the  signal, its Fourier transform turns out to be discrete in frequency  domain with frequency samples taken at a rate reciprocal to the period  of the time domain signal. This process is reffered as discrete Fourier  transform.</big></p>
+    </li>
+    <li>
+    <p><big>Note that at the aliasing condition the reconstructed signal does not have similarity with the original signal.</big></p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link8"><span style="color: rgb(0, 0, 255);">Top<img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></span></a></blink></big></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a name="link5"><em><strong><span style="color: rgb(0, 0, 255);"><big>Exp-4(e) Spectral analysis using DFT</big></span></strong></em></a></p>
+<p>&nbsp;</p>
+<p><big>This experiment demonstrate the spectral analysis of an analog signal performed using discrete Fourier transform (DFT). Consider analog signal </big><big>consisting of three sinusoids of frequencies 0.65 Hz, 0.67 Hz and 0.69 Hz with amplitudes 0.1, 0.4 and 0.2 respectively. This composite signal is sampled at rate of 100 Hz which is well above the Nyquist rate. The resulting discrete-time signal is considered to be the output of the signal generator.<br>
+</big></p>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><span style="color: rgb(0, 0, 255);"><big><span style="color: rgb(0, 0, 0);">Run the experiment by pressing "<img src="/userfiles/7/image/sig1/run.jpg" alt="" align="absMiddle" height="29" width="25">" button.</span></big></span></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>For the spectral analysis using DFT, we need to select some finite samples of the signal which can be done by multiplying the signal by a rectangular window whose length in seconds can be set by the "Window length in seconds" arrow key. The number of samples of the selected signal corresponding to window length set is shown in "Window length in sample" indicator box. The default value of the window length is 60 sec. The selected portion of the signal is shown in scope 1. <br>
+    </big></p>
+    <big>     </big></li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Prior to DFT analysis the selected can be zero padded i.e. appended with zeros to the right hand of the selected signal. The number of zero padding can be varied by an "up/down" arrow. By default no zero padding.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>The zero padded signal is shown in scope 2 and its DFT based normalized frequency spectrum is shown in scope 3. Also shown in scope 3 in yellow color the ideal spectra of the three sinusoids present in the analyzed signal.</big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now change the window length to 200 sec, observe that the three sinusoids presents in the signal get resolved in the frequency spectrum since the three dominent peaks in the spectra match with the marked locations of the three sinusoids.&nbsp; </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now reduce the signal length by changing the window length to 20 sec. Note the samples of the selected signal is only 2000. Note the total length of the analyze signal in the previous step was 20000 so to keep the DFT&nbsp;size same set the number of zero padding to 18000. Observe that the peaks in the frequency spectra of the sinusoids are resolved in frequency spectrum.<br>
+    </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>Now increase the signal length in steps of 40-80-120-140 sec and correspondingly adjusting the zero padding such that the DFT&nbsp;size is 20000. Keep observing the frequency spectra and note when the sinusoids get resolved the best. </big></p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul type="square">
+    <li>
+    <p><big>To stop the experiment press the "<img alt="" src="/userfiles/7/image/sig1/stop.jpg" align="absMiddle" height="28" width="25">" button.</big></p>
+    </li>
+</ul>
+<p><big><br>
+</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=820&amp;cnt=2#link10"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

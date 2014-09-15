@@ -1,0 +1,640 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Free Vibration of a Cantilever Beam with a Lumped Mass at Free End (Theory) : Virtual Labs for Mechanical Vibrations(M) : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To calculate the natural frequency and damping ratio for free vibration of a single DOF cantilever beam system, experimentally; and compare the results with theoretical values." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=175">Virtual Labs for Mechanical Vibrations(M)</a>-><a href="">Free Vibration of a Cantilever Beam with a Lumped Mass at Free End</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Free Vibration of a Cantilever Beam with a Lumped Mass at Free End</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2367"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_994.png" alt=""/></div><div id="tab_name" >Guidelines&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2545"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Software package&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2053"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=62&brch=175&sim=1078&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2054"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2058"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_93.png" alt=""/></div><div id="tab_name" >Calculation&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2055"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2056"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Discussion&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2057"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1078&cnt=2503"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p><!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--></p>
+<p><!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:RelyOnVML />
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves>false</w:TrackMoves>
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-IN</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+<w:UseFELayout />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin-top:0in;
+mso-para-margin-right:0in;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0in;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--></p>
+<p style="text-align:justify;text-justify:inter-ideograph"><strong><span style="font-size:13.5pt;color:blue">2.3&nbsp; Theoretical natural frequency for cantilever beam</span></strong></p>
+<p style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+<p style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+<p style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="data:image/png;base64,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"></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align:center" align="center"><span style="mso-no-proof:yes">                                                  </span></p>
+<p style="text-align:center" align="center"><span style="color:fuchsia">Fig. 2.1 (a): A cantilever beam</span></p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center"><img alt="" src="data:image/png;base64,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"></p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center"><span style="mso-no-proof:yes">   </span></p>
+<p style="text-align:center" align="center"><span style="color:fuchsia">Fig. 2.1 (b): The beam under free vibration</span></p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<p style="text-align:center" align="center">&nbsp;</p>
+<h3>&nbsp; A cantilever beam with rectangular cross-section is shown in Fig. 2.1(a). Bending vibration can be generated by giving an initial displacement at the free end of the beam. Fig. 2.1(b) shows a cantilever beam undergoing a free vibration.</h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp; When a system is subjected to free vibration and the system is considered as a discrete system in which the beam is considered as mass-less and the whole mass is concentrated at the free end of the beam. The governing equation of motion for such system will be,</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAAWCAIAAACuSD4AAAABHUlEQVRYhe1Uyw7DIAzj/3+anVYxyMMGo6ENHyaaRMbx3JZ6IUL5toDfwbVSBrGVpfSEY2WCkyXZISPVQ0t8WEZGT67EzfVhiZvt+n2LJfKsjIMQr5EuibuwIoMl7x9XqIlrFqxciSQlY5W8bZiJe85jDL20lzfANRAryyd2yEhBpPIRbf5Wy01PH/XhB61sK0IZxUGqM0pldVxLdSP/vBeZeIfRR60MCoSVqY91zw5xy8zI6Vam5+rEZKuV5oBQhvgFj33sKkFG2jOyWNwKlOyQgcCjrYiVoJRuSWoB0MrgXZHIAOFmlmWZaKVdFofI6MmhIeeDZY7hdRaHyHDvhYacSJuTaWUah8hwL919wf/gWinDtVKGa6UM10oZXk8SZPvhNIzhAAAAAElFTkSuQmCC"> &nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.1)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where <em>m</em> is a concentrated mass at the free end of the beam and <em>k </em>is the stiffness of the system. The transverse stiffness of a cantilever beam is given as (using strength of materials deflection formula, Timoshenko and Young, 1961),</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAqCAIAAABtD9/kAAAA6UlEQVRYhe2WSRLFIAhEvf+lyeJvjL8hDoBQRe9SGvtJGNIoldptgDUVrqUMcVsnYWnYw71iizv4QWLukWMlt2TIhCuzfn6H16oiFjZA9kFxJ0ttWJIO1GeENkw4l1ipcBkbsfD7pvtxji4W9lBipQFXGCergpUEh9lvgzACWVyau+JFZcYNzkoQdzKNrgjj4q18obhpbDEBI9oLdJnTE1Ul4ZIY3UDJ0P4GjzXH3m0xrmfMlrwuF9ZmdK9oPxl8hIs9cjJkxT3qDD46bziFK5glwlUZPYXLOSXC1fpt8sPNFF0tFa6lkuE+cEKD6npjpyEAAAAASUVORK5CYII="> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>(2.2)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where <em>E</em> is the Young’s modulus of the beam material (it can be obtained by the tensile test of the standard specimen). The fundamental undamped circular natural frequency of the system is given as,</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAwCAIAAADIACAMAAABUUlEQVRoge2X2xLDIAhE8/8/bV/ajnJT4qIk4z45MeCeiNhe5V26dhsA6/DkVlKey6MmcJdjW8SlIxDrA6XD8wvE+kCJngp2TtTAGD9TEq0fnjTi1seP05N4tDuneTPW2i0ZPP3YEEdz4s2NP1RjQxzNSWzWr+LhD9XYEEdzqq3zsQ32MJ7uLqXjuf3L7RuO8oHS4WnDxYz/Sh1vlCiBeWoAV6NECckjNhbvFo38y7fDx9cSwrVcZJeWCcZj32LLROqiKxrOExljsrA4laXeeE8zfMS1CvD50UjIlOuTq2tLq8zm9C6P2hnxo6zmKbhKEwthHQ8Wpk67mQdycuq0e3jq9bBtbTMPvEfXOXlyMiuOm/ex5m7I5inS0TXKJDsPsd6Hj7LpkXGtGfUmpwoz6ZDRNrVu8UgeGyZvvRWlXxk8qfen4G6CwxOmt/FAdHhy6wPs4/7trP9DMwAAAABJRU5ErkJggg==">&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:yes">&nbsp; </span>(2.3)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Where, m &nbsp;is an equivalent mass placed at the free end of the cantilever beam (of the beam and sensor masses). By substituting equation 2.2 into equation 2.3&nbsp; we get,</span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAwCAIAAAANcrqdAAABn0lEQVRoge1XyxbEEAzt//+02TkaSeSJDnelVfdRpPqUI/GsNrAGN/ZJ2DH2k4OXxKpsDHqX8RKp7Dbc2GkSqew2tJmpzVmIEtD34hIZvp2oXmEdwpLLL19dLoM5IKfowNh85uEbgb1Wb4kQZvir2MjRQlbS+l5OJcRrILjyS0yvNnO5sXcBV37FUf8ndmDmsnls/viFljSmyL1UktybIZmrAJUJGirc2JkqqHDdG8NNEuxmlhx+9KntMuv19+q5QkC1b2ut8JV2OFYu5IEo9hwrM7XGx71VsalVYwMUoiTRNrCIdn1skVdzfYPyF+7STyh8y8ifbcECgy75BA4tgjtOTiGVpUQPSbVs7U0nrZBHF7vELe+ex7OC2rHqRc7zloQtrbXLUzGX8GEVadSubmm3jt1yxRbwNnYISeQib0mN1mhO0KAUmaWhdbX+x3M4231ZQcuhTtRkNRL8RxF0gQkHDYWozWss+Nh8ZmrgQNFiMxrD2Za3pYraARmgyi+f03OU+Gps59d+i9gl59PIyU1T4nFu7KlyM8X2wY19En6QVghHjqgWuwAAAABJRU5ErkJggg==">&nbsp;&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.4)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>The undamped natural frequency is related with the circular natural frequency as</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAxCAIAAAAQi7NdAAABk0lEQVRoge2YS7aEIAxE2f+meTNPHpCk8uFjS41skUquYNJa6jdUdiewSJdzk0qe/tnu4uHU5JdmO8M0ossZs51hGtHljNnOMHVrEmS9nHs05KT9sG+MqHM0tVT1DBTsQfU4BzPLVfsnhvyktA7UV3J6nCNppWsIJhwbnCNppSvCKe/nozmbGiuQqCXqXM7KE9Lzz095Px/EaXrwGjZ1rjbs7csOWTnplBBnpC87hAeyQlaEc5kcnPhK8AVqLaQvYoizEFkDR+TjBGdlrmdhhE+3RjTktj4kp89xcvvCpNZcDsmNDi942b5VIdVroMCjV+qgpxROzeBZE8cSsVE7k9lPCrSeFC9rJfdwltIecJllJdQsKWebtoNUuxmQFeNEbgQaDkmo5t3X3rk/5k5GojtfEVJEbxziLBQOtZMZONNLRYSzr4tKO/SnGZaJUyhUiMPm7yZgu1IhdQdXemlCOJEhfTu40kuTWsbBoXdzCn2lb79H79sqpsg1jH7Kuzkzo8wOoGfwEc665PPFEZwLdDl/S397daSOxeuPTwAAAABJRU5ErkJggg==">&nbsp;&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.5)</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">&nbsp;</span></em></h3>
+<h3><span style="position:relative;top:2.0pt;mso-text-raise:-2.0pt">   </span><span style="mso-spacerun:yes">&nbsp;</span>the moment of inertia of the beam cross-section and for a circular cross-section it is given as,</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAqCAIAAABjpqGLAAABGElEQVRoge2WyRLDIAxD8/8/TS9dAl4BmeAOOnU65MkCDFwlv66nCwDoZNhDJ8MeOhmcHoJgfBSIp39q/VYMLP3nAifyNtkz3OtOnwESgELCM2AXgT0MFvW0UsEM8P2nNC5iznqxdAqKfy9FdN6Y6DIyU2N++ayYWXfupaiKOsVWkiMDvd2N8SxCQcc9exp3P9zebSs1dpmAM0hrpYu1DskQvZcucox6P5Qo60U7obsf4trUqbv7+Dok1clg0uXNiTwMUCAGbR1xMCMUqOWqAfQB3V4oUMvNnkE5H6VbecoOBaqgwgtC+j1rhwJVUO7lM/wcsu1QoAoqZAh6a63LoI+ZskOBWq7VuwkyFOsiy5FhmU6GPfQPGV7VLPifcLgoCAAAAABJRU5ErkJggg==">&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.6)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where, <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">d</span></em> is the diameter of cross section, and for a rectangular cross section</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAtCAIAAAB0/z9hAAABCElEQVRYhe2XQRaDIAxEuf+l6aK19ZmZEDSQ0MfsxJD5JohY6iIq0QBWbVBvJQIth/DdyTQWQdZ0oAEVVfrIYsJa3wSFMQGtXwO0lzLsrX9bQu/voOVhPlN84SBNFZWTAe1svnCS5nIJiU0JXbBAXgTK6E0JXbBAXtLr82A8KAOSq/PpGtV3CiOrzHAedKvoE8oRWhw0G2X9W9BCNJLwsIY0E4x7NQSUFf6GboIman3OvtcL6OQidSkdENMGlU7wl8280qa8sISmoDMrTeLPxZxav8U6a3Dr7QEbtJcj8xq13PrFuMKoTvzoaJruCqM6kX3UOt0VRnVaYnuCe37XcXF/6721Qb31AujonN/BMy0JAAAAAElFTkSuQmCC">&nbsp;&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.7)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">b</span></em><strong><span style="font-family:
+&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi"> </span></strong>and <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi">d</span></em> are the breadth and depth of the beam cross-section as shown in Fig. 2.2. Dimensions of the beam material are given in Table 2.2</h3>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAABqCAIAAAAz7ySuAAAFcElEQVR4nO2dXU/qTBCApxgQxEi88kf4H/zvmuiF8aIBLQKiaMTEL0DbQrvb7bwXEzbEvIZj5aQ7J/NcaIFCyD7M7uzSHQARkyRBxCiKEFEphYh5nqOAiIjv7++IOJvNEDHLMlw2UYnA4eHh/v4+AABAq9Wig1qt5gme53ne0dHRYrGgxtJaG2PCMCz3Mw2VSuX4+Hg6nY5GoyAIRqPReDw+Pz+/Fq6vr6+vAcAYg4hpmlKT2YOyAM/z+v3+cDj0ff/k5MT3/eFw2Ol0ekKv1+v16vU6IsZxTNHmwqgB1WrV9/3T09PxeDyZTB4fHweDwe3tbSAEQRAEAIDLIR+XA1vJfSMAPD09PTw8+L5/dnbWbrevrq4uLy+7Qrfb7XZt34iIWmvqGMMwLNnZxcVFEATdbvf+/v7u7i4Igpubm77Q7/f7/UajQS2llLLhVe6QBvV63ff9p6endrtN5jqdzmAwKPvz7QoAQKoo2pRScRyXKAwpznq9XhAEg8EgCIKrq6ubm5tut1t2vuYKnufRtMz2kKWnIeJsDeKMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMH+KMHwWcfX5+2jNXd2ZMJhNEtDujaMOfONs8P3U2n88RUWs9Ho/pHrrumPYeJklCJ6RpaoyhY3G2YQrEmVLq4+ODnmJjjp44m81qtRr+7op/cbaGAs5eX1/JXJZlxpgoivI8p46RWtyeOZ1OxdnmKZaD5HluBzNLHMfNZtMYk6bpl4fE2Sb5qTOtNSLO53OyopQKw5B2qVerVQCwY5jdhyjONsxPndHJuOwhF4tFtVrFZbWDVqtFcUYb6YuNauJsDcWcUQ6itabRi9xMp9NqtboaXvY1xdkm+akzexpp29nZ0VonSUJ9ZqVSsX2jzM/+FgXizPZ4n5+fAGCTw9Wt2cVmZuLsj/jN2lUURdvb24iYpimlIXQ/pSeFU0dxtoYCzowxb29vdJxlGQCQOUoa4zimej5/8lLirAjFcpA0TamSCLG66miHsYeHhwLCxNl6furMjl50mr1J+b3WOs/zl5cXSknE2V+hQN/4/PxMBxRqthIMLpN+e3M1FsXZxvipM+r68jynhfzVNWJSRZNrmlkXECbO1iPfefJDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPFDnPHDRWf1er1Wq21tbcESz/MqlQoIAABwcHBgd2zav7+5cnsDzuhfnufGmCzLsiwr/XPkFHQhsN0YYTe8lAh894ARjDHGIOJisbCXcNM95f48JFCEGWOomIUE2ReSJLE7oK25kn+DNVtCwsTZWsr/DdbvJJXYHTkFVfpIksQ2FG14KRFQSimltNZaawo4Oi73bTlImqbz+bzcXpH4NgcRLGma2v7QGIO/qzrwexx1ZhuF5rPFann9qzjnzNYeiqIojuOXl5dy34+DOOcMEcMwxJV8uvQ8zTWcc0bbwqMoUkrBsgiKKVQX6l/FOWe4UqAGAGjHuAvZmjs458xOM2yQkTbB4pwzRJzP50qpZrOJiADgeV7Z78gtnHNmv6wCgN3d3SRJVgc2AR10RktExphGo0ErRkmSUK1sgXDOWZIkVAKx2WzSSBaGIZWHFQjnnBGVSuXj4yOKIpqrSd+4iottMZ1OVyWJsC841xz0vSIA7O3t0RUZWPb1F67hnDOC1qtocm1XIAXCRWc0hlHd7MViQTcFi4vOLDbCJNRWcdqZ8L+IM36IM36IM36IM36IM36IM36IM36IM36IM378B/k9Fu8Q+jmvAAAAAElFTkSuQmCC"></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal" class="MsoNormal" align="center"><span style="mso-no-proof:yes">   </span></p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal" class="MsoNormal" align="center"><span style="color:fuchsia">Fig. 2.2: A rectangular cross-cross of the beam</span></p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal" class="MsoNormal" align="center">&nbsp;</p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal" class="MsoNormal" align="center">&nbsp;</p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal" class="MsoNormal" align="center">&nbsp;</p>
+<h3>&nbsp;&nbsp; In case of the test specimen, the beam mass is distributed over the length. However, by taking one-third of the total mass of beam at the free end (Thompson. 1961), the system can be assumed as discrete system. Hence,</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAqCAIAAAB5mkEFAAABHUlEQVRoge2X2xoCIQiEff+XpttNDiLNoqFz0WdbC/MbstToDLXVBpJ0OWspm7M95LkOy/tGUDUZY7OvI1PDI07kVnhKcWZC0irOZEhawqn1mzp9qM99wvmky1mKs3K/XTUM0Z1vq+k8zufx0NbLFTYp/FHQXnk+LgyNKb/Jr7vE+4nt1iuW5xU26arbsCeIeMyAyf73tNdDhsmtmNbQpGZD2A++TgDwyGkyyLkJJPlMapW1CwNKWgGW4jRKN4nTKH7BU/SwGN0ko0MavsUnR7eYTSdfD8RCpefbrzEDDKACDdIcyynWZzVO5+z135xOZv72JwOoQIM0bHwRB+NSnMZHp3CS0p8ABoCx1ByjUUH8PtgDNty2upy1dArnBwsOObO3G9LcAAAAAElFTkSuQmCC">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:yes"> </span>(2.8)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where &nbsp;<em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">m</span></em><sub>b</sub> is the mass of beam and is given as</h3>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAZCAIAAABb61zoAAABCUlEQVRYhe2UwRLDIAhE8/8/TW8ZK7BiXazJsIdOqujCC+SS0rKufyfwBhVEggoiQQWRoLMgXo28lQzHqRh95CyIItLnl4bPc4zEPA/iZsdIzFkQzfltd3fagVPgr7QQ9ZdIP3NluuRBBHZmjWZKZlbGtvcbSVELxIMih6YUO1Fkdby+dtCJ3uGMTsQQ6Y7DdybftXsHzcRC4/xj4r5AX2Q4YrvIIrhKdCeC5+G8xOdrHSLRrovpFicgYoL0rgRdn9T42sKDBSK9dzyG2F26XuSdSvA9p9rhxW7XK38i6fisRe7Zpg12UQPWRL+PoMxCrDa0XSZC99b/IBUXggoiQQWRoIJIUEEk6AObBOuenTVlwAAAAABJRU5ErkJggg==">&nbsp; </span><span style="mso-spacerun:yes"><br>
+</span></h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Where , ρ is the mass density of the beam material and <em>V</em> is the volume of the beam from the fixed end to the free end.</h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>The equivalent tip mass of a cantilever beam can be obtained as follows. Consider a cantilever beam as shown in Fig. 2.3 (a). Let be <em>m<sub>1</sub></em> the mass of the beam per unit length,<em> l</em> is the length of the beam, <em>m<sub>b</sub>=m<sub>1</sub>l</em> is total mass of the beam, and <em>V<sub>max</sub></em> is the transverse velocity at the free end of beam and <em>f</em> is the force applied, <em>E</em> is the young’s modulus of the beam and <em>I</em> is the moment of inertia of the beam.</h3>
+<p style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+<p style="text-align:justify;text-justify:inter-ideograph">&nbsp;</p>
+<p style="text-align:justify;text-justify:inter-ideograph"><span style="mso-no-proof:yes"><img alt="" src="data:image/png;base64,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">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,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">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-no-proof:yes">   </span></p>
+<p style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;text-justify:inter-ideograph;line-height:normal" class="MsoNormal"><span style="color:fuchsia">Fig. 2.3(a): A cantilever beam with distributed m<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Fig. 2.3(b): The cantilever beam with a tip mass</span></p>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Consider a small element of length <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi">dx</span></em> at a distance <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">x</span></em> from the free end (Fig. 2.3 (a)). The beam displacement at this point is given by (Timoshenko and Young, 1961),</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAAAtCAIAAABnBL3QAAACfUlEQVR4nO2YwXbsIAxD8/8/nbfoaR8Fo8jGMITqLmZBiBGOgj25biH6XJ8WILZG/hAI+UMg5I+/yPXN88wFasS2PFpE/vi7HHh+MFsSLW1BOa2+8CVTVHwlzczeafVF/gjwkzT5Q9SY5jj2/4v8wXMV3NHUvSzd8ocXUFyo21PFTCewyRdZKl3qoDnu4/2RkvEZ/5vMDkD+GMW1zyxzJEYD8WesIn+kTV4cDcTMWqgyx6L+Ay8ztdh7P5GZf/fjXxLnlJh5C5X+WHR+fCSPYfDRXVnEFSqRwDercORIkBnr7WAR1yNnDsU1/Qejh4mWZrLA2okz58HXwceZ3rrGgGM+Nq3gxlyptY5eYQa1vL3RnL8YIAAXGrCpETGusNgQK3NrP/VWCjasOW7ObIlrh/BvWE/qDElkWJDSxS8eerSMZ73jyyDfUdLcvQgux/M52Sere/mjl3ESl4Bxf3gZ9EdP8GDSQA5v4A8m3a4Uk4KyCPsDbGpcDxm2p6p3dR72o8X6qpGVr2C1BHAYFlA+LTP1ufq9YR9fzmUWcTzaKo/lnpnDZh6BA6wcqSaYlwblecMuTiDAYUxe9NIDcJtWLpF9xP8698iaPT4ni3B92ZmtlLuPU6auj9PrLcjeKFfMYsKyQdd/WbRXjZgxKVMxG0bXCB7fnJhsb0tLtow7ZpDcCXC9eeMrSDyA8ciL/VGBjxP+3v1ZYw7+AL6P90fslk+RItVuI071B3kMii/I/rS92g2YrzEPmSNM78BwmePe2R/enYiSw/3xWEQFhvfE+/xhlpXyV2CyzHFv64+2n8KfOoTZfraZLCeAjvV/hOnCxZuRPwRC/hAI+UMg/gEAXqJB4TJC/QAAAABJRU5ErkJggg==">&nbsp;&nbsp;&nbsp;</span>(2.9)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Here <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">fl<sup>3</sup></span></em>/<em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">3EI</span></em> is the deflection at free end of the cantilever beam. Now the velocity of the small element at distance <em><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi">x</span></em> is given by,</h3>
+<h3><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="position:relative;top:12.0pt;mso-text-raise:-12.0pt">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3>
+<h3 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAAtCAIAAADtKySRAAAB3klEQVR4nO2YwRLDIAhE/f+ftodOM6kKrgYUDO+UJgpkd6LYlAMDpN0FBDmHDUYIG0xwiA0ppZSE3yX9kA3bzrUghzaXUkqSLXDiBBsuNPR66deQbhQ3kbkaxcjGbCdakAOneOfCiaG5grx9UcJt+D6NvUGeIQ80uprolDqr06WOlEwaMccKWJwPoblFN8do5JWNiabekhWEWfFBvRIBk24Lh9swkW4LLm3Q6ItUe61+9i1ZEe66NPcJQck0Yo4VMDAU6NwfUi/f9V5NPXqYVDbmcA3ouB3/JbwHtN9Aw4UTU4QNJoCW4HIOe+Z8gxOMXJMBmdDFBV9KPbEYCZ6hvEDJNRmtCF1fj545veuLo24DkkDWBuqLsUZXrjkacalk3ZHUeOSVPMKIMByqiNsUkboD2mABDe8FA0JNTvpfo+42IJ+OKQQrrGWpzb5+1hd/oUbzSY3cgmp59zWKcoKq4UV/ZmhvSE2tmz8bc0fTzD3VhupkkK1OsIbM2iDwNVimWAGoR9QdqRqoVrC4M783GIeRvtZiaWUwRst6QnchNoibQnHChv0w+4Rl3BSK4NSDfJIN3R7JMp5qZVh5PtDAU60U1KnNkRNuCmVoHp0ceZDPsOEAwgYThA0mCBtM8AER/lIyZyizOAAAAABJRU5ErkJggg=="></h3>
+<h3>&nbsp;</h3>
+<h3>Hence, the kinetic energy of the element is given by</h3>
+<h3><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="position:relative;top:16.0pt;mso-text-raise:-16.0pt">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3>
+<h3 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAA2CAIAAAD4XMoQAAADJklEQVR4nO2Y27brIAhF/f+fznnLcMtFVCDYs+ZTm6aAOKO27QHAj/Z1AeCngE/AE/gEdmittcbIA5/AMq9JVCn4BPaBTwuw6/n/ht4E+GQFMr1IrcD5yYqvTNLR9TxmmvTMOtQafz2noItwlykiLI0fTZ+odYy35VRzERdNfOambMz1sU/VjinT4yd9Lo37TtCW5xtzmnF+T0IdfOLcE4ARpZ7ho0Gp7bCHVFuisD79wV6P3Sfp6OoCfPqbvpJPQTJFrMRfre7zlTinDjH9hT5JG18/x46THRR2u5jJDTl1iOlv84k9j9MbImqr0Cv4tMBSMdKpaGnTZDmvLQ74tECyT0sUaRR8WuDcp6CfcqG/EDcq0W7IqUNMX6BHL6u/74Zppi98q6rQq32f+r1c2ukPR+gShMZUcu19t49A26K/PiQo7Ek9kxssX+6jSK8roHf80CfwuPjEHhEsoZOZHjLg0zlH+91GuCAsO6zuk6Vy+DRl2ad3zur4ZDlDSKsmHU7v5RDtN3yig3Ic15pP9mmTkrEs1jzJaPdJGQ5b2G/49EQ+Jws+TSv4anGyXKH66sOpM8AgPvaJPr4bsew1GVeyjSvD7maPI13UCy4FO5bm+pBMo/FPM/u1eSzDOJeg351eacQnqdeW4PcijdElrHbDcN/bfcn3THoVWDWlK8pwlAf3K5/OHzwppmPAN+zkhj7923oqU8SYJ5V1xbBzP3wkLY2SlNK69SGOBdAVmnaStmg6xVafCpI/u9/6FJq9X6QlpSw1lPZJWfM+mdqgDUJZX6W3EWU8RBr2rSWOdsNJlScM3VQ+TcM96eoY40Y99en69ana2SWiBn2MaT5JJ8vho/etHmqSy6voQ37SJyU+3ewqdGAKfCpUg779XcEdPhVpbsKJOCdXHBf4VKez0cfhhETRVPepVGfjjsM5iRIo7VPBtkb/xAvKkoPpD6qEOvjEJbcA3zLYMRr/6SlIdZ/Yf0S+xd0nOsY6g12ltE9luXSyozG2Bb0bgU8s8GkfKDVgbwgaxwOlXpZaga6JQKlnvQloGfAEPgFP4BPwBD4BT+AT8OQfFGF0+EZ7pP0AAAAASUVORK5CYII="></h3>
+<h3>and the total kinetic energy of the beam&nbsp; is</h3>
+<h3><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="position:
+relative;top:36.0pt;mso-text-raise:-36.0pt">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,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"> </span>(2.10)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>where&nbsp;<em>m<sub>1</sub>l</em> =<em> m<sub>b</sub></em>. If we place a mass of <em>33</em>/<em>140m<sub>b</sub></em> at the free end of the beam and the beam is assumed to be of negligible mass, then</h3>
+<h3><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></h3>
+<h3>&nbsp;</h3>
+<h3>Total kinetic energy possessed by the beam = <span style="position:relative;top:14.0pt;mso-text-raise:-14.0pt">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAAuCAIAAABLf8uHAAAB60lEQVRoge2YwXLFIAhF/f+ftovOpNYAXlCQJN5FJ0kR8AQxvlKPTCq7E3iqDjijpsCVkot7ZD72SNmo/SosKzrMMDxicAl5vlAx7PoYyKy0WK9b7vlyBbCzVJw2Lc7+W+DyUwvyr42qSmgXtYAQjuC4dum9OVxRfP2rotqyeeVqPeCqrfy/Do77VBoPVIW0vJmH7A8LwAnNW1X8W44NXTgn46o9q+Y8n3JSfQConTulkkH4+sCN/0Z5pJJE4OZg6x5fB2d3rrOO/KWwqQLueuiB9KZywjrXWcdWXNt97n/B4e1tx24qN511bMW1Ebuiwz1wT5aBK7yGwYSxKt19ktfo3Hhw8xWQveKE6ztrwUP7ZMkskoKTqYGFQ4JbNYXngesqTkhJWKrt8M7JdXu/+OfKPJ/tGq67YbatB44d52fxIV/7/s1vAlmtNnBgN9Bt2HKWAghy0xz6FIS0+XlwiorjpqdKRcjP5haPhRsUSvd/Veqt12GPywxuKNeO7A6OXJIvB6fqcaQBB+vN4IQ2L7nD6ASAc6VWOXDmPb6jI3Rf3KdNG8DN7PEg8ReCQ6Zkq8e133GyvKlVEhy5uJC0hCHkKMF4UhvAocMyHVo7xeRmj5GTXVhWU2GysYvMJ9fMH6QDzqgDzqgDzqgf+puYNZs9VQsAAAAASUVORK5CYII=">&nbsp;&nbsp; </span>(2.11)</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Hence two systems are dynamically same. Therefore, the continuous system of cantilever beam can be changed to single degree freedom system as shown in Fig. 2.3(b) by adding the<em><sub> </sub>33</em>&nbsp;/<em>140m<sub>b </sub></em>of mass at its free end.</h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+<h3>&nbsp;</h3>
+<h3>Values of the mass density for various beam materials are given in Table 2.1. If any contacting type of transducer is used for the vibration measurement, it should be placed at end of the beam and then the mass of transducer has to be added into the equivalent mass of the beam at the free end of the beam during the natural frequency calculation. If <em>m<sub>t</sub></em> is the mass of transducer, then the total mass at the free end of the cantilever beam is given as,</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="position:relative;top:12.0pt;mso-text-raise:-12.0pt">   </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAAAqCAIAAADUG1msAAABX0lEQVRoge2YyxLCIAxF+f+fxp0yTQIXAoHiPQunVknCkVdNmThIuwt4N9TngvpchOpLBcj984krVyqr338F22q1NFEfkPUKd3mLvmvc5Xh91hbBraMz8RVjkPpcUJ8L7rwuQo/Nlz1yZD7zOvlHfROHOfX5QpVBy8d49Xo7U4qsbFy9wZV/O6xXmUkCdsADXmQ9wpTgSW2ZhX6wstUMF2n93mWrgeDQ5O3rIlBxFzKms0jTRX/wp/v69SNTvasraBaJlFHR17x+NkFaBnhBAIsc04cElw3b+g5xl7EikXnQq+/rTllM+npwPEunizn67mBsJxmI/7uzIg2SuPLR8IoRPPRygL76YqSsJr4RtG6lVnuxc/TJwWKpPBbqc7FNnzpJqc9IY3uhPiAN5oj6jDTiHP9Afk2+PZCzzn3UZ6SBj82rnxzmElFi8+Ssfn99XRN4R5XHQn0uqM8F9bn4AFl8xN77dehoAAAAAElFTkSuQmCC">&nbsp;&nbsp;&nbsp;&nbsp; </span>(2.12)</h3>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

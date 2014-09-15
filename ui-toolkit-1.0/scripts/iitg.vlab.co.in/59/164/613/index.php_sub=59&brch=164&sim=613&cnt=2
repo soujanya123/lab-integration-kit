@@ -1,0 +1,166 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Identification of Voice/Unvoiced/Silence regions of Speech  (Procedure) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Identification of Voice/Unvoiced/Silence regions of Speech " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Identification of Voice/Unvoiced/Silence regions of Speech </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Identification of Voice/Unvoiced/Silence regions of Speech </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=613&cnt=1106"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=613&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2186"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2029"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2187"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2985"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">&nbsp;</span></span></h2>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Plotting Speech Signal and Its Spectra</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">In this experiment we observe the nature of speech signal only  qualitatively without looking much into the signal processing methods to  extract them. The aim is to get hold on to the basic understanding of  identifying the voiced/unvoiced/silence regions of speech from their  time domain and frequency domain representations. For this we need to  plot the speech signal in time and frequency domains. The time domain  representation is termed as <i> waveform </i> and frequency domain representation is termed as <i> spectrum </i>. As discussed in <i> Experiment 1</i>,  due to the non-stationary nature of speech, we consider speech signals  in short ranges for plotting their waveforms and spectra. The typical  lengths include 10-30 msec. Waveforms and their spectra for segments  selected from the word <i> speech </i> recorded using 16 kHz sampling  frequency and 16 bit resolution are plotted in Figure 1. As it can be  observed, the time domain and frequency domain characteristics are  distinct for the three cases. Voiced segment represents periodicity in  time domain and harmonic structure in frequency domain. Unvoiced segment  is random noise-like in time domain and spectrum without harmonic  structure in frequency domain. Silence region does not have energy in  either time or frequency domain. The Scilab code to select voiced,  unvoiced and silence segments of the word <i> speech </i> and plotting their spectra is as given below.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img src="/userfiles/7/image/speech/ex3/experiment3-procedure-fig1.jpg" alt=""></p>
+<p style="text-align: justify;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Analysis of Voiced Speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">We should be able to identify whether given segment of speech,  typically, 20 - 50 msec, is voiced or not. The voiced speech segment is  characterized by the periodic nature, relatively high energy, less  number of zero crossings and more correlation among successive samples.  The voiced speech can be identified by observation of the waveform in  the time domain due to its periodicity nature. In the frequency domain,  the presence of harmonic structure is the evidence that the segment is  voiced. Further, the spectrum will have more energy, typically, in the  low frequency region. The spectrum will also have a downward trend  starting from zero frequency and moving upwards. The autocorrelation of a  segment of voiced speech will have a strong peak at the pitch period.  The high energy can be observed in terms of high amplitude values for  voiced segment. However, energy alone cannot decide the voicing  information. Periodicity is crucial along with energy to identify the  voiced segment unambiguously. Similarly the relatively low  zero-crossings can also be indirectly observed as smooth variations  among sequence of sample values. Figure 2 below shows the code to  generate the waveform, spectrum and autocorrelation sequence for a given  segment of voiced speech. The figure generated gives plots related to a  30 msec segment of voiced speech. The characteristics about the voiced  speech mentioned above are observable in these plots. This figure  displays the typical nature and should be observed carefully to be able  to comment whether a given segment of speech is voiced or not at a later  time.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img src="/userfiles/7/image/speech/ex3/experiment3-procedure-fig2.jpg" alt=""></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Analysis of Unvoiced Speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">We should be able to identify whether given segment of speech,  typically, 20 - 50 msec, is unvoiced or not. The unvoiced speech segment  is characterized by the non-periodic and noise-like nature, relatively  low energy compared to voiced speech, more number of zero crossings and  relatively less correlation among successive samples. The unvoiced  speech can be identified by observation of the waveform in the time  domain due to its non-periodicity and noise-like nature. In the  frequency domain, the absence of harmonic structure is the evidence that  the segment is unvoiced. Further, the spectrum will have more energy,  typically, in the high frequency region. The spectrum will also have an  upward trend starting from zero frequency and moving upwards. The  autocorrelation of a segment of unvoiced speech will match typically  that of random noise. The low energy can be observed in terms of low  amplitude values for unvoiced segment. However, energy alone cannot  decide the unvoicing information. The number of zero-crossings is  crucial along with energy to identify the unvoiced segment  unambiguously. The relatively high zero-crossings can also be indirectly  observed as rapid variations among sequence of sample values. Figure 3  below shows the code to generate the waveform, spectrum and  autocorrelation sequence for a given segment of unvoiced speech. The  figure generated gives plots related to a 30 msec segment of unvoiced  speech. The characteristics about the unvoiced speech mentioned above  are observable in these plots. This figure displays the typical nature  and should be observed carefully so that we should be able to comment  whether a given segment of speech is unvoiced or not at a later time.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img src="/userfiles/7/image/speech/ex3/experiment3-procedure-fig3.jpg" alt=""></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<h2 style="text-align: left;"><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Analysis of Silence Region</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">It is identify the silence regions in speech. The silence region is  characterized by the absence of any signal characteristics, lowest  energy compared to unvoiced and voiced speech segments, relatively more  number of zero crossings compared to unvoiced segment and no correlation  among successive samples. The silence region can be identified by  observation of the waveform in the time domain due to absence of any  signal. In the frequency domain, the absence of any spectral information  is the evidence that the segment is silence region. The autocorrelation  of a segment of silence region will not have any information. The  lowest energy can be observed in terms of absence of any appreciable  amplitude values. Even though energy is a good information for  identifying silence regions, the robustness can be improved further  using the zero-crossings information. Figure 4 below shows the code to  generate the waveform, spectrum and autocorrelation sequence for a given  segment of unvoiced speech. The figure generated gives plots related to  a 30 msec segment of silence region. The characteristics about the  silence region mentioned above are observable in these plots. This  figure displays the typical nature and should be observed carefully so  that we should be able to comment whether a given segment of speech  belongs to silence region or not at a later time.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img src="/userfiles/7/image/speech/ex3/experiment3-procedure-fig4.jpg" alt=""></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

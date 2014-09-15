@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Identification of Voice/Unvoiced/Silence regions of Speech  (Theory) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Identification of Voice/Unvoiced/Silence regions of Speech " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Identification of Voice/Unvoiced/Silence regions of Speech </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Identification of Voice/Unvoiced/Silence regions of Speech </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=613&cnt=1106"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=613&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2186"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2029"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2187"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=2985"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=613&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h1><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Introduction</span></span></h1>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Speech is an acoustic signal produced from a speech production system.  From our understanding of signals and systems, the system  characteristics depends on the design of the system. For the case of  linear time invariant system, this is completely characterized in terms  its impulse response. However, the nature of response depends on the  type of input excitation to the system. For instance, we have impulse  response, step response, sinusoidal response and so on for a given  system. Each of these output responses are used to understand the  behavior of the system under different conditions. A similar phenomenon  happens in the production of speech also. Based on the input excitation  phenomenon, the speech production can be broadly categorized into three  activities. The first case where the input excitation is nearly periodic  in nature, the second case where the input excitation is random  noise-like in nature and third case where there is no excitation to the  system. Accordingly, the speech signal can be broadly categorized into  three regions. The study of these regions is the aim of this experiment.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<h2 style="text-align: left;"><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Signal and System Block Diagram</span></span></h2>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: justify;">Signal and system concepts are linked by a classical  block diagram shown in Figure 1. As shown, the system responds to the  input signal/excitation and produces output signal/response. For a given  design of the system, the output response depends on the type of input  excitation. Accordingly, we can have different output responses. The  same block diagram can be used for the study of this experiment. For the  case of speech, it can be modified as shown in Figure 2. The speech  production system responds to the input excitation by producing speech  signal. The schematic of human speech production mechanism is shown in  Figure 3. The speech production organs include lungs, trachea, glottis,  pharynx, oral cavity and nasal cavity. The lungs supply the required air  during exhalation for producing speech. Trachea also termed as wind  pipe connects the lungs to the glottis. The glottis consists of two thin  membranes termed as vocal folds or chords and obstruct airflow during  specific category speech to generate the required excitation signal for  speech production. The organs above glottis constitute the system part  for speech production.</p>
+<p class="content" style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig1.JPG" alt=""></p>
+<p class="content" style="text-align: center;">Figure 1: Block diagram representing relation between signal and system</p>
+<p class="content" style="text-align: center;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig2.JPG" alt=""></p>
+<p class="content" style="text-align: center;">Figure 2: Speech production process as a signal and system block diagram</p>
+<p class="content" style="text-align: center;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig3.JPG" alt=""></p>
+<p class="content" style="text-align: center;">Figure 3: Schematic diagram of human speech production system</p>
+<p class="content" style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Voiced Speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">If the input excitation is nearly periodic impulse sequence, then the  corresponding speech looks visually nearly periodic and is termed as <b>voiced speech</b>.  The speech production process for the voiced speech can be pictorially  represented as shown in Figure 4. During the production of voiced  speech, the air exhaling out of lungs through the trachea is interrupted  periodically by the vibrating vocal folds. Due to this, the glottal  wave is generated that excites the speech production system resulting in  the voiced speech.  A typical glottal waveform and the corresponding  voiced speech are shown in Figure 5. Thus grossly, when we look at the  speech signal waveform, if it looks nearly periodic in nature, then it  can be marked as voiced speech.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig4.JPG" alt=""></p>
+<p class="content" style="text-align: center;">Figure 4: Block diagram representation of voiced speech production</p>
+<p class="content" style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig5.JPG" alt=""></p>
+<p class="content" style="text-align: center;">Figure 5: Glotal wave and corresponding speech signal during voiced speech production</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">The periodicity associated with the voiced speech can be measured by the  autocorrelation analysis. This period is more commonly termed as <b>pitch period</b>.  A 30 msec segment of voiced speech and its autocorrelation sequence are  plotted in Figure 6. The distance of the first largest peak in the  autocorrelation sequence from the beginning represents pitch period.  This is the important and main distinguishing factor for voiced speech.  Since voiced speech is periodic in nature, we expect some fundamental  frequency and its harmonics in the spectrum of speech. Figure 7 shows a  30 msec segment of voiced speech and its magnitude spectrum. As it can  be observed in the spectrum, there frequency components repeating at  regular intervals indicating the presence of harmonic structure. In the  frequency domain, the presence of this harmonic structure is the main  distinguishing factor for voiced speech. The fundamental frequency of  input excitation is also termed as <b> pitch frequency </b> or just <b> pitch </b>.</p>
+<p>&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig6.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 6: Voiced segment speech and its autocorrelation sequence</p>
+<p class="content" style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig7.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 7: Voiced segment speech and its log magnitude spectrum</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Unvoiced Speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">If the excitation is random noise-like, then the resulting speech will  also be random noise-like without any periodic nature and is termed as <b>Unvoiced Speech</b>.  The speech production process for the voiced speech can be pictorially  represented as in Figure 8. During the production of unvoiced speech,  the air exhaling out of lungs through the trachea is  not interrupted by  the vibrating vocal folds. However, starting from glottis, somewhere  along the length of vocal tract, total or partial closure occurs which  results in obstructing air flow completely or narrowly. This  modification of airflow results in stop or frication excitation and  excites the vocal tract system to produce unvoiced speech. The typical  nature of excitation and resulting unvoiced speech are shown in Figure 8  itself. As it can be seen, the unvoiced speech will not have any  periodic nature. This will be the main distinction between voiced and  unvoiced speech.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig61.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 8: Block diagram representation of unvoiced speech production</p>
+<p class="content" style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig9.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 9: Unvoiced segment speech and its autocorrelation sequence</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig10.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 10: Unvoiced segment speech and its log magnitude spectrum</p>
+<p class="content" style="text-align: center;">&nbsp;</p>
+<p class="content" style="text-align: justify;">The aperiodicity of unvoiced speech can also be   observed by the autocorrelation analysis. A 30 msec segment of unvoiced  speech and its autocorrelation sequence are plotted in Figure 9. As it  can be observed there is no strong peak indicating periodicity. This is  the important and main distinguishing factor between voiced and unvoiced  speech. Figure 10 shows a 30 msec segment of unvoiced speech and its  magnitude spectrum. As it can be observed in the spectrum, there is no  harmonic structure. In the frequency domain, the absence of this  harmonic structure is the main distinguishing factor for unvoiced  speech.</p>
+<p class="content" style="text-align: justify;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Silence Region</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The speech production process involves generating voiced and unvoiced speech in succession, separated by what is called <b>silence region</b>.  During silence region, there is no excitation supplied to the vocal  tract and hence no speech output. However, silence is an integral part  of speech signal. Without the presence of silence region between voiced  and unvoiced speech, the speech will not intelligible. Further, the  duration of silence along with other voiced or unvoiced speech is also  an indicator of certain category of sounds. Even though from  amplitude/energy point of view, silence region is unimportant, but its  duration is very essential for intelligible speech. Figure 11 shows  waveforms for the words <i>apa</i>, <i>aTa</i> and <i>ata</i>. As it can be observed between the two vowels there is silence region representing the sounds <i>p</i>, <i>T</i> and <i>t</i>.  Even though the signal energy is lowest or negligible, its duration is  important for perceiving it. A speech signal for the text <i>Do not ask me to walk like that</i>  is also shown in Figure 12. In this case also we can observe the  silence regions between several sounds. These are natural and essential  for perceiving the information present in it. Suppose if we remove all  the silence regions and concatenate only voiced and unvoiced segments,  then the signal looks like as given in the same figure. It will be very  difficult to perceive information from this signal.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig11.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 11: Speech waveforms of <i>apa</i>, <i>aTa</i>, <i>ata</i>. Silence regions between the vowels represent the consonants p,T,t</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex3/experiment3-theory-fig12.jpg" alt=""></p>
+<p class="content" style="text-align: center;">Figure 12: Original speech signal and its silence removed version</p>
+<p class="content" style="text-align: center;"><span style="background-color: rgb(255, 255, 255);">&nbsp;</span></p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Voiced/Unvoiced/Silence Classification of Speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Above discussion gave a feel about the production of voiced/unvoiced  speech and also significance of silence region. Now the next question  is, how to identify these regions of speech? first by visual perception  and next by automatic approach. In this experiment we will learn only  how to do it by visual perception. In the later experiments, we can  learn the automatic approach. First and more most distinction is between  voiced and unvoiced speech. If the speech signal waveform looks  periodic in nature, then it may be marked as voiced speech. Otherwise,  it may be marked as unvoiced/silence region based on the associated  energy. If the signal amplitude is low or negligible, then it can be  marked as silence, otherwise as unvoiced region. Finally, there may be  regions where the speech can be mixed version of voiced and unvoiced  speech. In mixed speech, the speech signal will look like unvoiced  speech, but you will also observe some periodic structure.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,276 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>6.Effective vertical work surface (Home) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="The experiment aims at understanding the various vertical work surfaces are in effect in our daily life, may be the office table, kitchen platform, console or any interactive work counter and various work component layout there in." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">6.Effective vertical work surface</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">6.Effective vertical work surface</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=171&sim=841&cnt=1566"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Home&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=1568"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference datasheet&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=1567"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Practical experience&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=1570"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Application relevance&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=1571"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=841&cnt=1636"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td valign="top" width="200">
+            <p>&nbsp;<a name="top"></a></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            </td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="4" valign="top" width="200">&nbsp; <span style="background-color: Yellow;">Content</span><hr>
+            </td>
+            <td colspan="2" rowspan="4" valign="top" width="375">
+            <h2 style="text-align: center;"><span style="color: rgb(51, 102, 255);">Effective vertical work surface</span></h2>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><a href="#top">Theory</a></td>
+            <td rowspan="7" valign="top" width="375">
+            <div>Three types of work surface are there, i.e., horizontal, vertical and diagonal; there exist a curved work surface suitable to touch by hand approximately 1 meter from the body and suits to vision. Such curved surfaces may be useful to work in a standing as well as in a seating position where at a same time person is required to touch top, horizontal and lower comfortable reach. Few aspects may be considered about the movement pattern of arm arc in erect posture and bending forward and the eye movement. <br>
+            A viewing distance of a vertical work surface should not be more than 750mm and should never be less than 330 mm, preferably not less than 510mm from the eye position, while adopting different postures, because a short viewing distance as well as a long distance creates undue strain on the eye. The vertical plane of the visual field follows a stepwise curvature over the head and below the waist of approximately 5 degrees inward inclination at</div>
+            </td>
+            <td rowspan="7" valign="top" width="375">
+            <div>each 200mm. <br>
+            A vertical work surface might have a concave feature to fit the arc of the front arm reaches, because both the extreme ends of the arm reaches are smaller in length than that at the mid-position. As a matter of general convenience, it could be said that the area in front of a person, from waist level to head level may be straight and vertical and the extreme ends of the surface may be curved in order to make it easy for the arms to reach both the upper and lower areas. Initially starting at around 15 degrees, it should gradually be nearer the user.<br>
+            By combining these two, the visual curvature and the arm reach curvature, a specific vertical work surface can be designed. To ensure comfortable reach and vision, it may have an inclination of 10 degrees at every 200mm length approximately over the head and below the waist, and from waist to head level it can be straight and vertical.</div>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#about">About experiment</a></td>
+        </tr>
+        <tr>
+            <td>
+            <p><a href="#procedure">Procedure</a></p>
+            <ul>
+                <li><a href="#measure">Measuring procedures</a></li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td rowspan="2" valign="top" width="200">&nbsp;<br>
+            &nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="about"></a></td>
+            <td style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">About experiment </span></h2>
+            <p>&nbsp;</p>
+            </td>
+            <td valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>Those physical human body dimensions which have an impact on design dimensions are static when structural. Structural body measurements include direct measurements of various body parts; say heights, lengths, depths, breadths and the circumferences of head, neck, trunk,</div>
+            </td>
+            <td valign="top" width="375">
+            <div>hands and legs in some standard positions. As standard practice, the collection of body structural data in static body positions is easier than the collection of body functional data in dynamic body positions. When these dimensions are taken in sitting static posture it is called sitting static anthropometry.</div>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="procedure"></a></td>
+            <td style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top">&lt;Back to content&gt;</a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Procedure </span></h2>
+            <p>&nbsp;</p>
+            </td>
+            <td valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>In the case of dynamic body dimensional measurements, as the body functional contexts vary, comfortable work postures should be maintained and measurements of body parts in</div>
+            </td>
+            <td valign="top" width="375">
+            <div>such positions should be taken with extension and flexing movements so that various reach values in different positions are normally taken care of.</div>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="measure"></a></td>
+            <td style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <p><strong>Measuring procedures</strong></p>
+            <p>&nbsp;</p>
+            </td>
+            <td valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>In the case of dynamic body dimensional measurements, as the body functional contexts vary, comfortable work postures should be maintained and measurements of body parts in such positions should be taken with extension and flexing movements so that various reach values in different positions are normally taken care of.</div>
+            <div>To suit proper arm reach and vision comfort, a suitable experimental set up can be created where standing erect and bending arm reaches can be measured and visual objects display are located in such a distance which can be used as a comfortable surroundings where both arm reach at around 1 meter distance and easy to</div>
+            </td>
+            <td valign="top" width="375">
+            <div>see is conceptualized.<br>
+            Only to measure the arm arcs animated experiment is being presented herein towards a practical acquaintance of the above fact, as shown in the figure.<br>
+            <br>
+            A person may be asked to stand on an erect posture keeping heels close against a board placed at the side. He is asked to extend arm on a arc motion without bending and leave a mark on the board to denote the arc lines; thereafter from the same standing position he is asked to bend forward and mark the maximum arm reach arc line. Arm arc points distance from the vertical axis passing through both heel joint position.</div>
+            <div>&nbsp;</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td style="text-align: right;" valign="top" width="375"><a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Skeleton - Assembling, Identification & labeling (Quiz) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Assembling , Identifying & labeling different parts of a skeleton" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Skeleton - Assembling, Identification & labeling</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Skeleton - Assembling, Identification & labeling</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=173&sim=715&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=715&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=715&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=173&sim=715&cnt=1787"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=715&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=715&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=715&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">By weight, bone tissue is ___ mineral and ___ organic material.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5479" style="vertical-align:middle" type="radio" name="ans0"  value="5479"> </input><label for="ans5479" id="textAnsChoice">70% and 30%</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5480" style="vertical-align:middle" type="radio" name="ans0"  value="5480"> </input><label for="ans5480" id="textAnsChoice">30 % and 70%</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5481" style="vertical-align:middle" type="radio" name="ans0"  value="5481"> </input><label for="ans5481" id="textAnsChoice">60% and 40 %</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5482" style="vertical-align:middle" type="radio" name="ans0"  value="5482"> </input><label for="ans5482" id="textAnsChoice">50 % and 50 % .</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Humerus is the bone of</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5511" style="vertical-align:middle" type="radio" name="ans1"  value="5511"> </input><label for="ans5511" id="textAnsChoice">Lower arm</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5512" style="vertical-align:middle" type="radio" name="ans1"  value="5512"> </input><label for="ans5512" id="textAnsChoice">Upper arm</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5513" style="vertical-align:middle" type="radio" name="ans1"  value="5513"> </input><label for="ans5513" id="textAnsChoice">The lateral bone of the forearm</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5514" style="vertical-align:middle" type="radio" name="ans1"  value="5514"> </input><label for="ans5514" id="textAnsChoice">medial bone of the forearm</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Which one is the largest and strongest bone of the skeleton?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5507" style="vertical-align:middle" type="radio" name="ans2"  value="5507"> </input><label for="ans5507" id="textAnsChoice">Ulna</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5508" style="vertical-align:middle" type="radio" name="ans2"  value="5508"> </input><label for="ans5508" id="textAnsChoice">Femur</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5509" style="vertical-align:middle" type="radio" name="ans2"  value="5509"> </input><label for="ans5509" id="textAnsChoice">Tibia</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5510" style="vertical-align:middle" type="radio" name="ans2"  value="5510"> </input><label for="ans5510" id="textAnsChoice">patella</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is the crown in tooth?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5503" style="vertical-align:middle" type="radio" name="ans3"  value="5503"> </input><label for="ans5503" id="textAnsChoice">the projected portion beyond the gum</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5504" style="vertical-align:middle" type="radio" name="ans3"  value="5504"> </input><label for="ans5504" id="textAnsChoice">portion between the roots</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5505" style="vertical-align:middle" type="radio" name="ans3"  value="5505"> </input><label for="ans5505" id="textAnsChoice">in the sockets of the maxilla</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5506" style="vertical-align:middle" type="radio" name="ans3"  value="5506"> </input><label for="ans5506" id="textAnsChoice">none of them</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Which one is the bone of facial part?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5499" style="vertical-align:middle" type="radio" name="ans4"  value="5499"> </input><label for="ans5499" id="textAnsChoice">Palantine</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5500" style="vertical-align:middle" type="radio" name="ans4"  value="5500"> </input><label for="ans5500" id="textAnsChoice">vomer</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5501" style="vertical-align:middle" type="radio" name="ans4"  value="5501"> </input><label for="ans5501" id="textAnsChoice">Lachrymal</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5502" style="vertical-align:middle" type="radio" name="ans4"  value="5502"> </input><label for="ans5502" id="textAnsChoice">occipital</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Where is vomer  situated</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5495" type="radio" name="ans5"  value="5495"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5495">in the lower part of the septum of the nose</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5496" type="radio" name="ans5"  value="5496"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5496">in the upper part of the septum of the nose</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5497" type="radio" name="ans5"  value="5497"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5497">in the right side of the septum of the nose</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5498" type="radio" name="ans5"  value="5498"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5498">near the front part of the medial orbital walls.</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Parietal are ____ in number.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5491" style="vertical-align:middle" type="radio" name="ans6"  value="5491"> </input><label for="ans5491" id="textAnsChoice">3</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5492" style="vertical-align:middle" type="radio" name="ans6"  value="5492"> </input><label for="ans5492" id="textAnsChoice">4</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5493" style="vertical-align:middle" type="radio" name="ans6"  value="5493"> </input><label for="ans5493" id="textAnsChoice">2</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5494" style="vertical-align:middle" type="radio" name="ans6"  value="5494"> </input><label for="ans5494" id="textAnsChoice">1</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is ethmoid ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5487" style="vertical-align:middle" type="radio" name="ans7"  value="5487"> </input><label for="ans5487" id="textAnsChoice">The region of the forehead</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5488" style="vertical-align:middle" type="radio" name="ans7"  value="5488"> </input><label for="ans5488" id="textAnsChoice">walls and roof the brainbox</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5489" style="vertical-align:middle" type="radio" name="ans7"  value="5489"> </input><label for="ans5489" id="textAnsChoice">The posterior</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5490" style="vertical-align:middle" type="radio" name="ans7"  value="5490"> </input><label for="ans5490" id="textAnsChoice">The anterior part of base of the cranium</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">9)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Since when ossification of body Skelton begins?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5483" style="vertical-align:middle" type="radio" name="ans8"  value="5483"> </input><label for="ans5483" id="textAnsChoice">6th week of foetal life</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5484" style="vertical-align:middle" type="radio" name="ans8"  value="5484"> </input><label for="ans5484" id="textAnsChoice">5th week of foetal life</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5485" style="vertical-align:middle" type="radio" name="ans8"  value="5485"> </input><label for="ans5485" id="textAnsChoice">10th week of foetal life</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5486" style="vertical-align:middle" type="radio" name="ans8"  value="5486"> </input><label for="ans5486" id="textAnsChoice">12th week of foetal life</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint18" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">10)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The skeleton of the foot consists of __ sets of bones</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5515" style="vertical-align:middle" type="radio" name="ans9"  value="5515"> </input><label for="ans5515" id="textAnsChoice">4</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5516" style="vertical-align:middle" type="radio" name="ans9"  value="5516"> </input><label for="ans5516" id="textAnsChoice">3</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5517" style="vertical-align:middle" type="radio" name="ans9"  value="5517"> </input><label for="ans5517" id="textAnsChoice">1</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5518" style="vertical-align:middle" type="radio" name="ans9"  value="5518"> </input><label for="ans5518" id="textAnsChoice">2</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint19" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383133053/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

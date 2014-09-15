@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>IIT GUWAHATI Virtual Lab </title><META NAME="description" CONTENT= ""><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<div id="head_box" style="width:1024px; margin-left:auto; margin-right:auto;">
+<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div></div>
+<div align="left" style="position: relative; margin:auto; width: 1024px; background-color:#e3f2fc;"><div align="left" style="padding-left:15px; padding-right:10px;min-height:350px;"><div class="contactUs" style="width:460px; float:left; padding-right:00px; background:url(images/seperator_line.png) top right no-repeat; min-height:600px;">
+<h1>Contact us</h1><br />
+
+        <form name="contact" method="post">
+            
+    <label for="name"><span style="color: #0099CC;font-weight: bold;">*</span>Name:</label><br />
+    <input id="name" name="name" type="text" size="20" value="" /><br /><br />	
+    
+    <label for="email"><span style="color: #0099CC;font-weight: bold;">*</span>Email:</label>
+    <br />
+    <input id="email" name="email" type="text" size="20" value="" /><br /><br />
+    
+    <label for="usertype"><span style="color: #0099CC;font-weight: bold;">*</span>User Type:</label>
+    <br />
+    <select name="userType" id="userType" style="width:155px;">
+    	
+    	<option value="Select">
+			Select        </option>
+    	<option value="Parent"  >
+			Parent        </option>
+        <option value="Student"  >
+			Student        </option>
+        <option value="Academician"  >
+			Academician        </option>
+        <option value="Others"  >
+			Others        </option>
+    </select>
+    <br /><br />
+    <label for="contactnum">Contact Number:</label>
+    <br />
+    <input id="contactNumber" name="contactNumber" type="text" size="20" value="" />
+    <br /><span style="font-family:Verdana, Geneva, sans-serif; font-size:10px;">
+    (With country code/ STD code)</span>
+    <br /><br />
+    
+   <!-- <label for="site">:</label><br>
+    <input id="website" name="website" type="text" size="20"  value="" />
+    <br /><br />-->	                
+    <label for="subject"><span style="color: #0099CC;font-weight: bold;">*</span>Mail subject:</label>
+    <br />
+    <input id="subject" name="subject" type="text" size="20" value="" />
+    <br /><br />                              
+    <label for="msg"><span style="color: #0099CC;font-weight: bold;">*</span>Your message:</label>
+    <br />
+    <textarea id="message" name="message" type="text" rows="10" cols="30"></textarea>			
+    <br /><br />	            
+    <label for="code"><span style="color: #0099CC;font-weight: bold;">*</span>Please type in the code shown.</label>
+    <br />
+     <div><input type="text" name="captcha_code" size="15" class=""/></div>
+     <div> <img id="captcha" src="captcha/captchadisp.php?md5(uniqid(time())); " /></div><br />
+        
+    <input type="submit" id="sendIt" name="sendIt" value="Send it" onclick="return checkContactUs();"/>
+    </form>
+<br/></div> 
+
+<div class="contactUs" style=" padding-left:480px; min-height:670px;">
+    <h1>Frequently asked questions</h1><br />
+    <div class="text" style="text-align:justify;">
+        <ol>
+            <li><b>Why am I getting the error message "Invalid username or password", when I try to login?</b><br />
+<br />It might be because of anyone of the following issues:</li><br />
+            	<ul>
+                	<li>Check if you are using the wrong username or password.</li><br />
+            		<li>The password is case sensitive, so type in the password the same way you did when you registered with us.</li><br />
+                    <li>If you have forgotten your password, please use the <a href="?pg=bindex&bsub=forgot_pwd">"Forgot Password?"</a> link seen in the login page.</li><br />
+               	</ul>
+            <li><b>Despite having registered, why do I get the message, "Your account is not active" when I try to login?</b><br /><br />Once registered, an email with an activation link is sent to the email id with which you have registered.  Click on that link to activate your account. If you do not find this email in your inbox, please check your spam folder.  Having checked and if you still can't find it, please send an email to <a href="mailto:collab.tools@am.amrita.edu">collab.tools@am.amrita.edu</a> from your registered email address.</li><br />
+            <li><b>Why do I get the message, "There is an existing account associated with this email" when I try to register?</b><br /><br />It means that you already have got an account registered with us through that particular email id. If you haven't received the activation email from us, please send an email to <a href="mailto:collab.tools@am.amrita.edu">collab.tools@am.amrita.edu</a> from the registered email address.</li>
+        </ol>                
+    </div>
+   
+</div>
+            
+              </div></div><div style="width:1024px; margin-left:auto; margin-right:auto;">
+	<div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</div>
+

@@ -1,0 +1,1195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Vertical take Off and landing (currently offline: Experiment will be available on request) (Theory) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Vertical take Off and landing (currently offline: Experiment will be available on request)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Vertical take Off and landing (currently offline: Experiment will be available on request)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Vertical take Off and landing (currently offline: Experiment will be available on request)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1041"><span><div id="tabspan" ><img id="tabimg" src="images/temp.gif" alt=""/></div><div id="tab_name" >VTOL HOME&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=264&cnt=1042"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1043"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1044"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1067"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Guide&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1068"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Manual&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1045"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1046"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="color: Red; text-align: center;"><span style="background-color: Lime;"><font color="#660000" face="Times New Roman, Times, serif">Vertical          Take Off and Landing (VTOL) System</font></span></h3>
+<p style="text-align: center;"><font color="#006633" size="+1"><em><a name="top"></a>Current                           Control Technique</em></font></p>
+<p><font class="style1" color="#666666">The                            technique feeds an open-loop voltage or  current to the                           VTOL-Trainer. The Virtual  Instrument (VI) when used in                           current mode is  shown in the figure1 below.</font></p>
+<p style="text-align: center;">&nbsp;<img src="/userfiles/7/image/vtol/cur22.JPG" alt="" width="603" height="507"></p>
+<p style="text-align: center;"><font size="-1">figure1</font></p>
+<div class="style1" align="justify"><font color="#666666">In this mode a current controller is used to regulate                            the current in the motor and the user chooses the reference                            current. In voltage mode shown in figure2,the voltage                            chosen is directly applied to the VI VTOL amplifier,      which in turn drives the motor.</font></div>
+<div class="style1" align="justify">&nbsp;</div>
+<div class="style1" style="text-align: center;"><font color="#666666"><img src="/userfiles/7/image/vtol/cur3.JPG" alt="" width="602" height="505"></font></div>
+<div class="style1" style="text-align: center;">&nbsp;</div>
+<div class="style1" style="text-align: center;">figure2</div>
+<div class="style1" style="text-align: center;">&nbsp;</div>
+<div class="style1" style="text-align: left;">
+<table width="818" align="center" border="0">
+    <tbody>
+        <tr>
+            <th scope="row" colspan="7">
+            <p><font color="#006633"><em>Modeling</em></font></p>
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" width="112" height="49">
+            <div align="center"><font color="#cc3333"><strong>ID#</strong></font></div>
+            </td>
+            <td valign="top" width="112"><font color="#cc3333"><strong>Label</strong></font></td>
+            <td valign="top" width="113"><font color="#cc3333"><strong>Parameter</strong></font></td>
+            <td valign="top" width="109">
+            <div align="center"><font color="#cc3333"><strong>Description</strong></font></div>
+            </td>
+            <td colspan="3" valign="top" width="389">
+            <div align="center"><font color="#cc3333"><strong>Unit</strong></font></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="83">
+            <div align="center">1</div>
+            </td>
+            <td valign="top">
+            <div align="center">Position</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL pitch position numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="76">
+            <div align="center">2</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor armature current numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="72">
+            <div align="center">3</div>
+            </td>
+            <td valign="top">
+            <div align="center">Voltage</div>
+            </td>
+            <td valign="top">
+            <div align="center">V<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor input voltage numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">V</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="71">
+            <div align="center">4</div>
+            </td>
+            <td valign="top">
+            <div align="center">Signal Type</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Type of signal generated for the current reference.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="70">
+            <div align="center">5</div>
+            </td>
+            <td valign="top">
+            <p align="center">Amplitude</p>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint amplitude input box.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>A</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">6</div>
+            </td>
+            <td valign="top">
+            <div align="center">Frequency</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint frequency input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>Hz</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">7</div>
+            </td>
+            <td valign="top">
+            <div align="center">Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint offset input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">8</div>
+            </td>
+            <td valign="top">
+            <div align="center">kp_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>p,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control proportional gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">9</div>
+            </td>
+            <td valign="top">
+            <div align="center">ki_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>i,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control derivative gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="30">
+            <div align="center">10</div>
+            </td>
+            <td valign="top">
+            <div align="center">VTOL Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Pitch calibration</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">11</div>
+            </td>
+            <td valign="top">
+            <div align="center">Transfer Function Simulation Parameters</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="left">Transfer Function used for simulation</div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top">
+            <div align="center">12</div>
+            </td>
+            <td valign="top">
+            <div align="center">Simulation Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Displays the Transfer Function currently being          simulated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="74">
+            <div align="center">13</div>
+            </td>
+            <td valign="top">
+            <div align="center">Order of Estimated Model</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Order of Transfer Function to be Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">14</div>
+            </td>
+            <td valign="top">
+            <div align="center">Estimated Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Transfer Function Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">15</div>
+            </td>
+            <td valign="top">
+            <div align="center">Sampling Rate</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the sampling rate</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="33">
+            <div align="center">16</div>
+            </td>
+            <td valign="top">
+            <div align="center">Device</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the Device</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">17</div>
+            </td>
+            <td valign="top">
+            <div align="center">Stop</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Stops the Labview VI from running.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="89">
+            <div align="center">18</div>
+            </td>
+            <td valign="top">
+            <div align="center">Pitch</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <p align="left">Scope with measured (in red) VTOL pitch position</p>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>deg</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">19</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="left">Scope with reference ( in blue) and measured (in        red) current</div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>A</strong></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p style="text-align: center;">&nbsp;</p>
+<h3 style="color: Red; text-align: center;">&nbsp;</h3>
+<h3 style="color: Red; text-align: center;"><span style="background-color: Yellow;">&nbsp;</span><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=163&amp;sim=264&amp;cnt=1043#p1"><span style="background-color: Yellow;">Click here for Procedure&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></a></h3>
+<h3 style="color: Red; text-align: center;">&nbsp;</h3>
+<h3 style="color: Red; text-align: center;"><span style="background-color: Lime;"><font color="#660000" face="Times New Roman, Times, serif">Vertical          Take Off and Landing (VTOL) System</font></span></h3>
+<p style="text-align: center;"><em><font color="#006633" size="+1"><a name="top1"></a> Modeling</font></em></p>
+<p align="left"><font color="#666666">It is used for model validation and parameter identification          as shown in the figure1 below. A transfer function is          ran in parallel with the actual system and enables users          to confirm whether their derived model is correct or      not. </font></p>
+<p style="text-align: center;">&nbsp;<img src="/userfiles/7/image/vtol/model1.JPG" alt="" width="604" height="429"></p>
+<p style="text-align: center;"><font size="-1">figure1</font></p>
+<table width="818" align="center" border="0">
+    <tbody>
+        <tr>
+            <th scope="row" colspan="7">
+            <p><font color="#006633"><em>Modeling</em></font></p>
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" width="112" height="49">
+            <div align="center"><font color="#cc3333"><strong>ID#</strong></font></div>
+            </td>
+            <td valign="top" width="112"><font color="#cc3333"><strong>Label</strong></font></td>
+            <td valign="top" width="113"><font color="#cc3333"><strong>Parameter</strong></font></td>
+            <td valign="top" width="109">
+            <div align="center"><font color="#cc3333"><strong>Description</strong></font></div>
+            </td>
+            <td colspan="3" valign="top" width="389">
+            <div align="center"><font color="#cc3333"><strong>Unit</strong></font></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="83">
+            <div align="center">1</div>
+            </td>
+            <td valign="top">
+            <div align="center">Position</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL pitch position numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="76">
+            <div align="center">2</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor armature current numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="72">
+            <div align="center">3</div>
+            </td>
+            <td valign="top">
+            <div align="center">Voltage</div>
+            </td>
+            <td valign="top">
+            <div align="center">V<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor input voltage numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">V</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="71">
+            <div align="center">4</div>
+            </td>
+            <td valign="top">
+            <div align="center">Signal Type</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Type of signal generated for the current reference.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="70">
+            <div align="center">5</div>
+            </td>
+            <td valign="top">
+            <p align="center">Amplitude</p>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint amplitude input box.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>A</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">6</div>
+            </td>
+            <td valign="top">
+            <div align="center">Frequency</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint frequency input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>Hz</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">7</div>
+            </td>
+            <td valign="top">
+            <div align="center">Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint offset input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">8</div>
+            </td>
+            <td valign="top">
+            <div align="center">kp_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>p,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control proportional gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">9</div>
+            </td>
+            <td valign="top">
+            <div align="center">ki_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>i,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control derivative gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="30">
+            <div align="center">10</div>
+            </td>
+            <td valign="top">
+            <div align="center">VTOL Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Pitch calibration</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">11</div>
+            </td>
+            <td valign="top">
+            <div align="center">Transfer Function Simulation Parameters</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="left">Transfer Function used for simulation</div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top">
+            <div align="center">12</div>
+            </td>
+            <td valign="top">
+            <div align="center">Simulation Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Displays the Transfer Function currently being          simulated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="74">
+            <div align="center">13</div>
+            </td>
+            <td valign="top">
+            <div align="center">Order of Estimated Model</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Order of Transfer Function to be Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">14</div>
+            </td>
+            <td valign="top">
+            <div align="center">Estimated Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Transfer Function Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">15</div>
+            </td>
+            <td valign="top">
+            <div align="center">Sampling Rate</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the sampling rate</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="33">
+            <div align="center">16</div>
+            </td>
+            <td valign="top">
+            <div align="center">Device</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the Device</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">17</div>
+            </td>
+            <td valign="top">
+            <div align="center">Stop</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Stops the Labview VI from running.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="89">
+            <div align="center">18</div>
+            </td>
+            <td valign="top">
+            <div align="center">Pitch</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <p align="left">Scope with measured (in red) VTOL pitch position</p>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>deg</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">19</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="left">Scope with reference ( in blue) and measured (in        red) current</div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<h3 style="text-align: center;"><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=163&amp;sim=264&amp;cnt=1043#p2"><span style="background-color: Yellow;">Click here for Procedure&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></a></h3>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<h3 style="color: Red; text-align: center;">&nbsp;<span style="background-color: Lime;"><font color="#660000" face="Times New Roman, Times, serif">Vertical          Take Off and Landing (VTOL) System</font></span></h3>
+<p style="text-align: center;">&nbsp;<em><font color="#006633" size="+1"><a name="topx"></a>Flight Control Technique </font></em></p>
+<p align="left"><font color="#333333">This        system runs the PID based cascade control system to        control the position of the VTOL pitch.</font></p>
+<p align="left">&nbsp;</p>
+<p style="text-align: center;">&nbsp;<img src="/userfiles/7/image/vtol/flight1.JPG" alt="" width="604" height="485"></p>
+<p style="text-align: center;">figure1</p>
+<table width="818" align="center" border="0">
+    <tbody>
+        <tr>
+            <th scope="row" colspan="7">
+            <p><font color="#006633"><em>Modeling</em></font></p>
+            </th>
+        </tr>
+        <tr>
+            <td valign="top" width="112" height="49">
+            <div align="center"><font color="#cc3333"><strong>ID#</strong></font></div>
+            </td>
+            <td valign="top" width="112"><font color="#cc3333"><strong>Label</strong></font></td>
+            <td valign="top" width="113"><font color="#cc3333"><strong>Parameter</strong></font></td>
+            <td valign="top" width="109">
+            <div align="center"><font color="#cc3333"><strong>Description</strong></font></div>
+            </td>
+            <td colspan="3" valign="top" width="389">
+            <div align="center"><font color="#cc3333"><strong>Unit</strong></font></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="83">
+            <div align="center">1</div>
+            </td>
+            <td valign="top">
+            <div align="center">Position</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL pitch position numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="76">
+            <div align="center">2</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor armature current numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="72">
+            <div align="center">3</div>
+            </td>
+            <td valign="top">
+            <div align="center">Voltage</div>
+            </td>
+            <td valign="top">
+            <div align="center">V<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">VTOL motor input voltage numeric display</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">V</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="71">
+            <div align="center">4</div>
+            </td>
+            <td valign="top">
+            <div align="center">Signal Type</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Type of signal generated for the current reference.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="70">
+            <div align="center">5</div>
+            </td>
+            <td valign="top">
+            <p align="center">Amplitude</p>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint amplitude input box.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>A</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">6</div>
+            </td>
+            <td valign="top">
+            <div align="center">Frequency</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint frequency input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>Hz</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">7</div>
+            </td>
+            <td valign="top">
+            <div align="center">Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current setpoint offset input box</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">8</div>
+            </td>
+            <td valign="top">
+            <div align="center">kp_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>p,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control proportional gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="55">
+            <div align="center">9</div>
+            </td>
+            <td valign="top">
+            <div align="center">ki_c</div>
+            </td>
+            <td valign="top">
+            <div align="center">k<sub>i,c</sub></div>
+            </td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Current control derivative gain</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">A</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="30">
+            <div align="center">10</div>
+            </td>
+            <td valign="top">
+            <div align="center">VTOL Offset</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Pitch calibration</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">deg</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">11</div>
+            </td>
+            <td valign="top">
+            <div align="center">Transfer Function Simulation Parameters</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="left">Transfer Function used for simulation</div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top">
+            <div align="center">12</div>
+            </td>
+            <td valign="top">
+            <div align="center">Simulation Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Displays the Transfer Function currently being          simulated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="74">
+            <div align="center">13</div>
+            </td>
+            <td valign="top">
+            <div align="center">Order of Estimated Model</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Order of Transfer Function to be Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">14</div>
+            </td>
+            <td valign="top">
+            <div align="center">Estimated Transfer Function</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Transfer Function Estimated</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="54">
+            <div align="center">15</div>
+            </td>
+            <td valign="top">
+            <div align="center">Sampling Rate</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the sampling rate</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong><font color="#000066">Hz</font></strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="33">
+            <div align="center">16</div>
+            </td>
+            <td valign="top">
+            <div align="center">Device</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Selects the Device</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="53">
+            <div align="center">17</div>
+            </td>
+            <td valign="top">
+            <div align="center">Stop</div>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">
+            <div align="center">
+            <div align="left">Stops the Labview VI from running.</div>
+            </div>
+            </td>
+            <td colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" height="89">
+            <div align="center">18</div>
+            </td>
+            <td valign="top">
+            <div align="center">Pitch</div>
+            </td>
+            <td valign="top">
+            <div align="center">θ&nbsp;</div>
+            </td>
+            <td valign="top">
+            <p align="left">Scope with measured (in red) VTOL pitch position</p>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>deg</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="27">
+            <div align="center">19</div>
+            </td>
+            <td valign="top">
+            <div align="center">Current</div>
+            </td>
+            <td valign="top">
+            <div align="center">I<sub>m</sub></div>
+            </td>
+            <td valign="top">
+            <div align="left">Scope with reference ( in blue) and measured (in        red) current</div>
+            </td>
+            <td colspan="3" valign="top">
+            <div align="center"><strong>A</strong></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: Yellow;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=163&amp;sim=264&amp;cnt=1043#p3"><span style="background-color: Yellow;"> Click here for Procedure&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></a></h3>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Identification of finger print patterns (Theory) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="It includes identification of finger patterns of different individuals." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Identification of finger print patterns</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Identification of finger print patterns</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=173&sim=713&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=1783"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1>&nbsp;</h1>
+<h1><span style="color: rgb(153, 51, 0);">Dermatoglyphics</span></h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;Indian physical anthropologists have extensively used the dermatoglyphics as the tool for racial identification though almost all the works in this regard are descriptive in nature. P. C. Biswas has completed the work on dermatoglyphics on some sections of the criminals and also on the Bengalis and the Bhils of Raisthan. A number of scholars have shown interest in this sort of study and they have taken up the different communities according to their choice. In connection with the study on dermatoglyphics the names of following persons like B. B. Verma (the Uraon), S. C. Tiwari (on the Raji of Askote and the Bhotiya of Almorah), I. P. Sing Mongha (on the Panjabis), S. Gupta (on the Ulladan of Travancore), D. Roychoudhury (on the Riang of Tripura), R N. Bhattacharya (on the Abor tribes of N. E. F. A), M. R. Chakravorty<span style="mso-spacerun:yes">&nbsp; </span>(on the Nayandi and the Paniyan of South India), B. K. Chatterjee and Others (on the Urali of Travancore), P. Gupta and others (on the Lambadi of Andhra Pradesh), D. K. Sen ( on the criminal people in U. P), E. C. Buchi (on the Tebetan, Oraon, Andamanese and Khasi ) are important. S. S. Sarkar has made an attempt to discuss all the data on the dermatoglyphics in India and has seen the striking difference in ringer prints between the Australoids and other groups of people. In his study he has included the cases of the Juang, Savar, Santal, Khond, Gond, Pano, Munda and others. He has drawn his observation on the point that a ratio 60:40 between whorl and loop is the characteristic features of Veddids or Australoids, but it has been seriously criticised by Biswas as, according to him, this sort of ratio is not supported by sufficient investigation and, therefore, it should be used with considerable caution in ethnic identifcation. The study of Sarkar and others among the Kadars of Kerala indicates a striking similarity with the Semang as in both the groups the Australoid element is to be met with</p>
+<p>Dermatoglyphics (derma, skin +  glyphic, carve) is the study of the ridge patterns of the skin of the  fingers, palms, toes and soles. The human body is covered with hairs and  sebaceous (oil) glands except the palmar and planter regions which are  continuously corrugated with narrow ridges. The ridges make certain  patterns.</p>
+<p>&nbsp;</p>
+<p>Dermatoglyphics patterns have long  since been used for various purposes for their permanency and  unchangeability throughout life. From the time of their formation in the  foetus to the final disintegration of the skin after death the patterns  remain unchanged. Of course, the ridges may be worn out and thus become  invisible owing to various reasons. Though ever since the beginning of  the Christian era finger patterns has been used for personal  identification, yet systematic scientific studies started from the end  of the nineteenth century. Uses of dermatoglyphic traits are manifold,  but the anthropologists are more concerned in establishing variations in  respect of traits among different human populations. However, the  anthropologists are interested also in the study of dermatoglyphics in  the context of twin diagnosis, paternity diagnosis, primatology, etc. Dermatoglyphics fulfill many of the conditions laid by Boyd for a good racial criterion. Dermatoglyphics traits are not  modified by environmental factors. Dermatoglyphics traits are not –  adaptive. These are not subjected to a high rate of mutation. Genetic  process of Dermatoglyphic traits is complex and is not perfectly known. Ridges and patterns of the finger,  palm, toes and soles are studied from different angles applying various  methods. Here we shall deal with some aspects of finger patters. Finger patterns: Henry has classified the various  finger patterns into four main types: Arches, Loops, True, Whorls and  composites. The composites form a heterogeneous assemblage of patterns.  Again, three types have been identified by Galton. His three types are:  Arches, Loops, and Whorls. A loop may be open to the ulnar side or to  the radial side and accordingly it is termed as ulnar or radial loop.</p>
+<p>&nbsp;</p>
+<p>The classic and widely used notation is A=  arches; Lr = radial  loops; Lu= ulnar loops;  and W= whorls.&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: small;">The whorls possess two triradii,  while only one triradius is present in loops. On the other hand  triradius is absent in arches. Thus, generally speaking, the patters may  be identified from the occurrence of triradius.</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="contentEquation" style="text-align: center;"><img alt="" style="width: 477px; height: 341px;" src="http://202.141.81.60/Anthro/fing/images/1.jpg"></p>
+<p>&nbsp;</p>
+<p>&nbsp;In general, loops are more frequent  than whorls. Arches are found in small numbers. Again, of the two types  of, ulnar loops is much more frequent than radial loops</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

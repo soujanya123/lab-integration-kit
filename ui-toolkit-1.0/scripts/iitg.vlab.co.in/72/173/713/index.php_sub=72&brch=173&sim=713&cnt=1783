@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Identification of finger print patterns (Quiz) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="It includes identification of finger patterns of different individuals." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Identification of finger print patterns</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Identification of finger print patterns</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=173&sim=713&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=173&sim=713&cnt=1783"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=713&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is Dermatoglyphics?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5365" type="radio" name="ans0"  value="5365"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5365">is the study of the ridge patterns of the skin of the fingers, palms, toes and soles</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5366" type="radio" name="ans0"  value="5366"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5366">is the study of the hairs and sebaceous (oil) glands</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5367" type="radio" name="ans0"  value="5367"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5367">is the study of palmar and planter</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5368" type="radio" name="ans0"  value="5368"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5368">none of above</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">How to calculate Pattern Intensity Index on the basis of frequency distribution?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5391" style="vertical-align:middle" type="radio" name="ans1"  value="5391"> </input><label for="ans5391" id="textAnsChoice">Whorls x 100/loops</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5392" style="vertical-align:middle" type="radio" name="ans1"  value="5392"> </input><label for="ans5392" id="textAnsChoice">Arches x 100/Whorls</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5393" style="vertical-align:middle" type="radio" name="ans1"  value="5393"> </input><label for="ans5393" id="textAnsChoice">2 x Whorls + Loops/n</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5394" style="vertical-align:middle" type="radio" name="ans1"  value="5394"> </input><label for="ans5394" id="textAnsChoice">2xwhorls x 100/loops</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">In which type of population arches appears in very small numbers?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5387" style="vertical-align:middle" type="radio" name="ans2"  value="5387"> </input><label for="ans5387" id="textAnsChoice">Caucasoid</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5388" style="vertical-align:middle" type="radio" name="ans2"  value="5388"> </input><label for="ans5388" id="textAnsChoice">Mongoloid</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5389" style="vertical-align:middle" type="radio" name="ans2"  value="5389"> </input><label for="ans5389" id="textAnsChoice">Negroid</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5390" style="vertical-align:middle" type="radio" name="ans2"  value="5390"> </input><label for="ans5390" id="textAnsChoice">None of above</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is the percentage of whorls in Caucasoid?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5383" style="vertical-align:middle" type="radio" name="ans3"  value="5383"> </input><label for="ans5383" id="textAnsChoice">30 to 40</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5384" style="vertical-align:middle" type="radio" name="ans3"  value="5384"> </input><label for="ans5384" id="textAnsChoice">40 to 50</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5385" style="vertical-align:middle" type="radio" name="ans3"  value="5385"> </input><label for="ans5385" id="textAnsChoice">10 to 20</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5386" style="vertical-align:middle" type="radio" name="ans3"  value="5386"> </input><label for="ans5386" id="textAnsChoice">20 to 30</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Who classified the various finger patterns into four main types?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5379" style="vertical-align:middle" type="radio" name="ans4"  value="5379"> </input><label for="ans5379" id="textAnsChoice">Henry</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5380" style="vertical-align:middle" type="radio" name="ans4"  value="5380"> </input><label for="ans5380" id="textAnsChoice">Galton</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5381" style="vertical-align:middle" type="radio" name="ans4"  value="5381"> </input><label for="ans5381" id="textAnsChoice">Schmidt</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5382" style="vertical-align:middle" type="radio" name="ans4"  value="5382"> </input><label for="ans5382" id="textAnsChoice">W H River</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Dermatoglyphic traits are not modified by environmental factors.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5377" style="vertical-align:middle" type="radio" name="ans5"  value="5377"> </input><label for="ans5377" id="textAnsChoice">True</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5378" style="vertical-align:middle" type="radio" name="ans5"  value="5378"> </input><label for="ans5378" id="textAnsChoice">false</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The __________ are more concerned in establishing variations in respect of traits among different human populations.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5373" style="vertical-align:middle" type="radio" name="ans6"  value="5373"> </input><label for="ans5373" id="textAnsChoice">Anthropologist</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5374" style="vertical-align:middle" type="radio" name="ans6"  value="5374"> </input><label for="ans5374" id="textAnsChoice">Archeologist</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5375" style="vertical-align:middle" type="radio" name="ans6"  value="5375"> </input><label for="ans5375" id="textAnsChoice">Dermatologist</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5376" style="vertical-align:middle" type="radio" name="ans6"  value="5376"> </input><label for="ans5376" id="textAnsChoice">Geographical Statistician</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">In which era finger patterns were used for personal identification?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5369" style="vertical-align:middle" type="radio" name="ans7"  value="5369"> </input><label for="ans5369" id="textAnsChoice">New age</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5370" style="vertical-align:middle" type="radio" name="ans7"  value="5370"> </input><label for="ans5370" id="textAnsChoice">Pagan</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5371" style="vertical-align:middle" type="radio" name="ans7"  value="5371"> </input><label for="ans5371" id="textAnsChoice">Christian era</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5372" style="vertical-align:middle" type="radio" name="ans7"  value="5372"> </input><label for="ans5372" id="textAnsChoice">Prehistoric era</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383133800/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,614 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>1.Static anthropometry, standing heights (Reference datasheet) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="This experiment focuses on standing height measurement landmarks, reference data pack and animated experiments." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">1.Static anthropometry, standing heights</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">1.Static anthropometry, standing heights</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=171&sim=829&cnt=1532"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Home&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=171&sim=829&cnt=1530"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference datasheet&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=829&cnt=1529"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Practical experience&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=829&cnt=1531"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Application relevance&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=829&cnt=1528"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=829&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=829&cnt=1631"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="top"></a></td>
+            <td colspan="2" valign="top" width="375">
+            <h2><strong><span>The  datasheet relevant to  Indian  anthropometric dimension in standing  posture, i.e, heights,  depths, breadths  and circumferences at specific  landmarks are presented  here in followed by the  key mentioned below.</span></strong></h2>
+            <p>&nbsp;</p>
+            <p><span>The  source reference :- Chakrabarti,  D.,1997: Indian Anthropometric   Dimensions for Ergonomic design Practice, NID,  Ahmedabad, India<br>
+            </span></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4" valign="top" width="200">&nbsp;<br>
+            &nbsp;             &nbsp;&nbsp;             <br>
+            <img src="/userfiles/7/image/ergonomics/key/key%20image1.jpg" style="width: 148px; height: 296px;" alt=""></td>
+            <td colspan="2" valign="top" width="375">
+            <p><strong>Key to follow the datasheet.</strong></p>
+            <p>&nbsp;</p>
+            <p>The below key structure showing  landmarks, definitions and data table structure <br>
+            is used in all the data sheets incorporated in this presentation under  different experiment heads.</p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="375">
+            <div>The  compiled data (with relevant descriptions of anthropometric terminology  and illustrative descriptions with the respective measurement  landmarks) are presented herewith as INDIAN ANTHROPOMETRIC DIMENSIONS  separately for Males, Females and Combined (males and females both  considering a single study</div>
+            </td>
+            <td valign="top" width="375">
+            <div>population)  forms in the sequence of &nbsp;illustrative measurement land marks, brief of  dimensions! measurements and the data table. Dimensional reference  numbers as &#039;R. No.&#039; shown in illustrations and referred both in  definitions and in data tables simultaneously. All dimensions (except  body weight in Kg) are in millimeters (mm).</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" width="375"><span style="color: rgb(255, 255, 255);">cc</span><img src="/userfiles/7/image/ergonomics/key/key%20table1.gif" alt="" height="120" width="602"></td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" width="375">&nbsp;&nbsp;<img src="/userfiles/7/image/ergonomics/key/key%20table2.gif" alt="" height="196" width="628"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/key/key%20image1.jpg" style="width: 122px; height: 245px;" alt=""></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <table style="width: 621px; height: 171px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th scope="col" width="126">
+                        <div align="center">R.No. Parameters</div>
+                        </th>
+                        <th scope="col" width="338">
+                        <div align="center">Definition ( brief)</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1. Weight</td>
+                        <td>Body weight of the person with minimum clothes, and without shoes.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><strong>Measurements in standing posture<br>
+                        Heights from floor</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Vertical  distances from the floor to the respective points (as mentioned  specifically) of the body while standing in stretched erect posture  (except relaxed normal standing height), feet together and firmly placed  on the ground, weight equally distributed on both feet, looking  straight ahead, palm flat against side of the thigh.</td>
+                    </tr>
+                    <tr>
+                        <td>2. Normal standing</td>
+                        <td>Top of the head, standing in normal relaxed erect posture.</td>
+                    </tr>
+                    <tr>
+                        <td>3. Stature</td>
+                        <td>Top to head, standing in erect stretched posture</td>
+                    </tr>
+                    <tr>
+                        <td>4. Eye</td>
+                        <td>Inner corner of the eye.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/Reference%20data%20/34%20table.jpg" style="width: 723px; height: 314px;" alt=""></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image35.jpg" alt="" height="271" width="205"></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table style="width: 724px; height: 145px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th scope="col" width="120">R.No. Parameters</th>
+                        <th scope="col" width="396">Definition ( brief)</th>
+                    </tr>
+                    <tr>
+                        <td>5. Cervical</td>
+                        <td>Most prominent spinousprocessof the seventh cervical vertebra.</td>
+                    </tr>
+                    <tr>
+                        <td>6. Mid shoulder</td>
+                        <td>Uppermost point on the mid-level of the shoulder</td>
+                    </tr>
+                    <tr>
+                        <td>7. Acromion</td>
+                        <td>Most lateral point of the shoulder on the superior surface of the acromion   process of the scapula.</td>
+                    </tr>
+                    <tr>
+                        <td>8. Supra sternum</td>
+                        <td>Upper most point of the sternum.</td>
+                    </tr>
+                    <tr>
+                        <td>9. Substernum</td>
+                        <td>Lower most point of the sternum</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;&nbsp;<br>
+            <img src="/userfiles/7/image/ergonomics/Reference%20data%20/table35.jpg" alt="" height="361" width="701"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image36.jpg" style="width: 179px; height: 252px;" alt=""></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table style="width: 660px; height: 127px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th scope="col" width="126">
+                        <div align="center">R.No. Parameters</div>
+                        </th>
+                        <th scope="col" width="338">
+                        <div align="center">Definition ( brief)</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>10. Elbow</td>
+                        <td>Most proximal point of the olecranon-tip of the ulna.</td>
+                    </tr>
+                    <tr>
+                        <td>11. Abdominal extension</td>
+                        <td>Maximum extended point of the abdomen.</td>
+                    </tr>
+                    <tr>
+                        <td>12. Waist</td>
+                        <td>Upper margin of the lateral iliaccrests (where the belt is worn).</td>
+                    </tr>
+                    <tr>
+                        <td>13. Crotch</td>
+                        <td>Lower most point of the trunk between the legs. (wearing   underwear).</td>
+                    </tr>
+                    <tr>
+                        <td>14. Buttock extension</td>
+                        <td>Maximum extended point of the buttocks (the fleshy protuberances forming the   lower and back part of the trunk).</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table36.jpg" alt="" height="380" width="713"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image37.jpg" style="width: 192px; height: 290px;" alt=""></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table style="width: 697px; height: 107px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td width="103"><strong>R.No. Parameters</strong></td>
+                        <td width="351"><strong>Definition ( brief)</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="103">15. Gluteal furrow</td>
+                        <td width="351">The furrow, formed in between the buttocks and the upper thigh   muscles.</td>
+                    </tr>
+                    <tr>
+                        <td>16. Tip of radius</td>
+                        <td>Tip of the radius (Stylion).</td>
+                    </tr>
+                    <tr>
+                        <td>17. Trochanter</td>
+                        <td>Uppermost point on the lateral projection of the great trochanter   bone.</td>
+                    </tr>
+                    <tr>
+                        <td>18. Knuckle</td>
+                        <td>Tip of the knuckle of the middle finger (where the middle finger meets the   palm at dorsal surface).</td>
+                    </tr>
+                    <tr>
+                        <td>19. Dactylion</td>
+                        <td>Tip of the middle finger.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table37.jpg" alt="" height="371" width="703"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image38.jpg" alt="" height="304" width="176"></td>
+            <td style="text-align: right;" valign="top" width="375"><img src="/userfiles/7/image/ergonomics/Reference%20data%20/stretched%20hand%20ed%281%29.gif" style="width: 308px; height: 323px;" alt=""></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">
+            <table style="width: 728px; height: 231px;">
+                <tbody>
+                    <tr>
+                        <td width="38"><strong>R.No</strong>.</td>
+                        <td width="113"><strong>Parameters</strong></td>
+                        <td width="547"><strong>Definition  (brief)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Mid-patella</td>
+                        <td>Mid mid point of the patella (the Knee bone)</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Lateral  malleolus</td>
+                        <td>Lower  most point of the fibula</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Medial  malleolus</td>
+                        <td>Lower  most point of the tibia.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><strong>Breadths, Depths and Lengths</strong></td>
+                    </tr>
+                    <tr>
+                        <td height="25">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Horizontal  distances between two respective points</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Span</td>
+                        <td>Maximum  horizontal distance between the middle fingertips  when both    the  arms are stretched out fully sideways perpendicular to  the trunk.</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Span  akimbo</td>
+                        <td>
+                        <div>Maximum  horizontal distance between the tips of the  elbows  when both the  upper arms are stretched out sideways  perpendicular to the trunk  and  the elbows are fully flexed so that the  tips of the middle finger of  both  the hands touch each other.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" colspan="2" valign="top" width="375">&nbsp; <br>
+            <img src="/userfiles/7/image/ergonomics/Reference%20data%20/table38.jpg" alt="" height="371" width="713"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td style="text-align: center;" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/39b.gif" alt="" height="323" width="179"></td>
+            <td style="text-align: center;" valign="top" width="375"><img src="/userfiles/7/image/ergonomics/Reference%20data%20/39a.gif" alt="" height="314" width="197"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <table style="width: 727px; height: 174px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th scope="col" width="181">R.No. Parameters</th>
+                        <th scope="col" width="366">
+                        <div align="justify">Definition ( brief)</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>25. Maximum body breadth, relaxed</td>
+                        <td>
+                        <div align="justify">Maximum horizontal distance across the body including arms hanging relaxed   at sides.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26. Chest depth</td>
+                        <td>
+                        <div align="justify">Horizontal distance from the back to the front of the chest at the nipple   level.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27. Maximum body depth, relaxed</td>
+                        <td>
+                        <div align="justify">Maximum  horizontal distance between the    vertical planes passing through the    most anterior point (on the  chest   or abdomen) and the most  posterior point (on   the shoulder or  buttocks)   of the trunk.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28. Acromion to olecranon tip length</td>
+                        <td>
+                        <div align="justify">Length  between the most lateral point  on   the superior surface of the    acromion process of the scapula and  the   most proximal point of the  olecranon,   i.e. the tip of the ulna  at   elbow.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>29. Olecranon to stylion length</td>
+                        <td>
+                        <div align="justify">Length between the proximal point of the olecranon, i.e., the tip of</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table39.jpg" alt="" height="388" width="709"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/40.gif" alt="" height="326" width="187"></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table style="width: 561px; height: 192px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td scope="col" width="199">R.No. <strong>Parameters</strong></td>
+                        <td scope="col" width="268">Definition (brief)</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">&nbsp;</td>
+                        <td scope="col"><strong>Circumferences<br>
+                        </strong></td>
+                    </tr>
+                    <tr>
+                        <td scope="col">&nbsp;</td>
+                        <td scope="col">Horizontal(otherwisementioned specifically)circumferences at   different areas</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">30. Chest (mid tidal) on bust</td>
+                        <td scope="col">On the chest at nipple level.</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">31. Chest (mid tidal) below bust</td>
+                        <td scope="col">On the chest below the nippl elevel</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">32. Abdominal extension Waist</td>
+                        <td scope="col">On the abdomen, at its maximum extended point</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">33. Waist</td>
+                        <td scope="col">On the waist, at the level of the upper margin of the lateral   iliac crests, (wher ethe belt is worn).</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">34. Hip at gluteal extension</td>
+                        <td scope="col">At the level of the maximum protrusion (glutealextension) of the   buttocks.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table40.jpg" alt="" height="378" width="708"></td>
+        </tr>
+        <tr>
+            <td colspan="3" valign="top" width="200">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image41.GIF" style="width: 703px; height: 734px;" alt=""></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image42.jpg" style="width: 186px; height: 261px;" alt=""></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table cellpadding="0" cellspacing="0" width="529">
+                <tbody>
+                    <tr>
+                        <td scope="col" width="133">R.No. <strong>Parameters</strong></td>
+                        <td scope="col" width="329"><strong>Definition ( brief)</strong></td>
+                    </tr>
+                    <tr>
+                        <td scope="col">40<strong>. Relaxed elbow</strong></td>
+                        <td scope="col">On the elbow encompassing the elbow pit and the olecranon tip of   the arm in hanging relaxed position.</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">41. <strong>Relaxed forearm</strong></td>
+                        <td scope="col">Maximum horizontal circumference at the lower arm (hanging   relaxed) wherever found.</td>
+                    </tr>
+                    <tr>
+                        <td scope="col">42. <strong>Wrist</strong></td>
+                        <td scope="col">At the styloid processes of radius and ulna (where the wrist band   is worn).</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table42.jpg" alt="" height="242" width="703"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/image43.jpg" alt="" height="304" width="159"></td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table style="width: 569px; height: 188px;" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td scope="col" width="84">R.No. <strong>Parameters</strong></td>
+                        <td scope="col" width="412"><strong>Definition ( brief)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><strong>Arm reach lengths and heights</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Arm  reach lengths and heights in different standing  postural   variations  and   directions are explained with relevant  figures in   respective  data   sheets.</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>Standing in erect posture, vertical comfortable arm reach height from   floor.</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>Standing in erect posture, body stretched and standing on toe, vertical   comfortable arm reach height from floor.</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>Standing in erect posture, vertical comfortable grasp (centre of a grasp   while holding a rod of<br>
+                        30 mm diameter) reach height from floor.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="2" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Reference%20data%20/table43.jpg" alt="" height="249" width="705"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td style="text-align: right;" valign="top" width="375"><a href="http://iitg.vlab.co.in/index.php?sub=72&amp;brch=171&amp;sim=829&amp;cnt=1532">&lt;TOP&gt;</a></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+
