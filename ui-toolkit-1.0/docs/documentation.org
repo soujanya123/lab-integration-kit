@@ -109,7 +109,7 @@ Give execute permissions to the python script "transfer.py" and then run the fol
 
 Note: The source filename is usually the html or php page you want to transfer the contents from and here the destination filename refers to the contents.html downloaded as a part of the sample repository, after svn checkout, which is already in the blue-icon theme format.
 ** Update the links to the images
-Run the last script, by using the command, "> ./link\_changer.sh". Don't forget to provide execute permission to the shell script before running it.
+Run the last script, by using the command, "> ./link_changer.sh". Don't forget to provide execute permission to the shell script before running it.
 
 Note: You also need to copy the whole user files folder got after running the wget command, inside each experiment's images folder.
 ** Observe the UI transfer(mapping)
