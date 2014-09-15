@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pottery - Virtual Reconstruction of Shapes  (Quiz) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="It includes the reconstruction of the size and shape of the pottery." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Pottery - Virtual Reconstruction of Shapes </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Pottery - Virtual Reconstruction of Shapes </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=72&brch=173&sim=711&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=711&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=711&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class="current"><a href="?sub=72&brch=173&sim=711&cnt=1784"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=711&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=711&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=711&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">How old is ceramics history in old and new world respectively?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5395" type="radio" name="ans0"  value="5395"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5395">12,000 years ago in the Old World and about 5,000 years ago in the New World</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5396" type="radio" name="ans0"  value="5396"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5396">10,000 years ago in the Old World and about 7,000 years ago in the New World</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5397" type="radio" name="ans0"  value="5397"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5397">8,000 years ago in the Old World and about 5,000 years ago in the New World</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5398" type="radio" name="ans0"  value="5398"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5398">11,000 years ago in the Old World and about 4,000 years ago in the New World</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Can we examine the question of social inequality by analyzing pottery ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5427" style="vertical-align:middle" type="radio" name="ans1"  value="5427"> </input><label for="ans5427" id="textAnsChoice">Yes</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5428" style="vertical-align:middle" type="radio" name="ans1"  value="5428"> </input><label for="ans5428" id="textAnsChoice">No</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is Estimated Vessel Equivalents ?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5423" type="radio" name="ans2"  value="5423"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5423">number of pieces identified as the same</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5424" type="radio" name="ans2"  value="5424"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5424">total weight of pieces identified as the same</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5425" type="radio" name="ans2"  value="5425"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5425">measuring the percentage of surviving pot rim from individual vessels</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5426" type="radio" name="ans2"  value="5426"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5426">the broken sherds</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is sherd count?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5419" type="radio" name="ans3"  value="5419"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5419">recording the number of pieces identified as the same</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5420" type="radio" name="ans3"  value="5420"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5420">recording the total weight of pieces</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5421" type="radio" name="ans3"  value="5421"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5421">recording the total weight of pieces identified as the same</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5422" type="radio" name="ans3"  value="5422"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5422">measuring the percentage of surviving pot rim</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Why do we compare prehistoric ceramics with regional ceramic sequences?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5415" type="radio" name="ans4"  value="5415"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5415">for metric attributes</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5416" type="radio" name="ans4"  value="5416"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5416">to place the assemblage into chronological and cultural context</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5417" type="radio" name="ans4"  value="5417"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5417">identification of vessel form, function, and design</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5418" type="radio" name="ans4"  value="5418"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5418">identification of manufacturing techniques</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The analysis of__________ ceramics allows archaeologists to construct cultural sequences.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5411" style="vertical-align:middle" type="radio" name="ans5"  value="5411"> </input><label for="ans5411" id="textAnsChoice">prehistoric ceremics</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5412" style="vertical-align:middle" type="radio" name="ans5"  value="5412"> </input><label for="ans5412" id="textAnsChoice">proto historic ceremics</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5413" style="vertical-align:middle" type="radio" name="ans5"  value="5413"> </input><label for="ans5413" id="textAnsChoice">early history</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5414" style="vertical-align:middle" type="radio" name="ans5"  value="5414"> </input><label for="ans5414" id="textAnsChoice">historical period</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What is main reason to Collect & Study pottery?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5407" style="vertical-align:middle" type="radio" name="ans6"  value="5407"> </input><label for="ans5407" id="textAnsChoice">it was easily broken, does not decay</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5408" style="vertical-align:middle" type="radio" name="ans6"  value="5408"> </input><label for="ans5408" id="textAnsChoice">could not be recycled</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5409" style="vertical-align:middle" type="radio" name="ans6"  value="5409"> </input><label for="ans5409" id="textAnsChoice">often the most abundant type of artifact</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5410" style="vertical-align:middle" type="radio" name="ans6"  value="5410"> </input><label for="ans5410" id="textAnsChoice">all  of them</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What do you understand by experimental studies?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5403" type="radio" name="ans7"  value="5403"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5403">studies consist of controlled experiments used in manufacturing processes by refitting</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5404" type="radio" name="ans7"  value="5404"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5404">studies consist of controlled experiments used to replicate prehistoric ceramic manufacturing processes</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5405" type="radio" name="ans7"  value="5405"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5405">studies consist of uncontrolled experiments used to replicate posthistoric ceramic manufacturing processes</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5406" type="radio" name="ans7"  value="5406"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5406">both a and b</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">9)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">What make ceramic assemblage one of the most resources from archaeological site</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5399" type="radio" name="ans8"  value="5399"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5399">The combination of abundance</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5400" type="radio" name="ans8"  value="5400"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5400">Near indestructibility and almost unique plasticity</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5401" type="radio" name="ans8"  value="5401"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5401">it was not easily broken, does decay</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans5402" type="radio" name="ans8"  value="5402"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans5402">a and b</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint18" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">10)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">A fabric series provides examples of pots made in different places</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans5429" style="vertical-align:middle" type="radio" name="ans9"  value="5429"> </input><label for="ans5429" id="textAnsChoice">True</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans5430" style="vertical-align:middle" type="radio" name="ans9"  value="5430"> </input><label for="ans5430" id="textAnsChoice">false</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint19" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383133802/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

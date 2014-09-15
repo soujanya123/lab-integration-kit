@@ -1,0 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Short-Term Frequency Domain Processing of Speech (Theory) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To understand the limitation of DTFT for the spectral analysis of speech" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Short-Term Frequency Domain Processing of Speech</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Short-Term Frequency Domain Processing of Speech</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=908&cnt=1676"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=908&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2878"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2034"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2905"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2988"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Introduction</span></span></h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The short term time domain analysis is useful for computing the time domain features at the gross level like energy,&nbsp; zero crossing rate and autocorrelation. The different frequency or spectral components that are present in the speech signal are not directly apparent in the time domain. Hence we need to go for frequency domain representation using Fourier representation. The conventional Fourier representation studied in the first courseof signal processing is inadequate to provide information about the time varying nature of spectral information present in speech. Hence the need for short term version of Fourier transform, termed more commonly as Short term Fourier Transform (STFT) .</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">DTFT</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;From digital signal processing , to obtain the frequency domain representation we use discrete time Fourier transform (DTFT). If X(w) is the discrete time Fourier Transform(DTFT) &nbsp;of&nbsp; x(n),a discrete time signal, then its DTFT is given by</p>
+<p style="text-align: center;">&nbsp;<img alt="" height="48" width="470" src="/userfiles/7/image/vsspl/theory/n1.png"></p>
+<p>As given in equn (1), X(w) is continuous function of frequency and hence cannot be computed on a digital signal processor or machine. To make it possible discrete version of the DTFT termed as discrete Fourier transform (DFT) is defined where DFT is obtained by uniformly sampling X(w) is given by</p>
+<p style="text-align: center;">&nbsp;<img alt="" height="45" width="364" src="/userfiles/7/image/vsspl/theory/n2.png"></p>
+<p style="text-align: left;">where&nbsp;&nbsp;&nbsp; <img width="58" height="16" align="absMiddle" alt="" src="/userfiles/7/image/vsspl/theory/n3%281%29.png">, k=0,1,....(N-1), where &#039;N&#039; is the number of samples of X(w). The value of &#039;N&#039; is chosen such that, the reconstructed sequence x(n) in the time domain is free from aliasing. For this the condition is &#039;N&#039; should be greater than or equal to the length of x(n). Thus we have a tool called D.F.T for computing DTFT on a digital signal processor or machine.</p>
+<p style="text-align: left;">&nbsp;</p>
+<h3><span style="color: rgb(51, 102, 255);">Limitation of DTFT</span></h3>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p>When speech signal is recorded on a digital machine, then it leads to the discrete time sequene s(n) . Now &nbsp;we can compute its DTFT, S(W) using DFT and can be plotted as shown in Fig.1. The figure shows the waveform (time domain representation), linear magnitude and log magnitude spectra. In case of speech the large magnitude frequency components dominate in the linear magnitude spectrum to give a false picture of small magnitude frequency components. To reduce the dynamic range, the logarithmic version of the magnitude spectrum is taken. In case of log magnitude spectrum both large and small magnitude frequency components are visible. Hence in all future plots, only log magnitude spectrum is used.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" style="width: 846px; height: 689px;" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig1_dft_whole_speech.png"></p>
+<p style="text-align: center;">Fig.1 : Speech signal and its linear and log magnitude spectra</p>
+<p>&nbsp;</p>
+<p>The magnitude spectrum shown in Fig. 1 is for the entire speech signal and &nbsp;gives us only gross information of the frequency components present in the speech signal. However, this spectrum does not tell us when a particular frequency component is present i.e the timing information is completely lost. Speech is a non-stationery signal i.e the frequency components change with time. To be more specific, a particular set of frequency components is present in one interval and another set of frequency components in some other interval and so on. Therefore for speech we need a representation that will give time varying spectral information.</p>
+<p>To get a feel about the significance of such a time-varying spectral information, Fig.2 shows a segment of voiced speech, unvoiced speech and silence regions and their spectra. The nature of spectra is different for all these three segments. Speech is made of time-varying sequence of such spectra. Thus one spectrum for the entire signal will not help us to understand the different frequency components present in the speech signal. Finally, it is also not the correct way of computing the spectrum of non-stationery signal.</p>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(51, 102, 255);">Need for STFT</span></h3>
+<p style="text-align: center;">&nbsp;<img width="800" height="401" alt="" src="/userfiles/7/image/2.PNG"></p>
+<p style="text-align: center;">Fig.2 : Segmentation of voiced ,uncoiced and silence regions of speech along with linear and log magnitude spectra</p>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(51, 102, 255);">STFT Relation</span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To take care of time varying spectral information, the short term processing approach is employed. In short term processing, speech is processed is blocks of 10-30 ms with a shift of 10 ms. For instance, using a block size of 20 ms, the DTFT is computed using DFT for that block.&nbsp; Their process is repeated for all the blocks of speech signal and all the spectra computed are stacked together as a function of time and frequency to observe the time varying spectra. To accommodate the time varying nature of this spectra, the DTFT equation is defined as given below</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="89" width="421" src="/userfiles/7/image/vsspl/theory/n4.png">&nbsp;&nbsp;&nbsp; (3)</p>
+<p style="text-align: left;">where <em><strong>W(n)</strong></em> is the window function for short term processing. Now the spectral amplitude and phase are function of both frequency and time where as it was only function of frequency in the earlier case of DTFT. <strong><em>x(m).w(n-m)</em></strong> represents the &nbsp;window segment around the time instant <strong><em>&#039;</em></strong><em><strong>n&#039;.</strong></em> Hence <em><strong>X(w,n)</strong></em> at <em><strong>&#039;n&#039;</strong></em> represents the spectrum of the speech segment present around it. When we shift <strong><em>&#039;n&#039;</em></strong>, then correspondent <strong><em>X(w,n)</em></strong> also changes. Thus giving visualization of the time varying spectra of speech. Since such a time-spectral is computed using short term processes, <strong><em>X(w,n)</em></strong> is termed as Short Term Fourier Transform (STFT).</p>
+<h3><span style="color: rgb(51, 102, 255);"><br>
+</span></h3>
+<h3><span style="color: rgb(51, 102, 255);">STFT of speech</span></h3>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig3_stft3d.png"></p>
+<p style="text-align: center;">&nbsp;Fig.3</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">The STFTof speech signal is given in fig 3. STFT magnitude spectra is a three dimensional (3D) plot of spectral amplitude versus time and frequency. By fixing time &#039;<em><strong>n&#039;</strong></em> at a particular value say <strong><em>n=n<sub>0</sub></em></strong> and observing STFT gives spectrum of that segment of speech. Alternatively by fixing the frequency &#039;w&#039; at a particular value say <em><strong>w=w<sub>0</sub></strong></em>, and then observing STFT gives time varying nature of that particular frequency component. As can be observed, the spectral amplitude associated with &nbsp;a frequency component varies as a function of time. This is what needs to be observed in case of time varying spectra available in speech and hence the usefulness of STFT.</p>
+<p style="text-align: left;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Concept of True vs Convolved spectra</span></h2>
+<p>&nbsp;</p>
+<p>The STFT representation of speech comes with a price. That is STFT need not accurately represent the true spectral information of speech. To understand this we need to get hold on to the concept of true Vs convolved spectra. Consider a sinewave of 500 HZ&nbsp;of 10 sec duration. Since it is a single tone stationery signal, we can say from our signal processing knowledge that its spectrum will have an impulse only at 500 HZ. This is termed as the true spectrum of the sine wave in the context of STFT representation.</p>
+<p>Alternatively, we can consider a segment of sinewave, say 30 ms somewhere along its length by windowing and compute its spectrum. In this case, the resulting spectrum is not an &nbsp;impulse at 500 HZ, but a sinc function centered around 500 HZ&nbsp;. This is because, by multipliying it with a rectangular window in the time domain, &nbsp;leads to &nbsp;the convolution of their spectra in the frequency domain. The true spectrum of sine wave is impulse at 500 HZ&nbsp;and that of rectangular window is sinc function. As a result, &nbsp;the convolved spectrum is a sinc function around 500 HZ&nbsp;. If we do not have the knowledge about the true spectrum of sine wave, then we would &nbsp;be easily carried away by the magnitude spectrum of sinc function around 500 HZ&nbsp;and interpret all non-zero amplitudes as the frequency components as the spectral components of the 500 HZ&nbsp;sine wave which is wrong</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig4_sinwave.png"></p>
+<p style="text-align: center;">Fig.4 : Sine wave and its true and convolved spectra</p>
+<p>&nbsp;</p>
+<p>This is the effect of short term processing. Fig.4 shows the plot of true Vs convolved spectra of sine wave. For the case of &nbsp;sinewave, we do not need STFT, because it is stationary. However this synthetic example is used to illustrate the concept of true and convolved spectra. This is because, it do not have access to the true spectrum of speech. If we compute the spectrum by considering the whole speech signal, then it results in a spectrum as given in Fig.1 and do not convey any information related to speech. If we have to obtain same useful spectral representation of speech, then we need to segment it by windowing. Once we window it, then we get only convolved spectrum, not the true spectrum.&nbsp;Thus we have to be careful in interpreting the spectral information available in the STFT&nbsp;of speech. What we are observing is only the convolved spectra.</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Window size for short term spectral analysis:</span>&nbsp;</h2>
+<p>&nbsp;</p>
+<p>Of course we can minimize this effect by using a proper size of window. If the window duration is of 10-30 ms, then the spectral information may be affected to a minimum extent. Alternatively, if the window size is too less, then the window effect may be too severe. In yet another case, if the window is too large , say 100 msec, then even though windowing effect is negligable compared to 10-30 ms case, we cannot use such a long window due to the non-stationary nature of speech.</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Effect of windowing function on short term spectral analysis:</span></h2>
+<p>&nbsp;</p>
+<p style="text-align: center;"><font class="Apple-style-span" color="#3366ff"><img width="800" height="450" alt="" src="/userfiles/7/image/window function.PNG"><br>
+</font></p>
+<p style="text-align: center;">&nbsp;Fig.5 : Rectangular ,hamming and hanning window &amp; their spectra</p>
+<p>&nbsp;</p>
+<p>In case of short term spectral analysis, we consider speech in segments of 10-30 ms. For a given frame &nbsp;size, the nature of spectral information may be slightly varied depending on the type of window which is essentially a finite duration function used for selecting &nbsp;out a particular segment of speech. However, the nature of window function indeed varies the spectral information. Fig. 5 shows the rectangular, Hamming and Hanning window functions in the time and frequency domains. The width &nbsp;of main lose in the frequency domain is less for rectangular window compared to the other two window function. As a result the resolution offered by the rectangular window function is better. Alternatively, the peak-to-side lobe ratio of rectangular window is significantly&nbsp; poor compared to the other two window functions. This results in relatively more spectral leakage in case of rectangular window which is not desirable. Thus from the resolution point of view, rectangular window is preferable and from spectral leakage point of other two window functions &nbsp;are preferable.&nbsp;The effect of spectral leakage is severe and hence in most of the speech analysis applications, either Hamming or Hanning window function is employed.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Spectral analysis of speech using window function:</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;Fig. 6 plots the short term log magnitude spectra of a 30 msec voiced speech segment using rectangular, Hamming and Hanning window function. The peaks in the log magnitude spectrum of rectangular window are relatively sharper compared to the other cases. However, the spectrum due to the rectangular window seems &nbsp;to be more noisy compared to the other two window functions. This is because of the high spectral leakage associated with it. Similar observations can be made with respect to the unvoiced segment of speech shown in Fig.7. Since spectral leakage is severe in case of rectangular window, either Hamming or Hanning window is &nbsp;preferred for the short term spectral analysis of speech.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: rgb(51, 102, 255);"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig6_voiced_allwidow_logmagspec.png"></span></p>
+<p style="text-align: center;">&nbsp;Fig. 6 : Voiced segment of speech and its log magnitude spectra using rectangular,hamming and hanning window functions&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig7_unvoiced_allwidow_logmagspec.png"></p>
+<p style="text-align: center;">Fig.7 : Unvoiced segments of speech and its log magnitude spectra using rectangular,hamming anf hanning window functions</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Effect of window size on short term spectral analysis of speech:<br>
+</span></span></h2>
+<p>&nbsp;</p>
+<p><span style="background-color: rgb(255, 255, 255); ">Fig. 8 shows a short term log m</span><span style="background-color: rgb(255, 255, 255); ">agnitude spectra of voiced segment using a frame size of 3 ms, 30 ms and 300 ms. In case of 30 ms, the log magnitude spectrum contains both the vocal tract information as envelope and the excitation source information in terms of pitch and its harmonics. In case of 3 ms, since the window size is less than a pitch period, the log magnitude spectrum has only smooth envelope representing vocal tract information. However, due very short frame size, the vocal tract information &nbsp;is affected &nbsp;from poor spectral resolution. Finally, in the 300 ms case, the spectrum suffers from timing resolution due to its large size. Similar observation can be made for unvoiced segmentation of speech also.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig8_3ms_30ms_300ms.png"></span></span></p>
+<p style="text-align: center;">&nbsp;Fig.8 : voiced segment spectra using 3,30 and 300 msec segments</p>
+<p>&nbsp;</p>
+<p><span style="background-color: rgb(255, 255, 255);"><br>
+</span></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,754 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Conduction analysis of Single Material Cylinder (Theory) : Virtual laboratory Experience in Fluid and Thermal Sciences : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Conduction analysis of Single Material Cylinder" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=176">Virtual laboratory Experience in Fluid and Thermal Sciences</a>-><a href="">Conduction analysis of Single Material Cylinder</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Conduction analysis of Single Material Cylinder</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=62&brch=176&sim=1141&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=3025"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Software Package&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=2215"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=2214"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Demonstration&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=2221"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1141&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p><br>
+<!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--></p>
+<h3>&nbsp;</h3>
+<h2 style="text-align: right;"><span style="color: rgb(51, 153, 102);"><a href="http://iitg.vlab.co.in/index.php?sub=62&amp;brch=176">&nbsp;<span style="color: rgb(128, 128, 0);"><strong>Back to HOME</strong></span></a></span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Thermal conduction is the transport of energy in a medium due to a    temperature gradient and the physical mechanism is that of random&nbsp;   atomic or molecular activity.The quantity of heat flow through the cross   sction of a solid body over time &#039;t&#039; in steady state is governed by  the  Fourier&#039;s law of heat conduction</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(51, 102, 255);"><strong><strong>&nbsp;&nbsp; &nbsp; &nbsp;</strong><u><strong> Working Formula:</strong></u></strong></span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Heat conduction through single material Cylinder&nbsp; is given by</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><b style=""><u><span style="font-size: 18pt;"> </span></u></b><img alt="" src="data:image/png;base64,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" align="bottom"></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(0, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 0, 0);">&nbsp; Where the symbols carry their usual meanings<span style="font-size: 14pt;"> &nbsp; &nbsp;</span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="text-align: right;">&nbsp;<img alt="" src="data:image/png;base64,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"></p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size: 14pt;"> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--></p>
+<p style="text-align: center;" class="MsoNormal">&nbsp;</p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<h3 style="text-align: left;"><span style="color: rgb(51, 102, 255);"><strong> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </strong><u><strong>Description:</strong></u></span></h3>
+<p style="text-align: left;">&nbsp;</p>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>radial conduction unit</strong></h3>
+<p style="text-align: left;">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; It consist of-</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1. Insulating housing with disc and lid</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2. Heater</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 3. cooler</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;&nbsp;</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; -The heater is fixed in the center of the bress disc.</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -There is Cu pipe around the disc through which cooling water flows.</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: justify;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -From above,6 temperature measuring points are fitted.</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; -These points stretches radially from the center to the periphery.</p>
+<p class="MsoNormal" style="margin-left: 0.25in; line-height: 150%; text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; The control and dispaly unit has a digital temperature and power display.</p>
+<p style="text-align: left;"><span style="font-size: 14pt; line-height: 150%;"><br>
+</span></p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<p style="text-align: left;" class="MsoNormal">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

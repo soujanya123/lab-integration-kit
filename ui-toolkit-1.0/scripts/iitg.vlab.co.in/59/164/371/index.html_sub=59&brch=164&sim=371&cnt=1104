@@ -1,0 +1,192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Non-Stationary Nature of Speech Signal (Theory) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To understand the stationary and non-stationary signal" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Non-Stationary Nature of Speech Signal</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Non-Stationary Nature of Speech Signal</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=371&cnt=1103"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=371&cnt=1104"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2182"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2021"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2183"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2982"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=371&cnt=2855"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h2><span style="background-color: rgb(255, 255, 255);"><span style="color: rgb(51, 102, 255);"><strong>Introduction</strong></span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Signal is a physical quantity that is measurable. System is a physical  entity that exists. Signal is produced from a system. Depending on the  nature of signal, it is categorized into several classes based on some  criterion. Some of the classifications include continuous v/s discrete,  periodic v/s aperiodic, energy v/s power, periodic v/s aperiodic,  deterministic v/s random, stationary v/s non-stationary and so on. In a  first level course on signals and systems and also digital signal  processing, emphasis was not provided on the stationary v/s  non-stationary classification of signals. That is, most of the signals,  systems and signal processing concepts were taught based on the implied  assumption of stationarity of the signal under consideration. Speech  signal processing deviates in this aspect. This is because, speech is an  example for non-stationary signal where as conventional synthetic  signals like sine wave, triangular wave, square wave and so on are  stationary in nature. Hence different approaches and tools are needed to  process the speech signal. To appreciate the new approaches and also  tools developed exclusively for speech processing, we should get a feel  about stationary v/s non-stationary classification of signal. Hence the  motivation for this experiment.&nbsp;</p>
+<h2>&nbsp;</h2>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);"><strong>Stationary v/s non-stationary signals</strong></span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">A signal is said to be stationary if its frequency or spectral contents  are not changing with respect to time. This is a very important point,  pause a while and try to understand. This is because when we generate a  sine wave using either a function generator or software, we selected the  frequency value and kept it constant for ever. Thus the frequency  content of the sine wave will not change with time and hence is an  example for stationary signal. Suppose if you change the frequency, then  it altogether becomes a new sine wave. Further, the definition of  stationarity should not be confused with the time varying amplitude in  the time domain as in the case of sine wave. Stationarity is linked to  the behavior of the frequency contents of the signal with respect to  time and nothing else. For instance, consider a sine wave of 10 Hz  plotted in Figure 1. The corresponding magnitude spectrum is shown in  Figure 2. As it can be observed in Figure 1, the sine wave amplitude  varies in the time domain, but its frequency content will have only one  frequency component, that is, impulse at 100 Hz as shown in Figure 2.  Mathematically, a singletone sine wave can be represented as given in  Equation (1).</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex1/experiment1-theory-equation1.jpg" height="25" width="469"></p>
+<p style="text-align: left;">where A is the amplitude, ω is the angular frequency and φ is phase.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig1.jpg" alt=""></p>
+<p style="text-align: center;">Figure 1: Singletone sine wave of 10 Hz sampled using a sampling frequency of 1000 Hz.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig2.jpg" alt=""></p>
+<p style="text-align: center;">Figure 2: Magnitude spectrum of singletone sine wave shown in Figure 1.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;">Next let us consider a multitone sine wave that contains many frequency  components. If all the frequency components do not change with time,  then without any consideration to the number of frequency components  present, the multitone sine wave is still a stationary signal. For  instance, consider a multitone sine wave made of three frequency  components namely, 10 Hz, 50 Hz and 100 Hz, shown in Figure 3. Even  though this signal looks complicated compared to the singletone sine  wave shown in Figure 1, it is still a stationary signal because, the  frequency contents do not change with time as shown in Figure 4.  Mathematically, a multitone sine wave can be represented as given in  Equation (2).</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-equation2.jpg" alt="" height="25" width="470"></p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig3.jpg" alt=""></p>
+<p style="text-align: center;">Figure 3: Multitone sine wave of 10, 50 and 100 Hz sampled using a sampling frequency of 1000 Hz.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig4.jpg" alt=""></p>
+<p style="text-align: center;">Figure 4: Magnitude spectrum of multitone sine wave shown in Figure 3.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="content" style="text-align: justify;">From this point onwards we deviate to introduce the  concept of non-stationarity. Let us consider a multitone sine wave whose  duration is equally divided into four intervals. Let the frequency  component of f<sub>1</sub> Hz be present in the first interval, then two components of f<sub>1</sub> and f<sub>2</sub> Hz in the second interval, three components of f<sub>1</sub>, f<sub>2</sub> and f<sub>3</sub> Hz for the third interval and finally f<sub>1</sub>  Hz in the fourth interval. Now if we observe this signal for its entire  duration, the frequency components are changing from one interval to  the other. Thus such a signal qualifies the definition of  non-stationarity and hence is an example for a non-stationary signal.  Therefore this signal is more opt to be termed as non-stationary  multitone sine wave. For instance, consider a non-stationary multitone  sine wave of duration  1 sec which has 10 Hz component for 0-250 msec,  10 and 50 Hz components for 250-500 msec, 10, 50 and 100 Hz components  for 500-750 msec and only 10 Hz component for 750-1000 msec as shown in  Figure 5. Such a signal qualifies the definition of non-stationarity,  since the frequency contents change from one interval to other as shown  in Figure 6. A mathematical formulation for the just described signal  can be written as given in Equation (3).</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-equation3.jpg" alt=""></p>
+<p class="content" style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig5.jpg" alt=""></p>
+<p style="text-align: center;">Figure 5: Non-stationary multitone sine wave of 10, 50 and 100 Hz sampled using a sampling frequency of 1000 Hz</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig6.jpg" alt=""></p>
+<p style="text-align: center;">Figure 6: Magnitude spectra of non-stationary multitone sine wave shown in Figure 5.</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Non-stationary nature of speech</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Finally, the speech signal is a much more complicated non-stationary  signal compared to the one described above. Speech signal differs in two  aspects from the non-stationary multitone sine wave shown in Figure 5.  First, there may not be just one, two or three components, but many more  in a given interval of time. Second, the interval itself will be very  short, as short as about 10-30 msec as against 250 msec considered. To  summarize, the frequency contents of the speech signal will have many  frequency contents and these components change continuously with time.  For example consider a speech signal for the Hindi word <b>SAKSHAAT</b>  shown in Figure 7. Compare this figure with Figure 5 and get a feel  about non-stationary nature of speech, that indicates that the signal at  some places may not be just one or two components, but may be many  more. The changing frequency components can also  be observed in Figure  8. A mathematical approximation to the speech signal to indicate its  non-stationarity can be given as in Equation (4).</p>
+<p class="content" style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-equation4.jpg" alt=""></p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig7.jpg" alt=""></p>
+<p style="text-align: center;">Figure 7: Speech signal for the Hindi word <i>sakshaat</i></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig8.jpg" alt=""></p>
+<p style="text-align: center;">Figure 8: Spectra of different segments of speech signal.</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);"><strong>Limitation of Fourier Representation</strong></span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The final objective of this experiment is to get a feel about the  limitation of the Fourier representation in handling the non-stationary  signals. Fourier representation also makes an underlying assumption of  stationarity for the signal whose spectrum is to be computed. Therefore,  to plot the spectra of non-stationary signals presented above, we  played a trick. That is, we cleverly considered each segment of speech  signal where it qualifies the definition of stationarity and computed  the spectra using discrete time Fourier transform (DTFT) on a digital  machine with the help of discrete Fourier transform (DFT). However,  without this clever trick, the actual procedure would have been to  consider the whole signal in one shot, assuming it to be stationary and  compute the spectrum. Suppose if we do the same for non-stationary  multitone sine wave shown in Figure 5, then we get a spectrum as shown  in Figure 9. Compare this with Figure 6. This computation gives  information about the different frequency components present in the  signal, but not when those frequency contents existed, that is, timing  information is missing. The next question you may ask is, so what? let  the timing information be missing, I want only the frequency contents  information. If this is the question, then you are on the wrong path.  This is because the essential information in the non-stationary signal  is stored in the time varying spectrum only. Thus just by taking DTFT on  the whole signal will not provide any useful information. Hence the  limitation of conventional Fourier representation. The same phenomenon  happens in case of speech signal shown in Figure 7. The spectrum  obtained by considering the whole speech signal is given in Figure 10.  In this case also, the frequency contents are visible, but not their  timing information which is crucial for recognizing the time varying  message present in speech.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig9.jpg" alt=""></p>
+<p style="text-align: center;">Figure 9: Spectrum of non-stationary multitone sine wave of 10, 50 and 100 Hz  sampled using a sampling frequency of 1000 Hz by considering whole  signal once</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/speech/ex1/experiment1-theory-fig10.jpg" alt=""></p>
+<p style="text-align: center;">Figure 10: Spectrum of the entire speech signal shown in Figure 7</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: right;"><a href="#intro">top</a></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

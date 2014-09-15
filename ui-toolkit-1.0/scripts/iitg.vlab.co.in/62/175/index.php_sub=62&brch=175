@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Virtual Labs for Mechanical Vibrations(M) : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title>  <META NAME="description" CONTENT= "Virtual Labs for Mechanical Vibrations(M)"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<div id="head_box" style="width:1024px; margin-left:auto; margin-right:auto;">
+<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div></div>
+<div align="left" style="position: relative; margin:auto; width: 1024px; background-color:#e3f2fc">
+<table width="100%" border="0">
+<tr><td width="50%" align="left" valign="top"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=175">Virtual Labs for Mechanical Vibrations(M)</a></div></td>
+<td width="45%" align="right"> </td>
+<td width="5%" align="left"></td></tr>
+</table>
+<div class="title">Virtual Labs for Mechanical Vibrations(M)</div><br><div class="clstopicDesc">Virtual Labs for Mechanical Vibrations(M)</div><br /><div id="tblExperiment"><table width="100%"><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1077&cnt=2313'>Free Vibration of Spring-Mass System</a><br><span class="clsDescription">To calculate the natural frequency and damping ratio of a spring-mass system, experimentally; and compare the results with theoretical values.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1078&cnt=2367'>Free Vibration of a Cantilever Beam with a Lumped Mass at Free End</a><br><span class="clsDescription">To calculate the natural frequency and damping ratio for free vibration of a single DOF cantilever beam system, experimentally; and compare the results with theoretical values.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1079&cnt=2368'>Forced Vibration Of a Cantilever Beam with a Lumped Mass at Free End</a><br><span class="clsDescription">To calculate the natural frequency and damping ratio for forced vibration of a single DOF cantilever beam system, experimentally; and compare the results with theoretical values.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1080&cnt=2369'>Free Vibration of a Cantilever Beam (Continuous System)</a><br><span class="clsDescription">To calculate the natural frequencies and damping ratio for free vibration of a cantilever beam considering as a continuous system, experimentally; and compare the results with theoretical values.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1081&cnt=2370'>Forced Vibration of a Cantilever Beam (Continuous System)</a><br><span class="clsDescription">To calculate the natural frequencies and damping ratio for forced vibration of a cantilever beam considering as a continuous system, experimentally; and compare the results with theoretical values.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1082&cnt=2371'>Free Vibration of a Two-DOF System</a><br><span class="clsDescription">To find the natural frequencies of a two degrees-of-freedom (DOF) system and the phase differences between the masses in the system in different modes of vibration.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1083&cnt=2594'>Free Vibration of a Viscously Damped Single DOF System</a><br><span class="clsDescription">To analyze the free vibration response of a single DOF system at various damping conditions.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1084&cnt=2595'>Harmonicaly Excited Forced Vibration of a Single DOF System</a><br><span class="clsDescription">To analyze the forced vibration response of a single DOF system at different damping ratio and frequency ratio.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1085&cnt=2596'>Harmonincally Excited Rotating Unbalance of a Single DOF System</a><br><span class="clsDescription">To analyze the forced vibration response of a single DOF system with rotating unbalance at different damping ratio and frequency ratio.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=62&brch=175&sim=1086&cnt=2597'>Harmonically Excited Support  Motion of a Single DOF System</a><br><span class="clsDescription">To analyze the response for forced vibration of a system excited by support motion at different damping ratio and frequency ratio.</span></td></tr></table></div>	 <div align="center">
+    </div>
+</div><div style="width:1024px; margin-left:auto; margin-right:auto;">
+	<div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</div>
+
+

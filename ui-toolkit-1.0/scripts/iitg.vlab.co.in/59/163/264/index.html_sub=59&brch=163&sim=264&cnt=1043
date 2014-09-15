@@ -1,0 +1,543 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Vertical take Off and landing (currently offline: Experiment will be available on request) (Procedure) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Vertical take Off and landing (currently offline: Experiment will be available on request)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Vertical take Off and landing (currently offline: Experiment will be available on request)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Vertical take Off and landing (currently offline: Experiment will be available on request)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1041"><span><div id="tabspan" ><img id="tabimg" src="images/temp.gif" alt=""/></div><div id="tab_name" >VTOL HOME&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1042"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=264&cnt=1043"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1044"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1067"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Guide&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1068"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Manual&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1045"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=264&cnt=1046"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p align="center"><font color="#660000" face="Times New Roman, Times, serif"><strong>Vertical      Take Off and Landing (VTOL) System</strong></font></p>
+<p align="center"><font color="#006633"><em><font size="+1"><strong><a name="p1"></a>Current control Experiments </strong></font></em></font></p>
+<p><em><font color="#003300" face="Times New Roman, Times, serif">Experiment      1.</font></em></p>
+<p>1.Click the <em><strong><a target="_blank" href="http://125.20.82.167:8080/09-QNET_VTOL_Current_Control.html">perform      experiment link </a></strong> t</em>o open the file as shown in figure3 below</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/vtol/cur2.JPG" alt="" width="604" height="504"></p>
+<p style="text-align: center;">figure3</p>
+<p align="justify">2.Ensure the correct <strong>Device</strong> is chosen</p>
+<p align="justify">3.Set the Current Control ON switch to ON.</p>
+<p align="justify">4.RUN the application</p>
+<p align="justify">5.In the Current Setpoint section set:</p>
+<p><strong><font color="#006600">Amplitude=0.20 A, Frequency      = 0.40 Hz, Offset =0.90 A </font></strong></p>
+<p>6.                            In the Control Parameters section set the PI current                            gains to:<strong> <font color="#006600">Kp_c = 0.250,      Ki_c = 10</font></strong></p>
+<p>The                            VTOL Trainer propeller should begin turning at various                            speeds according to the current command. Examine the                            reference and measured current response obtained in                            the Current(A) scope. They should be tracking as shown      in figure3 above.</p>
+<p><em><font color="#003300">Experiment      2 </font></em></p>
+<p><span style="padding-left: 20px;" class="page_head">1.Show      and explain the effect of not having any integral gain. </span></p>
+<p><span style="padding-left: 20px;" class="page_head">2.In                          the Control Parameters section set the PI current gains      to: <strong><font color="#006600">Kp_c = 0, Ki_c = 100.</font></strong></span></p>
+<p><span style="padding-left: 20px;" class="page_head">Attach      a sample response.</span></p>
+<p><em><font color="#003300">Experiment      3 </font></em></p>
+<p>Show                            and explain the effect of not having any proportional        gain.</p>
+<p>In the Control Parameters section set the PI current        gains to: <strong><font color="#006600">Kp_c = 0.250,          Ki_c =0</font></strong></p>
+<p>Attach a sample response.</p>
+<p>Record the time response parameters as per the following        table by setting suitable sampling rates.</p>
+<p>Calculate damping ratios for various percentage overshoots.</p>
+<p><strong><font color="#006600">Finally      click on the Stop button to stop the application.</font></strong></p>
+<p>&nbsp;</p>
+<table width="64%" align="center" border="1" cellpadding="0" cellspacing="3" height="196">
+    <tbody>
+        <tr>
+            <td width="19%">&nbsp;% Overshoot</td>
+            <td width="10%">0</td>
+            <td width="10%">1</td>
+            <td width="9%">2</td>
+            <td width="7%">5</td>
+            <td width="8%">8</td>
+            <td width="9%">10</td>
+            <td width="9%">15</td>
+            <td width="19%">20</td>
+        </tr>
+        <tr>
+            <td>tp(peak time)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>ts(rise time)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>ts(settling time)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp; <span style="background-color: Lime;"><br>
+</span></p>
+<h3 style="text-align: center;"><span style="background-color: Lime;"><font color="#006633" size="+1"><em><a name="p2"></a>Modeling Experiments </em></font></span></h3>
+<p>1. Measure the Equilibrium current .</p>
+<p><font color="#666666">1.Click the <strong><a target="_blank" href="http://125.20.82.167:8080/09-QNET_VTOL_Current_Control.html"><em>perform      experiment link </em></a></strong> to open the file as shown in figure1 below.</font></p>
+<p style="text-align: center;"><font color="#666666"><img src="/userfiles/7/image/vtol/cur1.JPG" alt="" width="604" height="504"></font></p>
+<p style="text-align: center;"><font color="#000000">figure1</font></p>
+<p>&nbsp;</p>
+<p><font color="#666666">2.Ensure the correct <strong>Device</strong> is chosen</font></p>
+<p><font color="#666666">3.      Set the Current Control ON switch to ON.</font></p>
+<p><font color="#666666">4.      RUN the application</font></p>
+<p><font color="#666666">5.        In the current control parameters, set PI gains to <strong>Kp_c=0.2      V/A, Ki_c=97.2 V/(A.s)</strong></font></p>
+<p><font color="#666666">6.        In the Current Setpoint section set :<strong><em> <font color="#003300">Amplitude=0.00 A, Frequency      = 0.40 Hz, Offset =1.00 A .</font></em></strong></font></p>
+<p><font color="#666666">7.Gradually        increase the offset current until the VTOL Trainer is      horizontal. </font></p>
+<p><font color="#666666">8.The pitch should read 0 degrees when the VTOL Trainer        is horizontal.You may need to adjust the pitch offset        by varying the <em> VTOL Offset contro</em>l. By default      this is set to 25.0 degrees.</font></p>
+<p><font color="#003333"><strong>The        current required to make the VTOL trainer horizontal is      called the equilibrium current, I<sub>eq.</sub></strong></font></p>
+<p><font color="#666666">9.Capture the pitch and current response and record        this current.</font></p>
+<p><font color="#666666"><em>Finally click on the      Stop button to stop the application.</em></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h1 style="text-align: center;"><strong><a name="p3"></a>FLIGHT CONTROL EXPERIMENTS</strong></h1>
+<h3 style="color: Red;">PD Steady-State Analysis</h3>
+<p>&nbsp;</p>
+<p><font color="#333333">1. Calculate the theoretical        VTOL steady state error using a PD control with Kp=2        and Kd=1 and a step amplitude of R0= 4.0 degrees.</font></p>
+<p align="left">2. Click the <strong><a target="_blank" href="http://125.20.82.167:8080/11-QNET_VTOL_Flight_Control.html"><em>perform      experiment link </em></a></strong> to open the file as shown in figure1 below.</p>
+<p style="text-align: center;"><img src="/userfiles/7/image/vtol/mo.JPG" alt="" width="604" height="512"></p>
+<p style="text-align: center;">figure1</p>
+<p style="text-align: justify;">3.Ensure the correct <strong>Device</strong> is chosen</p>
+<p style="text-align: justify;">4.      RUN the VI.</p>
+<div style="text-align: justify;">5.        In the Position Setpoint section set: <strong>Amplitude=0.00 rad, Frequency          = 0.15 Hz, Offset =0.0      rad </strong></div>
+<div align="left">
+<p style="text-align: justify;">6.        In the Position Control Setpoint section set:</p>
+<p style="text-align: justify;"><strong><font color="#003300">kp= 1.0 A/rad, ki=2.0      A/(rad.s),kd=1.0 A.s/rad</font></strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify;">7.        Let the VTOL system stabilises about the 0.0 rad setpoint.        Examine whether the VTOL Trainer body is horizontal..If        not then you can adjust the pitch offset by varying the <strong> VTOL Offset control. </strong>By default      this is set to 25.0 degrees.</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div align="left">
+<p style="text-align: justify;"><font color="#000000">8.        To use a PD Control, in the Position Control Parameters        section set:</font></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong><font color="#003300"> kp= 2.0 A/rad, ki=0      A/(rad.s), kd=1.0 A.s/rad</font></strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><font color="#000000">9.        In the Position Setpoint section set:</font></p>
+</div>
+<div align="left">
+<p style="text-align: justify;"><strong><font color="#006600">Amplitude= 2 rad, Frequency          = 0.40 Hz, Offset =</font><font color="#003300"> 2.0            rad .</font></strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>The VTOL system should      be going up and down and tracking the square wave setpoint.</strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Capture the VTOL device step response when using this PD controller and measure        the steady state error.</p>
+<div style="text-align: justify;">10. In the Signal Generator section set Amplitude(rad)      to 0 rad and slowly decrement Offset(rad) to -8.0 rad</div>
+<div align="left">&nbsp;</div>
+<div align="left">
+<p align="center"><span style="padding-left: 20px;" class="page_head">Finally                          click on the STOP application to stop the application.</span></p>
+</div>
+</div>
+<div align="left">&nbsp;</div>
+<div align="left">&nbsp;</div>
+</div>
+<div align="left"><em><br>
+</em></div>
+<h3 style="color: Red;">PID      Steady-State Error Analysis</h3>
+<p>&nbsp;</p>
+<div align="left">
+<p align="left">1. Calculate the theoretical        VTOL steady state error using a PID control with Kp=2        and Kd=1 and a step amplitude of R0= 4.0 degrees.</p>
+<div align="left">2. Click the <strong><a target="_blank" href="http://125.20.82.167:8080/11-QNET_VTOL_Flight_Control.html"><em>perform      experiment link </em></a></strong>to open the file as shown in figure1 below.</div>
+</div>
+<p style="text-align: center;"><img src="/userfiles/7/image/vtol/mo1.JPG" alt="" width="604" height="512"></p>
+<p style="text-align: center;">figure1</p>
+<p style="text-align: justify;">3.Ensure the correct <strong>Device</strong> is chosen</p>
+<div style="text-align: justify;">4.      RUN the VI.</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div align="left">
+<p style="text-align: justify;">5.        In the Position Setpoint section set: Amplitude=0.00 rad, Frequency          = 0.15 Hz, Offset =<font color="#003300">0.0      rad </font></p>
+<div align="left">
+<p style="text-align: justify;">6.        In the Position Control Setpoint section set:</p>
+<p style="text-align: justify;"><font color="#003300">kp= 1.0 A/rad, ki=2.0      A/(rad.s),kd=1.0 A.s/rad</font></p>
+<div style="text-align: justify;">7.        Let the VTOL system stabilises about the 0.0 rad setpoint.        Examine whether the VTOL Trainer body is horizontal..If        not then you can adjust the pitch offset by varying the <strong> </strong>VTOL Offset control<strong><em>. </em></strong>By default      this is set to 25.0 degrees.</div>
+<div align="left">
+<p style="text-align: justify;"><font color="#000000">8.        To use a PD Control, in the Position Control Parameters        section set:</font></p>
+<p style="text-align: justify;"><strong><font color="#003300"> </font></strong><font color="#003300">kp= 2.0 A/rad, ki=0      A/(rad.s), kd=1.0 A.s/rad</font></p>
+<p style="text-align: justify;"><font color="#000000">9.        In the Position Setpoint section set:</font></p>
+<p style="text-align: justify;"><font color="#006600">Amplitude= 2 rad, Frequency          = 0.40 Hz, Offset =</font><font color="#003300"> 2.0            rad .</font></p>
+<p style="text-align: justify;">The VTOL system should      be going up and down and tracking the square wave setpoint.</p>
+<div style="text-align: justify;">10. In the Position Control Parameter section, increment      the integral gain until you reach ki= 4.0 A/(rad.s)</div>
+<div align="left">
+<div style="text-align: justify;">11. Capture the VTOL system step response when using      a PID controller and measure the steady-state error.</div>
+<div align="left">
+<div style="text-align: justify;">12.        To stop the control, in the Signal Generator section set        Amplitude(rad) to 0 rad and slowly decrement Offset(rad)      to -8.0 rad.</div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;"><span style="padding-left: 20px;" class="page_head">Finally      click on the STOP application to stop the application.</span></div>
+</div>
+</div>
+<p align="left">&nbsp;</p>
+</div>
+<h3 style="color: Red;">PID Control Design</h3>
+</div>
+</div>
+<p><em><font color="#0000ff" face="Times New Roman, Times, serif"><br>
+</font></em></p>
+<p align="left">1. Find the Natural frequency        W<sub>n</sub> and damping ratio ζ required to meet        a peak time of 1.0 seconds and Overshoot 20%.</p>
+<p align="left">2. Calculate the PID gains kp, ki and kd needed to      meet the VTOL system specifications.</p>
+<div align="left">3. Click the<a target="_blank" href="http://125.20.82.167:8080/11-QNET_VTOL_Flight_Control.html"> <strong><em>perform      experiment link</em> </strong> </a>to open the file as shown in figure1 below.</div>
+<div align="left">&nbsp;</div>
+<div style="text-align: center;"><img src="/userfiles/7/image/vtol/mo2.JPG" alt="" width="604" height="512"></div>
+<div style="text-align: center;">figure1</div>
+<div>
+<div align="left">4.Ensure the correct <strong>Device</strong> is chosen</div>
+<div align="left">5.      RUN the VI.</div>
+<div align="left">
+<div align="left">6.        In the Position Setpoint section set: <strong>Amplitude=0.00 rad, Frequency          = 0.15 Hz, Offset =<font color="#003300">0.0      rad </font></strong></div>
+<div align="left">
+<div align="left">7.                            In the Position Control Parameters section, enter the      PID gains founded in point 2. above</div>
+<div align="left">
+<div align="left">8        . Let the VTOL system stabilises about the 0.0 rad setpoint.        The VTOL system body should be horizontal...If not, adjust        the pitch offset by varying the <strong> <em>VTOL Offset          control. </em></strong>By default this is set to 25.0      degrees.</div>
+<div align="left">
+<p align="left"><font color="#000000">9.In        the Position Setpoint section</font></p>
+<p align="left"><strong><font color="#003300"> </font></strong><font color="#003300">kp= 2.0 A/rad, ki=0      A/(rad.s), kd=1.0 A.s/rad</font></p>
+<p align="left"><font color="#000000">10        . In the Position Setpoint section set:</font></p>
+<p align="left"><font color="#006600">Amplitude= 0.0 rad, Frequency          = 0.40 Hz, Offset =</font><font color="#003300"> 0.0            rad .</font></p>
+<p align="left"><font color="#003300">The VTOL system should      be going up and down and tracking the square wave setpoint.</font></p>
+<div align="left">11 . Capture the response of the VTOL system when using      your desired PID controller.</div>
+<div align="left">
+<div align="left">12. Measure the pick time and percentage overshoot      of the measured response.</div>
+<div align="left">
+<div align="left">13.        To stop the control, in the Signal Generator section set        Amplitude(rad) to 0 rad and slowly decrement Offset(rad)      to -8.0 rad.</div>
+<div align="left">&nbsp;</div>
+<div style="text-align: center;"><span style="padding-left: 20px;" class="page_head">Finally      click on the STOP application to stop the application.</span></div>
+<div align="left">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<div align="center"><span style="padding-left: 20px;" class="page_head"><font color="#cc6600">Enter      all the values founded in the table below.</font></span></div>
+<div align="center">
+<table width="65%" align="center" border="1" cellpadding="0" cellspacing="2">
+    <tbody>
+        <tr>
+            <td width="45%">
+            <div align="center"><strong>Parameters</strong></div>
+            </td>
+            <td width="12%">
+            <div align="center"><strong>Symbols</strong></div>
+            </td>
+            <td width="9%">
+            <div align="center"><strong>Values</strong></div>
+            </td>
+            <td width="34%">
+            <div align="center"><strong>Units</strong></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">PD steady-state error</div>
+            </td>
+            <td>
+            <div align="center">e<sub>ss,pd</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">deg</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Measured PD steady-state error</div>
+            </td>
+            <td>
+            <div align="center">e<sub>ss,meas,pd</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">deg</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">PID steady-state error</div>
+            </td>
+            <td>
+            <div align="center">e<sub>ss,pid</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">kg.m<sup>2</sup></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Measured PID steady-state error</div>
+            </td>
+            <td>
+            <div align="center">e<sub>ss,meas,pid</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">N.m.s./rad</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Desired peak time</div>
+            </td>
+            <td>
+            <div align="center">t<sub>p</sub></div>
+            </td>
+            <td>
+            <div align="center">1.0</div>
+            </td>
+            <td>
+            <div align="center">s</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Desired Percentage Overshoot</div>
+            </td>
+            <td>
+            <div align="center">PO</div>
+            </td>
+            <td>
+            <div align="center">20</div>
+            </td>
+            <td>
+            <div align="center">%</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Desired pole location</div>
+            </td>
+            <td>
+            <div align="center">p<sub>0</sub></div>
+            </td>
+            <td>
+            <div align="center">1.0</div>
+            </td>
+            <td>
+            <div align="center">rad/s</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Natural frequency</div>
+            </td>
+            <td>
+            <div align="center">W<sub>n</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">rad/s</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Damping ratio</div>
+            </td>
+            <td>
+            <div align="center">ζ</div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">N.m/rad</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Proportional gain</div>
+            </td>
+            <td>
+            <div align="center">k<sub>p</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">A/rad</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Integarl gain</div>
+            </td>
+            <td>
+            <div align="center">k<sub>i</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">A/(rad.s)</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Derivative gain</div>
+            </td>
+            <td>
+            <div align="center">k<sub>d</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">A.s/rad</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Measured peak time</div>
+            </td>
+            <td>
+            <div align="center">t<sub>p</sub></div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">s</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div align="left">Measured Percentage Overshoot</div>
+            </td>
+            <td>
+            <div align="center">PO</div>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+            <div align="center">%</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+&nbsp;</div></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

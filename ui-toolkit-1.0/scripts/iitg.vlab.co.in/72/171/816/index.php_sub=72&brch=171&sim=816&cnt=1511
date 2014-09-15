@@ -1,0 +1,787 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introduction to Ergonomics  (Home) : Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="General Theory, methods and its application" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a>-><a href="">Introduction to Ergonomics </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Introduction to Ergonomics </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=171&sim=816&cnt=1511"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Home&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1470"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Statistical methods&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1584"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1583"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_95.png" alt=""/></div><div id="tab_name" >People&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=171&sim=816&cnt=1630"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Experiments&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<table border="0" cellpadding="1" cellspacing="1" width="950">
+    <tbody>
+        <tr>
+            <td colspan="4" valign="top" width="200">&nbsp;<img src="/userfiles/7/image/humanity.gif" alt="" height="60" width="900"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="top"></a></td>
+            <td valign="top" width="375">
+            <h1>&nbsp;<span style="color: rgb(51, 102, 255);">Ergonomics</span></h1>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <h2 style="text-align: left;"><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition</span></h2>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<span style="background-color: Lime;">Content<hr>
+            </span></td>
+            <td rowspan="16" valign="top" width="375">
+            <p><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/userfiles/7/flash/Ergonomics/ergo%20video.swf" play="true" loop="true" menu="true" height="352" width="352"></p>
+            <div>Workspace and work equipment specification must be compatible with users&#039; physical dimension, cognitive and physiological tolerance factors<br>
+            <strong>Ergonomics</strong></div>
+            </td>
+            <td colspan="2" rowspan="16" valign="top" width="375">
+            <div>Ergonomics is the study of interactions between human and the work environment. It studies and employees various context specific human compatibility factors in man-usable commodity/ machinery and environment/ workstation interaction system. It promises humanizing work and work environment. <br>
+            <br>
+            Ergonomics based development and marketing policies are well adopted in Design, Production process, Safety, stress and Occupational Health, and in Management. Mismatch between the work environment and the worker imposes negatively on a worker&#039;s ability to perform a task resulting in poor quality, reduced productivity and increased risk of injury. It deals Iwith the means and methods of using optimum human resources to achieve maximum benefit.&nbsp;&nbsp;<br>
+            <br>
+            By acquiring this knowledge, user&#039;s satisfaction leading to product acceptance in market will increase, and during production, optimum productivity and sustainable growth be ensured. In technology and management education ergonomics has become one of the core input. In our country well equipped laboratories are very few and all also do not have all the facilities.<br>
+            This is an effort to make the techniques familiar for applying and measuring ergonomics interfaces relevant to the humanising technology.</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <p style="text-align: right;">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#top">1.Definition</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#domains">2.Domains of ergonomics</a></td>
+        </tr>
+        <tr>
+            <td><a href="#human">3.Human body-Physical dimension</a></td>
+        </tr>
+        <tr>
+            <td><a href="#body">4.Body planes</a></td>
+        </tr>
+        <tr>
+            <td><a href="#anthro">5.Anthropomentry</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#need">6.Need for Indian anthropometry</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#guide">7.Guidelines for design use</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#percentile">8.Percentile selection for design use</a></td>
+        </tr>
+        <tr>
+            <td><a href="#use">9.Use of average</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#consider">10.Consideration for regular percentile</a></td>
+        </tr>
+        <tr>
+            <td align="left"><a href="#concept">11.Concept of male-female combined data for design use</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td colspan="3">
+            <h2 style="text-align: center;"><span style="color: rgb(51, 102, 255);"><b><a name="domains"></a>Domains of Ergonomics </b><b><br>
+            <strong>(IEA- International Ergonomics Association)</strong></b></span></h2>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>Ergonomics (or human factors) is the scientific discipline concerned with the understanding of interactions among humans and other elements of a system,and the profession that applies theory, principles, data, and methods to design in order to optimise human well-being and overall system performance.<br>
+            <br>
+            Ergonomists contribute to the design and evaluation of tasks, jobs, products, environments, and systems in order to make them compatible with the needs, abilities, and limitations of people.Ergonomics promotes a holistic approach in which considerations of physical, cognitive, social, organisational, environmental and other relevant factors are taken into account.There exist domains of specialisation within the discipline, which represent deeper competencies in specific human attributes or characteristics of human interaction.</div>
+            <div><strong>Physical ergonomics</strong> is concerned with human anatomical, anthropometric, physiological and biomechanical characteristics as they relate to physical activity. (Relevant topics include working posture materials handling, repetitive movements, materials handling, repetitive movements, work related musculoskeletal disorders, workplace layout, safety and health.)<br>
+            <br>
+            <strong align="justify">Cognitive ergonomics </strong>is concerned with mental processes, such as perception, memory, reasoning, and motor response, as they affect interactions among humans and other elements of a system. (Relevant topics include mental workload, decision-making, skilled   performance, human-computer interaction, human reliability, work stress,  and training as these may relate to human-system design.)</div>
+            <div>&nbsp;</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <p><img src="/userfiles/7/image/ergonomics/cognitive1.jpg" alt="" style="width: 321px; height: 323px;"></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div><strong>Organisational ergonomics </strong>is concerned with the optimisation of sociotechnical systems, including their organisational structures, policies, and processes. (Relevant topics include communication, crew resource management, and work design, design of working times, teamwork, participatory design, community ergonomics, cooperative work, new work paradigms, virtual organisations, telework, and quality management.)</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375"><a name="human"></a></td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375"><!--[if gte mso 9]><xml>
+            <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+            DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+            LatentStyleCount="267">
+            <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+            <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+            <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+            <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+            <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+            <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Title" />
+            <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+            <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+            <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+            <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+            <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Table Grid" />
+            <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+            <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 1" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+            <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+            <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+            <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+            <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 1" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 2" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 2" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 3" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 3" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 4" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 4" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 5" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 5" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+            <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+            <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light List Accent 6" />
+            <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+            <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+            <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+            <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+            <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Dark List Accent 6" />
+            <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+            <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+            <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+            UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+            <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+            <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+            <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+            <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+            <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+            UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+            <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+            <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+            </w:LatentStyles>
+            </xml><![endif]--><!--[if gte mso 10]>
+            <style>
+            /* Style Definitions */
+            table.MsoNormalTable
+            {mso-style-name:"Table Normal";
+            mso-tstyle-rowband-size:0;
+            mso-tstyle-colband-size:0;
+            mso-style-noshow:yes;
+            mso-style-priority:99;
+            mso-style-qformat:yes;
+            mso-style-parent:"";
+            mso-padding-alt:0in 5.4pt 0in 5.4pt;
+            mso-para-margin-top:0in;
+            mso-para-margin-right:0in;
+            mso-para-margin-bottom:10.0pt;
+            mso-para-margin-left:0in;
+            line-height:115%;
+            mso-pagination:widow-orphan;
+            font-size:11.0pt;
+            font-family:"Calibri","sans-serif";
+            mso-ascii-font-family:Calibri;
+            mso-ascii-theme-font:minor-latin;
+            mso-fareast-font-family:"Times New Roman";
+            mso-fareast-theme-font:minor-fareast;
+            mso-hansi-font-family:Calibri;
+            mso-hansi-theme-font:minor-latin;}
+            </style>
+            <![endif]-->
+            <h2 style="text-align: left;"><span class="style16"><span style="color: rgb(51, 102, 255);">Human body-Physical Dimension</span></span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<img src="/userfiles/7/image/ergonomics/360%281%29.gif" style="width: 105px; height: 300px;" alt=""></td>
+            <td valign="top" width="375">
+            <div>The human body may be said to be designed for the type of life man led earlier. The use of his limbs was mainly for his survival, for collecting food, etc., and to run away from danger. These are no more the only users in the present day context. Due to the progress of civilization and the innovation in life-styles, man unconsciously and continuously adapts himself to new ways, while using the same body and same physical capabilities. Normally, we use only a portion of our total physical and mental capacity in our day-to-day life.<br>
+            <br>
+            At present, it is only on the sportsfield that we move freely and expend the maximum energy. Imitation of the skills of various creatures and their specialized movements based on what they require for their survival, are a very important means of increasing the skilled use of our limited physical resources. Excellence in motor performance has been the focus of research in sports nowadays. A complex chain of physical movements requires a high level of neuromuscular coordination with a high level of strength and power.</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>To attain that level, necessary training is required with a full knowledge of biomechanics, medical and kinesiological sciences.<br>
+            <br>
+            Today, we are innovating various aids that can minimize or optimize the physical efforts and exertion that are required. The use of such aids could result in excellent performance. These aids are to be designed in such a manner that, they should consider the normal physical skills of movement within comfortable limits i.e. designing for ease of human use.<br>
+            <br>
+            If we are aware of the basic structural mechanisms and various in-built facilities and limitations in shape, size, range of movements that the human structure provides, we can apply these in various design concepts. Obviously these innovations should be compatible with the human body. For that purpose, we must know our body structure in general. Anthropometric landmarks are te external points of the body structure with their muscles and skinny covers on it and these should be taken into consideration.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375"><a name="body"></a></td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2 style="text-align: left;"><span style="color: rgb(51, 102, 255);">Body Planes</span></h2>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>The bi-lateral human body could be described in terms of three reference planes in relation to the three planes of directional motions corresponding to these reference planes. These imaginary planes are used for the identification of relationships between the positions of things and the postural configuration, and for</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <p>&nbsp;description of any location. For example, it could be said that while standing and attentively working in an upper anterior median plane, it is not possible to reach for anything kept in the location of a lower posterior plane very near the floor, without distracting the attention of the central work area.</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" style="text-align: center;" valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/Introduction/body%20planer%28t%29.gif" style="width: 495px; height: 360px;" alt=""></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="anthro"></a></td>
+            <td colspan="3" valign="top" width="375">
+            <h2 style="text-align: left;"><span style="color: rgb(51, 102, 255);">Anthropometry</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div><strong>Static Anthropometry </strong><br>
+            When a man is placed in a static posture that is standing , sitting or adopted postures eg height, breadths, depths and circumferences, are termed as static anthropometry.</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div><strong>Dynamic Antropometry </strong><br>
+            The human body is not rigid but rather, always dynamic. The dimensional measurements of the human body with various movements taken into consideration in different adopted postures which the work context demands, are termed dynamic anthropometry.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<img src="/userfiles/7/image/ergonomics/PPT.jpg" style="width: 347px; height: 274px;" alt=""></td>
+            <td valign="top" width="140"><img src="/userfiles/7/image/ergonomics/sidha%20hath1.gif" alt="" height="200" width="150"></td>
+            <td valign="top" width="140"><img src="/userfiles/7/image/ergonomics/sidha%20hath%281%29.gif" alt="" height="150" width="150"></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="need"></a></td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Need for Indian Anthropometry</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>Age, sex, race, geographical regions, even different occupations all influence human body dimensions. Accurate dimensions of clothing and personal equipment used by persons, e.g. headgear, footwear, spectacles, lifesaving and support equipment would be of great value because human functional dimensions and the range of movements possible demand that appropriate allowances should be made when specific designs are developed.<br>
+            <br>
+            It is advocated by experts that the anthropometric data to be used for specific design considerations of specific user&#039;s groups, should be based on the same population groups.<br>
+            <br>
+            Anthropometric data obtained from a specific group may differ in acceptance value, when similar data are obtained from others. For solving specific design. problems of a specific user group, anthropometric data should come from the same population group, solving</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>specific design. problems of a specific user group, anthropometric data should come from the same population group, using different percentile selections.The use of non-Indian anthropometric data in Indian designs and other imported ready made designs often results in mismatches with the requirements of Indian users. Accidents and serious mistakes may occur if any design dimensions do not exactly match the body dimensions of specific groups.<br>
+            <br>
+            Indian behavior is also not similar to that of foreigners. Some Indians prefer sitting on the floor and performing a range of activities there. Non-Indian data sources do not provide the references for these requirements.<br>
+            <br>
+            Indian being a multicultural nation with an ethnically diverse population, it would be of direct relevance to strengthen design practice in India with data on human dimensions collected from Indian population groups for the specific needs of Indian users.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="guide"></a></td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2 style="text-align: center;"><span style="color: rgb(51, 102, 255);">GUIDELINES FOR DESIGN USE<br>
+            Usage of the anthropometric percentile values</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <p>The relevant anthropometric supports, along with the intended users&#039; behavioral pattern, should be seen together while designing. To make an article of the correct size, to create a system of multiple units and a work space, or to design an article for a single individual&#039;s need, the individual&#039;s own dimensional requirements may be of direct importance. But for mass production and use, proper percentile (definition: Experiment), selections of the anthropometric data should be made and adequate allowances should be considered.<br>
+            <br>
+            Data provided here (Experiments) are taken from subjects wearing minimum clothes and without footwear or head-wear, etc. Hence, while using height dimensions for any design application, appropriate height adjustment for sole and head-wear may be an added consideration. Dimensional allowances and movement restrictions due to wearing of heavy clothes, etc., need to be considered carefully. Support of anthropometric data (collected from the specific population groups) to design specific articles,e.g. product, equipment,furniture, machine tools, etc., should be looked into.<br>
+            <br>
+            t would not be an exaggeration to say that there is no person with all his or her body dimensions in the 95th or 50th or 5th percentiles. All body parts do not follow the same proportions and even show different somatotypic features. A person with a 50th percentile body height may have 75th percentile hand length, 25th percentile foot length and 95th percentile abdominal circumference; a person of 75th percentile height may have 25th percentile chest circumference and 50th percentile head circumference; a mesomorph type general body structure may have hip portion of</p>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>endomorphic nature. These mixed body types and proportions among the body parts constitute the common population. <br>
+            <br>
+            Dimensions of equipment or work accessories and work spaces should be considered while designing,in order to achieve effective accommodation layout and for enabling easy handling of equipment by moving within and around the space provided. <br>
+            <br>
+            As an example, the height of the work surface for a very small height housewife, using a cooking platform, must be fixed according to her height to make her feel comfortable while cooking. It should take into account, the dimensions of the cooking accessories, so that these can come within the range of her free arm reach and movement while cooking. <br>
+            <br>
+            Here, any standard may not be appropriate as used by designer-architects for general work surface height. If it is to be used by others within the same users&#039; population, then the proper percentile values of the total human dimensions, as well as individual work surface height, should be considered. Proper allowances should&#039; be made for the different tasks to be performed, so that most of the population can perform their cooking tasks without problems and uneasiness.<br>
+            For design purposes,to fit an intended user from amongst the known population group, different percentile values of different human body dimensions should be considered for different design dimensions. Designing an article or a system with a single percentile value for all the relevant human dimensions would fail to satisfy all the other dimensional features of the design.</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;<a name="percentile"></a></td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Percentile selection for design use</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>Depending on the nature of the design and the context of use, the design should usually be conceived to accommodate the population in between the 5th and 95th percentile, keeping the 50th as mid-value, so that most of the population is covered. Data tending towards the lowest, below the 5th percentile, with the highest values above 95th percentile are generally considered as freak data. Hence, these are normally neglected unless there are extreme requirements. As a general rule, to "avoid reach" higher percentiles and to "get easy reach" lower percentile values would be of relevance in design. <br>
+            <br>
+            Designing an article for the large-sized users means that the higher percentile values of all dimensions should be considered, because when the maximum number of the population has lower values than those of large-sized users, the users with lower percentile values will not be able to get easy reach and hence will keep away from those unwanted things beyond their reach, thereby ensuring safety. For designing doors, stature heights of higher than the maximum value, must be considered with appropriately defined allowances for articles supposed to be carried on the head by intended users. A feeling of psychological clearance may be an added dimension. The higher percentile value of the maximum body breadth for passageways, etc., maybe taken into account to provide free movement facilities.</div>
+            <div>Small-sized users should also be considered while designing things of easy reach. This has to be done</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>keeping in mind the contextual use,the application of strength or any other consideration involving human endeavor. This means that the lower percentile values of any dimension should be considered for accommodating the maximum number of people who have higher values than that , in order to be able to perform physical tasks more easily and with good control of the body.<br>
+            <br>
+            Normally, for the moving parts of a machine that are dangerous and not to be touched, i.e. those which must be kept out of arm&#039;s reach, the higher value of the "leaning forward" arm reach,along with appropriate allowances for safety distances should be considered, in order to ensure safety. But, if an "on-off" type handle or switch requires to be used only a few times throughout the whole working period, then it can be placed at a distance of the 75th percentile or so of the normal "standing forward" grasp reach.</div>
+            <div>While working, it should not create any obstacle to normal work. When required, it could be grasped by leaning, as it comes within the 5th percentile of the "leaning forward" grasp reach limit. If anything has to be operated smoothly, it should be placed nearer, say, within the lower percentile range (may be the 5th) of the am grasp reach. This means that people having a higher value than that can reach it easily. Below this value, people can handle it with little difficulty, but the number of such people would be very limited. Hence, these may be ignored for general purposes, if there is no specific requirement.</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div style="text-align: right;">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="use"></a></td>
+            <td valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Use of "Average"</span></h2>
+            <p>&nbsp;</p>
+            </td>
+            <td colspan="2" valign="top" width="375">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <p>Selection of the average or mean value of a dimension depends on its contextual use and whether it demands critically to be fitted into the whole range of the users’ population. The terms mean or average, and median or the 50th percentile value may not be identical. But&nbsp;if there is no dearth of sample sizes on which data were collected, the median (50th percentile) value normally is closed to the mean value. Hence, in practice, the average is used as synonym for the 50th percentile.<br>
+            <br>
+            Average value should not always be considered blindly while designing. As a classical example, while conceptualizing a common counter height for general purpose use, the 50th percentile elbow height may be considered, because the height differences of people lying in both halves of the data distribution may be accommodated. This may be the 95th percentile values, so that, for specific needs the height may be adjusted accordingly. Door heights with 50th percentile stature value may work, but tall people can only pass through by bending. This creates inconvenience to them and should not be used. If we consider people of average-weight say, 55 kg and design a lift system to carry 10</p>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <p>people, it means that the carrying capacity is 550 kg. if 10 people of less-weight board it, there would be no problem but, when one or more with a 75th or 95th percentile value, say of 60 kg or 75 kg or more than 100 kg do so, then it may not be safe. Hence, the values tending towards higher levels, even the highest limits, should be considered, along with the allowances for the articles supposed to be carried by the people on board, as well as other safety allowances for the articles supposed to be carried by the people on board, as well as other safety allowances so that, overloading beyond the lift&#039;s capacity is ruled out.<br>
+            <br>
+            Another example of the same case with reference to weight may be considered while determining the structural strength of a seat, or in the case of an individual or a family, a design for a suspended garden swing. Then, not only should the highest value be used but the proper allowances for the different ways of using the seat should be considered. The user may carry something on his lap; he may even stand and do some work. This could be an added consideration.</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="consider"></a></td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><strong><em>&lt;Back to content&gt;</em></strong></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Consideration for regular percentiles</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>For considering shoe lengths, a single percentile value of a foot length dimension cannot support the purpose of accommodating a large percentage of the population. To accommodate most of the people, we</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>can never specify any single percentile value, like the 95th percentile of the foot length. This can never be appropriate. It requires different percentile values so that they fit the users of different foot sizes</div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;<a name="concept"></a></td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375">&nbsp;<a href="#top"><em><strong>&lt;Back to content&gt;</strong></em></a></td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td colspan="3" valign="top" width="375">
+            <h2><span style="color: rgb(51, 102, 255);">Concept of male-female combined data for design use</span></h2>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">
+            <div>Anthropometric data are obtained separately for males and females and also sometimes also presented separately. We may require these separate data for designing separately for males and females. Designers quite often speak about the 5th percentile of the female data as the lowest value and the 95th percentile of male data as the highest value of the dimensional range of the human body in general, for various uses of design. It is seen that all the dimensions do not always follow this rule. Nowadays, as there is very limited scope for such divisions of jobs exclusively for males and females, for general purposes, percentile values of anybody dimension comprising both males and females might serve well for producing designed articles or for conceptualizing the work spaces. According to requirements, percentile values may be derived irrespective of whether there is predominantly a male population or female population.<br>
+            <br>
+            For example, to avoid reaching towards a dangerously moving part in any equipment, its location in terms of the human operator should be such that most of the population should not get within easy reach. The higher percentile value of the forward arm reach in the "standing in front leaning" posture, say the 95th percentile, is found to be 1336mm for males and 1199mm for females. To ensure safety, irrespective of this data, whether for males or females, the higher value of the two must be considered, because we are not sure whether the intended users will be only females, males or both. Here, the male and female combined value of the 95th percentile figure, 1309mm, may also be considered in general and the moving part can be fixed at that distance. If the equipment is unguarded, to avoid all risks, the combined maximum value, 1500mm, irrespective of for males (1500mm) and for females (1250mm), should be used.</div>
+            </td>
+            <td colspan="2" valign="top" width="375">
+            <div>Another example, where easy accommodation is the prime concern, is when designing a seat with arm rests. The mid-breadth of the seat should accommodate the relaxed mid-thigh to thigh distance. When the higher values say, the 95th percentile for males and females, are found to be 449mm and 529mm respectively, the combined 95th percentile value, i.e. 479mm for general purposes or the higher of these two may be considered.<br>
+            <br>
+            For general use we may select: a) lowest and highest value of any dimension taken from separate male and female data sources or b) the whole data collected from both males and females may be computed as a single population data with combined values, irrespective of whether these are collected from male or female sources.</div>
+            <div>&nbsp;</div>
+            <div><img src="/userfiles/7/image/ergonomics/MALE%20FEMALE%20COMBINED%20DTA.jpg" style="width: 314px; height: 180px;" alt="">
+            <p><em>Male 95th percentile mid-thigh distance<br>
+            </em></p>
+            <p><em>Female 95th percentile mid-thigh distance <br>
+            </em></p>
+            <p><em>Preferred seat breadth (in tune with higher female value and allowance)<br>
+            </em></p>
+            <p><em>Data  may be obtained from males or females. The higher value, including  proper allowances, should be considered to accomodate most of the people  where free acccomodation (=avoid reach) is concerned)</em></p>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="200">&nbsp;</td>
+            <td valign="top" width="375">&nbsp;</td>
+            <td colspan="2" style="text-align: right;" valign="top" width="375"><a href="#top"><strong><em>&nbsp;&lt;Back to content&gt;</em></strong></a></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

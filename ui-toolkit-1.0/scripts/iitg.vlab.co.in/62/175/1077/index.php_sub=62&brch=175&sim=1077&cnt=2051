@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Free Vibration of Spring-Mass System (Discusion) : Virtual Labs for Mechanical Vibrations(M) : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To calculate the natural frequency and damping ratio of a spring-mass system, experimentally; and compare the results with theoretical values." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=175">Virtual Labs for Mechanical Vibrations(M)</a>-><a href="">Free Vibration of Spring-Mass System</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Free Vibration of Spring-Mass System</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2313"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_994.png" alt=""/></div><div id="tab_name" >Guidelines&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2544"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Software package&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2048"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2050"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2049"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class="current"><a href="?sub=62&brch=175&sim=1077&cnt=2051"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Discusion&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2052"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=175&sim=1077&cnt=2480"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;<strong style="background-color: white; line-height: 13.5pt; text-align: justify; "><span style="font-size:13.5pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:blue">1.9&nbsp; Conclusion</span></strong></p>
+<p>&nbsp;</p>
+<h3><span _mce_style="font-size: small;"><span style="font-family: Verdana, sans-serif; ">In this experiment, we have found out stiffness and natural frequency of the system theoretically and experimentally. In calculating the natural frequency, we have to account the mass of accelerometer and mass of the hanger also. There is good agreement between theoretical and experimental values and the response of the spring mass system for a small initial disturbance is observed. The animation of the spring mass system is also shown in VI’s for better visualization.</span></span><span style="font-size: 9pt; font-family: Verdana, sans-serif; "><o:p></o:p></span></h3>
+<h3><span _mce_style="font-size: small;"><span style="font-family: Verdana, sans-serif; "><br>
+</span></span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; background-position: initial initial; background-repeat: initial initial; " _mce_style="text-align: justify;">&nbsp;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; background-position: initial initial; background-repeat: initial initial; " _mce_style="text-align: justify;">&nbsp;</p>
+<p style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; background-position: initial initial; background-repeat: initial initial; " _mce_style="text-align: justify;"><strong style="background-color: white; line-height: 13.5pt; "><span style="font-size:13.5pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:blue;background:white">1.10 &nbsp;References</span></strong></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-color: white; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-position: initial initial; background-repeat: initial initial; "><span style="font-size: 9pt; font-family: Verdana, sans-serif; "><u1:p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">&nbsp;</u1:p><o:p></o:p></span></p>
+<h3><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">1.</span><span style="font-size: 10pt; ">&nbsp;&nbsp;<span class="apple-converted-space">&nbsp;</span></span><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">Meirovitch, L., 1967,<span class="apple-converted-space">&nbsp;</span><em>Analytical methods in vibration</em>, Ccollier-MacMillan Ltd., London.<o:p></o:p></span><u1:p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "></u1:p></h3>
+<h3><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">2.</span><span style="font-size: 10pt; ">&nbsp;&nbsp;<span class="apple-converted-space">&nbsp;</span></span><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">Thomson, W.T., 2007,<span class="apple-converted-space">&nbsp;</span><em>Theory of vibration with application</em>, Kindersley Publishing, Inc., London.<u1:p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "></u1:p><o:p></o:p></span></h3>
+<h3><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">3.</span><span style="font-size: 10pt; ">&nbsp;&nbsp;<span class="apple-converted-space">&nbsp;</span></span><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">Rao,J. S, and Gupta, K.,<span class="apple-converted-space">&nbsp;</span><em>Introductory Course on Theory and Practice of Mechanical Vibrations</em>, New Age International, New Delhi.<o:p></o:p></span><u1:p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "></u1:p></h3>
+<h3><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">4.</span><span style="font-size: 10pt; ">&nbsp;&nbsp;<span class="apple-converted-space">&nbsp;</span></span><span style="font-size: 10pt; font-family: Verdana, sans-serif; ">S.Timoshenko ,D.H.Young, 1961,<span class="apple-converted-space">&nbsp;</span><i>strength of material</i>, Standford University, California.<u1:p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "></u1:p><o:p></o:p></span></h3>
+<p style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; text-align: justify; line-height: 13.5pt; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; background-position: initial initial; background-repeat: initial initial; " _mce_style="text-align: justify;"><span style="font-family: Verdana, sans-serif; font-size: 10pt; background-color: white; line-height: 13.5pt; ">&nbsp;</span><font color="#0000ff" face="Verdana, sans-serif" size="4"><b><br>
+</b></font></p>
+<p>&nbsp;</p>
+<div style="margin:0in;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;line-height:13.5pt;background:white">
+<div style="margin-top: 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; line-height: 13.5pt; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; background-position: initial initial; background-repeat: initial initial; "><strong>&nbsp;</strong></div>
+</div></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,576 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Direct Kinematics - By Remotely Triggering Stationary Base Robot (Introduction) : Virtual Robotics Lab : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To study direct kinematics by remotely triggering stationary base robot " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=271">Virtual Robotics Lab</a>-><a href="">Direct Kinematics - By Remotely Triggering Stationary Base Robot</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Direct Kinematics - By Remotely Triggering Stationary Base Robot</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=62&brch=271&sim=1387&cnt=2911"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2912"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2913"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2914"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Demonstration&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=3387"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=3383"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Remote Trigger&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2915"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2916"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=271&sim=1387&cnt=2917"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p><span style="font-size:12.0pt;line-height:150%;
+font-family:&quot;Georgia&quot;,&quot;serif&quot;" lang="EN-IN">Click <a href="http://202.141.81.15/VLAB/Exp.2/INTRODUCTION.doc" target="_blank">here </a>to download the documentation</span></p>
+<p>&nbsp;</p>
+<p><!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--></p>
+<p><!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:TargetScreenSize>800x600</o:TargetScreenSize>
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+<w:UseFELayout />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin-top:0in;
+mso-para-margin-right:0in;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0in;
+line-height:105%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Cambria","serif";
+mso-ascii-font-family:Cambria;
+mso-ascii-theme-font:major-latin;
+mso-hansi-font-family:Cambria;
+mso-hansi-theme-font:major-latin;}
+</style>
+<![endif]--></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">INTRODUCTION:</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">&nbsp;</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">An industrial robot is also called a robotic manipulator or a robotic arm which can be modeled as a chain of rigid links interconnected by flexible joints. One end of a robotic manipulator is fixed to a base while at the other end, there is an end-effector, also called a tool, which is free to move and often has two or more fingers that open and close. <span style="mso-spacerun:yes">&nbsp;</span>The joint motions (input) control the end-effector motions (output) in a robot. </span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Links are the individual bodies that make up a robot. A joint couples two links and provides the physical constraints on the relative motion between the links. </span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Adjacent pairs of links are connected by two types of joints-</span></p>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:
+11.0pt;line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:
+Arial">1. Revolute joints (R): they exhibit rotary motion about an axis. A revolute joint permits two paired links to rotate w. r. t. each other about the axis of the joint. It prohibits one of the links to translate w. r. t. the other one along three perpendicular axes.<span style="mso-spacerun:yes">&nbsp; </span></span></p>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:
+11.0pt;line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:
+Arial">2. Prismatic joints (P): they exhibit sliding or linear motion along an axis. A prismatic joint allows two paired links to slide w. r. t. each other along its axis.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial"><span style="mso-spacerun:yes">&nbsp;</span>Each robot manipulator has a number of axes about which its links rotate or along which its links translate. The three major axes of a robot determine the shape of the work envelope (locus of points in three dimensional space that can be reached by the tool of the robot) and correspond to the Cartesian, cylindrical or spherical coordinate systems. The major axes are used to determine the position of the tool. The axes of the remaining joints i.e. the minor axis are used to establish the orientation of the tool. </span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">TOOL ORIENTATION:</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">The tool orientation convention used is the <i style="mso-bidi-font-style:normal">yaw-pitch-roll </i>(YPR) system. </span></p>
+<p style="text-align: center; line-height: 150%;" class="MsoNormal"><img alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAFQAYQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKAKd5eWun6Rd6hfXCWtlawtNcTSHCxooLMxPoACT9K5Pwr4+8P8AjO6mj0FrqREsLa/R7m1a3aSC43+VJ5cmJYw3lvgSIhIGVDDmtjxRo6+Ivht4i8Pt5YXU9MnsyZk3oPMjZPmXuPm5HcVzfh7wevg/wp4ftdDtbee/trSy0+7aWeQQpbxqEkMEZJWLON+1FUMwG7JAIAO8knhjOHljjbaWwzgcL1P0GRn0zXPw+KdLm+J0/hH95Hq0dj9uUMoKyQ7lUuuCSBudVBYKGIcIWMcgTzbVvgzo+vfHS+8Ya1Z6Vqyy6pY3cUV5pqTSRrb2s0BTcwPVpQ3HHBre+GPw0sPAPw28G2N1J/aniTRvDkGjy6l5shRljihjfy42YiNX+zw52gEiNM52jAB6nXO+IvE2g+EdDt9S8RanDpFjcalaadDNO2Fe5u7mO2t4x/tPNLGg92ycDJroq+Xf2tPAvhr4gfs6+D9J8VWlzeWMXxP8KSRpa6pc2TBpNbtbVzvgkRj+6uJQMn5WKuuHRGUA+oqKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK8M/aC/wCSM+Ff+ymeEP8A1JNPr3OvDP2gv+SM+Ff+ymeEP/Uk0+gD3OiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvDP2gv+SM+Ff8AspnhD/1JNPr3OvDP2gv+SM+Ff+ymeEP/AFJNPoA9zooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoor57+OljNrHjL4CeH11zWtDsdV+IjQX8mhazcabPPEug6tMI2lgdG2b4o2K5wSq5HAoA+hKK8W/wCFG+Hf+hy+Iv8A4crWP/kisD4JabcaP8X/ANoDRm8ReIde0/SvGVnZaamv+ILrUmtYToenXTJG07sVDTXUznB53AHhVAAPoiiiigArwz9oL/kjPhX/ALKZ4Q/9STT69zrwz9oL/kjPhX/spnhD/wBSTT6APc6KKKACiiigAor5V8B/CfwD4m8efGLUde0WXUrweP7pVlk1O5G1Tb2zlVAkAVdzOcAADccVT+OHwe+Hfh39j34la9oehzaXrOn+Hrm5sry31a6WSCWOMsjqfN4IIBoA+tqKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK8N+Lv/JaP2a/+ymS/+o3rVe5V4b8Xf+S0fs1/9lMl/wDUb1qgD3KvDfhX/wAn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7K3S3s7S2iEcVvFGoVERRwqqAAAOAABWhRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUVTurpLPS7q8mWZ4YImkdYLd5pCFBJCogLO2BwqgsTwASQK8n+D3xO1D4rfD7RvFjeGx4e0XWPDOn63pkcs07XO27e5wkqywxbWVIom+UMpMjbWZQjuAeyUV5v4i+Kvgnwt4ybw/q99qH9sJHA8kFjoN9fCMXDOluHaCF1RpXjkRFYhnZSqgnArY8P+KofE17a3mkrFdeGb3SYr6wvt0iTSMzsrpJC8amPaAnDHeGLqyoV5AOwooriPFnjGPw7JY6Xp9i/iHxdqZZdJ0WCQI82zbvllfBENvHvQyTMCF3Kqh5HjjcAteK/Fmn+FNMtZJre41TVr2b7PpOj2IVrvUp9pby41YqvCgszuyoihndlVSwxfC/hHUV8St4y8a3EGpeNpoTFDHbuzWWiwNgm2tAwBOSB5k7KskzAEhEWKGK34V8IyaTqdx4j8RXy6/wCNr2Hy7zUhDsit4shvs1rGSTFAGAO3JZyAzs7AEd5QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVw+i+C4fC/wR8I+BfC+q3elab4etNOsbO4cJNNJa2bRKYnLLg+bFEYmYAECRmXBAx3FFAHCXXw/0O8+I2peKJHu11O+XTFnCygR40+eaaDC7eMtcSbueRjGMZOx4W8N2HhHwNY+HdLkmksbTf5TXDhnO92kOSAB1Y9umK6OigArxH4U/Anwp8J/HXxG8X6bqWs+IvGvjvVRqPijWtZ1B5nuHUv5UUUQxHBDEsjRoiKCECKzPsUj26igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k="></p>
+<p style="text-align: center; line-height: 150%;" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Fig: Yaw, pitch, and roll of tool</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">&nbsp;</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">&nbsp;</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">&nbsp;</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Two types of coordinate frames are used here to specify tool orientation:</span></p>
+<ol start="1" style="margin-top:0in" type="1">
+    <li style="text-align:justify;text-justify:inter-ideograph;
+    line-height:150%;mso-list:l0 level1 lfo1;tab-stops:list .5in" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;
+    font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Tool coordinate      frame (<i style="mso-bidi-font-style:normal">M={m<sup>1</sup>,m<sup>2</sup>,m<sup>3</sup>}</i>):      It is a mobile frame that is attached and moves along with the tool. </span></li>
+</ol>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">m<sup>3</sup></span></i><sup><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial"> </span></sup><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">is aligned with the principle axis of the tool and points away from the wrist. </span></p>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">m<sup>2</sup></span></i><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial"> is parallel to the line followed by the fingertips of the tool as it opens and closes.</span></p>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">m<sup>1</sup></span></i><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:
+&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial"> completes the right-handed tool coordinate frame.</span></p>
+<p style="margin-left:.25in;text-align:justify;text-justify:
+inter-ideograph;line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:
+11.0pt;line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:
+Arial">2.<span style="mso-spacerun:yes">&nbsp; </span>Wrist coordinate frame (<i style="mso-bidi-font-style:normal">F={f<sup>1</sup>,f<sup>2</sup>,f<sup>3</sup>}</i>): The yaw, pitch and roll motions are performed in a specific order about a set of fixed axis defined by the wrist coordinate frame, attached at the end of the forearm.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Yaw motion is performed by rotating the tool about wrist axis <i style="mso-bidi-font-style:
+normal">f<sup>1</sup></i>. </span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Pitch motion is performed by rotating the tool about wrist axis<i style="mso-bidi-font-style:
+normal"> f<sup>2</sup></i>.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Roll motion is performed by rotating the tool about wrist axis<i style="mso-bidi-font-style:
+normal"> f<sup>3</sup></i>.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Positive angles correspond to counter-clockwise rotations.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">Fundamental Rotations:</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:
+11.0pt;line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:
+Arial">The mobile coordinate frame <i style="mso-bidi-font-style:normal">M </i>rotates with the tool while the fixed coordinate frame <i style="mso-bidi-font-style:
+normal">F</i> is stationary at the end of the forearm.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:
+11.0pt;line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:
+Arial">The three fundamental rotations correspond to yaw, pitch and roll.</span></p>
+<p style="text-align:justify;text-justify:inter-ideograph;
+line-height:150%" class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+line-height:150%;font-family:&quot;Georgia&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial">The mobile coordinate frame <i style="mso-bidi-font-style:normal">M </i>is obtained from the fixed coordinate frame <i style="mso-bidi-font-style:normal">F </i>by the rotating <i style="mso-bidi-font-style:normal">M</i> about one of the unit vectors of <i style="mso-bidi-font-style:normal">F </i>, with the resulting coordinate transformation matrix termed as the fundamental rotation matrix.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

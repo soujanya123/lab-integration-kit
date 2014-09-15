@@ -1,0 +1,785 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exp-1 Signals and their properties (Theory) : Signals and Systems Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Demonstration of different signals and their properties. There are FIVE sub-experiments within this experiment." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=166">Signals and Systems Laboratory</a>-><a href="">Exp-1 Signals and their properties</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Exp-1 Signals and their properties</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=166&sim=618&cnt=1582"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Objective&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=166&sim=618&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=1412"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=1760"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=618&cnt=1996"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;<a><br>
+</a></p>
+<h2>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <a name="link20"></a><a name="link19"></a><a name="link6"></a><a name="link7"></a><a name="link8"></a><a name="link9"></a><a name="link10"></a><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link1"><span style="color: rgb(0, 0, 255);"><big>Introduction to some simple signals</big></span></a></h2>
+<p>&nbsp;<big><br>
+</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><span style="color: rgb(0, 128, 128);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big></span></strong><u><strong><span style="color: rgb(0, 128, 128);"><big><blink>Type of signal</blink></big></span></strong></u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u><strong><span style="color: rgb(0, 128, 128);"><big><blink>Properties of signal</blink></big></span></strong></u></p>
+<p><strong><span style="color: rgb(0, 128, 128);"><big>&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</big></span></strong></p>
+<table style="width: 882px; height: 131px;" align="center" border="0">
+    <tbody>
+        <tr>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link1"><span style="color: rgb(0, 0, 255);">♦ <big>Definition of Signal</big></span></a></td>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link11"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Random and Deterministic Signal</big></span></a></td>
+            <td>
+            <p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link16"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Amplitude-scaling of Signal</big> </span></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link2"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Continuous-time Signal</big></span></a></td>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link12"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Causal, Non-causal and Anti-causal Signal <br>
+            </big></span></a></td>
+            <td>
+            <p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link17"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Time-scaling of Signals</big></span></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link3"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Discrete-time Signal</big></span></a></td>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link13"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Even and Odd Signal</big></span></a></td>
+            <td>
+            <p><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link18"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Time-shifting of Signal</big></span></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link4"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Digital Signal</big></span></a></td>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link14"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Real </big></span><span style="color: rgb(0, 0, 255);"><big>and Complex Exponential Signal <br>
+            </big></span></a></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link5"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Periodic and Aperiodic Signal</big></span></a></td>
+            <td><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link15"><span style="color: rgb(0, 0, 255);">♦ </span><span style="color: rgb(0, 0, 255);"><big>Impulse Signal</big></span></a></td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="color: rgb(0, 0, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big></span></p>
+<p>&nbsp;</p>
+<p><strong><big><span style="color: rgb(128, 0, 128);"><br>
+</span></big></strong></p>
+<p><strong><big><span style="color: rgb(128, 0, 128);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig2/sig7/line.jpg" align="absMiddle" height="5" width="642"></span></big></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>Introduction to some simple signal</big></span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="link1"><strong><big><span style="color: rgb(0, 0, 255);">Definition of Signal:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;<big>Any time varying physical phenomenon that can convey information is   called signal. Some examples of signals are human voice, electrocardiogram, sign language, videos etc. There are several classification of signals such as Continuous time signal, discrete time signal and digital signal, random signals and non-random signals</big>.</p>
+<p>&nbsp;</p>
+<p><a name="link2"><big><strong><span style="color: rgb(0, 0, 255);">Continuous-time Signal:</span></strong></big></a></p>
+<p>&nbsp;</p>
+<p><big>A continuous-time signal is a signal that can be defined at every instant of time. A continuous-time signal contains values for all real numbers along the X-axis. It is denoted by <em>x(t)</em>. Figure 1(a) shows continuous-time signal.<br>
+</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;<img alt="" src="/userfiles/7/image/sig6/cont.jpg" align="absMiddle" height="146" width="350"> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<img alt="" src="/userfiles/7/image/sig6/dis.jpg" align="absMiddle" height="157" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big>Fig.1(a) Continuous-time signal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Fig.1(b) Discrete-time signal <br>
+&nbsp;</big></p>
+<p><a name="link3"><strong><big><span style="color: rgb(0, 0, 255);">Discrete-time Signal:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p><big>Signals that can be defined at discrete instant of time is called  discrete time signal. Basically discrete time signals can be obtained by sampling a continuous-time signal. It is denoted as <em>x(n)</em>.Figure 1(b) shows discrete-time signal.<br>
+</big></p>
+<p><span style="font-size: medium;"><br>
+</span></p>
+<p><a name="link4"><strong><big><span style="color: rgb(0, 0, 255);">Digital Signal:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p><big>The  signals that are discrete in time and quantized in amplitude are called  digital signal. The term "digital signal" applies to the transmission of  a sequence of values of a discrete-time signal in the form of some  digits in the encoded form.</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link19"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;</p>
+<p><a name="link5"><strong><big><span style="color: rgb(0, 0, 255);">Periodic and Aperiodic Signal:</span></big></strong><big><span style="color: rgb(0, 0, 255);">&nbsp;</span></big></a></p>
+<p>&nbsp;</p>
+<p><big>A signal is said to be periodic if it repeats itself after some amount of time<em> x(t+T)</em>=<em>x(t)</em>, for some value of <em>T</em>. The period of the signal is the minimum value of time for which it exactly repeats itself.&nbsp;</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;</big></p>
+<table style="width: 713px; height: 161px;" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><big><img alt="" style="width: 333px; height: 128px;" src="/userfiles/7/image/sig2/sig7/periodic.jpg" align="absMiddle"></big></td>
+            <td><span style="font-size: medium;"><img alt="" src="/userfiles/7/image/sig2/aperiodic.jpg" align="absMiddle" height="119" width="300"></span></td>
+        </tr>
+        <tr>
+            <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.2(a) Periodic signal <br>
+            </big></td>
+            <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.2(b)&nbsp; Aperiodic signal</big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big>&nbsp;</big></p>
+<p><big>Signal which does not repeat itself after a certain period of time is called aperiodic signal. The periodic and aperiodic signals are shown in Figure 2(a) and 2(b) respectively.<br>
+</big></p>
+<p style="text-align: left;"><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <br>
+</span></p>
+<p><a name="link11"><strong><big><span style="color: rgb(0, 0, 255);">Random and Deterministic Signal:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p><big>A  random signal  cannot be described by any mathematical function, where as a deterministic signal is one that can be described mathematically. A common example of random signal is noise. Random signal and deterministic signal are shown in the Figure 3(a) and 3(b) respectively.<br>
+</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp; <img alt="" style="width: 371px; height: 196px;" src="/userfiles/7/image/sig6/random.jpg" align="absMiddle"> &nbsp; &nbsp;&nbsp; <img alt="" style="width: 350px; height: 190px;" src="/userfiles/7/image/sig1/sq_deter%281%29.jpg" align="absMiddle"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <big>Fig.3(a) Random signal&nbsp;</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big>Fig.3(b) Deterministic signal</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="link12"><strong><big><span style="color: rgb(0, 0, 255);">Causal, Non-causal and Anti-causal Signal:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p><big>Signal that are zero for all negative time, that type of signals are called causal signals, while the signals that are zero for all positive value of time  are called anti-causal signal. </big></p>
+<p><big>A non-causal signal is one that has non  zero values in both positive and negative time. Causal, non-causal and anti-causal signals are shown below in the Figure 4(a), 4(b) and 4(c) respectively.<br>
+</big></p>
+<table border="0" cellpadding="1" cellspacing="1" width="200">
+    <tbody>
+        <tr>
+            <td><big><img alt="" src="/userfiles/7/image/sig2/sig7/causal.jpg" align="absMiddle" height="128" width="247"></big></td>
+            <td><img alt="" src="/userfiles/7/image/sig2/sig7/non-causal.jpg" align="absMiddle" height="121" width="221"></td>
+            <td><img alt="" src="/userfiles/7/image/sig2/sig7/anti_causal.jpg" align="absMiddle" height="124" width="230"></td>
+        </tr>
+        <tr>
+            <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.4(a) Causal signal</big></td>
+            <td><big>&nbsp;&nbsp; Fig.4(b) Non-caual signal</big></td>
+            <td><big>&nbsp;&nbsp; Fig.4(c) Anti-causal signal</big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(51, 102, 255);"><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link6"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></span></p>
+<p>&nbsp;</p>
+<p><a name="link13"><strong><span style="color: rgb(0, 0, 255);"><big>Even and Odd Signal:</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big> An even signal is any signal&nbsp;<em>&#039;x</em>&#039; such that<em> x</em><span style="font-style: italic;">(t) = x(-t)</span>. On the other hand, an odd signal is a signal <em>&#039;x&#039;   </em>for which <span style="font-style: italic;">x</span><em>(t) = <big>-</big>x(-t)</em>. Even signals are symmetric around the vertical   axis, so that they can easily spotted. </big></p>
+<table style="width: 596px; height: 150px;" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><span style="font-size: medium;"><img alt="" src="/userfiles/7/image/sig2/odd.jpg" align="absMiddle" height="117" width="219"></span></td>
+            <td><span style="font-size: medium;"><img alt="" src="/userfiles/7/image/sig2/even.jpg" align="absMiddle" height="97" width="226"></span></td>
+        </tr>
+        <tr>
+            <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.5(a) Odd signal</big></td>
+            <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.5(b) Even signal</big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><big>An even signal is one that is invariant under the time scaling<em> </em><em>t→</em><em> - t </em>and an odd sign</big><big>a</big><big>l is one that is invariant under the amplitude and time scaling<em> x(t) → - x(-t).</em></big></p>
+<p><big>A simple way of visualizing even and odd signal is to imazine that the ordinate <em>[x(t)]</em> axis is a mirror. For even signals, the part of<span style="font-style: italic;"> x</span><em>(t) </em>for <em>t &gt; 0 </em>and the part of <span style="font-style: italic;">x</span><em>(t)</em> for <em>t &lt; 0 </em>are mirror images of each other. In case of an odd signal, the same two parts of the signals are negative mirror  images of each other. Some signals are odd, some signals are even and  some signals are neither odd nor even. But any signal <em>x(t)</em> can be expressed as a sum of its even and odd parts such as <em>x(t) = x<sub>e</sub>(t) + x<sub>o</sub>(t)</em> or we can say that every signal is composed of the addition of an even part and odd part. The even and odd parts of a signal <em>x(t)</em> are&nbsp;</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=557922494d47a641703043ccb2d7af6a.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»e«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mrow»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»+«/mo»«mi»x«/mi»«mo»(«/mo»«mo»-«/mo»«mi»t«/mi»«mo»)«/mo»«/mrow»«mn»2«/mn»«/mfrac»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp;&nbsp;&nbsp; <big>and &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c1f764e43a3f828acf1f8169fd448799.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»o«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mrow»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»-«/mo»«mi»x«/mi»«mo»(«/mo»«mo»-«/mo»«mi»t«/mi»«mo»)«/mo»«/mrow»«mn»2«/mn»«/mfrac»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big><big><br>
+</big></p>
+<p><big>Here </big><em><big>x<sub>e</sub></big><big>(t) </big></em><big>denotes the even part of signal <em>x(t)</em> and </big><em><big>x<sub>o</sub></big><big>(t) </big></em><big>denotes the odd part of signal <em>x(t)</em>. </big><big>Figure 5(a) and 5(b) shows the odd signal and even signal respectively. </big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: medium;"><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link7"><span style="color: rgb(0, 0, 255);">Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></span></a></blink><br>
+</span></p>
+<p>&nbsp;</p>
+<p><a name="link16"><strong><span style="color: rgb(0, 0, 255);"><big>Amplitude-Scaling of Signal:</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>There are some important properties of signal such as amplitude-scaling, time-scaling and time-shifting. </big><big>Among these properties now we are discussing about amplitude scaling. Consider a signal <em>x(t)</em> which is multiplying by a constant <em>&#039;A</em>&#039; and this can be indicated by a notation <em>x(t) → Ax(t)</em></big>. <big>For any arbitrary </big><em><big>&#039;t&#039;</big></em>&nbsp; <big>this multiplies the signal value <em>x(t)</em> by a constant<em> &#039;A&#039;</em>. </big><big>Thus, <em>x(t) → Ax(t)</em></big> <big>multiplies <em>x(t)</em> at every value of <em>&#039;t&#039;</em> by a constant <em>&#039;A&#039;</em>. This is called amplitude-scaling. If the amplitude-scaling factor is negative then it flips the signal with the<em> t-</em>axis as the rotation axis of the flip. If the scaling factor is -1 then only the signal will be flip. This is shown in the Figure 6(a), 6(b), 6(c) which is given below.<br>
+</big></p>
+<p><big>&nbsp;&nbsp; <img src="/userfiles/7/image/sig2/amp.jpg" alt="" align="absMiddle" height="149" width="209"> &nbsp;&nbsp; </big><big><img src="/userfiles/7/image/sig6/sig8/amp2.jpg" alt="" align="absMiddle" height="170" width="209"> &nbsp;&nbsp; </big><img src="/userfiles/7/image/sig2/amp3.jpg" alt="" align="absMiddle" height="162" width="220"></p>
+<p>&nbsp;</p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.6(a) A signal x(t)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><big>Fig.6(b) A signal x(t) scaled by <em>-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em></big><big>Fig.6(c) A signal x(t) scaled by<span style="font-style: italic;"> </span></big><em><big>1/2</big></em></p>
+<p>&nbsp;</p>
+<p><big><br>
+</big></p>
+<p><a name="link17"><strong><span style="color: rgb(0, 0, 255);"><big>Time-Scaling of Signal</big>:</span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>Time scaling compresses or dilates a signal by multiplying the time variable by some quantity. If that quantity is greater than one, the signal becomes narrower and the operation is called compression. If that quantity is less than one, the signal becomes wider and the operation is called dilation. Figure 7(a), 7(b), 7(c) shows the signal x(t), compression of signal and dilation of signal respectively.<br>
+</big></p>
+<table style="width: 685px; height: 200px;" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><big><img alt="" src="/userfiles/7/image/sig1/tim_scal%281%29.jpg" align="absMiddle" height="105" width="140"></big></td>
+            <td><img alt="" src="/userfiles/7/image/sig1/tim_scal1.jpg" align="absMiddle" height="119" width="140"></td>
+            <td><img alt="" src="/userfiles/7/image/sig1/tim_scal2.jpg" align="absMiddle" height="129" width="140"></td>
+        </tr>
+        <tr>
+            <td><big>Fig.7</big><big>(a) Signal x(t)</big></td>
+            <td><big>Fig.7(b) Compression of signal</big></td>
+            <td><big>Fig.7(c) Dilation of signal</big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link20"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p><a name="link18"><strong><span style="color: rgb(0, 0, 255);"><big>Time-Shifting of Signal</big>:</span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>In signals and system amplitude scaling, time shifting and time scaling are some important properties. </big><big>If&nbsp; a continuous time signal is defined as<em> x(t) = s(t - t1)</em>. Then we can say that <em>x(t)</em> is the time shifted version of <em>s(t)</em>.</big></p>
+<p><big>Consider a simple signal<span style="color: rgb(51, 102, 255);"><em> </em></span></big><big><span style="color: rgb(51, 102, 255);"><em><span style="color: rgb(0, 0, 0);">s(t)</span> </em></span>for <em><span style="font-size: 12pt; line-height: 115%;">0 &lt; </span><span style="font-size: 12pt; line-height: 115%;">t &lt;</span><span style="font-size: 12pt; line-height: 115%;"> 1</span></em></big></p>
+<table style="width: 806px; height: 237px;" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><big><span style="font-size: 12pt; line-height: 115%;"><img alt="" src="/userfiles/7/image/sig6/sig8/time_shf.jpg" align="absMiddle" height="204" width="235"></span></big></td>
+            <td><span style="font-size: 12pt; line-height: 115%;"><img alt="" src="/userfiles/7/image/sig6/sig8/time_shf1.jpg" align="absMiddle" height="200" width="220"></span></td>
+            <td><big><big><span style="font-size: 12pt; line-height: 115%;"><img alt="" src="/userfiles/7/image/sig6/sig8/time_shf3.jpg" align="absMiddle" height="196" width="230"></span></big></big></td>
+        </tr>
+        <tr>
+            <td><big>Fig.8(a) Signal</big> <big>within </big><em><big>0&lt; t &lt; 1</big></em></td>
+            <td><big>Fig.8(b) Signal</big><big> shifted by <em>2</em> sec.</big></td>
+            <td><big>Fig.8(c) Signal shifted by -1 sec.</big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><big>Now shifting the function&nbsp; by time <em>t1 = 2</em></big> <big>sec.</big></p>
+<p>&nbsp;&nbsp;<big> <em>x(t) = s (t-2) = t-2</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp; <span style="font-size: 12pt; line-height: 115%;">for</span> &nbsp; &nbsp; <span style="font-size: 12pt; line-height: 115%;">0</span> <span style="font-size: 12pt; line-height: 115%;">&lt; (</span><span style="font-size: 12pt; line-height: 115%;">t -</span><span style="font-size: 12pt; line-height: 115%;"> </span><span style="font-size: 12pt; line-height: 115%;">2)</span> <span style="font-size: 12pt; line-height: 115%;">&lt; 1</span></em><span style="font-size: 12pt; line-height: 115%;"><br>
+</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em><big>= t-2</big></em><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big> <em><span style="font-size: 12pt; line-height: 115%;">for</span>&nbsp;&nbsp; <big> 2&nbsp; </big><span style="font-size: 12pt; line-height: 115%;">&lt; </span><span style="font-size: 12pt; line-height: 115%;">(t -</span> <span style="font-size: 12pt; line-height: 115%;">2 ) &lt; 3</span></em></p>
+<p><span style="font-size: 12pt; line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>
+</span></p>
+<p><big>Which is simply signal <em>s(t)&nbsp;</em> with its origin delayed by <em>2</em> sec. </big></p>
+<p>&nbsp;</p>
+<p><big>Now if we shift the signal by <em>t1 = -1</em> sec.</big></p>
+<p>&nbsp;</p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then <em>x(t) = s (t+1) = t+1</em>&nbsp;&nbsp;&nbsp;&nbsp; <em>for</em> &nbsp;&nbsp;&nbsp;&nbsp; <em>0 &lt;&nbsp;(t+1)</em> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = t+1</em>&nbsp;&nbsp;&nbsp;&nbsp; <em>for</em>&nbsp;&nbsp;&nbsp;&nbsp; <em>-1 &lt; <span style="font-size: 12pt; line-height: 115%;">  t &lt; 0</span></em><span style="font-size: 12pt; line-height: 115%;">.</span></big></p>
+<p><big><big> </big></big></p>
+<p><big><big><span style="font-size: 12pt; line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</span></big></big></p>
+<p><big><big> </big></big></p>
+<p><big>Which is&nbsp; simply <em>s(t)</em> with its origin shifted to the left or advance in time by <em>1</em> seconds. This time-shifting property of signal is shown in the Figure 8(a), 8(b) and 8(c) given above.<a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link1"><br>
+</a></big></p>
+<p><big><big> </big></big></p>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link8"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></big></span></a></blink></p>
+<p><a name="link15"><strong><big><span style="color: rgb(0, 0, 255);">Impulse Signal:&nbsp;</span></big></strong><big><span style="color: rgb(0, 0, 255);"><br>
+</span></big></a></p>
+<p>&nbsp;</p>
+<p><big> </big></p>
+<p><big>The Dirac delta  function or unit impulse or often referred to as the delta function, is  the function that defines the idea of a unit impulse in  continuous-time. Informally, this function is one that is infinitesimally  narrow, infinitely tall, yet integrates to one. Perhaps the simplest way  to visualize this as a rectangular pulse from a -D/2 to a +D/2 with a height of 1/D. As we take the limit of this setup as D approaches <em>0</em>, we see that the width tends to zero and the height tends  to infinity as the total area remains constant at one.<br>
+The impulse function is often written as&nbsp;<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=6623553b4c9f04c5b79b76485188a2be.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=0a1a97a017abaca8c2208cb0a5f30b59.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»d«/mi»«mi»t«/mi»«mo»=«/mo»«mn»1«/mn»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></p>
+<table style="width: 515px; height: 192px;" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><big><big><img alt="" src="/userfiles/7/image/sig6/sig8/impls.jpg" align="absMiddle" height="140" width="146"></big></big></td>
+            <td><big><big><img alt="" src="/userfiles/7/image/sig6/sig8/impls1.jpg" align="absMiddle" height="126" width="143"></big></big></td>
+        </tr>
+        <tr>
+            <td><big>Fig.9(a)&nbsp; Dirac delta functoin</big></td>
+            <td><big>Fig.9(b) Unit impulse</big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big> </big><big><br>
+</big></p>
+<p><big> </big></p>
+<p><big>Since it is quite difficult to draw something that is  infinitely tall, we represent the Dirac with an arrow centered at the  point it is applied. The dirac delta function and unit impulse are shown in Figure 9(a) and 9(b) respectively.<br>
+</big></p>
+<p><big> </big></p>
+<p><big>The impulse function has some special properties.</big></p>
+<p>&nbsp;</p>
+<p><big> </big></p>
+<ul><big>
+    <ul type="disc">
+        <li>&nbsp;The sampling property.</li>
+    </ul>
+    </big></ul>
+    <p><big> </big></p>
+    <p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=df6b4ac4cf7d7e8e936115e9723d7cae.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»f«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mi»f«/mi»«mo»(«/mo»«mn»0«/mn»«mo»)«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+    <p><big>     </big></p>
+    <ul><big>
+        <ul type="disc">
+            <p><span style="display: none;" id="1317213280690S">&nbsp;</span></p>
+            <li><big><span id="1318397709986S" style="display: none;">&nbsp;</span>&nbsp;</big>Another important property is the scaling property.</li>
+            <p><span style="display: none;" id="1317213280843E">&nbsp;</span></p>
+        </ul>
+        </big></ul>
+        <p><big>     </big></p>
+        <p><big><big>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=55ecf8d449bbfd80a7e1c0c257c3c33c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»§#948;«/mi»«mo»(«/mo»«mi»§#945;«/mi»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mn»1«/mn»«mfenced close=¨|¨ open=¨|¨»«mi»§#945;«/mi»«/mfenced»«/mfrac»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></p>
+        <p><big>         </big></p>
+        <p><big>Since the derivative of the unit step<em> u(t)</em><em> </em>is zero everywhere except at<em> t=0</em>, the unit impulse is zero everywhere except at<em> t=0. </em>Since  the unit step is the integral of the unit impulse, a definite  integral of the unit impulse whose integration range includes<em> t=0</em> must  have the value one.</big></p>
+        <p>&nbsp;</p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=67a63315489c6a57b8caa1ecf9d84a78.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mi»d«/mi»«mrow»«mi»d«/mi»«mi»t«/mi»«/mrow»«/mfrac»«mi»u«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">, where <em>u(t)</em> is the unit step.</big></p>
+        <p>&nbsp;<big>This scaling property can not be applied for discrete-time impulse.</big></p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link9"><span style="color: rgb(0, 0, 255);"><big>Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" style="width: 19px; height: 19px;" align="absMiddle"></big></span></a></blink></p>
+        <p>&nbsp;</p>
+        <p><big>         </big></p>
+        <p><a name="link14"><strong><span style="color: rgb(0, 0, 255);"><big>Real and Complex Exponential Signal</big></span><big><span style="color: rgb(0, 0, 255);">:</span></big></strong>&nbsp;</a></p>
+        <p>&nbsp;</p>
+        <p><big>Exponential signal is of two types. These two type of signals are real exponential signal and complex exponential signal</big> <big>which are given below.</big></p>
+        <p>&nbsp;</p>
+        <p><big>         </big></p>
+        <p><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin-top:0in;
+mso-para-margin-right:0in;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0in;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><big> <strong><span style="color: rgb(51, 102, 255);"><span style="color: rgb(0, 0, 255);">Real Exponential Signal:</span></span></strong><span style="color: rgb(51, 102, 255);"> </span><big>&nbsp;</big></big></p>
+        <p>&nbsp;</p>
+        <p><big>         </big></p>
+        <p><big>A real exponential signal is defined as</big></p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mi»A«/mi»«msup»«mi»e«/mi»«mrow»«mi»§#963;«/mi»«mi»t«/mi»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=2311078021cb3aad51fbe4d57e883902.png" align="middle"></big></p>
+        <p><big>Where both <em>"A"</em> and<em> "</em></big><big><em>σ</em></big><big><em>"</em> are real. Depending on the value of "</big><big><em>σ</em></big><big>" the signals will be different. If <em>"</em></big><big><em>σ</em></big><big><em>"</em> is positive the signal <em>x(t)</em> is a growing exponential and if <em>"</em></big><big><em>σ</em></big><big><em>"</em> is negative then the signal <em>x(t)</em> is a decaying exponential. For </big><big><em>σ</em></big><big>=0, signal <em>x(t)</em> will be constant. Figure 10(a), 10(b) and 10(c) shows a dc signal, exponentially growing signal and exponentially decaying signal respectively.<br>
+        </big></p>
+        <table style="width: 890px; height: 241px;" align="center" border="0" cellpadding="1" cellspacing="1">
+            <tbody>
+                <tr>
+                    <td><big><img src="/userfiles/7/image/sig2/dc_signal.jpg" alt="" align="absMiddle" height="172" width="250"></big></td>
+                    <td><img alt="" src="/userfiles/7/image/sig6/sig8/grow_expon.jpg" align="absMiddle" height="186" width="250"></td>
+                    <td><img alt="" src="/userfiles/7/image/sig6/sig8/decay_sig%281%29.jpg" align="absMiddle" height="189" width="250"></td>
+                </tr>
+                <tr>
+                    <td><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.10(a) A dc signal</big></td>
+                    <td><big>Fig.10(b) Exponentially growing signal</big></td>
+                    <td><big>Fig.10(c) Exponentially decaying signal</big></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big> &nbsp; </big><big><br>
+        </big></p>
+        <p><big>         </big></p>
+        <p class="MsoNormal"><big>&nbsp;</big></p>
+        <p><big>         </big></p>
+        <p><big><span style="color: rgb(0, 0, 255);">&nbsp;</span><strong><span style="color: rgb(0, 0, 255);">Complex exponential Signal:</span></strong></big></p>
+        <p class="MsoNormal">&nbsp;</p>
+        <p><big>         </big></p>
+        <p><big>The complex exponential signal is given by</big></p>
+        <p class="MsoNormal"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=811c9c03cba76d6b58d2231daf1e5b28.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mi»A«/mi»«msup»«mi»e«/mi»«mrow»«mi»s«/mi»«mi»t«/mi»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+        <p><big>         </big></p>
+        <p><big>Where <em>"s"</em> is a complex variable and it is defined as&nbsp; </big></p>
+        <p><big>         </big></p>
+        <p class="MsoNormal"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=105b5f65ce95e8d174a7e45cf67bd2d9.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»s«/mi»«mo»=«/mo»«mi»§#963;«/mi»«mo»+«/mo»«mi»j«/mi»«mi»§#969;«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+        <p><big>         </big></p>
+        <p><big>Therefore</big></p>
+        <p><big>         </big></p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msup»«mi»e«/mi»«mrow»«mi»s«/mi»«mi»t«/mi»«/mrow»«/msup»«mo»=«/mo»«msup»«mi»e«/mi»«mrow»«mo»(«/mo»«mi»§#963;«/mi»«mo»+«/mo»«mi»j«/mi»«mi»§#969;«/mi»«mo»)«/mo»«mi»t«/mi»«/mrow»«/msup»«mo»=«/mo»«msup»«mi»e«/mi»«mrow»«mi»§#963;«/mi»«mi»t«/mi»«/mrow»«/msup»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#969;«/mi»«mi»t«/mi»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=1bfc38da7155dc2fe1f34e74a5bed646.png" align="middle"></big><big>&nbsp;&nbsp; ........................(1)</big></p>
+        <p><big>         </big></p>
+        <p><big>Using Eulers identity </big></p>
+        <p><big>         </big></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style="font-size: 16pt; line-height: 115%;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#969;«/mi»«mi»t«/mi»«/mrow»«/msup»«mo»=«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«mo»=«/mo»«mi mathvariant=¨normal¨»cos«/mi»«mi»§#952;«/mi»«mo»+«/mo»«mi»j«/mi»«mi mathvariant=¨normal¨»sin«/mi»«mi»§#952;«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9def5d435a25b8648184d895becd6c02.png" align="middle">&nbsp; &nbsp; &nbsp;</span><big>...............................(2)</big><span style="font-size: 16pt; line-height: 115%;"> </span></p>
+        <p><big>Substituting eq<sup>n</sup>.(2) in eq<sup>n</sup>.(1) we have</big></p>
+        <p>&nbsp;</p>
+        <p><big>         </big></p>
+        <p><big>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msup»«mi»e«/mi»«mrow»«mi»§#963;«/mi»«mi»t«/mi»«/mrow»«/msup»«mo»[«/mo»«mi mathvariant=¨normal¨»cos«/mi»«mi»§#952;«/mi»«mo»+«/mo»«mi»j«/mi»«mi mathvariant=¨normal¨»sin«/mi»«mi»§#952;«/mi»«mo»]«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=8293ff8956874e471e21a2cb29784a40.png" align="middle"></big></p>
+        <p><big>&nbsp;A complex exponential signal can not be plot in a two dimentional (2D) graph, it should be plot in a three </big><big>dimentional graph. Figure given below shows the three dimentional view of a complex exponential signal.<br>
+        </big></p>
+        <p>&nbsp;</p>
+        <p><big>Real sines and real cosines can be expressed by the combinations of complex sinusoids through the trigonometric identities </big></p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨normal¨»cos«/mi»«mo»(«/mo»«mi»§#952;«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mrow»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«mo»+«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«/mrow»«mn»2«/mn»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c08b3d43852146c2536596acb03ab59b.png" align="middle"></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big>and</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨normal¨»sin«/mi»«mo»(«/mo»«mi»§#952;«/mi»«mo»)«/mo»«mo»=«/mo»«mfrac»«mrow»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«mo»-«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«/mrow»«mrow»«mi»j«/mi»«mn»2«/mn»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=0349fc578df9cc41251d900d6ae6b53e.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p><big>Complex exponential signal<img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»(«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=54ea8fbf583d1a63dd08925a3bae1f38.png" align="middle">, out of phase complex exponential signal<img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»(«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c23fd3ddfb7d0e37561066cc9ded938a.png" align="middle">and the addition and substraction of complex exponentials to </big><big>form the real cosine and real sine</big> <big>are </big><big>shown in Figure 11(a), 11(b), 11(c) and 11(d) respectively.</big></p>
+        <p><big>&nbsp;</big></p>
+        <p><big>         </big></p>
+        <p><big><span style="font-size: 16pt; line-height: 115%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></big><big><small><big><span style="font-size: 12pt; line-height: 115%;"><img src="/userfiles/7/image/sig6/sig8/cp1.jpg" alt="" align="absMiddle" height="263" width="300">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/userfiles/7/image/sig6/sig8/cp2.jpg" alt="" align="absMiddle" height="264" width="300"> <br>
+        </span></big></small></big></p>
+        <p><big>         </big></p>
+        <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Fig.11(a) Complex exponential signal <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=95dbfd1878296da7a020240fc46d3c42.png" align="middle">&nbsp;&nbsp; Fig.11(b) Out of phase complex exponential signal<img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mi»§#952;«/mi»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9fc2f71b9a31a951043983d207964f9b.png" align="middle"><br>
+        </big></p>
+        <p><big><big><small><span style="font-size: 12pt; line-height: 115%;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src="/userfiles/7/image/sig6/sig8/cp3.jpg" alt="" align="absMiddle" height="267" width="300"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </span></small></big></big><big><big><img src="/userfiles/7/image/sig6/sig8/cp4.jpg" alt="" align="absMiddle" height="267" width="300"></big></big></p>
+        <p>&nbsp;</p>
+        <p><big>Fig.11(c)Real cosine after addition of complex sinusoids </big><big>Fig.11(d) Real sine after substraction of complex sinusoids<br>
+        </big></p>
+        <p><big><br>
+        </big></p>
+        <p>&nbsp;</p>
+        <p><big>         </big><big><big>         </big></big><big>         </big><big><big><span style="font-size: 12pt; line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 12pt; line-height: 115%;">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link10"><span style="color: rgb(0, 0, 255);"><span style="font-size: 12pt; line-height: 115%;">Top<img alt="" src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" align="absMiddle"></span></span></a></blink><span style="font-size: 12pt; line-height: 115%;"><br>
+        </span><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=618&amp;cnt=1#link1"><span style="color: rgb(51, 102, 255);"><span style="font-size: medium;"><br>
+        </span></span></a></big></big></p>
+        <p><big>         </big></p>
+        <p><big><big>         </big></big></p>
+        <p><big><br>
+        </big></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

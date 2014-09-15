@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BPSK Modulation and Demodulation(Real time experiment) (Quiz) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="BPSK Modulation and Demodulation(Real time experiment)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">BPSK Modulation and Demodulation(Real time experiment)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">BPSK Modulation and Demodulation(Real time experiment)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=262&cnt=970"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=978"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=1027"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=1028"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=262&cnt=1622"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=1813"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=262&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">ASK, BPSK and FSK are the examples of ______ conversion.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3888" style="vertical-align:middle" type="radio" name="ans0"  value="3888"> </input><label for="ans3888" id="textAnsChoice">digital to digital</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3889" style="vertical-align:middle" type="radio" name="ans0"  value="3889"> </input><label for="ans3889" id="textAnsChoice">digital to analog</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3890" style="vertical-align:middle" type="radio" name="ans0"  value="3890"> </input><label for="ans3890" id="textAnsChoice">analog to digital</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3891" style="vertical-align:middle" type="radio" name="ans0"  value="3891"> </input><label for="ans3891" id="textAnsChoice">analog to analog</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Which one of the following pairing between analog and digital carrier modulations based on their similarity is correct?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3988" style="vertical-align:middle" type="radio" name="ans1"  value="3988"> </input><label for="ans3988" id="textAnsChoice">FM – PSK</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3989" style="vertical-align:middle" type="radio" name="ans1"  value="3989"> </input><label for="ans3989" id="textAnsChoice">AM – FSK</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3990" style="vertical-align:middle" type="radio" name="ans1"  value="3990"> </input><label for="ans3990" id="textAnsChoice">PM – ASK</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3991" style="vertical-align:middle" type="radio" name="ans1"  value="3991"> </input><label for="ans3991" id="textAnsChoice">DSBSC AM – PSK</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Minimal allowable bandwidth for a binary signal with bit rate of 200 kbps is</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3916" style="vertical-align:middle" type="radio" name="ans2"  value="3916"> </input><label for="ans3916" id="textAnsChoice">100 KHz</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3917" style="vertical-align:middle" type="radio" name="ans2"  value="3917"> </input><label for="ans3917" id="textAnsChoice">200 KHz</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3918" style="vertical-align:middle" type="radio" name="ans2"  value="3918"> </input><label for="ans3918" id="textAnsChoice">10 MHz</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3919" style="vertical-align:middle" type="radio" name="ans2"  value="3919"> </input><label for="ans3919" id="textAnsChoice">20 MHz</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Which one of the following circuit is used to produce BPSK signal?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3912" style="vertical-align:middle" type="radio" name="ans3"  value="3912"> </input><label for="ans3912" id="textAnsChoice">Low pass filter</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3913" style="vertical-align:middle" type="radio" name="ans3"  value="3913"> </input><label for="ans3913" id="textAnsChoice">Carrier recovery circuit</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3914" style="vertical-align:middle" type="radio" name="ans3"  value="3914"> </input><label for="ans3914" id="textAnsChoice">diode detector</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3915" style="vertical-align:middle" type="radio" name="ans3"  value="3915"> </input><label for="ans3915" id="textAnsChoice">balanced modulator</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">In _______, the peak amplitude of one signal level is 0; the other is the same as the amplitude of the carrier frequency.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3908" style="vertical-align:middle" type="radio" name="ans4"  value="3908"> </input><label for="ans3908" id="textAnsChoice">OOK</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3909" style="vertical-align:middle" type="radio" name="ans4"  value="3909"> </input><label for="ans3909" id="textAnsChoice">FSK</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3910" style="vertical-align:middle" type="radio" name="ans4"  value="3910"> </input><label for="ans3910" id="textAnsChoice">PSK</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3911" style="vertical-align:middle" type="radio" name="ans4"  value="3911"> </input><label for="ans3911" id="textAnsChoice">none of these</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">A constellation diagram shows us the __________ of a signal element, particularly when we are using two carriers (one in-phase and one quadrature).</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3904" style="vertical-align:middle" type="radio" name="ans5"  value="3904"> </input><label for="ans3904" id="textAnsChoice">amplitude and phase</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3905" style="vertical-align:middle" type="radio" name="ans5"  value="3905"> </input><label for="ans3905" id="textAnsChoice">frequency and phase</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3906" style="vertical-align:middle" type="radio" name="ans5"  value="3906"> </input><label for="ans3906" id="textAnsChoice">amplitude and frequency</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3907" style="vertical-align:middle" type="radio" name="ans5"  value="3907"> </input><label for="ans3907" id="textAnsChoice">none of these</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The constellation diagram of BPSK has ____ points.</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3900" style="vertical-align:middle" type="radio" name="ans6"  value="3900"> </input><label for="ans3900" id="textAnsChoice">0</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3901" style="vertical-align:middle" type="radio" name="ans6"  value="3901"> </input><label for="ans3901" id="textAnsChoice">1</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3902" style="vertical-align:middle" type="radio" name="ans6"  value="3902"> </input><label for="ans3902" id="textAnsChoice">2</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3903" style="vertical-align:middle" type="radio" name="ans6"  value="3903"> </input><label for="ans3903" id="textAnsChoice">4</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">&#039;BPSK&#039; stands for</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3896" style="vertical-align:middle" type="radio" name="ans7"  value="3896"> </input><label for="ans3896" id="textAnsChoice">Bits per second keying</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3897" style="vertical-align:middle" type="radio" name="ans7"  value="3897"> </input><label for="ans3897" id="textAnsChoice">Bytes per second keying</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3898" style="vertical-align:middle" type="radio" name="ans7"  value="3898"> </input><label for="ans3898" id="textAnsChoice">Binary pulse shift keying</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3899" style="vertical-align:middle" type="radio" name="ans7"  value="3899"> </input><label for="ans3899" id="textAnsChoice">Binary phase shift keying</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">9)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Which of the following is not a digital to analog conversion?</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3892" style="vertical-align:middle" type="radio" name="ans8"  value="3892"> </input><label for="ans3892" id="textAnsChoice">Amplitude Shift Keying</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3893" style="vertical-align:middle" type="radio" name="ans8"  value="3893"> </input><label for="ans3893" id="textAnsChoice">Frequency Shift Keying</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3894" style="vertical-align:middle" type="radio" name="ans8"  value="3894"> </input><label for="ans3894" id="textAnsChoice">Pulse Code Modulation</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3895" style="vertical-align:middle" type="radio" name="ans8"  value="3895"> </input><label for="ans3895" id="textAnsChoice">Frequency Modulation</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint18" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">10)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Bits of duration Tb are to be transmitted using a BPSK modulation with a carrier of frequency fc Hz. The power spectral density of the transmitted signal has the first null at the normalized frequency</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3992" style="vertical-align:middle" type="radio" name="ans9"  value="3992"> </input><label for="ans3992" id="textAnsChoice">|f – fc|Tb = 0</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3993" style="vertical-align:middle" type="radio" name="ans9"  value="3993"> </input><label for="ans3993" id="textAnsChoice">|f – fc|Tb = 1</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans3994" style="vertical-align:middle" type="radio" name="ans9"  value="3994"> </input><label for="ans3994" id="textAnsChoice">|f – fc|Tb = 2</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans3995" style="vertical-align:middle" type="radio" name="ans9"  value="3995"> </input><label for="ans3995" id="textAnsChoice">|f – fc|Tb = 4</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint19" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383132150/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

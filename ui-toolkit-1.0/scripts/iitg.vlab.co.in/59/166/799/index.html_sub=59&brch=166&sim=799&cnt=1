@@ -1,0 +1,585 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exp-3 Fourier analysis of signals (Theory) : Signals and Systems Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Analysis of Fourier properties of Signals.
+There are SIX sub-experiments within this experiment." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=166">Signals and Systems Laboratory</a>-><a href="">Exp-3 Fourier analysis of signals</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Exp-3 Fourier analysis of signals</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=166&sim=799&cnt=1407"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Objective&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=166&sim=799&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=1533"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=1704"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=166&sim=799&cnt=1992"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h2>&nbsp; <blink><a name="link17"></a><a name="link16"><span style="color: rgb(0, 128, 128);"><span style="background-color: rgb(255, 255, 255);"><strong><big>Contents:-</big></strong></span></span></a></blink></h2>
+<p>&nbsp;</p>
+<h2>&nbsp; <a name="link4"></a><a name="link5"></a><a name="link6"></a><a name="link9"></a><a name="link12"></a><a name="link13"><span style="color: rgb(0, 0, 255);"><big> Introduction to Fourier analysis methods</big></span></a></h2>
+<p>&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link1"><span style="color: rgb(0, 0, 255);"><big>♦ Continuous-time Fourier series (CTFS)</big></span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link14"><span style="color: rgb(0, 0, 255);"><big>♦ Discrete-time Fourier series (DTFS)</big></span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link2"><span style="color: rgb(0, 0, 255);"><big>♦ Continuous-time Fourier transform (CTFT)</big></span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link15"><span style="color: rgb(0, 0, 255);"><span style="color: rgb(0, 0, 255);"><big>♦ </big><big>Discrete-time Fourier transform (DTFT)</big></span></span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link3"><span style="color: rgb(0, 0, 255);"><big>♦ Salient properties of Fourier analysis method</big></span></a><span style="color: rgb(51, 102, 255);"><span style="color: rgb(51, 102, 255);"><big><br>
+</big></span></span></p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(0, 0, 255);">&nbsp;&nbsp;&nbsp; <a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link7"><span style="color: rgb(0, 0, 255);"><big>Relationship among Fourier analysis methods</big></span></a></span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 255);"> <a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link8"><span style="color: rgb(51, 102, 255);"><span style="color: rgb(0, 0, 255);"><big>♦ Relationship between CTFS and CTFT</big></span></span></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link10"><big><span style="color: rgb(0, 0, 255);">♦ Relationship between DTFS and DTFT</span></big></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><big> </big></small><big><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link11"><small><span style="color: rgb(0, 0, 255);"><big>♦ Relationship between CTFT and DTFT</big></span></small></a></big></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(128, 0, 128);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig2/sig7/line.jpg" height="5" width="642" align="absMiddle"><br>
+</span></p>
+<p>&nbsp;</p>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>Introduction to Fourier analysis method</big></span><big><br>
+</big></h2>
+<p><big><small><span style="color: rgb(51, 102, 255);"><big><br>
+</big></span></small></big><big>In the following we first describe different Fourier methods available for analysing continuous-time and discrete-time signals. It would be followed by listing of salient properties of these Fourier analysis methods.<br>
+</big></p>
+<p>&nbsp;</p>
+<p><a name="link1"><strong><span style="color: rgb(0, 0, 255);"><big>Continuous-time Fourier series (CTFS):</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>For a continuous-time </big><big>signal <em>x(t)</em>, t</big><big>he Fourier series representation of a signal over a representation time<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d6e3a4a70347023a011667735a723455.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mo»§lt;«/mo»«mi»t«/mi»«mo»§lt;«/mo»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mo»+«/mo»«msub»«mi»T«/mi»«mi»F«/mi»«/msub»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big> <big>is defined as<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=bc683570b05c7980878a015bbcc6f2de.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«msub»«mi»f«/mi»«mi»F«/mi»«/msub»«mi»t«/mi»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>where </big><em><big>X[k]</big></em> <big>is the</big><big> harmonic function, <em>k</em> is the harmonic number</big> <big>and<em> </em></big><em><big>f<sub> F&nbsp;</sub>= 1/ T<sub>F</sub></big></em>. <big>The harmonic function is computed as</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«mfrac»«mn»1«/mn»«msub»«mi»T«/mi»«mi»F«/mi»«/msub»«/mfrac»«msubsup»«mo»§#8747;«/mo»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mrow»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mo»+«/mo»«msub»«mi»T«/mi»«mi»F«/mi»«/msub»«/mrow»«/msubsup»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«msub»«mi»f«/mi»«mi»F«/mi»«/msub»«mi»t«/mi»«/mrow»«/msup»«mi»d«/mi»«mi»t«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=2222340ce755ecc6dd4b7971356e0507.png" align="middle">&nbsp;</big></p>
+<p><big>The signal and its harmonic function form a pair which is indicated by the notation</big><big>&nbsp;</big></p>
+<p><big><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mfenced close=¨]¨ open=¨[¨»«mi»k«/mi»«/mfenced»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=38d45278b46497dc2d32bb6fc4a09f2c.png" align="middle"></big> &nbsp; </big></p>
+<p><big>The left hand side of the above relation represents the signal in time domain while the right hand side represents the&nbsp;</big><big>transformation of the signal to a "harmonic-number" domain.</big></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link16"><span style="color: rgb(0, 0, 255);"><big>Top<img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a><a href="../../index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link4"><big><span style="color: rgb(51, 102, 255);"><br>
+</span></big></a></blink></p>
+<p>&nbsp;</p>
+<p><a name="link14"><span style="color: rgb(0, 0, 255);"><strong><big>Discrete-time Fourier series (DTFS):</big></strong></span><big><big><br>
+</big></big></a></p>
+<p>&nbsp;</p>
+<p><big>For a discrete-time </big><big>signal </big><em><big>x(n)</big></em><big>, the Fourier series representation over a representation time&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=f143ae6731edceac137c66650b456a9a.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»§#10877;«/mo»«mi»n«/mi»«mo»§lt;«/mo»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»+«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big>&nbsp; <big>is defined as<br>
+</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=e414a6e9d16db855de75423f31bd2791.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«munder»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«mo»§gt;«/mo»«/mrow»«/munder»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«mi»n«/mi»«mo»/«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp;where <em>X[k]</em> is the harmonic function and the harmonic function can be found as&nbsp;</big></p>
+<p>&nbsp;</p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/mfrac»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«/mrow»«mrow»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»+«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«mo»-«/mo»«mn»1«/mn»«/mrow»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«mi»n«/mi»«mo»/«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=f382b3d1cbf95ebc82785550dc6c6c63.png" align="middle"></big></p>
+<p><big>The discrete-time signal and its harmonic function form a pair which is indicated by the notation below</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d5d960798a3139b199a076f2e538f94f.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»n«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>where <em>&#039;N<sub>F</sub>&#039;</em> is the representation time and the notation </big> <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=b6d4ac2bcb58b4e22e8f1fffae66c7a5.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«munder»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«mo»§gt;«/mo»«/mrow»«/munder»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> <big>means summation over any range of consecutive<em> &#039;k</em>&#039; exactly<em> N<sub>F</sub></em> in length.</big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link4"><span style="color: rgb(0, 0, 255);"><big>Top</big></span><big><span style="color: rgb(51, 102, 255);"><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></span></big></a></blink></p>
+<p>&nbsp;</p>
+<p><a name="link2"><strong><span style="color: rgb(0, 0, 255);"><big>Continuous-time</big> <big>Fourier transform (CTFT):</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>The continuous-time Fourier transform(CTFT) is defined as <br>
+</big></p>
+<p><big>&nbsp;</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=8f37b884580e5fb58ef8e4517f171f5d.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»f«/mi»«mi»t«/mi»«/mrow»«/msup»«mi»d«/mi»«mi»t«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>&nbsp;</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9262833b7777123c61b6b0ca196a7e52.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»f«/mi»«mi»t«/mi»«/mrow»«/msup»«mi»d«/mi»«mi»f«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;</big></p>
+<p>&nbsp;</p>
+<p><big> </big><big>The forward and inverse transforms</big>&nbsp; <big>are almost same, only the sign of the exponent and the variable of integration change.</big></p>
+<p><big>The continuous-time signal <em>x(t)</em> and its Fourier transform </big><em><big>X(f)</big></em> <big>pairs </big><big>are indicated by the notation below.</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=3b6054ea297f32027060331b1625514e.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link17"><span style="color: rgb(0, 0, 255);"><big>Top<img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a></blink></p>
+<p>&nbsp;</p>
+<p><a name="link15"><strong><span style="color: rgb(0, 0, 255);"><big>Discrete-time Fourier transform (DTFT):</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>The discrete-time Fourier transform is defined by</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mn»1«/mn»«mo»§nbsp;«/mo»«/msubsup»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»F«/mi»«mi»n«/mi»«/mrow»«/msup»«mi»d«/mi»«mi»F«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=3d489fa9373ade01c5128d755170099f.png" align="middle"></big></p>
+<p><big>&nbsp;&nbsp;&nbsp;and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=7bd653ef39b1b5064e4a8b47ec159adc.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»&amp;n;#960;«/mi»«mi»F«/mi»«mi»n«/mi»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big>The signal and its harmonic function form a pair which is indicated by the notation below</big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=059b2eba99ca62e74e84d7b11c144e0a.png" align="middle"></big></p>
+<p><big><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link5"><span style="color: rgb(0, 0, 255);">Top</span></a></blink></span></big><big><span style="color: rgb(51, 102, 255);"><big><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link5"><span style="color: rgb(51, 102, 255);"><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></span></a></big></span></big></p>
+<p><a name="link3"><strong><span style="color: rgb(0, 0, 255);"><big>Salient properties of Fourier analysis methods:</big></span></strong></a><big><a name="link3"></a></big></p>
+<p>&nbsp;</p>
+<p><big> Some of the salient properties exhibited by the continuous-time as well as discrete-time Fourier transform / Fourier series are given below. <br>
+</big></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(51, 102, 255);"><big><big>&nbsp;</big></big></span></p>
+<p><span style="color: rgb(51, 102, 255);"><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">Linearity property:&nbsp;</span></big></span></p>
+<table style="width: 691px; height: 208px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">For CTFS</span></big></td>
+            <td><big><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><span style="color: rgb(0, 0, 255);">For DTFS</span><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            </big></span></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=080743c82fd7d405f186ac5786f0d3bc.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»A«/mi»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»+«/mo»«mi»B«/mi»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»A«/mi»«mi»X«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«mo»+«/mo»«mi»B«/mi»«mi»Y«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+            <td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9c2fed089d153140f8770a49eabdb963.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»A«/mi»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»+«/mo»«mi»B«/mi»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»A«/mi»«mi»X«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«mo»+«/mo»«mi»B«/mi»«mi»Y«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 0, 255);"><big>For&nbsp; CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For DTFT</big></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp; &nbsp;&nbsp; &nbsp; <big><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=510b462e2a565c832682b1f2546b0c1c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»A«/mi»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»+«/mo»«mi»B«/mi»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»A«/mi»«mo»§nbsp;«/mo»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»+«/mo»«mi»B«/mi»«mo»§nbsp;«/mo»«mi»Y«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></td>
+            <td>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <big><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c01e978364f6dfdbae9a801683931d9f.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mtable columnalign=¨left¨ rowspacing=¨0¨»«mtr»«mtd»«mi»A«/mi»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»+«/mo»«mi»B«/mi»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»A«/mi»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»+«/mo»«mi»B«/mi»«mi»Y«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«/mtd»«/mtr»«mtr»«mtd/»«/mtr»«/mtable»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> <br>
+            </big></big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;<span style="color: rgb(51, 102, 255);"><big>&nbsp; </big></span></p>
+<p><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big></span><span style="color: rgb(0, 0, 255);"><big>Time shifting property:</big></span><big><strong>&nbsp;</strong></big></p>
+<table style="width: 695px; height: 100px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFS</big></span></td>
+            <td><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><span style="color: rgb(0, 0, 255);"><big>For DTFS</big></span></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4583ec863ae9beab7d5421212dd721e1.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            </big></td>
+            <td>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=74e563ca0492111f5e5cab438cca186f.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»K«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«msub»«mi»n«/mi»«mn»0«/mn»«/msub»«mo»/«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For DTFT</big></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=fa53470ab2a544c2cb66a10826321cf2.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»f«/mi»«msub»«mi»t«/mi»«mn»0«/mn»«/msub»«/mrow»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9053385cf2fcca8c2f9b7b5b937274b0.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mi»n«/mi»«/mrow»«/msup»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp; </big></span></p>
+<p><span style="color: rgb(51, 102, 255);"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><span style="color: rgb(0, 0, 255);"><big>Frequency shifting property:</big></span></span></p>
+<table style="width: 697px; height: 178px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 255);"> <big>For CTFS</big></span><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp; <br>
+            </span></big></td>
+            <td><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: rgb(0, 0, 255);">For DTFS</span></big></td>
+        </tr>
+        <tr>
+            <td>
+            <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=79d4809720fbd7c10b31003fb2e4c572.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»k«/mi»«mn»0«/mn»«/msub»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mi»t«/mi»«/mrow»«/msup»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»-«/mo»«msub»«mi»k«/mi»«mn»0«/mn»«/msub»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><big><br>
+            </big></p>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=decf5cbad24c565126ad00f3d4a322ee.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»k«/mi»«mn»0«/mn»«/msub»«mi»n«/mi»«mo»/«/mo»«msub»«mi»N«/mi»«mi»F«/mi»«/msub»«/mrow»«/msup»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»-«/mo»«msub»«mi»k«/mi»«mn»0«/mn»«/msub»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For DTFT</big></span></td>
+        </tr>
+        <tr>
+            <td>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=0ff8ea7d24ec0b99337437fedd60963c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mi»t«/mi»«/mrow»«/msup»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big>&nbsp; &nbsp; &nbsp;</p>
+            </td>
+            <td>
+            <p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9053385cf2fcca8c2f9b7b5b937274b0.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mi»n«/mi»«/mrow»«/msup»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;<big><span style="color: rgb(51, 102, 255);"><big>&nbsp; </big></span></big></p>
+<p><span style="color: rgb(51, 102, 255);"><big>&nbsp; </big></span></p>
+<p><span style="color: rgb(0, 0, 255);"><big>Multiplication-convolution property:</big></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>Multiplication: </big></span></p>
+<table style="width: 696px; height: 86px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFS</big></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">For DTFS</span></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=f23e57b3f7b29539d2cfe787e7aa08d4.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»*«/mo»«mi»Y«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp; <br>
+            </big></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=3ff0aa606d3d3213eac05060d24ef5f4.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»Y«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»*«/mo»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 255);"> <big>For CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 255);"> <big>For DTFT</big></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=8ec1576ea907abd163072625f44fef26.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»*«/mo»«mi»Y«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d9e61003af24d466bbe729a1e25741cc.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»*«/mo»«mi»Y«/mi»«mo»[«/mo»«mi»F«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp; </span></big></p>
+<p><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">Convolution:</span></big></p>
+<table style="width: 695px; height: 95px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFS</big></span></td>
+            <td><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">For DTFS</span></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <big><big><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«menclose notation=¨roundedbox¨»«mo»*«/mo»«/menclose»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«msub»«mi»T«/mi»«mn»0«/mn»«/msub»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»Y«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=612088765db8b893d1e15ec294f20754.png" align="middle">&nbsp; <br>
+            </big></big></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <big><big><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«menclose notation=¨roundedbox¨»«mo»*«/mo»«/menclose»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mi»Y«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=88849a80379c38eb5e958207670a1662.png" align="middle"></big></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For DTFT</big></span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=19b19d20b00b165cba427eb4e9edf7fb.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»*«/mo»«mi»y«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mi»Y«/mi»«mo»[«/mo»«mi»f«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=6b763d6314aa5b2163639b21650b6ae6.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»*«/mo»«mi»y«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mi»Y«/mi»«mo»[«/mo»«mi»F«/mi»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">Parseval&#039;s theorem:</span><big> </big></big></p>
+<table style="width: 696px; height: 90px;" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 255);"> <big>For CTFS</big></span><big><span style="color: rgb(51, 102, 255);">&nbsp; <br>
+            </span></big></td>
+            <td><big><span style="color: rgb(51, 102, 255);">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: rgb(0, 0, 255);">For DTFS</span></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <big><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=889bf4d30662cbab030106aa56580de5.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mn»1«/mn»«msub»«mi»T«/mi»«mn»0«/mn»«/msub»«/mfrac»«msubsup»«mo»§#8747;«/mo»«msub»«mi»T«/mi»«mn»0«/mn»«/msub»«mo»§nbsp;«/mo»«/msubsup»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«mi»d«/mi»«mi»t«/mi»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            </big></big></td>
+            <td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <big><img alt="" src="/userfiles/7/image/sig1/pars_dtfs.jpg" style="width: 280px; height: 43px;" align="middle"></big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For CTFT</big></span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 255);"><big>For DTFT</big></span><big> <br>
+            </big></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=24400e84ce21ab107bec1e672f2c0f91.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«mi»d«/mi»«mi»t«/mi»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mrow»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/msubsup»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«mi»d«/mi»«mi»f«/mi»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></td>
+            <td>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><big><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«mo»=«/mo»«msubsup»«mo»§#8747;«/mo»«mn»1«/mn»«mo»§nbsp;«/mo»«/msubsup»«msup»«mfenced close=¨|¨ open=¨|¨»«mrow»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«/mrow»«/mfenced»«mn»2«/mn»«/msup»«mi»d«/mi»«mi»F«/mi»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4519ff1348124126882078101a77a42f.png" align="middle"></big></big></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><big><big>&nbsp; </big></big></p>
+<p><big><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</big></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link6"><big><span style="color: rgb(0, 0, 255);">Top</span></big><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></a></blink></p>
+<h2><big>&nbsp; &nbsp; </big><a name="link7"><span style="color: rgb(0, 0, 255);"><big>Relationship among Fourier analysis mehods:</big></span></a><big>&nbsp; </big></h2>
+<p>&nbsp;<span style="color: rgb(0, 0, 255);"><big><br>
+</big></span></p>
+<p><big>There are many similarities among different Fourier analysis methods and their relationship</big><big> are discuss below. These relationships provide the basis of processing of the analog signal in digital domain.<br>
+</big></p>
+<p><br>
+<a name="link8"><strong><span style="color: rgb(0, 0, 255);"><big>Relationship between</big></span> <big><span style="color: rgb(0, 0, 255);">CTFS and CTFT:</span></big></strong></a></p>
+<p>&nbsp;</p>
+<p><big>For a periodic signal <em>x(t)</em> with fundamental period<em> T<sub>0</sub> = 1/ f<sub>0</sub> </em>can be represented for all time using CTFS</big> <big>representation </big>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mi»t«/mi»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=938a19f71171dfd93c9fba446ba2fdfa.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><br>
+</big></p>
+<p><big> </big></p>
+<p><big>Now using the frequency shifting property </big><img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=36c05191b84fd2854e8ec3fa212e44db.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mi»t«/mi»«/mrow»«/msup»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mover»«mo»§#8660;«/mo»«mo»§nbsp;«/mo»«/mover»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> <big>and the CTFT pair <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=0025a5b321f11a4749461708ea39ce04.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«mover»«mo»§#8660;«/mo»«mi»F«/mi»«/mover»«mi»§#948;«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">we can find the CTFT of <em>x(t)</em> as<br>
+</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=a24e67dfd92f362091c53a6ea307e764.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big><big> </big><big><big>&nbsp; </big></big></p>
+<p><big> </big></p>
+<p><big>The CTFT of a periodic function is a continuous frequency function, which consists of a sum of impulses spaced apart by the fundamental frequency of the signal, whose strengths are the same as the CTFS harmonic function at the same harmonic number multiple of the fundamental frequency. The CTFS is just a special case of the CTFT.</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/ctfs_ctft_l1.jpg" height="148" width="220" align="absMiddle"></big></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig6/arrow_ver.jpg" alt="" height="76" width="100" align="absMiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig6/arrow_dow.jpg" alt="" height="78" width="100" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/ctfs_ctft_r1.jpg" height="145" width="220" align="absMiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/ctfs_ctft_r2.jpg" height="155" width="220" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big> </big>Fig.1 CTFS harmonic function and CTFT for a normalized gaussian function</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;</big></p>
+<p><big> </big></p>
+<p><big><span style="display: none;" id="1315462937414S">&nbsp;</span> The information equivalence of a harmonic function <em>X[k]</em> and CTFT&nbsp;function <em>X(f)</em> is shown in Fig.1. Note, here <em>X[K]</em> is a function of discrete variable, harmonic number <em>k</em> whereas <em>X(f)</em> is a function of continuous variable frequency <em>f</em>. These two functions are equivalent in the sense that <em>X(f)</em> is non zero only at the integer multiples of <em>&#039;k&#039;</em> of the fundamental frequency<em> f<sub>0</sub></em> and <em>X[k]</em> is only defined at integer values of <em>k</em>.&nbsp;</big></p>
+<p>&nbsp;</p>
+<p><big> We can observe that the values of <em>X[k]</em> at the integer values of <em>&#039;k&#039; </em>are the same as the strengths of the impulses in <em>X(f) </em>that occur at <em>&#039;kf<sub>0</sub></em>&#039;. For a periodic function <em>x(t)</em><span style="display: none;" id="1315462937908E">&nbsp;</span></big><big> </big></p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=a24e67dfd92f362091c53a6ea307e764.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> ........................(1)<big> </big></big></p>
+<p><big> </big></p>
+<p><big>The relationship between CTFS and CTFT can also be estblished for aperiodic signal and is achieved by finding relationship between the CTFT of an aperiodic signal and the CTFS function of&nbsp; periodic extention of that signal. Let us consider <em>x(t)</em> be an aperiodic function of time and let <em>x<sub>p</sub>(t)</em> is a periodic extension of <em>x(t)</em> with fundamental period <em>T<sub>p</sub></em> defined by</big></p>
+<p><big> </big></p>
+<p><big><big><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=8799ea06bb9a662357856130ce375926.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»p«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»n«/mi»«msub»«mi»T«/mi»«mi»p«/mi»«/msub»«mo»)«/mo»«mo»=«/mo»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»*«/mo»«msub»«mi»§#948;«/mi»«msub»«mi»T«/mi»«mi»p«/mi»«/msub»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> <br>
+</big></big></big></p>
+<p><big> </big></p>
+<p><big>&nbsp; <big><img alt="" style="width: 270px; height: 140px;" src="/userfiles/7/image/sig6/ctft_ctfs_2_l1.jpg" align="absMiddle"></big>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="/userfiles/7/image/sig6/arrow.jpg" height="30" width="130" align="absMiddle">&nbsp; <img alt="" src="/userfiles/7/image/sig6/ctft_ctfs_2_r1.jpg" height="135" width="262" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp; <img alt="" style="width: 269px; height: 139px;" src="/userfiles/7/image/sig6/ctft_ctfs_2_l2.jpg" align="absMiddle"> &nbsp; <img alt="" src="/userfiles/7/image/sig6/arrow.jpg" height="30" width="130" align="absMiddle">&nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/ctft_ctfs_2_r2.jpg" height="140" width="259" align="absMiddle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; Fig.2. A signal and its CTFT and the periodic repetition of the signal and its CTFS harmonic function&nbsp; </big></p>
+<p><big>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>The CTFT of <em>x(t)</em> is<img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=19676a1ac94bf74e6ae064725db1e048.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">. Using the multiplication-convolution duality of the CTFT, the CTFT of <em>x<sub>p</sub>(t)</em><sub> </sub>is</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=e0b238b59870a355044e37f7bb9a1368.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»(«/mo»«mfrac»«mn»1«/mn»«msub»«mi»T«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«msub»«mi»§#948;«/mi»«mfrac»«mn»1«/mn»«msub»«mi»T«/mi»«mi»p«/mi»«/msub»«/mfrac»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> </big>........................................<big>(2)</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=09f31285e607eee296923b004aa61c43.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»=«/mo»«mi»X«/mi»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«msub»«mi»§#948;«/mi»«mrow»«mi»f«/mi»«mi»p«/mi»«/mrow»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»(«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mo»)«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"><big>,</big></big></p>
+<p><big> </big></p>
+<p><big>where <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=b74a55c8a87404ff140b451b0c44c9c1.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mo»=«/mo»«mfrac»«mn»1«/mn»«msub»«mi»T«/mi»«mi»p«/mi»«/msub»«/mfrac»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp; now using equation (1),</big><big><br>
+</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=52a91c0547e4a20e74bdb37747af15e1.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> ........................(3)<big><br>
+</big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big>Now combining equations (2) &amp; (3), we get</big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=02f3bcd8bb8c3b8ecc85b04b446249b4.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mi»X«/mi»«mo»(«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mi»p«/mi»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big>We can say that if an aperiodic function is periodically extended to form a periodic function <em>x<sub>p</sub>(t)</em> with fundamental period<em> &#039;T<sub>p</sub>&#039;</em> the values of the CTFS&nbsp;harmonic function <em>X<sub>p</sub>[K]</em> of  <em>x<sub>p</sub>(t)</em> are samples of the CTFT <em>X(f)</em> of <em>x(t)</em> taken at the frequencies <em>Kf<sub>p</sub></em> and then multiplied by the fundamental frequency of the CTFS <em>&#039;f<sub>p</sub>&#039;</em>. This forms an equivalance between sampling in the frequency domain and periodic repetition in the time domain. Figure 2 shows a signal and its CTFT and periodic repetition of the signal and its CTFS harmonic function.<br>
+</big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p>&nbsp;</p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big></big><blink><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link9"><span style="color: rgb(0, 0, 255);"><big>Top</big></span></a><a href="http://iitg.vlab.co.in/?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link9"><span style="color: rgb(0, 0, 255);"><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></span></a></blink></p>
+<p><big> </big></p>
+<p><big>&nbsp;</big></p>
+<p><big> </big></p>
+<p><a name="link10"><strong><span style="color: rgb(0, 0, 255);"><big>Relationship between DTFS and DTFT</big></span>:</strong></a></p>
+<p>&nbsp;</p>
+<p><big>The DTFS of a periodic function <em>x[n]</em> with fundamental period <em>N<sub>0</sub> </em>is defined as</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»§gt;«/mo»«/mrow»«mo»§nbsp;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mfrac»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«mi»n«/mi»«/mrow»«msub»«mi»N«/mi»«mrow»«mn»0«/mn»«mo»§nbsp;«/mo»«/mrow»«/msub»«/mfrac»«/msup»«mover»«mrow»«mo»§#8660;«/mo»«mo»§nbsp;«/mo»«/mrow»«mrow»«mi»F«/mi»«mi»S«/mi»«/mrow»«/mover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«/mfrac»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»§gt;«/mo»«/mrow»«mo»§nbsp;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mfrac»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»k«/mi»«mi»n«/mi»«/mrow»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«/mfrac»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c241354b70523bba9095afa72494da2e.png" align="middle"></big></p>
+<p><big> </big></p>
+<p><big>Using the frequency shifting property <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=e78930a3186805b7754555bde7c5ff60.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msup»«mi»e«/mi»«mrow»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mi»n«/mi»«/mrow»«/msup»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«mo»§nbsp;«/mo»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«msub»«mi»F«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"> and the DTFT transform pair <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=2c168476596d5a7462d389d17214e4f9.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«mover»«mo»§#8660;«/mo»«mrow»«mi»F«/mi»«mi»T«/mi»«/mrow»«/mover»«msub»«mi»§#948;«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">, we can find the DTFT&nbsp;of <em>x[n]</em> as</big></p>
+<p><big><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=a1b9f5168a5ec57c2e05cb3b09a6ce7c.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»§gt;«/mo»«/mrow»«mo»§nbsp;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«msub»«mi»§#948;«/mi»«mn»1«/mn»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«/mfrac»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></p>
+<p><big>Then</big><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=accd0f4c40e58c68c69190582c7d41de.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»§lt;«/mo»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»§gt;«/mo»«/mrow»«mo»§nbsp;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»q«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»§#948;«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mfrac»«mi»k«/mi»«mrow»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»-«/mo»«mi»q«/mi»«/mrow»«/mfrac»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«/mfrac»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle">&nbsp;</big><big> <br>
+</big></p>
+<p><big>The DTFS is simply a special case of the DTFT for periodic functions. If a function <em>x[n]</em> is periodic, its DTFT consists only of impulses occurring at <em>K/N<sub>0</sub></em> with strengths <em>X[K]</em>.<big><br>
+</big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/dtfs_dtft_1_l1.jpg" height="146" width="220" align="absMiddle"></big> &nbsp;&nbsp;&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/userfiles/7/image/sig6/arrow_ver.jpg" alt="" height="76" width="100" align="absMiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/userfiles/7/image/sig6/arrow_dow.jpg" alt="" height="78" width="100" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/dtfs_dtft_1_r1.jpg" height="143" width="220" align="absMiddle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/dtfs_dtft_1_r2.jpg" height="149" width="220" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fig.3 Harmonic function and DTFT of <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=aa6797f850030d08bb82f9d79a1d1570.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«mo»(«/mo»«mi»A«/mi»«mo»/«/mo»«mn»2«/mn»«mo»)«/mo»«mo»[«/mo»«mn»1«/mn»«mo»+«/mo»«mi mathvariant=¨normal¨»cos«/mi»«mo»(«/mo»«mn»2«/mn»«mi»§#960;«/mi»«mi»n«/mi»«mo»)«/mo»«mo»]«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>For a periodic function <em>x[n]</em> with fundamental period <em>N<sub>0</sub></em></big><big> </big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mi»k«/mi»«mo»/«/mo»«msub»«mi»N«/mi»«mn»0«/mn»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=f90240134f60532a7e83ae02a6f00cfa.png" align="middle"> ...............................(4)<br>
+</big></p>
+<p><big> </big></p>
+<p><big>Another important point is the relationship between the DTFT of an aperiodic signal and the DTFS harmonic function of a periodic extension of that signal. Let <em>x[n]</em> be an aperiodic function and its DTFT is <em>X(F)</em>. Let <em>x<sub>p</sub>[n]</em> be a periodic extension of <em>x[n]</em> with fundamental period <em>N<sub>p</sub></em> such that</big> <big><br>
+</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»p«/mi»«/msub»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»m«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»-«/mo»«mi»m«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«mo»]«/mo»«mo»=«/mo»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mo»*«/mo»«msub»«mi»§#948;«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/msub»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=08782fa250c5176602ffceeff6feee70.png" align="middle"> <br>
+</big></big></p>
+<p><big> </big></p>
+<p><big>Using the multiplication-convolution duality of the DTFT,</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=93539f81fe48c6e600574c2e658bf1ef.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»(«/mo»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«msub»«mi»§#948;«/mi»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«mo»(«/mo»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»(«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big><big> ...................</big></big><big>(5)</big></p>
+<p><big> </big></p>
+<p><big>Now using equation (4) we get</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»X«/mi»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»X«/mi»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=aa2bca57566bf47a34a15b349d3c1738.png" align="middle"></big><big> ........................................</big></big><big>(6)</big></p>
+<p><big> </big></p>
+<p><big>Combining equation(5) and (6) we have</big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=f4c9c99637878615b9955f5ab4ff44a5.png" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»p«/mi»«/msub»«mo»[«/mo»«mi»k«/mi»«mo»]«/mo»«mo»=«/mo»«mo»(«/mo»«mfrac»«mn»1«/mn»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«mi»X«/mi»«mo»(«/mo»«mfrac»«mi»k«/mi»«msub»«mi»N«/mi»«mi»p«/mi»«/msub»«/mfrac»«mo»)«/mo»«/math»" class="Wirisformula" title="Double click to edit" align="middle"></big></big></p>
+<p><big> </big></p>
+<p><big>From the above equation, it says that if an aperiodic signal <em>x[n]</em> is periodically repeated with fundamental period<em> N<sub>p</sub></em> to form a periodic signal <em>x<sub>p</sub>[n]</em>, the values of its DTFS&nbsp;harmonic function <em>X<sub>p</sub>[k]</em> can be found from <em>X(F)</em>, which is the DTFT&nbsp;of <em>x[n]</em>, evaluated at the discrete frequencies<em> k / N<sub>p</sub></em>. This forms an equivalence between sampling in the frequency domain and periodic repetition in the time domain. Figure 4 shows a signal and its DTFT and periodic repetition of the signal and its DTFS harmonic function.<br>
+</big></p>
+<p>&nbsp;</p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp;</big> &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/dtfs_dtft_2_r1.jpg" height="146" width="250" align="absMiddle"> &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/arrow.jpg" height="30" width="130" align="absMiddle">&nbsp; &nbsp; <big><img alt="" style="width: 250px; height: 147px;" src="/userfiles/7/image/sig2/dtfs_dtft_2_l1.jpg" align="absMiddle"></big>&nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img alt="" style="width: 248px; height: 135px;" src="/userfiles/7/image/sig6/dtfs_dtft_2_r2.jpg" align="absMiddle"> &nbsp; <img alt="" src="/userfiles/7/image/sig6/arrow.jpg" height="30" width="130" align="absMiddle"> &nbsp;&nbsp; <img style="width: 252px; height: 139px;" alt="" src="/userfiles/7/image/sig2/dtfs_dtft_2_l2.jpg" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.4 A signal and its DTFT and the periodic repetition of the signal and its DTFS harmonic function.</big><big> </big><big> </big>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <big><blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link12"><span style="color: rgb(0, 0, 255);">Top<big><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a></blink></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;</big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><a name="link11"><strong><span style="color: rgb(0, 0, 255);"><big>Relationship between CTFT and DTFT:</big></span></strong></a></p>
+<p>&nbsp;</p>
+<p><big>The CTFT is the Fourier transform of a continuous-time function and DTFT is the Fourier transform of a discrete-time function. By multiplying a continuous time function <em>x(t)</em> by a periodic train of unit impulses spaced <em>T<sub>s</sub></em> seconds apart, we can create the continuous-time impulse function</big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«mi»x«/mi»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«msub»«mi»§#948;«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»(«/mo»«mi»n«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»n«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=47c2526cfdc74a603069226c51f3eb62.png" align="middle"></big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big>If we form a function <em>x[n]</em> whose values are the values of the original continuous time function <em>x(t)</em> at integer multiples of <em>T<sub>s</sub></em> and these are also the strengths of the impulses in the continuous time impulse function&nbsp;<img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle">, we get the relationship <em>x[n] = x(nT<sub>s</sub>)</em>. The two functions x[n] and  <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle"> are completely defined by the same set of numbers and contain the same information. By finding the CTFT&nbsp;of the above equation we have,<big> <br>
+</big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»X«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»*«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«msub»«mi»§#948;«/mi»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»(«/mo»«mi»n«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»f«/mi»«mi»n«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4f7072f5a5894ad5d6dd5643cbc00dbb.png" align="middle"></big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;</big>Or &nbsp;<big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msub»«mi»X«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»-«/mo»«mi»k«/mi»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»f«/mi»«mi»n«/mi»«mo»/«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«/mrow»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=d8353339c618e018254bea976f07ee19.png" align="middle"></big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big>where <em>f<sub>s</sub> = 1/T<sub>s</sub></em>, if we make the change of variable <em>f→f<sub>s</sub>F</em>, we get</big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msub»«mi»X«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mi»k«/mi»«mo»)«/mo»«mo»)«/mo»«mo»=«/mo»«munder»«munder»«mrow»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«msup»«mi»e«/mi»«mrow»«mo»-«/mo»«mi»j«/mi»«mn»2«/mn»«mi»§#960;«/mi»«mi»n«/mi»«mi»F«/mi»«/mrow»«/msup»«/mrow»«mo»§#65080;«/mo»«/munder»«mrow»«mo»=«/mo»«msub»«mi»X«/mi»«mi»F«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«/mrow»«/munder»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=9b94508d4617c9da91d7be1d8485e2db.png" align="middle"></big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big>The above equation is exactly the definition of the DTFT of <em>x[n]</em>, which is <em>X<sub>F</sub>(F)</em>. If <em>x[n] = x(nT<sub>s</sub>)</em> and&nbsp;<big> </big></big></p>
+<p><big> </big></p>
+<p><big><big> </big></big></p>
+<p><big> </big></p>
+<p><big><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«mo»=«/mo»«munderover»«mo»§#8721;«/mo»«mrow»«mi»n«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«mi»x«/mi»«mo»[«/mo»«mi»n«/mi»«mo»]«/mo»«mi»§#948;«/mi»«mo»(«/mo»«mi»t«/mi»«mo»-«/mo»«mi»n«/mi»«msub»«mi»T«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=6b7d7f9171e6c11484ac01505662aa70.png" align="middle">, </big></big></p>
+<p><big><big><big> </big></big></big><big>Then &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </big><big><big><big>&nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»F«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mi»F«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=b687840afb64481d3d1091491a09939a.png" align="middle"></big></big></big></p>
+<p><big>&nbsp;or</big><big><big><big> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»X«/mi»«mi»F«/mi»«/msub»«mo»(«/mo»«mi»f«/mi»«mo»/«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=efd2f542c4db17d43ef6589eee8d0318.png" align="middle"></big></big></big></p>
+<p><big><big>&nbsp; </big></big><big>Also&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»X«/mi»«mi»F«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»)«/mo»«mo»=«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«munderover»«mo»§#8721;«/mo»«mrow»«mi»k«/mi»«mo»=«/mo»«mo»-«/mo»«mo»§#8734;«/mo»«/mrow»«mo»§#8734;«/mo»«/munderover»«msub»«mi»X«/mi»«mi»f«/mi»«/msub»«mo»(«/mo»«msub»«mi»f«/mi»«mi»s«/mi»«/msub»«mo»(«/mo»«mi»F«/mi»«mo»-«/mo»«mi»k«/mi»«mo»)«/mo»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=916f006da7490fa5189368da9483422d.png" align="middle"></big>...................................<big>(7)</big><big><br>
+</big></p>
+<p><big><big> </big></big></p>
+<p><big>We have a correspondence between a function <em>x[n]</em> of a discrete independent variable and an impulse function <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle"> of a continuous independent variable, here <em>x[n]</em> in case of discrete time <em>&#039;n&#039;</em> and <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle"> in case of continuous time <em>&#039;t&#039;</em>. There is also an information equivalence between the DTFT of the function <em>x[n] </em>and the CTFT of the function <img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle">.<big> </big></big><big> </big><big>Figure 5 given below shows this information.</big></p>
+<p>&nbsp;</p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft-dtft_r1.jpg" height="138" width="250" align="absMiddle"> &nbsp;&nbsp; &nbsp; <img src="/userfiles/7/image/sig6/arrow.jpg" alt="" height="28" width="120" align="absMiddle"> &nbsp;&nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft_dtft_r2.jpg" height="139" width="250" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft_dtft_l3.jpg" height="141" width="250" align="absMiddle">&nbsp;&nbsp; &nbsp; &nbsp; <img src="/userfiles/7/image/sig6/arrow.jpg" alt="" height="28" width="120" align="absMiddle"> &nbsp;&nbsp; &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft_dtft_r2.jpg" height="139" width="250" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft_dtft_l1.jpg" height="139" width="250" align="absMiddle">&nbsp; &nbsp; &nbsp;&nbsp; <img src="/userfiles/7/image/sig6/arrow.jpg" alt="" height="28" width="120" align="absMiddle"> &nbsp; &nbsp; &nbsp; <img alt="" src="/userfiles/7/image/sig6/rela_ctft_dtft_2.jpg" height="139" width="250" align="absMiddle"></big></p>
+<p><big> </big></p>
+<p><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig.5 DTFT of a sinc function x[n] and CTFT&nbsp;of a impulse function&nbsp;<img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi»x«/mi»«mi»§#948;«/mi»«/msub»«mo»(«/mo»«mi»t«/mi»«mo»)«/mo»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=baf6b17d3186f898ca8c71ce51b2e3ef.png" align="middle"> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</big></p>
+<p><big> </big></p>
+<p><big>There is also some equivalence between the CTFT of the original function <em>x(t)</em> and the DTFT of the function <em>x[n]</em> through equation (7). Given <em>X<sub>f</sub>(f)</em>, we can find <em>X<sub>F</sub>(F)</em>. However the reverse of this statement is not always true. Given&nbsp; <em>X<sub>F</sub>(F),</em> we cannot always be sure of being able to find<em> X<sub>f</sub>(f).</em></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  <big><blink><a href="http://iitg.vlab.co.in/index.php?sub=59&amp;brch=166&amp;sim=799&amp;cnt=1#link13"><span style="color: rgb(0, 0, 255);">Top<big><img src="http://iitg.vlab.co.in/fckeditor/editor/images/smiley/msn/thumbs_up.gif" alt="" align="absMiddle"></big></span></a></blink></big></p>
+<p><big> </big></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

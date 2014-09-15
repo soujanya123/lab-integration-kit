@@ -1,0 +1,904 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Short-Term Frequency Domain Processing of Speech (Procedure) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To understand the limitation of DTFT for the spectral analysis of speech" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Short-Term Frequency Domain Processing of Speech</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Short-Term Frequency Domain Processing of Speech</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=908&cnt=1676"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=908&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2878"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2034"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2905"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2988"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Limitation of DTFT for the spectral analysis of speech</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;<span>&nbsp;</span>The procedure to generate the linear and and log magnitude spectrum is given below. We can observe that both the small and large magnitude frequency components are visible in the log magnitude spectrum compared to the linear magnitude spectrum.Figure 1 shows the speech signal, linear magnitude and log magnitude spectra of speech signals.<span>&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/SA2.wav&#039;);</p>
+<p>max_value=max(abs(y));<br>
+y=y/max_value;<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(3,1,1);plot(t,y);<br>
+xtitle(&#039;Speech signal waveform&#039;,&#039;time in seconds&#039;);<br>
+dfty=abs(fft(y));<br>
+leny=length(y)<br>
+len=length(dfty)<br>
+tt=linspace(1/Fs,Fs,length(dfty));<br>
+subplot(3,1,2);plot(tt,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+dftylog=10*log10(dfty);<br>
+subplot(3,1,3);plot(tt,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: rgb(51, 102, 255);"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig1_dft_whole_speech.png"></span></p>
+<p style="text-align: center;">&nbsp;Fig.1: Speech signal and log magnitude DTFT spectra</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Need for Short Time&nbsp; Fourier Transform:</span></h2>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-IN</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>HI</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Mangal;
+mso-bidi-theme-font:minor-bidi;
+mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+<p style="text-align: left; ">Figure 2 shows the log magnitude spectrum of a segment of voiced speech, unvoiced speech and silence region. The procedure for generating the plots is given below. It has to be observed that the log magnitude spectrum for voiced, unvoiced and silence regions is different.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">clear;clc;clf;<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_voiced2.wav&#039;);//input: voiced speech segment<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+y=y(1:(Fs*.035));<br>
+<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(3,3,1);plot(t,y);<br>
+xtitle(&#039;Voiced Speech waveform&#039;,&#039;time in seconds&#039;);<br>
+<br>
+dfty=abs(fft(y));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+tt=linspace(1/Fs,Fs/2,length(dfty));<br>
+subplot(3,3,4);plot(tt,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+<br>
+dftylog=10*log10(dfty);<br>
+subplot(3,3,7);plot(tt,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_unvoiced.wav&#039;);//input: unvoiced speech segment<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+y=y(1:(Fs*.035));<br>
+<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(3,3,2);plot(t,y);<br>
+xtitle(&#039;Unvoiced Speech waveform&#039;,&#039;time in seconds&#039;);<br>
+<br>
+dfty=abs(fft(y));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+tt=linspace(1/Fs,Fs/2,length(dfty));<br>
+subplot(3,3,5);plot(tt,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+dftylog=10*log10(dfty);<br>
+subplot(3,3,8);plot(tt,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/silence.wav&#039;);//input: silence segment<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+y=y(1:(Fs*.035));<br>
+<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(3,3,3);plot(t,y);<br>
+xtitle(&#039;Silence waveform&#039;,&#039;time in seconds&#039;);<br>
+<br>
+dfty=abs(fft(y));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+tt=linspace(1/Fs,Fs/2,length(dfty));<br>
+subplot(3,3,6);plot(tt,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+dftylog=10*log10(dfty);<br>
+subplot(3,3,9);plot(tt,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);</span></p>
+<p style="text-align: left; ">&nbsp;</p>
+<p style="text-align: left; ">&nbsp;</p>
+<p style="text-align: left; "><img width="800" height="401" alt="" src="/userfiles/7/image/2.PNG"></p>
+<p style="text-align: center;">&nbsp;Fig.2 : Segments of Voiced ,Unvoiced and Silence regions of speech and their linear and&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">STFT of speech:</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>For the short term spectral analysis, the given speech signal is divided into blocks of 10-30 ms with a shift of 5-10 ms.&nbsp;The log magnitude spectra is the&nbsp;&nbsp;procedure for computing the STFT from the speech signal is shown below, computed&nbsp;for each of the blocks.&nbsp;Figure 3 shows a 3D plot showing the log magnitude spectra of each of the frames&nbsp; of size 20 ms with a shift of 10 ms.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">//function to compute short term fourier transform<br>
+function [c] = stft(Speech_signal, Fs, Frame_size, Frame_shift, window_type)<br>
+y=Speech_signal;<br>
+Frame_size=Frame_size/1000;<span>&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+Frame_shift=Frame_shift/1000;<span>&nbsp;&nbsp;</span><br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(2,1,1);<br>
+plot(t,y);<br>
+xtitle(&#039;Speech signal waveform&#039;,&#039;time in seconds&#039;);<br>
+Frame_length = Frame_size*Fs<br>
+sample_shift = Frame_shift*Fs<br>
+sum1=0;energy=0;autocorrelation=0;w=window(window_type,Frame_length);jj=1;<br>
+for i=1:(floor((length(y))/sample_shift)-ceil(Frame_length/sample_shift))<br>
+<span>&nbsp;&nbsp;</span>k=1;yy=0;<br>
+<span>&nbsp;&nbsp;</span>for j=(((i-1)*sample_shift)+1):(((i-1)*sample_shift)+Frame_length)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>yy(k)=y(j)*w(jj);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>jj=jj+1;k=k+1;<br>
+<span>&nbsp;&nbsp;</span>end<br>
+<span>&nbsp;&nbsp;</span>jj=1;<br>
+<span>&nbsp;&nbsp;</span>dfty=abs(fft(yy));<br>
+<span>&nbsp;&nbsp;</span>dfty3d(:,i)=dfty(1:(length(dfty)/2));<span>&nbsp;&nbsp;</span><br>
+end<br>
+c=dfty3d;<br>
+return(c);<br>
+endfunction<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/SA2.wav&#039;);//input: Speech signal<br>
+Frame_size=20;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>//Input: Frame size in millisecond<br>
+Frame_shift=10;<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>//Input: Frame shift in millisecond<br>
+window_type = &#039;hn&#039;;<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>//Input: window type-&gt; &#039;hm&#039; for hamming window, &#039;hn&#039; for hanning window and &#039;re&#039; for rectangular window<br>
+dfty3d=stft(y, Fs, Frame_size, Frame_shift, window_type);<br>
+[rows,cols]=size(dfty3d);<br>
+tt=1/Fs:1/Fs:(length(y)/Fs);<br>
+kk=linspace(1/Fs,Fs/2000,rows);<br>
+kkk=1/Fs:(Frame_shift/1000):(cols*(Frame_shift/1000));<br>
+subplot(2,1,2);<br>
+plot3d(kk,kkk,dfty3d);<br>
+xtitle(&#039;3D Representation of Short Term Linear Magnitude Spectrum &#039;,&#039;Frequency in KHz&#039;,&#039;time-shift in seconds&#039;);<br>
+<br>
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig3_stft3d.png"></p>
+<p style="text-align: center;">&nbsp;Fig.3 : Speech signal and its short term fourier transform plot</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Concept of true and convolved spectra</span></h2>
+<p>&nbsp;</p>
+<p>Figure 4 illustrates the concepts of true and convolved spectrum of a sine wave.&nbsp; In the figure the true spectrum of the given 200 Hz sine wave is computed by taking DTFT of the whole sinusoidal signal.&nbsp;The convolved spectrum is represented by taking STFT of the 20-30 ms of short term segment of the sine wave. In the figure we can observe that the true spectra is represented by an impulse function at 200 Hz and the convolved spectrum is represented by the sinc function centered around 200 Hz . The procedure for illustrating the true and convolved spectrum is given below,</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">clear;clc;clf;<br>
+Fs=4000; //sampling frequency<br>
+f=200;<span>&nbsp;&nbsp;</span>//frequency of the sine wave<br>
+zero=zeros(1:1000);<br>
+t=1/Fs:1/Fs:.03;<br>
+y1=sin(2*3.1416*f*t);<br>
+subplot(3,2,1);<br>
+t=t*1000;<br>
+plot(t,y1);<br>
+xtitle(&#039;200 Hz Synthetic sine wave of 30 ms duration&#039;,&#039;time in ms&#039;);<br>
+y1 = [zero y1 zero];<br>
+dfty=abs(fft(y1));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+dftylog=10*log(dfty);<br>
+ff=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,2,3);<br>
+plot(ff,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in KHz&#039;);<br>
+subplot(3,2,5);<br>
+plot(ff,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in KHz&#039;);<br>
+<br>
+t=1/Fs:1/Fs:.25;<br>
+y2=sin(2*3.1416*f*t);<br>
+t=t*1000;<br>
+subplot(3,2,2);<br>
+plot(t,y2);<br>
+xtitle(&#039;200 Hz Synthetic sine wave of 250 ms duration&#039;,&#039;time in ms&#039;);<br>
+dfty=abs(fft(y2));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+dftylog=10*log(dfty);<br>
+ff=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,2,4);<br>
+plot(ff,dfty);<br>
+xtitle(&#039;Linear Magnitude Spectrum&#039;,&#039;frequency in KHz&#039;);<br>
+subplot(3,2,6);<br>
+plot(ff,dftylog);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in KHz&#039;);<br>
+&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig4_sinwave.png"></p>
+<p style="text-align: center;">Fig4 : Sine wave and &nbsp;its window region, and then linear &amp; log magnitude spectra</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Effect of windowing function on short term spectral analysis</span></h2>
+<p>&nbsp;</p>
+<p>Figure 5 shows various window functions like rectangular, hamming and hanning in the time and frequency domains.&nbsp;The procedure for generating the time and frequency domain representation of these window functions is given below.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">clear; clc; clf;<br>
+function [c] = dft_window(window_type, i)<br>
+Fs=8000;j=i+3;k=i+6;ii=i;<br>
+y=window(window_type, 240);<br>
+zero=zeros(1:1000);<br>
+y1=[y zero];<br>
+dfty=abs(fft(y1));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+for i=1:length(dfty)<br>
+<span>&nbsp;&nbsp;</span>if(dfty(i) == 0)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>dfty(i)=0.001;<br>
+<span>&nbsp;</span><span>&nbsp;</span>end<br>
+end<br>
+dftylog=10*log(dfty);<br>
+c=dftylog;<br>
+t=((1/(1000*Fs):1/Fs:(length(y)/Fs)))*1000;<br>
+subplot(3,3,ii);plot(t,y);<br>
+xtitle(window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,3,j);plot(f,dfty);<br>
+xtitle(&#039;Linear magnitude spectrum&#039;);<br>
+subplot(3,3,k);plot(f,dftylog);<br>
+xtitle(&#039;Log magnitude spectrum&#039;);<br>
+return(c);<br>
+endfunction<br>
+Fs=8000;<br>
+window_type=&#039;re&#039;;i=1;<br>
+dfty=dft_window(window_type, i);<br>
+<br>
+window_type=&#039;hm&#039;;i=2;<br>
+dfty=dft_window(window_type, i);<br>
+<br>
+window_type=&#039;hn&#039;;i=3;<br>
+dfty=dft_window(window_type, i);<br>
+<br>
+</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;<img width="800" height="450" alt="" src="/userfiles/7/image/window function(1).png"></p>
+<p style="text-align: center;">Fig.5 : Rectangular, Hamming and hanning window functions and their linear &amp; log magnitude spectra</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: rgb(51, 102, 255);"><br>
+</span></p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Spectral Analysis of speech using window functions</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;Figure 6 short term magnitude spectra of a 30 ms voiced speech segment&nbsp; using a rectangular, hamming and hanning window functions.&nbsp;The procedure to computer the short term spectra of these voiced segment is given below. It has to be observed that, &nbsp;the STFT using the rectangular spectra is found to be more noisy compared to STFT spectra due to other window functions.&nbsp; This is due to the higher spectral leakage in rectangular window compared to other window functions.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">clear; clc; clf;<br>
+//function to compute log magnitude spectrum of a speech segment for a particular window type<br>
+function [c] = stft(Speech_signal, Fs, window_type)<br>
+y=Speech_signal; y2=0;<br>
+zero=zeros(1:10000);<br>
+w=window(window_type,length(y));<br>
+for i=1:length(y)<br>
+<span>&nbsp;&nbsp;</span>y(i)=y(i)*w(i);<br>
+end<br>
+y2 = [zero y zero];<br>
+<br>
+dfty=abs(fft(y2));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+dfty=10*log(dfty);<br>
+c=dfty;<br>
+return(c);<br>
+endfunction<br>
+<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_voiced2.wav&#039;);//INPUT: speech segment<br>
+max_value=max(abs(y));<br>
+y=y(1:240);<br>
+y=y/max_value;<br>
+t=(1/(1000*Fs):1/Fs:(length(y)/Fs));<br>
+subplot(4,1,1);plot(t,y);<br>
+xtitle(&#039;Voiced segment of speech&#039;);<br>
+<br>
+window_type=&#039;re&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,2);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using rectangular window&#039;);<br>
+<br>
+window_type=&#039;hm&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,3);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using hamming window&#039;);<br>
+<br>
+window_type=&#039;hn&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,4);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using hanning window&#039;,&#039;Frequency in KHz&#039;);<br>
+&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig6_voiced_allwidow_logmagspec.png"></p>
+<p style="text-align: center;">&nbsp;Fig.6 : Segment of voiced speech &amp; its log magnitude spectra using rectangular,hamming and hanning window functions.</p>
+<p style="text-align: left; ">&nbsp;</p>
+<p style="text-align: left; ">Figure 7 shows the STFT log magnitude spectra of an unvoiced speech segment using rectangular, hamming and hanning window functions.</p>
+<p>The procedure for computing same is given below</p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-family: &#039;Courier New&#039;; ">clear; clc; clf;<br>
+//function to compute log magnitude spectrum of a speech segment for a particular window type<br>
+function [c] = stft(Speech_signal, Fs, window_type)<br>
+y=Speech_signal; y2=0;<br>
+zero=zeros(1:10000);<br>
+w=window(window_type,length(y));<br>
+for i=1:length(y)<br>
+<span>&nbsp;&nbsp;</span>y(i)=y(i)*w(i);<br>
+end<br>
+y2 = [zero y zero];<br>
+<br>
+dfty=abs(fft(y2));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+dfty=10*log(dfty);<br>
+c=dfty;<br>
+return(c);<br>
+endfunction<br>
+<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_voiced2.wav&#039;);//INPUT: speech segment<br>
+max_value=max(abs(y));<br>
+y=y(1:240);<br>
+y=y/max_value;<br>
+t=(1/(1000*Fs):1/Fs:(length(y)/Fs));<br>
+subplot(4,1,1);plot(t,y);<br>
+xtitle(&#039;Voiced segment of speech&#039;);<br>
+<br>
+window_type=&#039;re&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,2);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using rectangular window&#039;);<br>
+<br>
+window_type=&#039;hm&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,3);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using hamming window&#039;);<br>
+<br>
+window_type=&#039;hn&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(4,1,4);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum using hanning window&#039;,&#039;Frequency in KHz&#039;);<br>
+</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig7_unvoiced_allwidow_logmagspec.png"></p>
+<p style="text-align: center;">Fig.7 : Segment of voiced speech and its magnitude spectra using hamming, &nbsp;hanning and rectangular window function.&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Effect of window size on short term spectral analysis of speech</span></h2>
+<p>&nbsp;Figure 8 shows a short term log magnitude spectra of voiced segment using a frame size of 3 ms, 30 ms and 300 ms. Here we can observe that the poor spectral resolution due to smaller window size in case of 3 ms window.Also poor time resolution can be observed in case of 300 ms window.The log magnitude spectrum of the 30 ms windowed speech segment shows vocal tract spectral envelope and excitation information in terms of pitch and its harmonics. The procedure to generate the log magnitude spectrum of different window sizes is given below,</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="MsoPlainText"><span style="font-family: &#039;Courier New&#039;; ">clear; clc; clf;<br>
+//function to compute log magnitude spectrum of a speech segment for a particular window type<br>
+function [c] = stft(Speech_signal, Fs, window_type)<br>
+y=Speech_signal; y2=0;<br>
+zero=zeros(1:10000);<br>
+w=window(window_type,length(y));<br>
+for i=1:length(y)<br>
+<span>&nbsp;&nbsp;</span>y(i)=y(i)*w(i);<br>
+end<br>
+y2 = [zero y zero];<br>
+<br>
+dfty=abs(fft(y2));<br>
+dfty=dfty(1:(length(dfty)/2));<br>
+dfty=10*log(dfty);<br>
+c=dfty;<br>
+return(c);<br>
+endfunction<br>
+<br>
+<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/SA2.wav&#039;);//input: speech signal of atleast 300 ms duration<br>
+max_value=max(abs(y));<br>
+y=y(1:.30*Fs);<br>
+y1=y(1:.003*Fs);<br>
+no_zeros=length(y)-length(y1);<br>
+zero=zeros(1:no_zeros);<br>
+y=[y1 zero];<br>
+y=y/max_value;<br>
+t=((1/(1000*Fs):1/Fs:(length(y)/Fs)))*1000;<br>
+subplot(3,2,1);plot(t,y);<br>
+xtitle(&#039;Unvoiced segment of speech 3ms duration&#039;);<br>
+<br>
+window_type=&#039;hm&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,2,2);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum&#039;);<br>
+<br>
+y=yy(1:.30*Fs);<br>
+y1=y(1:.03*Fs);<br>
+no_zeros=length(y)-length(y1);<br>
+zero=zeros(1:no_zeros);<br>
+y=[y1 zero];<br>
+y=y/max_value;<br>
+t=((1/(1000*Fs):1/Fs:(length(y)/Fs)))*1000;<br>
+subplot(3,2,3);plot(t,y);<br>
+xtitle(&#039;Unvoiced segment of speech 30ms duration&#039;);<br>
+<br>
+window_type=&#039;hm&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,2,4);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum&#039;);<br>
+<br>
+<br>
+y=yy(1:.30*Fs);<br>
+y1=y(1:.3*Fs);<br>
+no_zeros=length(y)-length(y1);<br>
+zero=zeros(1:no_zeros);<br>
+y=[y1 zero];<br>
+y=y/max_value;<br>
+t=((1/(1000*Fs):1/Fs:(length(y)/Fs)))*1000;<br>
+subplot(3,2,5);plot(t,y);<br>
+xtitle(&#039;Unvoiced segment of speech 300ms duration&#039;);<br>
+<br>
+window_type=&#039;hm&#039;;<br>
+dfty=stft(y, Fs, window_type);<br>
+f=linspace(1/Fs,Fs/2000,length(dfty));<span>&nbsp;&nbsp;</span><br>
+subplot(3,2,6);plot(f,dfty);<br>
+xtitle(&#039;Log magnitude spectrum&#039;);</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/frqncy%20dmn/Fig8_3ms_30ms_300ms.png"></p>
+<p style="text-align: center;">&nbsp;Fig.8 : Segments of 3,30 &amp;300 msec of voiced speech and their log magnitude spectra.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

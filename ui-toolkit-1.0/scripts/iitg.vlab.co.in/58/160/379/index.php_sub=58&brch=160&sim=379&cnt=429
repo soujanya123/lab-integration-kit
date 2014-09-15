@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Vapor in air diffusion  (Expt calc) : Virtual mass transfer lab : Chemical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To determine the difusion co-efficient of an organic vapor in air and to study the effect of temperature on it. " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=58">Chemical Engineering</a>-><a href="?sub=58&brch=160">Virtual mass transfer lab</a>-><a href=""> Vapor in air diffusion </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title"> Vapor in air diffusion </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=58&brch=160&sim=379&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class="current"><a href="?sub=58&brch=160&sim=379&cnt=429"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Expt calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=459"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Labvw calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=1980"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=658"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Video&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=619"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Download&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=1982"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post expt quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=637"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Help&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=379&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p style="text-align: center;">&nbsp;</p>
+<div class="style9 style32" align="center">
+<div class="style9" align="left">
+<h1 style="text-align: center;"><strong>SAMPLE  CALCULATION&nbsp; </strong></h1>
+<p>&nbsp;</p>
+<h3 style="text-align: center;"><span class="style3 style33 style11 style13 style16"><span class="style3
+style33 style11  style13"><strong>OBSERVATION TABLE - IN AIR AT&nbsp; 328K</strong></span></span></h3>
+</div>
+</div>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;&nbsp;<img src="/userfiles/7/image/che3/k1.JPG" alt="" style="width: 513px; height: 322px;" align="absMiddle"></p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Now we plot a graph between (x-x<sub>0</sub>) and time/(x-x<sub>0</sub>)</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/che3/k.JPG" height="297" width="421"></p>
+<p style="text-align: center;"><strong>(x-x<span class="style15">0</span>) vs  time/(x-x<span class="style15">0</span>) plot </strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="style10" align="left">Then for the data above we have the  least square equation as :</p>
+<p class="style12" align="center">y = 26.17x + 1159</p>
+<p class="style10" align="left">From the graph slope S  is  = 2.617*10^7 sec/m^2</p>
+<p class="style10" align="left">Operating temperature T =  328K</p>
+<p class="style10" align="left">Vapor pressure or carbon  tetrachloride can be obtained from the equation :</p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨bold¨»V«/mi»«mo»§nbsp;«/mo»«mo»=«/mo»«mi mathvariant=¨bold¨»exp«/mi»«mo»(«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«mn»1«/mn»«/msub»«mo»§nbsp;«/mo»«mo»+«/mo»«mfrac»«msub»«mi mathvariant=¨bold¨»C«/mi»«mn»2«/mn»«/msub»«mi mathvariant=¨bold¨»T«/mi»«/mfrac»«mo»§nbsp;«/mo»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«mn»3«/mn»«/msub»«mi mathvariant=¨bold¨»ln«/mi»«mo»(«/mo»«mi mathvariant=¨bold¨»T«/mi»«mo»)«/mo»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«mn»4«/mn»«/msub»«mo»§nbsp;«/mo»«mo»+«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«mn»5«/mn»«/msub»«mo»§nbsp;«/mo»«mo»)«/mo»«/math»" src="/userfiles/7/image/CH8/554.PNG" align="middle"></p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" align="left">Where T is in K and vapor pressure is in  Pascal.</p>
+<p class="style10" align="left">For carbon tetrachloride  : C<sub>1</sub>=78.441 , C<sub>2</sub>=-6128.1 , C<sub>3</sub>=-8.5766 , C<sub>4</sub>=6.8465*10<sup>(-6)</sup> , C5=2</p>
+<p class="style10" align="left">With these values of  constants we have the vapor pressure to be 49512.55 pascal =49.512  kN/m<sup>2</sup></p>
+<p class="style10" align="left">Total pressure P =  101.32 kN/m<sup>2</sup></p>
+<p class="style10" align="left">Kilogram molecular  volume of a gas = 22.4 m<sup>3</sup> at 273.15 K</p>
+<p class="style10" align="left">Molecular weight of  carbon tetrachloride = 154 kg/mol</p>
+<p class="style10" align="left">Density of carbon  tetrachloride at 321K = 1540 kg/ m<sup>3</sup></p>
+<p class="style10" align="left">Total concentration</p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»C«/mi»«mi mathvariant=¨bold¨»T«/mi»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mrow»«mn»1«/mn»«mo»§#215;«/mo»«mn»273«/mn»«mo».«/mo»«mn»15«/mn»«/mrow»«mrow»«mn»22«/mn»«mo».«/mo»«mn»4«/mn»«mo»§#215;«/mo»«mi mathvariant=¨bold¨»T«/mi»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=de6827d9765a379372960bb6d996a355.png" align="middle"></p>
+<p class="style10" style="text-align: center;">=.03716kmol/m^3</p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" align="left">Concentration of carbon tetrachloride</p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»C«/mi»«mrow»«mi mathvariant=¨bold¨»A«/mi»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«mo»§nbsp;«/mo»«/mrow»«/msub»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mrow»«msub»«mi mathvariant=¨bold¨»C«/mi»«mi mathvariant=¨bold¨»T«/mi»«/msub»«mo»§#215;«/mo»«mi mathvariant=¨bold¨»V«/mi»«/mrow»«mi mathvariant=¨bold¨»P«/mi»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=ceb6e7fb64f688ef1ba79c556085aa29.png" align="middle"></p>
+<p class="style10" style="text-align: center;">=.01816 kmol/m<sup>3</sup></p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»1«/mn»«/msub»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«mfrac»«mrow»«mn»273«/mn»«mo».«/mo»«mn»15«/mn»«/mrow»«mrow»«mn»22«/mn»«mo».«/mo»«mn»4«/mn»«mo»§#215;«/mo»«mi mathvariant=¨bold¨»T«/mi»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=c6077c4040f1fd6bdc6f493abd6d4af4.png" align="middle"></p>
+<p class="style10" style="text-align: center;">= .0372kmol/m<sup>3</sup></p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»2«/mn»«/msub»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»1«/mn»«/msub»«/msub»«mfrac»«mrow»«mi mathvariant=¨bold¨»P«/mi»«mo»-«/mo»«mi mathvariant=¨bold¨»V«/mi»«/mrow»«mi mathvariant=¨bold¨»P«/mi»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=56220195757837b336da2cea9c7310b2.png" align="middle"></p>
+<p class="style10" style="text-align: center;">=.01902 kmol/m<sup>3</sup></p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mi mathvariant=¨bold¨»M«/mi»«/msub»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mfrac»«mrow»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»1«/mn»«/msub»«/msub»«mo»§nbsp;«/mo»«mo»-«/mo»«mo»§nbsp;«/mo»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»2«/mn»«/msub»«/msub»«/mrow»«mrow»«mi mathvariant=¨bold¨»ln«/mi»«mfenced»«mfrac»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»1«/mn»«/msub»«/msub»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mn»2«/mn»«/msub»«/msub»«/mfrac»«/mfenced»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=5b8ba036a45f22d3d276f3617f12fcd9.png" align="middle"></p>
+<p class="style10" style="text-align: center;">=.0271 kmol/m3</p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" align="left">Diffusion co-efficient</p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style10" style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«msub»«mi mathvariant=¨bold¨»D«/mi»«mrow»«mi mathvariant=¨bold¨»A«/mi»«mi mathvariant=¨bold¨»B«/mi»«/mrow»«/msub»«mo»§nbsp;«/mo»«mo»=«/mo»«mfrac»«mrow»«mi mathvariant=¨bold-italic¨»§#929;«/mi»«msub»«mi mathvariant=¨bold¨»C«/mi»«msub»«mi mathvariant=¨bold¨»B«/mi»«mi mathvariant=¨bold¨»M«/mi»«/msub»«/msub»«/mrow»«mrow»«mn»2«/mn»«msub»«mi mathvariant=¨bold¨»M«/mi»«mi mathvariant=¨bold¨»A«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»C«/mi»«mi mathvariant=¨bold¨»A«/mi»«/msub»«msub»«mi mathvariant=¨bold¨»C«/mi»«mi mathvariant=¨bold¨»T«/mi»«/msub»«mi mathvariant=¨bold¨»S«/mi»«/mrow»«/mfrac»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=4706cc406e153fb9eef43fe6dad2cf6e.png" align="middle"></p>
+<p class="style10" style="text-align: center;">=7.67*10<sup>(-6)</sup> m<sup>2</sup>/sec</p>
+<p class="style10" style="text-align: center;">&nbsp;</p>
+<p class="style10" align="left">&nbsp;</p>
+<p class="style14" style="text-align: justify;">Similarly repeating the experiments at  different temperature we get different values for diffusion  co-efficient.Thus it is seen that the diffusion coefficient is  a  function of time and it increases with increase in temperature.</p>
+<p class="style14" align="left">Plot a T vs D*P on a log  - log plot.</p>
+<p class="style14" align="left">Finally from the plot we  have</p>
+<p style="text-align: center;"><img title="Double click to edit" class="Wirisformula" alt="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi mathvariant=¨bold¨»D«/mi»«mo»§nbsp;«/mo»«mo»=«/mo»«mi mathvariant=¨bold¨»a«/mi»«mo»§#215;«/mo»«msup»«mi mathvariant=¨bold¨»T«/mi»«mi mathvariant=¨bold¨»b«/mi»«/msup»«/math»" src="/fckeditor/editor/plugins/fckeditor_wiris/integration/showimage.php?formula=44136174b218e271a8f07e74b7390613.png" align="middle"></p>
+<p class="style12 style14" align="left">where b is a  parameter that denotes temperature dependence and theoritically it  should lie between 1.5 to 1.8</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

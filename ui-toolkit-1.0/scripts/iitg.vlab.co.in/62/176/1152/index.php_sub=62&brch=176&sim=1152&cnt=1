@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Conduction analysis of Double Material Slab (Theory) : Virtual laboratory Experience in Fluid and Thermal Sciences : Mechanical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Conduction analysis of Double Material Slab" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=62">Mechanical Engineering</a>-><a href="?sub=62&brch=176">Virtual laboratory Experience in Fluid and Thermal Sciences</a>-><a href="">Conduction analysis of Double Material Slab</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Conduction analysis of Double Material Slab</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=62&brch=176&sim=1152&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=3030"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_995.png" alt=""/></div><div id="tab_name" >Software Package&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=2685"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_992.png" alt=""/></div><div id="tab_name" >Setup&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=2765"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Demonstration&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=2686"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=62&brch=176&sim=1152&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p style="text-align: right;">&nbsp;</p>
+<h2 style="text-align: right;"><span style="color: rgb(51, 153, 102);"><a href="../../index.php?sub=62&amp;brch=176">&nbsp;<span style="color: rgb(128, 128, 0);"><strong>Back to HOME</strong></span></a></span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Thermal conduction is the transport of energy in a medium due&nbsp; to a temperature gradient and the physical mechanism is that of random atomic&nbsp; or molecular activity. The quantity of heat flow through the cross section of a&nbsp; solid body over time ‘t’ in a steady state is governed by the Fourier’s law of&nbsp; heat conduction <br>
+<span style="color: rgb(51, 102, 255);"><br>
+</span></p>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(51, 102, 255);">&nbsp; &nbsp; </span><span style="color: rgb(51, 102, 255);">&nbsp;<u> Working Formula:</u></span></h3>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heat conduction through a&nbsp; wall is given by</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="data:image/png;base64,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"></p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Where the symbols carry their&nbsp; usual meanings</p>
+<p style="text-align: left;">&nbsp;</p>
+<h3 style="text-align: right;"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApUAAAF+CAIAAABcWHYsAAAbJklEQVR4nO3dv6tsa3nA8SFJISnChRSxPBhIKaeUCCluZXWvAUkXvFjY3CpbsL1YiEQkjVXYiHZaKULgwIYgpNPGIrsUTmexy/wDJ8XsPbN+zzvvzLvXs575fHias+fnXnNmffda82PtPgAAW7Nb+w4AAGfTbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv0GgO3RbwDYHv1u5d27d2/evNmxfX/9N3/79//4L1/71x+byfnnf/vP//qf/137CQc3R79b+fKXv7x2d7iav/jLv1o9k5Hnn77zH2s/4eDm6HcraxeHK1u9kcFn7Scc3Bz9buWw3v/Tn//PbHcOj+OnP/hvMx79hrXodyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2LS71b0O8fot35DTPrdin7nGP3Wb4hJv1vR7xyj3/oNMel3K/qdY/RbvyEm/W5Fv3OMfus3xKTfreh3jtFv/YaY9LsV/c4x+q3fEJN+t6LfOUa/9Rti0u9W9DvH6Ld+Q0z63Yp+5xj91m+ISb9b0e8co9/6DTHpdyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2LS71b0O8fot35DTPrdin7nGP3Wb4hJv1vR7xyj3/oNMel3K/qdY/RbvyEm/W4lT79/99Pn3+S7v/3D8efvf/Hd5x9/51fve+d//O13nk/5/BePa9/5i0e/9Rti0u9Wcvf7D7/6/OX3++m745mPUdfvGxn9hrXodyuZ+33cwt798HcvZ+v8UL9vZ/Qb1qLfreTt98ye832/v/vbP/z59z/U75sZ/Ya16HcrWfv97icvv9hPfj9zEf2+odFvWIt+t5Kz39PvZRuMft/Q6DesRb9bydjvz8veWK7fNzT6DWvR71YS9vtIv41+w8r0u5WE/f7ub98dPjZm/7nRb1iVfreSst+d95Z7/5rRb1iTfreStN+93enHD3/3Rr9vaPQb1qLfraTtd/cjZL0vXzuMft/Q6DesRb9bSdzvP53Yi67fNzT6DWvR71ZS93tqL/rE96cub6ZvY/RbvyEm/W4leb/HX8Sm3zc5+g1r0e9W8vT7tke/9Rti0u9W9DvH6Ld+Q0z63Yp+5xj91m+ISb9b0e8co9/6DTHpdyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2LS71b0O8fot35DTPrdin7nGP3Wb4hJv1vR7xyj3/oNMel3K/qdY/RbvyEm/W5Fv3OMfus3xKTfreh3jtFv/YaY9LsV/c4x+q3fEJN+t6LfOUa/9Rti0u9W9DvH6Ld+Q0z63Yp+5xj91m+ISb9b0e8co9/6DTHpdyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2LS71b0O8fot35DTPrdin7nGP3Wb4hJv1vR7xyj3/oNMel3K/qdY/RbvyEm/W5Fv3OMfus3xKTfreh3jtFv/YaY9LsV/c4x+q3fEJN+t6LfOUa/9Rti0u9W9DvH6Ld+Q0z63Yp+5xj91m+ISb9b0e8co9/6DTHpdyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2JK1u+nh7vdCfePM5e4e3i65l3R7xyj3+37fdbT9vG+f8qVn7ewHbfc78GZ9dtMjH7H6ffs+TScm5Ss3z2HP9Qnnt0TawL9NhOj3+373bPwtH287/20uyU+2K0Gt+C2+3338LR4rkvod47R7zj9Hur+FS7g3J5b7fe55zqffucY/Y7b7+4WuH5ze/Rbv83S6Hfcfne2v70Czg3Sb/02S6PfYftt65sbp9/6bZZGv4P2u1NvG9/cJv3Wb7M0+h2y3+oN+q3fZnH0O16/fXAMPnzQb/02y6PfwfrtQ2PwTL/12yyNfofq97bes/b27dsdnPL27du6/2D6rd9maQ6P4+qljDmv2e/NfV5st8u8guVaqv+fZP7vdeb3px5c5+96/c4x+h2m38Mjl/RFLLp+U0K/J+i3uXz0O0y/lw9zot9slX6Ho985Rr9fud+Z6Dcl9Dsc/c4x+q3f1fSbEvodjn7nGP3W72r6TQn9Dke/c4x+63c1/aaEfoej3zlGv/W7mn5TQr/D0e8co9/6XU2/KaHf4eh3jtFv/a6m35TQ73D0O8fot35X029K6Hc4+p1j9Fu/q+k3JfQ7HP3OMfqt39X0mxL6HY5+5xj91u9q+k0J/Q5Hv3OMfut3Nf2mhH6Ho985Rr/1u5p+U0K/w9HvHKPf+l3tFfv9fHC2iEdhu77H+wa/6eP9ruTgk4VnO4t+h6PfOUa/9bvayfXy88FSjy16OUZqp06Hw6YuFutEv/vHTr9yfqbuSNOb0u+XC171bnCk3zlGv/W72rn9PrTvuQ/9Ftb2e/K46U26ur+l7lU/3rfYJXCNfj893F2+FK5yJfodkH7nGP3W72rn9Xu07f2yqTfaSp+w3O/Dj48tv37Anx7uXmkHvn6/XPDSW2aGfucY/dbvauf0+6WsEzU4v98Tu+H752vQ79M7lvs7ArpnfXq42909PHV28w+v6HjK3cNTr9+j2x3Vvfviwf3jh+GrCc/nPrR44hfp/Kh/tt6VPExf8PRfGvodjn7nGP3W72rl/X64X6jquf2er/exOq/+8vHjfe9W+/8c/PEy3JLvXvfsXoreLQ1u6HDy433veoZ/Q3TyPrzGycsNruT0nxLT9Dsc/c4x+q3f1Ur73d0MnD9XYb8fF/4UaLf1faLfEzuau20b7XofnTgqbVm/53dwL/R7Ksv9PzVm+r14wQX6HY5+5xj91u9qxdvf9/fzW8xn9fvFfLLa1PtEv6deGu/+bBTT7rWNK1i8/3zhJfmlfo8jPfiEwFy/+zdY/DK9foej3zlGv/W7WnG/j1vNC/u8i7a/7+YSXfYxtOlbLrng6X5PvaRd0O+JBp/X7+k7tdjv4cb48ON8s/3u3tvyd9npdzj6nWP0W7+rndHvpVemL99/XhXv84w/OzY8cUPb351qD/J9qt/HmzzjTfL6HY5+5xj91u9qZ/V7vuDT/Z58x3n3neyHsDR7z9rEL7MU8BOvfxe9Y+xw4vQL0h8GzZ6/Tyf6/dLtYb5P9vvl9h/O+Iybfoej3zlGv/W72pn9HpZ2+AmlySqP+z14oXvy61va1Hx/l4apvX/8MNo8n/rnXL/7Zx6/uX60IT+qe+/953Npn/o74O7+fpDvwdkm/z44++8l/Q5Hv3OMfut3tbP7fVz3T33CeKrfg69uG36T2/MW5Cv1u/sLDO7t6KT5jdrDWYdxPVzj5D7tklNn7k//89+Dy03t9uicrX8l3Z+Vv0tQv8PR7xyj3/pdrXq9fNo+LrdxuJLNOfc70vU7HP3OMfqt39Xa9bvFUTS4krMfHP0OR79zjH7rd7WG299EVfE18Podjn7nGP3W72r6TQn9Dke/c4x+63c1/aaEfoej3zlGv/W7mn5TQr/D0e8co9/6XU2/KaHf4eh3jtFv/a6m35TQ73D0O8fot35X029K6Hc4+p1j9Fu/q+k3JfQ7HP3OMfqt39X0u9zCoT7PORRntVe4iVn6HY5+5xj91u9qi+vlue8l3+1Gx/nYbeubUge/Wdk3kVX2e+I74usWlX7Tod85Rr/1u9pF/e6fvpV+jw8D3jnk18kL1vX7KstGv+nQ7xyj3/pdrXC9/FLqXr1evkR7+uDfQVV8d2jvovp95gWvez840O8co9/6Xe2Sfr/YUr9PH7ijv1NhdLTOqeNy7u4enmr6/XIY0eMVzR2n+8RNtKff4eh3jtFv/a52Y/0+le/H+94v0v9nr9/da+ocynzmOuf7vRtczfAY3UU30Z5+h6PfOUa/9buafndM7CDvxrdz8uicC7vlR+9f6/9B0L3QzK2dvIn29Dsc/c4x+q3f1fT7aCqQ3Z91ijrepq7dfz58I93hB+fcRHv6HY5+5xj91u9qGfrd28Bdvhen+z31CvSo3xOlv3a/z7qJ9vQ7HP3OMfqt39Uy9PsM48+ODU+0/T1Jv8PR7xyj3/pd7cb6vbwFfsHr34M3vs1dxYnbG71jrfAm2tPvcPQ7x+i3fle7pN8TXyy2sHc6jP3dHpbxuF98+NVy/X/23g9+jfefz/X7nJtoT7/D0e8co9/6Xe0G+/3hw+iujxr6opfLQW47HxS/fzx8lvvkbXVucLnfZ9xEe/odjn7nGP3W72rV62Vuin6Ho985Rr/1u5p+U0K/w9HvHKPf+l1Nvymh3+Hod47Rb/2upt+U0O9w9DvH6Ld+V9NvSuh3OPqdY/Rbv6vpNyX0Oxz9zjH6rd/V9JsS+h2OfucY/dbvavpNCf0OR79zjH7rdzX9poR+h6PfOUa/9buafm/Bmkcu2dPvcPQ7x+i3fldbXC93vr5z5HgcruHPtmMyi4uHGD3/+gfqKqzfjOh3jtFv/a52Qb8nT91Uwi/v9+Qhw5evv4Z+M6LfOUa/9bta4Xp56vglTw93h6YcW76lgOt3Mf0OR79zjH7rd7UL+j15hoz97u9oOJw03Ds+DuzykUPvHp461zFcbsdT7h6e9JsR/c4x+q3f1a7V75fcrFuZM5X0+/G+91sN/lm7/T1Ynk8Pd71zdu/D2kf+3tPvcPQ7x+i3fle7Tr83ufU9dwDz7u8x0edelE/3e3oTfRjs3rWOrnR07ten3+Hod47Rb/2udo1+b7TeBdvfU+Hs/eyi7e/u5bq3Or6Y/eeM6HeO0W/9rnZxvw/xXq8vvc3cc+5GWb+nXplu2e+JPxr0mxH9zjH6rd/VLut3gHhfwvZ3Mf0OR79zjH7rd7VL+r3J96x1nX7/2uWvf1f0e/pE/aZHv3OMfut3tfp+z325y4ZqXvD+8/1vOffPE58Wr+x3/1a8/5xJ+p1j9Fu/q+n36c9/L7++fjh1+vPfQ53XuGf7/aG3dO8fDx8XX49+h6PfOUa/9bta9XqZm6Lf4eh3jtFv/a6m35TQ73D0O8e8Wr8/+fx7z7f09R9/4/DDH/z6619//vFXvv3rlx/+7Kv93YaHk/Q7FP2mhH6Ho985Zt1+f+Pb33q5/e99PPxJX+dS+h2EflNCv8PR7xyzYr8/+f6Pv/Jy61/9/PlsH3/SS/XHnxwLfjiPfgeh35TQ73D0O8es1e/JPecTl+o0fvfJz/Q7FP2mhH6Ho985Zq1+HzesF6vcey1cv4PRb0rodzj6nWPW6ffUa+HTl+psf6/yLjb9XqDflNDvcPQ7x6zR72+9JPlbX//+iUt1Xv9+foObfseh35TQ73D0O8es0O+jE/3uXmStj5Dp9wL9poR+h6PfOWaV/ecfHz4kNr//vPfK90ofHtPvZfq9iuXjngSk3+Hod45Zpd/fOPWutP5XuKyz51y/TzqxXn75Bu9uaiaPRXaVI4n2vy+8cd5WPSanfnMp/c4xK/W7t2988MHu7kfL1o23fi87tV4eHf1qfDis/oFMapM4eTiUloV7zX6Pcq3fXEq/c8xa/f50/r1pq79nTb8LnV4v9zfBn//VCd/LkbPGp5zl6eFu9DdC08Tp9zn0Oxz9zjEr9nvys92d7089/e50/V5XwXq5s8U9uev82el+Dzfdn/89cYlDwNfpd3dfQOcsL0fxPO7mH9y98fFC7x6ehj+8e3g69nv2qqLR73D0O8es2O9PR3vRx0cu6Vuh6Pq9oGi9PNi3PV29ku3v3rb88z8W/hZoun081+/H+93wT4znuzj46+Xp4a57Dd0jeA9Omtn+nj9/PPodjn7nmHX7/Wn/i9j6r3zrd3SF6+XORuRcZsr2nx/O9Ti78f0qW99z/V7a0z2qbPcqBlfX/+f0tc5dVUT6HY5+55hX6/dGR78XlK2XexvgM5kpfP375FW9Tr3nijn+6fEnowp3N7kr+j13VRHpdzj6nWP0W7+rlayXD69b3y2Vtfj9a8dt+ZnN37KrmbrCcy442e/Jd8EX9bti/7l+cwH9zjH6rd/VCtbLnTCPPzw2ebaCa5uq7VU+Q16sdPt7cP/morv4HgH95ur0O8fot35XO7leHrzTauoLXT50TxnEb/Ae8+M/R1f0Gu9ZG97fgte/l07rRPflvenT9Jur0+8co9/6Xe3Eennh21p6+41HBqc+X777lvP+Vc/suG5Y88X3n3dK+nj/craC/eeTy2DiSvWbS+l3jtFv/a62vF6e3NoebCiX9Ht/1uEWerfg6/R75rZm3mN3zvvXRi+BH26u9/nvyauKSL/D0e8co9/6Xa16vVxkH8LIn4u6kond7pv7irVF+h2OfucY/dbvak37HX2j8oomd5An+t31Oxz9zjH6rd/V2m5/35TBDvlcex30Oxz9zjH6rd/V9JsS+h2OfucY/dbvavpNCf0OR79zjH7rdzX9poR+h6PfOUa/9buaflNCv8PR7xyj3/pdTb8pod/h6HeO0W/9rqbflNDvcPQ7x+i3flfTb0rodzj6nWP0W7+r6Tcl9Dsc/c4x+q3f1fSbEvodjn7nGP3W72r6TQn9Dke/c4x+63c1/aaEfoej3zlGv/W7mn5TQr/D0e8co9/6XU2/KaHf4eh3jtFv/a6m35TQ73D0O8fot35X029K6Hc4+p1j9Fu/q+k3JfQ7HP3OMfqt39X0mxL6HY5+5xj91u9q+k0J/Q5Hv3OMfut3Nf2mhH6Ho985Rr/1u9pHH320g1M++uijuv9g+t3K4bFZvUDmkjk8jquXMuboN6xFv1vR7xyj3/oNMel3K/qdY/RbvyEm/W5Fv3OMfus3xKTfreh3jtFv/YaY9LsV/c4x+q3fEJN+t6LfOUa/9Rti0u9W9DvH6Ld+Q0z63Yp+5xj91m+ISb9b0e8co9/6DTHpdyv6nWP0W78hJv1uRb9zjH7rN8Sk363od47Rb/2GmPS7Ff3OMfqt3xCTfrei3zlGv/UbYtLvVvQ7x+i3fkNM+t2KfucY/dZviEm/W9HvHKPf+g0x6Xcr+p1j9Fu/ISb9bkW/c4x+6zfEpN+t6HeO0W/9hpj0uxX9zjH6rd8Qk363ot85Rr/1G2LS71b0O8fot35DTPrdin7nGP3Wb4hJv1vR7xyj3/oNMel3K/qdY/RbvyEm/W5Fv3OMfus3xKTfreh3jtFv/YaY9LsV/c4x+q3fEJN+t6LfOUa/9Rti0u9WduRyCJWZnLWfcHBz9LuVL33pS2sXh2taPZDBZ+0nHNwc/W7lRz/60drF4Wr+7h++tnogI8+///xh7Scc3Bz9BoDt0W8A2B79BoDt0W8A2B79BoDt0W8A2B79buizzz5b+y5wBR7HZZYPrEK/G9rtLN4MPI7LLB9YhSdeQ9ZrOXgcl1k+sApPvIas13LwOC6zfGAVnngNWa/l4HFcZvnAKjzxGrJey8HjuMzygVV44jVkvZaDx3GZ5QOr8MRryHotB4/jMssHVuGJ15D1Wg4ex2WWD6zCE68h67UcPI7LLB9YhSdeQ9ZrOXgcl1k+sApPvIas13LwOC6zfGAVnngNza3X3r9//7p3hCJzj4vHce/c5QM05YnX0Hi99pvf/Obt27eO9xDTF1988ebNm5///OeDn3sc98qXD/AKPPEa6q7X9mv83W632+1ubb2/FV988cX+ARpUyuO4V7J8gFfjidfQfr3WXePf5np/Kw59GlTK47i3vHyAV+aJ19Butxus8dmcN2/e7DyO8/bLZ+2nGtwiT7yGdrvd+/fvP/vss8Eq79a227ZisH252+2++c1v/vGPf/Q47i0sn7XvGtwiT7yGDuu1wdr/1tb7W9Ht075M+597HPdOLh/gNXniNTRYrx3W/re23t+KfZ+6ZdrzOO4VLh/gdXjiNTS5Xnv//v0vf/nL178znPTu3btBmfY8jntnLR+gNU+8hqzXcvA4LrN8YBWeeA1Zr+XgcVxm+cAqPPEasl7LweO4zPKBVXjiNfTmzZu17wJX4HFcZvnAKvQbALZHvwFge/QbALZHv6ny9HD3/E1cdw9PvVMe72dOmL8IE85bwoefWcRwK/SbOse87O4fp37cLUjnzOJSqnQJDxauxQw3Qr+pNZXqiU3DibwIS5myJfx4P7sl3u0+kIx+U++Yin0/jr3phGP/w7uHp/k968wpWsID3T+YBBzy0m8u0N/Fe6rP+n2+85bwXmcLXL8hL/3mIufsHdfvGme//tC5gAUNiek3Fxq+83l+k0+/65Qv4cG5bX1DZvrNpfp5WWiGflcqXsK9s1rKkJt+c5nR7t35bOh3lZolbBlDfvrNJTrvh76/P5UO/a5QvoR9cAxui35zgV6RZ75vZObcFCldwj40BjdHv6l23OB7LsaJb0jV73OVLmHvWYMbpN9UmkzJ8PtGevT7PIVL2OfF4DbpN3VGm4Z74128s1/PbWNxWeESHn66rE/RIS39psbC93jOf+Wnfp+heAkvLV/9hsT0GwC2R78BYHv0GwC2R78BYHv0GwC2R78BYHv0GwC2R78BYHv0GwC2R78BYHv0GwC2R78BYHv0GwC2R78BYHv0GwC25/8BCfEURxnOKyoAAAAASUVORK5CYII="></h3>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(51, 102, 255);"><u> Description:</u></span></h3>
+<p>&nbsp;</p>
+<p style="text-align: left;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linear conduction unit</strong></p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are 3 main elements in linear&nbsp; conduction unit</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp; Heater <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp; Various inserts<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 3.&nbsp;&nbsp;&nbsp; A movable part with a cooler</p>
+<p style="text-align: left;">&nbsp;</p>
+<ol>
+    <li style="text-align: justify;">Heater:-&nbsp; It&nbsp; consists of external insulation, lid, brass rod and a electrical heater&nbsp; element.&nbsp;&nbsp; Together with the inserts and&nbsp; under the insulation there are 9 temperature measuring points.</li>
+    <li style="text-align: justify;">Inserts:-&nbsp; Insert 1 has 3 temperature measuring points.&nbsp; Both insert 1 and 2 has brass rod of same diameter with the heater and&nbsp; cooler. But insert 2 has corrosion resistant rod so no temperature measuring&nbsp; points. Insert 3 has brass rod lesser in diameter than heater and cooler.</li>
+    <li style="text-align: justify;">Cooler:-&nbsp; The cooler&nbsp; consists of external insulation and brass rod. This rod has bores through which&nbsp; cooling water can flow.</li>
+</ol>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

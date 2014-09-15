@@ -1,0 +1,719 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Rotating Magnetic Field Behaviour in three coils (Theory) : Electrical Machines Laboratory : Electrical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To study the behaviour of rotating magnetic field in a three coil system due to AC current" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=61">Electrical Engineering</a>-><a href="?sub=61&brch=168">Electrical Machines Laboratory</a>-><a href="">Rotating Magnetic Field Behaviour in three coils</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Rotating Magnetic Field Behaviour in three coils</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=61&brch=168&sim=1054&cnt=1931"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=61&brch=168&sim=1054&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=168&sim=1054&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=168&sim=1054&cnt=1932"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=168&sim=1054&cnt=2618"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=168&sim=1054&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color: rgb(32, 32, 32);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="text-align: justify;" class="MsoNormal"><span style="color: rgb(32, 32, 32);"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</span></span><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If two magnetic fields are present in a machine, then a torque will be created which will tend to line up the two magnetic fields. If one magnetic field is produced by the stator of an ac machine and the other one is produced by the rotor of the machine, then a torque will be induced in the rotor which will cause the rotor to turn and align itself with the stator magnetic field. If there were some way to make the stator magnetic field rotate, then the induced torque in the rotor would cause it to constantly "chase" the stator magnetic field around in a circle. This, in a nutshell, is the basic principle of all ac motor operation.</p>
+<!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<p class="MsoNormal"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The fundamental principle of ac machine operation is that if a three-phase set of currents, each of equal magnitude and differing in phase by 120°, flows in a three-phase <span style="mso-spacerun:yes">&nbsp;</span>winding, then it will produce a rotating magnetic field of constant magnitude. The three phase winding consists of three separate windings spaced 120 electrical degrees apart around the surface of the machine. The rotating magnetic field concept is illustrated in the simplest case by an empty stator containing just three coils, each 120 degree apart (fig 1a). Since such a winding produces only one north and one south magnetic pole, it is a two pole winding.</p>
+<p class="MsoNormal"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To understand the concept of the rotating magnetic field, we will apply a set of currents to the stator of fig. 1 and see what happens at specific instants of time. Assume that the currents in the three coils are given by the equations</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">i<sub>aa</sub>&#039; (t) = I<sub>M</sub> sin wt&nbsp;&nbsp;&nbsp; A</p>
+<p class="MsoNormal">i<sub>bb</sub>&#039; (t) = I<sub>M</sub> sin (wt - 120°)&nbsp;&nbsp;&nbsp; A</p>
+<p class="MsoNormal">i<sub>cc</sub>&#039;&nbsp; (t) = I<sub>M</sub> sin (wt - 240°)&nbsp;&nbsp;&nbsp; A</p>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="MsoNormal">The current in coil aa&#039; flows into the a end of the coil and out the a&#039; end of the coil. It produces the magnetic field intensity.</p>
+<p class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">H<sub>aa</sub>&#039; (t) = H<sub>M</sub> sin wt A&lt;0° A.turns/m.</p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#353535">where </span><span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">° </span><span style="color:#202020">i</span><span style="color:#4C4C4C">s </span><span style="color:#202020">the </span><span style="color:#4C4C4C">spa</span><span style="color:#202020">tial </span><span style="color:#353535">angle </span><span style="color:#4C4C4C">of </span><span style="color:#202020">th</span><span style="color:#4C4C4C">e </span><span style="color:#202020">ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">n</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ti</span><span style="color:#4C4C4C">c </span><span style="color:#202020">fi</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ld int</span><span style="color:#4C4C4C">e</span><span style="color:#202020">n</span><span style="color:#4C4C4C">s</span><span style="color:#202020">ity </span><span style="color:#353535">vector. The direction </span><span style="color:#4C4C4C">of </span><span style="color:#202020">the ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">n</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ti</span><span style="color:#4C4C4C">c </span><span style="color:#202020">fi</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ld inten</span><span style="color:#4C4C4C">s</span><span style="color:#202020">it</span><span style="color:#4C4C4C">y </span><span style="color:#353535">vector </span><span style="color:#080808;mso-bidi-font-style:italic">H</span><sub><span style="color:#4C4C4C;mso-bidi-font-style:italic">aa</span></sub><span style="color:#4C4C4C;mso-bidi-font-style:italic">’(t) </span><span style="color:#202020">i</span><span style="color:#4C4C4C">s g</span><span style="color:#202020">iven </span><span style="color:#353535">by </span><span style="color:#202020">th</span><span style="color:#4C4C4C">e </span><span style="color:#202020">ri</span><span style="color:#4C4C4C">g</span><span style="color:#202020">ht-hand rule: </span><span style="color:#080808">If </span><span style="color:#202020">the fin</span><span style="color:#4C4C4C">ge</span><span style="color:#202020">r</span><span style="color:#4C4C4C">s </span><span style="color:#353535">of </span><span style="color:#202020">the ri</span><span style="color:#4C4C4C">g</span><span style="color:#202020">ht hand </span><span style="color:#4C4C4C">c</span><span style="color:#202020">url in the </span><span style="color:#353535">direction </span><span style="color:#4C4C4C">o</span><span style="color:#202020">f the </span><span style="color:#4C4C4C">c</span><span style="color:#202020">urrent fl</span><span style="color:#4C4C4C">ow </span><span style="color:#202020">in the </span><span style="color:#4C4C4C">co</span><span style="color:#202020">il, th</span><span style="color:#4C4C4C">e</span><span style="color:#202020">n the </span><span style="color:#4C4C4C">res</span><span style="color:#202020">ultin</span><span style="color:#4C4C4C">g </span><span style="color:#202020">ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">n</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ti</span><span style="color:#4C4C4C">c </span><span style="color:#202020">fi</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ld i</span><span style="color:#4C4C4C">s </span><span style="color:#202020">in th</span><span style="color:#4C4C4C">e </span><span style="color:#353535">direction </span><span style="color:#202020">that th</span><span style="color:#4C4C4C">e</span><span style="color:#202020"> thumb </span><span style="color:#353535">points. </span><span style="color:#202020">N</span><span style="color:#4C4C4C">o</span><span style="color:#202020">ti</span><span style="color:#4C4C4C">ce </span><span style="color:#202020">that th</span><span style="color:#4C4C4C">e </span><span style="color:#202020">ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">nitud</span><span style="color:#4C4C4C">e o</span><span style="color:#202020">f the ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">neti</span><span style="color:#4C4C4C">c </span><span style="color:#202020">fi</span><span style="color:#4C4C4C">e</span><span style="color:#202020">ld int</span><span style="color:#4C4C4C">e</span><span style="color:#202020">n</span><span style="color:#4C4C4C">s</span><span style="color:#202020">ity </span><span style="color:#353535">vector</span><span style="color:#202020"> </span><span style="color:#080808">H</span><sub><span style="color:#4C4C4C">aa</span></sub><span style="color:#4C4C4C">’(</span><span style="color:#202020">t</span><span style="color:#4C4C4C">) </span><span style="color:#353535">varies </span><span style="color:#4C4C4C">s</span><span style="color:#202020">inu</span><span style="color:#4C4C4C">so</span><span style="color:#202020">idally in tim</span><span style="color:#4C4C4C">e, </span><span style="color:#353535">but </span><span style="color:#202020">th</span><span style="color:#4C4C4C">e </span><span style="color:#353535">direction </span><span style="color:#4C4C4C">of </span><span style="color:#080808">H</span><sub><span style="color:#4C4C4C">aa</span></sub><span style="color:#4C4C4C">’(</span><span style="color:#202020">t</span><span style="color:#4C4C4C">) </span><span style="color:#202020">i</span><span style="color:#4C4C4C">s </span><span style="color:#353535">always </span><span style="color:#4C4C4C">co</span><span style="color:#202020">n</span><span style="color:#4C4C4C">s</span><span style="color:#202020">tant. </span><span style="color:#353535">Similarly, </span><span style="color:#202020">th</span><span style="color:#4C4C4C">e </span><span style="color:#202020">ma</span><span style="color:#4C4C4C">g</span><span style="color:#202020">neti</span><span style="color:#4C4C4C">c </span><span style="color:#202020">field int</span><span style="color:#4C4C4C">e</span><span style="color:#202020">n</span><span style="color:#4C4C4C">s</span><span style="color:#202020">ity </span><span style="color:#353535">vectors </span><span style="color:#080808">H</span><sub><span style="color:#353535">bb</span></sub><span style="color:#353535">’(t) and </span><span style="color:#080808">H</span><sub><span style="color:#4C4C4C">cc</span></sub><span style="color:#4C4C4C">’(t) </span><span style="color:#353535">are</span></p>
+<p class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="" class="MsoNormal">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/1%281%29.gif" alt="" height="294" width="652"></p>
+<p style="" class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig 1</p>
+<p style="" class="MsoNormal">(a) A simple three-phase stator. Currents in this stator are assumed positive if they flow into the unprimed end and out the primed end of the coils. The magnetizing intensities produced by each coil are also shown. (b) The magnetizing intensity vector Haa&#039;(t) produced by a current flowing in coil aa&#039;.</p>
+<p>&nbsp;</p>
+<p class="MsoNormal">&nbsp;H<sub>bb</sub>&#039; (t) = H<sub>M</sub> sin (wt -120°)&lt;120° &nbsp; A.turns/m.</p>
+<p class="MsoNormal">&nbsp;H<sub>cc</sub>&#039; (t) = H<sub>M</sub> sin (wt -240°)&lt;240° &nbsp; A.turns/m.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#101010">Th</span><span style="color:#494949">e </span><span style="color:#252525">flu</span><span style="color:#494949">x </span><span style="color:#252525">d</span><span style="color:#494949">e</span><span style="color:#252525">n</span><span style="color:#494949">s</span><span style="color:#252525">iti</span><span style="color:#494949">es res</span><span style="color:#252525">ultin</span><span style="color:#494949">g </span><span style="color:#252525">from th</span><span style="color:#494949">ese </span><span style="color:#252525">ma</span><span style="color:#494949">g</span><span style="color:#252525">neti</span><span style="color:#494949">c </span><span style="color:#252525">field inten</span><span style="color:#494949">s</span><span style="color:#252525">iti</span><span style="color:#494949">es </span><span style="color:#383838">are </span><span style="color:#494949">g</span><span style="color:#252525">iv</span><span style="color:#494949">e</span><span style="color:#252525">n by</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color: rgb(37, 37, 37);">B</span><b style=""><span style="color:#252525">=</span></b><b style=""><span style="color: rgb(37, 37, 37);">µ</span></b><span style="color: rgb(37, 37, 37);">H</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">They are</p>
+<p style="margin-left: 0.5in; text-indent: -0.5in;" class="MsoNormal">&nbsp;</p>
+<p style="margin-left:.5in;text-indent:-.5in" class="MsoNormal">B<sub>aa</sub>&#039; (t) = B<sub>M</sub> sin wt &lt;<span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">°<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span>T</span></p>
+<p class="MsoNormal">B<sub>bb</sub>&#039; (t) = B<sub>M</sub> sin (wt - 120°) &lt;12<span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">°<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span>T</span></p>
+<p class="MsoNormal">B<sub>cc</sub>&#039; (t) = B<sub>M</sub> sin (wt - 240°) &lt;24<span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">°<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp; </span>T</span></p>
+<p class="MsoNormal"><span style="color: rgb(106, 106, 106);">&nbsp;</span><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="margin-left:1.5in;text-indent:-1.5in;mso-layout-grid-align:
+none;text-autospace:none" class="MsoNormal">Where B<sub>M</sub><b style=""><span style="color: rgb(37, 37, 37);">=µ</span></b><span style="color: rgb(37, 37, 37);">H</span><sub>M</sub><b style=""><span style="color: rgb(37, 37, 37);"><sub>. </sub></span></b><span style="color:#252525">Th</span><span style="color:#494949">e c</span><span style="color:#252525">urrent</span><span style="color:#494949">s </span><span style="color:#383838">and </span><span style="color:#252525">th</span><span style="color:#494949">e</span><span style="color:#252525">ir </span><span style="color:#494949">corres</span><span style="color:#252525">p</span><span style="color:#494949">o</span><span style="color:#252525">ndin</span><span style="color:#494949">g </span><span style="color:#252525">flux den</span><span style="color:#494949">s</span><span style="color:#252525">iti</span><span style="color:#494949">es ca</span><span style="color:#252525">n </span><span style="color:#383838">be </span><span style="color:#494949">ex</span><span style="color:#383838">amined</span> <span style="color:#383838">at </span><span style="color:#494949">s</span><span style="color:#252525">pe</span><span style="color:#494949">c</span><span style="color:#252525">ifi</span><span style="color:#494949">c </span><span style="color:#252525">tim</span><span style="color:#494949">es </span><span style="color:#252525">t</span><span style="color:#494949">o </span><span style="color:#252525">determin</span><span style="color:#494949">e </span><span style="color:#252525">th</span><span style="color:#494949">e </span><span style="color:#252525">re</span><span style="color:#494949">s</span><span style="color:#252525">ultin</span><span style="color:#494949">g </span></p>
+<p style="margin-left: 1.5in; text-indent: -1.5in;" class="MsoNormal"><span style="color: rgb(37, 37, 37);">net ma</span><span style="color:#494949">g</span><span style="color:#252525">neti</span><span style="color:#494949">c </span><span style="color:#252525">field in the </span><span style="color:#494949">s</span><span style="color:#252525">tat</span><span style="color:#494949">o</span><span style="color:#252525">r.</span><span style="color:#252525">F</span><span style="color:#494949">o</span><span style="color:#252525">r </span><span style="color:#494949">exa</span><span style="color:#252525">mpl</span><span style="color:#494949">e, </span><span style="color:#383838">at </span><span style="color:#252525">tim</span><span style="color:#494949">e </span><span style="color:#101010">w</span><span style="color:#383838">t </span><span style="font-family:Arial;color:#494949">= </span><span style="color:#494949">0°, </span><span style="color:#252525">th</span><span style="color:#494949">e </span><span style="color:#252525">ma</span><span style="color:#494949">g</span><span style="color:#252525">n</span><span style="color:#494949">e</span><span style="color:#252525">ti</span><span style="color:#494949">c </span><span style="color:#252525">fi</span><span style="color:#494949">e</span><span style="color:#101010">ld </span><span style="color:#252525">from </span><span style="color:#494949">co</span><span style="color:#252525">il&nbsp;</span><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#383838;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA">aa</span><span style="font-size:13.0pt;color:#383838">’ </span><span style="color:#252525">will </span><span style="color:#383838">be</span></p>
+<p style="margin-left: 1.5in; text-indent: -1.5in;" class="MsoNormal">&nbsp;</p>
+<p style="margin-left: 1.5in; text-indent: -1.5in;" class="MsoNormal">B<sub>aa</sub>&#039;=0.</p>
+<p style="margin-left: 1.5in; text-indent: -1.5in;" class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="color:#252525">Th</span><span style="color:
+#494949">e </span><span style="color:#252525">ma</span><span style="color:#494949">g</span><span style="color:#252525">neti</span><span style="color:#494949">c </span><span style="color:#252525">field from </span><span style="color:#494949">co</span><span style="color:#252525">il </span><span style="color:#383838">bb&#039; </span><span style="color:#252525">will </span><span style="color:#383838">be</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">B<sub>bb</sub>&#039;&nbsp; = B<sub>M</sub> sin ( - 120°) &lt;12<span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">°<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span></span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="color: rgb(106, 106, 106);">and the magnetic field from coil cc&#039; will be</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">B<sub>cc</sub>&#039; = B<sub>M</sub> sin (- 240°) &lt;24<span style="color:#4C4C4C">0</span><span style="color:#6A6A6A">°<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span></span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;<img src="/userfiles/7/image/Electrical%20Machines/2%281%29.gif" alt="" height="344" width="666"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig 2</p>
+<p class="MsoNormal">(a) The vector magnetic field in a stator at time wt = 0°. (b) The vector magnetic field in a stator at<br>
+time wt = 90°.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p style="margin-left:.5in;text-indent:-.5in;mso-layout-grid-align:
+none;text-autospace:none" class="MsoNormal"><span style="color:#222222">Th</span><span style="color:#454545">e </span><span style="color:#222222">t</span><span style="color:#454545">o</span><span style="color:#222222">t</span><span style="color:#454545">a</span><span style="color:#131313">l </span><span style="color:#222222">m</span><span style="color:#454545">ag</span><span style="color:#222222">n</span><span style="color:#454545">e</span><span style="color:#222222">ti</span><span style="color:#454545">c </span><span style="color:#222222">fi</span><span style="color:#454545">e</span><span style="color:#131313">l</span><span style="color:#323232">d </span><span style="color:#222222">f</span><span style="color:#454545">ro</span><span style="color:#222222">m </span><span style="color:#323232">a</span><span style="color:#131313">ll </span><span style="color:#222222">thre</span><span style="color:#5C5C5C">e </span><span style="color:#454545">co</span><span style="color:#222222">il</span><span style="color:#454545">s added </span><span style="color:#222222">t</span><span style="color:#454545">oge</span><span style="color:#222222">th</span><span style="color:#454545">e</span><span style="color:#222222">r </span><span style="color:#323232">wi</span><span style="color:#131313">ll </span><span style="color:#323232">be</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#131313">B</span><sub><span style="color:#454545">net</span></sub><span style="color:#454545"> = </span><span style="color:#131313">B</span><sub><span style="color:#454545">aa&#039;</span></sub><span style="color:#454545"> + </span><span style="color:#131313">B</span><sub><span style="color:#454545">bb’ </span></sub><span style="color:#454545">+ </span><span style="color:#131313">B<sub> </sub></span><sub><span style="color:#5C5C5C">cc&#039;</span></sub></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#454545">= 0 + </span><span style="color:#323232">(-√3/2B<sub>M</sub>)&lt;</span><span style="color:#454545"> </span><span style="color:#131313">1</span><span style="color:#454545">20° + </span><span style="color:#323232">(√3/2B<sub>M</sub>) </span><span style="color:#454545">&lt;240°</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#454545">= </span><span style="color:#131313">1.</span><span style="color:#323232">5 B<sub>M</sub> &lt;-90</span><span style="color:#454545">°</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#222222">Th</span><span style="color:#454545">e </span><span style="color:#323232">re</span><span style="color:#5C5C5C">s</span><span style="color:#222222">ultin</span><span style="color:#454545">g </span><span style="color:#222222">n</span><span style="color:#454545">e</span><span style="color:#222222">t ma</span><span style="color:#454545">g</span><span style="color:#222222">neti</span><span style="color:#454545">c </span><span style="color:#222222">fi</span><span style="color:#454545">e</span><span style="color:#131313">l</span><span style="color:#323232">d </span><span style="color:#222222">i</span><span style="color:#454545">s s</span><span style="color:#222222">h</span><span style="color:#454545">ow</span><span style="color:#222222">n in the figure 2a.</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#323232">As </span><span style="color:#454545">a</span><span style="color:#222222">n</span><span style="color:#454545">o</span><span style="color:#222222">ther </span><span style="color:#454545">exa</span><span style="color:#222222">mple</span><span style="color:#454545">, </span><span style="color:#131313">l</span><span style="color:#454545">oo</span><span style="color:#222222">k </span><span style="color:#323232">at </span><span style="color:#222222">th</span><span style="color:#454545">e </span><span style="color:#222222">ma</span><span style="color:#454545">g</span><span style="color:#222222">n</span><span style="color:#454545">e</span><span style="color:#222222">ti</span><span style="color:#454545">c </span><span style="color:#222222">field </span><span style="color:#323232">at </span><span style="color:#222222">time </span><span style="color:#131313">w</span><span style="color:#323232">t </span><span style="color:#454545">= 90°</span><span style="color:#222222">. </span><span style="color:#323232">At </span><span style="color:#222222">th</span><span style="color:#454545">a</span><span style="color:#222222">t tim</span><span style="color:#454545">e, </span><span style="color:#222222">the </span><span style="color:#454545">c</span><span style="color:#222222">urrent</span><span style="color:#454545">s </span><span style="color:#323232">are</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#131313">i</span><sub><span style="color:#454545">aa</span></sub><span style="color:#454545">&#039; = I</span><sub><span style="color:#131313">M</span></sub><span style="color:#131313"> </span><span style="color:#454545">s</span><span style="color:#222222">in </span><span style="color:#454545">90</span><span style="color:#737373">° <span style="mso-spacerun:yes">&nbsp;&nbsp;</span></span><span style="color:#323232">A</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#131313">i</span><sub><span style="color:#454545">bb</span></sub><span style="color:#454545">’= </span><span style="color:#131313">I<sub>M</sub> </span><span style="color:#454545">s</span><span style="color:#222222">in </span><span style="color:#454545">(</span><span style="color:black">- </span><span style="color:#5C5C5C">30</span><span style="color:#454545">°</span><span style="color:#5C5C5C">) <span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span></span><span style="color:#323232">A</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#323232">i<sub>cc</sub>’</span><span style="color:#5C5C5C">= </span><span style="color:#131313">I<sub>M</sub> </span><span style="color:#454545">s</span><span style="color:#222222">in </span><span style="color:#454545">(</span><span style="color:black">-1</span><span style="color:#323232">50</span><span style="color:#454545">°</span><span style="color:#737373">) <span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span></span><span style="color:#323232">A</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#323232">and </span><span style="color:#222222">the ma</span><span style="color:#454545">g</span><span style="color:#222222">n</span><span style="color:#454545">e</span><span style="color:#222222">ti</span><span style="color:#454545">c </span><span style="color:#222222">fi</span><span style="color:#454545">e</span><span style="color:#131313">l</span><span style="color:#323232">ds </span><span style="color:#454545">are</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#131313">B</span><sub><span style="color:#454545">aa’</span></sub><span style="color:#454545">= </span><span style="color:#131313">B<sub>M</sub> </span><span style="color:#454545">&lt;0°</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#131313">B</span><sub><span style="color:#454545">bb’ </span></sub><span style="color:#454545">= </span><span style="color:#323232">-0.5 </span><span style="color:#131313">B</span><sub><span style="color:#323232">M</span></sub><span style="color:#323232"> </span><span style="color:#454545">&lt; </span><span style="color:#131313">1</span><span style="color:#454545">20</span><span style="color:#737373">°</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#131313">B</span><sub><span style="color:#454545">cc&#039;</span></sub><span style="color:#454545"> = </span><span style="color:#323232">-0.5 </span><span style="color:#131313">B</span><sub><span style="color:#323232">M</span></sub><span style="color:#323232"> </span><span style="color:#454545">&lt;240</span><span style="color:#737373">°</span></p>
+<p style="" class="MsoNormal">&nbsp;</p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#222222">Th</span><span style="color:#454545">e </span><span style="color:#323232">re</span><span style="color:#5C5C5C">s</span><span style="color:#222222">ultin</span><span style="color:#454545">g </span><span style="color:#222222">n</span><span style="color:#454545">e</span><span style="color:#222222">t ma</span><span style="color:#454545">g</span><span style="color:#222222">neti</span><span style="color:#454545">c </span><span style="color:#222222">field i</span><span style="color:#454545">s</span></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#131313">B</span><sub><span style="color:#454545">net </span></sub><span style="color:#454545">= </span><span style="color:#131313">B</span><sub><span style="color:#323232">aa&#039;</span></sub><span style="color:#323232"> </span><span style="color:#454545">+ </span><span style="color:#131313">B</span><sub><span style="color:#454545">bb’</span></sub><span style="color:#454545"> + </span><span style="color:#131313">B</span><sub><span style="color:#5C5C5C">cc’</span></sub></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="" class="MsoNormal"><span style="color:#454545">= </span><span style="color:#131313">B</span><sub><span style="color:#323232">M</span></sub><span style="color:#323232"> </span><span style="color:#454545">&lt; </span><span style="color:#323232">0</span><span style="color:#5C5C5C">° </span><span style="color:#454545">+ (-0</span><span style="color:#222222">.5B<sub>M</sub></span><span style="color:#5C5C5C">) </span><span style="color:#454545">&lt; </span><span style="color:#222222">1</span><span style="color:#454545">20° + </span><span style="color:#5C5C5C">(-0 </span><span style="color:#323232">.5</span><span style="color:#131313">B</span><sub><span style="color:#323232">M</span></sub><span style="color:#323232">) </span><span style="color:#454545">L&lt;240°</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="color:#454545">= </span><span style="color:#131313">1.</span><span style="color:#454545">5 </span><span style="color:#131313">B<sub>M</sub> </span><span style="color:#454545">&lt;0°</span></p>
+<p style="text-align:justify;mso-layout-grid-align:none;
+text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="text-align: justify;" class="MsoNormal"><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;}
+</style>
+<![endif]--></p>
+<p style="mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="color:#131313">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Th</span><span style="color:#4B4B4B">e </span><span style="color:#353535">resulting </span><span style="color:#222222">ma</span><span style="color:#4B4B4B">g</span><span style="color:#222222">neti</span><span style="color:#4B4B4B">c </span><span style="color:#353535">fie</span><span style="color:#131313">l</span><span style="color:#353535">d </span><span style="color:#222222">i</span><span style="color:#4B4B4B">s s</span><span style="color:#222222">h</span><span style="color:#4B4B4B">ow</span><span style="color:#222222">n in the </span><span style="color:#131313">Fi</span><span style="color:#4B4B4B">g</span><span style="color:#222222">u</span><span style="color:#4B4B4B">re 2b</span><span style="color:#353535">. </span><span style="color:#222222">N</span><span style="color:#4B4B4B">ot</span><span style="color:#222222">i</span><span style="color:#4B4B4B">ce </span><span style="color:#222222">that </span><span style="color:#353535">altho</span><span style="color:#131313">u</span><span style="color:#4B4B4B">g</span><span style="color:#222222">h </span><span style="color:#353535">the </span><span style="color:#131313">di</span><span style="color:#353535">rection </span><span style="color:#4B4B4B">of </span><span style="color:#222222">th</span><span style="color:#4B4B4B">e </span><span style="color:#222222">ma</span><span style="color:#4B4B4B">g</span><span style="color:#222222">n</span><span style="color:#4B4B4B">et</span><span style="color:#222222">i</span><span style="color:#4B4B4B">c </span><span style="color:#222222">field ha</span><span style="color:#4B4B4B">s c</span><span style="color:#222222">han</span><span style="color:#4B4B4B">ged, </span><span style="color:#353535">the magnitude </span><span style="color:#222222">i</span><span style="color:#4B4B4B">s co</span><span style="color:#222222">n</span><span style="color:#4B4B4B">sta</span><span style="color:#222222">nt. Th</span><span style="color:#4B4B4B">e </span><span style="color:#222222">ma</span><span style="color:#4B4B4B">g</span><span style="color:#222222">n</span><span style="color:#4B4B4B">et</span><span style="color:#222222">i</span><span style="color:#4B4B4B">c</span> <span style="color:#222222">fi</span><span style="color:#4B4B4B">e</span><span style="color:#131313">l</span><span style="color:#353535">d </span><span style="color:#222222">i</span><span style="color:#4B4B4B">s </span><span style="color:#222222">maintainin</span><span style="color:#4B4B4B">g </span><span style="color:#353535">a </span><span style="color:#4B4B4B">co</span><span style="color:#222222">n</span><span style="color:#4B4B4B">s</span><span style="color:#222222">tant ma</span><span style="color:#4B4B4B">g</span><span style="color:#222222">nitud</span><span style="color:#4B4B4B">e </span><span style="color:#353535">whi</span><span style="color:#131313">l</span><span style="color:#4B4B4B">e </span><span style="color:#353535">rotating </span><span style="color:#222222">in </span><span style="color:#353535">a </span><span style="color:#4B4B4B">co</span><span style="color:#222222">untercl</span><span style="color:#4B4B4B">oc</span><span style="color:#222222">k</span><span style="color:#353535">wise</span> <span style="color:#353535">direction.</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+</w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+</w:LatentStyles>
+</xml><![endif]--></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

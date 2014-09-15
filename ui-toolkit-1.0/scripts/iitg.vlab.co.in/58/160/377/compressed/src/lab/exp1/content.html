@@ -1,0 +1,946 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+  <div id="experiment">
+   <!-- The Experiment Document Container-->
+   <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+   <header class="default" id="experiment-header">
+    <div class="logo" id="experiment-header-logo">
+     <!-- Enclose the logo image of your lab or write it in 
+      text-->
+     <img src="../images/logo.jpg"/>
+    </div>
+    <div class="heading" id="experiment-header-heading">
+     <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+     <a href="../index.html">
+      Physics Lab
+     </a>
+    </div>
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+   </header>
+   <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+   <article id="experiment-article">
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <div class="breadcrumb" id="experiment-article-breadcrumb">
+    </div>
+    <header class="heading" id="experiment-article-heading">
+     <!-- You can add a welcome message or title of the 
+        experiment here -->
+     Simple Pendulum
+     <!-- Add any additional element if required with proper 
+        enclosing-->
+    </header>
+    <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+    <nav class="default" id="experiment-article-navigation">
+     <ul id="experiment-article-navigation-menu">
+      <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+     </ul>
+    </nav>
+    <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+    <div id="experiment-article-sections">
+     <section id="experiment-article-section-1">
+      <div class="icon" id="experiment-article-section-1-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-1-heading">
+       Help
+      </div>
+      <div class="content" id="experiment-article-section-1-content">
+       <div class="divContent">
+        <h3 style="text-align: center;">
+         <a class="style7" href="http://125.20.82.167:8080/Chem_vlab/HELP.htm#1">
+          GENAREAL  HELP FOR USING LABVIEW (PERFORM EXPERIMENT)
+         </a>
+        </h3>
+        <p>
+        </p>
+        <p>
+         Always begin the experiment page in the simulator tab from the 'HOME'   .If it is not at the 'HOME 'page then stop the  experiment and  restart again.
+        </p>
+        <table border="0" cellpadding="1" cellspacing="1" style="width: 755px; height: 401px;">
+         <tbody>
+          <tr>
+           <td>
+            <p>
+             <a href="javascript:void(0);/*1298940829990*/">
+              <img alt="" src="../images/userfiles/7/file/help/1.PNG" style="width: 197px; height: 62px;"/>
+             </a>
+            </p>
+           </td>
+           <td style="text-align: justify;">
+            <p>
+             Click the
+             <span class="style8">
+              highlighted
+             </span>
+             button to
+             <span class="style8">
+              start and run
+             </span>
+             the program. Once the start button  is pressed you need not need to press it again after you change the  input values.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <a href="../images/userfiles/7/file/help/2.PNG">
+              <img alt="" src="../images/userfiles/7/file/help/2.PNG" style="width: 196px; height: 70px;"/>
+             </a>
+            </p>
+           </td>
+           <td>
+            <p style="text-align: justify;">
+             Click the
+             <span class="style8">
+              highlighted
+             </span>
+             button to
+             <span class="style8">
+              stop
+             </span>
+             the program after you have finished with the  experiment. Or if you want to restart the whole experiment press stop  and then run again.
+            </p>
+            <p>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <a href="../images/userfiles/7/file/help/3.PNG">
+              <img alt="" src="../images/userfiles/7/file/help/3.PNG" style="width: 194px; height: 30px;"/>
+             </a>
+            </p>
+           </td>
+           <td rowspan="2" style="text-align: justify;">
+            <p>
+             Slide showing the percentage of experiment completed.
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <a href="../images/userfiles/7/file/help/4.PNG">
+              <img alt="" src="../images/userfiles/7/file/help/4.PNG" style="width: 199px; height: 27px;"/>
+             </a>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <a href="../images/userfiles/7/file/help/6.JPG">
+              <img alt="" src="../images/userfiles/7/file/help/6.JPG"/>
+             </a>
+            </p>
+           </td>
+           <td style="text-align: justify;">
+            <p>
+             To enter the next value wait for this dialog box to appear.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p>
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-2">
+      <div class="icon" id="experiment-article-section-2-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-2-heading">
+       Download
+      </div>
+      <div class="content" id="experiment-article-section-2-content">
+       <div class="divContent">
+        <p>
+        </p>
+        <p>
+         <span class="page_head" style="padding-left: 20px;">
+          LabVIEW Run Time Engine
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p align="left">
+         <span class="style2">
+          <a href="http://125.20.82.167/001/home_files/LVRTE90min_2.exe">
+           Windows
+          </a>
+         </span>
+        </p>
+        <p align="left">
+         <em>
+          <a href="http://125.20.82.167/001/home_files/labview2009SP1runtime_linux.zip">
+           Linux
+          </a>
+         </em>
+        </p>
+        <p align="left">
+         <em>
+          <a href="http://125.20.82.167/001/home_files/LabVIEW2009SP1RuntimeEngine.dmg">
+           Mac OS X
+          </a>
+         </em>
+        </p>
+        <p align="left">
+         <em>
+          <a href="http://125.20.82.167/001/home_files/NI-VISA-Runtime-5.0.0.iso">
+           NI-VISA(TM) Software for Linux. Version 5.0
+          </a>
+          ., Linux, Suse, RedHat-(BETA) (
+          <a href="http://125.20.82.167/001/home_files/README.html">
+           Readme
+          </a>
+          )
+         </em>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span class="style1">
+          <span class="style17">
+           Problem in Downloading?? try this link
+          </span>
+          "
+          <a href="http://www.ni.com/updates/" target="_blank">
+           <u>
+            http://www.ni.com/updates/
+           </u>
+          </a>
+          <u>
+           "
+          </u>
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-3">
+      <div class="icon" id="experiment-article-section-3-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-3-heading">
+       Video
+      </div>
+      <div class="content" id="experiment-article-section-3-content">
+       <div class="divContent">
+        <p style="text-align: center;">
+         <object height="344" width="425">
+          <param name="movie" value="http://www.youtube.com/v/Ogx1WjRIEP4?hl=en&amp;fs=1">
+          </param>
+          <param name="allowFullScreen" value="true">
+          </param>
+          <param name="allowscriptaccess" value="always">
+          </param>
+          <embed allowfullscreen="true" allowscriptaccess="always" height="344" src="http://www.youtube.com/v/Ogx1WjRIEP4?hl=en&amp;fs=1" type="application/x-shockwave-flash" width="425">
+          </embed>
+         </object>
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: center;">
+         <strong>
+          LABVIEW VIDEO
+         </strong>
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: center;">
+         <object height="344" width="425">
+          <param name="movie" value="http://www.youtube.com/v/e9obD2WJ8iI?hl=en&amp;fs=1">
+          </param>
+          <param name="allowFullScreen" value="true">
+          </param>
+          <param name="allowscriptaccess" value="always">
+          </param>
+          <embed allowfullscreen="true" allowscriptaccess="always" height="344" src="http://www.youtube.com/v/e9obD2WJ8iI?hl=en&amp;fs=1" type="application/x-shockwave-flash" width="425">
+          </embed>
+         </object>
+        </p>
+        <p style="text-align: center;">
+         <strong>
+          EXPERIMENTAL VIDEO
+         </strong>
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: center;">
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-4">
+      <div class="icon" id="experiment-article-section-4-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-4-heading">
+       Feedback
+      </div>
+      <div class="content" id="experiment-article-section-4-content">
+      </div>
+     </section>
+     <section id="experiment-article-section-5">
+      <div class="icon" id="experiment-article-section-5-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-5-heading">
+       Post expt quiz
+      </div>
+      <div class="content" id="experiment-article-section-5-content">
+       <div class="divQuiz">
+        <div id="displayQuiz">
+         <form id="form11" method="post" name="form11">
+          <table border="0" style="width:100%">
+           <tr>
+            <td valign="top" width="2%">
+            </td>
+            <td style="width:1%;vertical-align:top;" width="5%">
+             <b>
+              <span id="questionNum">
+               1)
+              </span>
+             </b>
+            </td>
+            <td colspan="2" style="vertical-align:top;" width="70%">
+             <span id="question">
+              VLE data can be obtained from :
+             </span>
+            </td>
+            <td colspan="3" width="3%">
+            </td>
+           </tr>
+           <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td colspan="5" width="80%">
+             <table align="left" border="0" width="100%">
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6792" name="ans0" style="vertical-align:middle" type="radio" value="6792"/>
+                <label for="ans6792" id="textAnsChoice">
+                 Raoult's law
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6793" name="ans0" style="vertical-align:middle" type="radio" value="6793"/>
+                <label for="ans6793" id="textAnsChoice">
+                 Henry's law
+                </label>
+               </td>
+              </tr>
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6794" name="ans0" style="vertical-align:middle" type="radio" value="6794"/>
+                <label for="ans6794" id="textAnsChoice">
+                 Dalton's law
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6795" name="ans0" style="vertical-align:middle" type="radio" value="6795"/>
+                <label for="ans6795" id="textAnsChoice">
+                 All
+                </label>
+               </td>
+              </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+          <div id="hint">
+           <div id="textHint10" style="padding-left:50px; color:#F00;">
+           </div>
+          </div>
+          <hr id="horizontalLine"/>
+          <input align="middle" id="loadTime" name="loadTime" type="hidden" value="1383132136/"/>
+          <br/>
+          <div style="padding-left:40px;">
+           <input id="submit1" name="submit1" onclick="get_radio_value();" style="width:8%;" type="submit" value=" Submit "/>
+           <input id="cancel1" name="cancel1" style="width:8%;" type="reset" value=" Cancel "/>
+          </div>
+         </form>
+         <br/>
+        </div>
+        <br/>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-6">
+      <div class="icon" id="experiment-article-section-6-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-6-heading">
+       Procedure
+      </div>
+      <div class="content" id="experiment-article-section-6-content">
+       <div class="divContent">
+        <p>
+        </p>
+        <h1 style="text-align: left;">
+         <u>
+          <span class="CLS_Headin">
+           PROCEDURE
+          </span>
+         </u>
+        </h1>
+        <p>
+        </p>
+        <p align="justify" class="style9">
+         1.Cleaning the  Setup : The  setup is  cleaned to start a new Experiment.
+        </p>
+        <p align="justify" class="style9">
+         2. Mixing in  given ratios : A mixture of  benzene and  toluene is prepared and put into  the flask
+        </p>
+        <p align="justify" class="style9">
+         3. Power is  Supplied : Then the  power is  supplied and the mixture begins to boil.
+        </p>
+        <p align="justify" class="style9">
+         4.  Equilibrium  is Reached: After some   time equilibrium is reached, this  is marked by  steady temperature in   both the phases.
+        </p>
+        <p align="justify" class="style9">
+         5.    Measuring RI :  Samples of condensed vapor and liquid are taken. To    calculate the  composition we need to measure the refractive index of   the  sample and  look into the chart.
+        </p>
+        <p align="justify" class="style9">
+        </p>
+        <p class="style9" style="text-align: center;">
+         <img alt="" src="../images/userfiles/7/image/ch1/w.png" style="width: 494px; height: 374px;"/>
+        </p>
+        <p class="style9" style="text-align: center;">
+         <strong>
+          Fig : 1.3 Mole fraction Vs Temperature plot
+         </strong>
+        </p>
+        <p align="justify" class="style9">
+        </p>
+        <p>
+        </p>
+        <h3>
+         <strong>
+          <strong>
+           <span class="CLS_Headin">
+            NOMENCLATURE
+           </span>
+          </strong>
+         </strong>
+        </h3>
+        <table border="1">
+         <tbody>
+          <tr>
+          </tr>
+          <tr>
+           <td class="style17" height="40" width="172">
+            x*
+           </td>
+           <td width="432">
+            equilibrium composition of benzene in liquid phase
+           </td>
+          </tr>
+          <tr>
+           <td class="style17" height="41">
+            y*
+           </td>
+           <td>
+            <div align="left" class="style17">
+             equilibrium   composition of benzene in  vapor phase
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="style17" height="36">
+            Teq
+           </td>
+           <td>
+            <div align="left" class="style17">
+             equilibrium   temperature
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="style17" height="37">
+            Tt, boil
+           </td>
+           <td>
+            <div class="style17" style="text-align: left;">
+             Boiling  temperature of pure Toluene
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="style17" height="42">
+            Tb, boil
+           </td>
+           <td>
+            <div class="style17" style="text-align: left;">
+             Boiling  temperature of pure Benzene
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="style17" height="39">
+            a
+           </td>
+           <td>
+            <div align="left" class="style17">
+             Relative   Volatility
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p>
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-7">
+      <div class="icon" id="experiment-article-section-7-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-7-heading">
+       Labvw calc
+      </div>
+      <div class="content" id="experiment-article-section-7-content">
+       <div class="divContent">
+        <h1 style="text-align: center;">
+         <u>
+          LABVIEW CALCULATIONS
+         </u>
+        </h1>
+        <p>
+        </p>
+        <p class="style14" style="text-align: justify;">
+         <strong>
+          <span class="style15">
+           STEP 1
+          </span>
+          :
+         </strong>
+         This step includes the calibration part where the user input is volume  fraction and the output is the corresponding refractive index.
+        </p>
+        <p align="left" class="style14">
+        </p>
+        <p class="style14" style="text-align: center;">
+         <img alt="" src="../images/userfiles/7/image/ch1/e.JPG" style="width: 700px; height: 312px;"/>
+        </p>
+        <p class="style14" style="text-align: center;">
+        </p>
+        <p class="style10" style="text-align: justify;">
+         <strong>
+          <span class="style15">
+           STEP 2
+          </span>
+          :
+         </strong>
+         This step includes the experiment part where the input is volume  fraction  and the output which you virtually get are the temperatures  and the refractive index.
+        </p>
+        <p align="left" class="style10">
+        </p>
+        <p class="style10" style="text-align: center;">
+         <img alt="" src="../images/userfiles/7/image/ch1/r.JPG" style="width: 700px; height: 406px;"/>
+        </p>
+        <p class="style10" style="text-align: center;">
+        </p>
+        <p class="style10">
+         <strong>
+          <span class="style15">
+           STEP 3
+          </span>
+          :
+         </strong>
+         In  this step we basically calculate the equilibrium compositions from the  refractive index which we got in step 2.
+        </p>
+        <p class="style10">
+        </p>
+        <p style="text-align: center;">
+         <img alt="" src="../images/userfiles/7/image/ch1/t.JPG" style="width: 700px; height: 327px;"/>
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <p style="text-align: justify;">
+         <strong>
+          STEP 4 :
+         </strong>
+         In this step the user has to  calculate the relative volatility by using their equilibrium composition  values which they have calculated in step 3.Finally they need to give  an average relative volatility value.
+        </p>
+        <p>
+        </p>
+        <p style="text-align: center;">
+         <span class="style3 style33">
+          <img alt="" src="../images/userfiles/7/image/ch1/y.JPG" style="width: 700px; height: 351px;"/>
+          <br/>
+         </span>
+        </p>
+        <p align="center" class="style3 style33">
+        </p>
+        <p align="left" class="style33 style3">
+         <strong>
+          STEP 5 :
+         </strong>
+         This step basically gives parity plots between user's equilibrim  composition and virtual equilibrium composition .
+        </p>
+        <p align="left" class="style33 style3">
+        </p>
+        <p class="style3 style33" style="text-align: center;">
+         <strong>
+          <img alt="" src="../images/userfiles/7/image/ch1/u.JPG" style="width: 700px; height: 317px;"/>
+          <br/>
+         </strong>
+        </p>
+        <p class="style3 style33" style="text-align: center;">
+        </p>
+        <p align="center" class="style3 style33">
+        </p>
+        <p align="left" class="style33 style3">
+         <strong>
+          STEP 6 :
+         </strong>
+         This is the last step which gives the user all possible reasons of  deviating from the standard value of relative volatility.
+        </p>
+        <p align="left" class="style33 style3">
+        </p>
+        <p class="style3 style33" style="text-align: center;">
+         <strong>
+          <img alt="" src="../images/userfiles/7/image/ch1/i.JPG" style="width: 700px; height: 297px;"/>
+          <br/>
+         </strong>
+        </p>
+        <p align="center" class="style3 style33">
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-8">
+      <div class="icon" id="experiment-article-section-8-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-8-heading">
+       Theory
+      </div>
+      <div class="content" id="experiment-article-section-8-content">
+       <div class="divContent">
+        <h3>
+         <u>
+          <span class="style11">
+           INTRODU
+          </span>
+         </u>
+         <u>
+          <span class="style11">
+           CTION
+          </span>
+         </u>
+        </h3>
+        <p>
+        </p>
+        <p align="justify" class="style9">
+         Equilibrium is a static condition in which no  changes occur in the macroscopic properties of a system with time.Vapor liquid Equilibrium is a condition where a  liquid and its vapor are in equilibrium with each other, a condition or state  where the rate of evaporation is equal to the rate of condensation one a  molecular level such that there is no overall vapor liquid inter-conversion.
+        </p>
+        <p align="justify" class="style9">
+         In theory equilibrium takes forever to reach, such  an equilibrium is practically reached in a relatively closed location if a  liquid and its vapor are allowed to stand in contact with each other long enough  with no interference or only gradual interference from the outside.
+        </p>
+        <p>
+         <strong>
+          Relative volatility
+         </strong>
+         ( a ) is a measure comparing the vapor  pressures of the components in a liquid mixture of chemicals. When the  volatilities of both key components are equal, a = 1 and separation would be  impossible under the given conditions because the compositions of the liquid and  the vapor phase are the same (azeotrope).As the value of a increases above 1,  separation becomes progressively easier.
+        </p>
+        <p style="text-align: center;">
+         <img alt="" src="../images/userfiles/7/image/ch7/DSC00002.JPG" style="width: 178px; height: 301px;"/>
+        </p>
+        <p style="text-align: center;">
+        </p>
+        <div align="right">
+         <p class="style21" style="text-align: center;">
+          Fig 1.1 EXPERIMENTAL SETUP
+         </p>
+         <p align="center" class="style21">
+         </p>
+         <h3 style="text-align: left;">
+          <u>
+           <span class="style11">
+            VLE EXPERIMENTAL SETUP
+           </span>
+          </u>
+         </h3>
+         <p align="justify" class="style9">
+          1. The setup consists of a round bottom flask,a  condenser,a thermocouple ,two water streams,a heater and a conical flask.
+         </p>
+         <p align="justify" class="style9">
+          2. A mixture of benzene and toluene is prepared  and put into the flask. Then the power is supplied and the mixture begins to  boil.
+         </p>
+         <p align="justify" class="style9">
+          3. After some time equilibrium is reached, this is  marked by steady temperature in both the phases.
+         </p>
+         <p align="justify" class="style9">
+          4. Samples of condensed vapor and liquid are  taken. To calculate the composition we need to measure the refractive index of  the sample.
+         </p>
+         <p align="justify" class="style9">
+          In an experiment since vapor and liquid  composition changes dynamically we need to measure until they reach vapor liquid  equilibrium. For such a measurement, physical properties (such as refractive  index) can be explored and related to the composition of a liquid.
+         </p>
+         <p align="justify" class="style9">
+          Now we first prepare a calibration chart that  depicts the variation of refractive index with composition
+         </p>
+         <p align="justify" class="style9">
+         </p>
+         <p class="style9" style="text-align: center;">
+          <embed height="364" loop="true" menu="true" play="true" pluginspage="http://www.macromedia.com/go/getflashplayer" src="../images/userfiles/7/flash/ch1/vle3.swf" type="application/x-shockwave-flash" width="445">
+          </embed>
+         </p>
+         <p align="justify" class="style9">
+         </p>
+         <p align="justify" class="style9">
+         </p>
+         <div align="center">
+          <p style="text-align: center;">
+           Fig 1.2  ANIMATION OF THE  EXPERIMENTAL SETUP
+          </p>
+         </div>
+         <p>
+         </p>
+         <p>
+         </p>
+         <p>
+         </p>
+        </div>
+        <p>
+        </p>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-9">
+      <div class="icon" id="experiment-article-section-9-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-9-heading">
+       Pre expt quiz
+      </div>
+      <div class="content" id="experiment-article-section-9-content">
+       <div class="divQuiz">
+        <div id="displayQuiz">
+         <form id="form11" method="post" name="form11">
+          <table border="0" style="width:100%">
+           <tr>
+            <td valign="top" width="2%">
+            </td>
+            <td style="width:1%;vertical-align:top;" width="5%">
+             <b>
+              <span id="questionNum">
+               1)
+              </span>
+             </b>
+            </td>
+            <td colspan="2" style="vertical-align:top;" width="70%">
+             <span id="question">
+              To seperate a binary mixture relative volatility should be :
+             </span>
+            </td>
+            <td colspan="3" width="3%">
+            </td>
+           </tr>
+           <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td colspan="5" width="80%">
+             <table align="left" border="0" width="100%">
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6780" name="ans0" style="vertical-align:middle" type="radio" value="6780"/>
+                <label for="ans6780" id="textAnsChoice">
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6781" name="ans0" style="vertical-align:middle" type="radio" value="6781"/>
+                <label for="ans6781" id="textAnsChoice">
+                 &gt; 1
+                </label>
+               </td>
+              </tr>
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6782" name="ans0" style="vertical-align:middle" type="radio" value="6782"/>
+                <label for="ans6782" id="textAnsChoice">
+                 = 1
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6783" name="ans0" style="vertical-align:middle" type="radio" value="6783"/>
+                <label for="ans6783" id="textAnsChoice">
+                 = 0
+                </label>
+               </td>
+              </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+          <div id="hint">
+           <div id="textHint10" style="padding-left:50px; color:#F00;">
+           </div>
+          </div>
+          <hr id="horizontalLine"/>
+          <table border="0" style="width:100%">
+           <tr>
+            <td valign="top" width="2%">
+            </td>
+            <td style="width:1%;vertical-align:top;" width="5%">
+             <b>
+              <span id="questionNum">
+               2)
+              </span>
+             </b>
+            </td>
+            <td colspan="2" style="vertical-align:top;" width="70%">
+             <span id="question">
+              VLE is a :
+             </span>
+            </td>
+            <td colspan="3" width="3%">
+            </td>
+           </tr>
+           <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td colspan="5" width="80%">
+             <table align="left" border="0" width="100%">
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6784" name="ans1" style="vertical-align:middle" type="radio" value="6784"/>
+                <label for="ans6784" id="textAnsChoice">
+                 Unit process
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6785" name="ans1" style="vertical-align:middle" type="radio" value="6785"/>
+                <label for="ans6785" id="textAnsChoice">
+                 Unit operation
+                </label>
+               </td>
+              </tr>
+              <tr>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;" width="50%">
+                <input id="ans6786" name="ans1" style="vertical-align:middle" type="radio" value="6786"/>
+                <label for="ans6786" id="textAnsChoice">
+                 Both
+                </label>
+               </td>
+               <td align="left" id="textAnsChoice" style="padding-left:20px;">
+                <input id="ans6787" name="ans1" style="vertical-align:middle" type="radio" value="6787"/>
+                <label for="ans6787" id="textAnsChoice">
+                 None
+                </label>
+               </td>
+              </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+          <div id="hint">
+           <div id="textHint11" style="padding-left:50px; color:#F00;">
+           </div>
+          </div>
+          <hr id="horizontalLine"/>
+          <input align="middle" id="loadTime" name="loadTime" type="hidden" value="1383132135/"/>
+          <br/>
+          <div style="padding-left:40px;">
+           <input id="submit1" name="submit1" onclick="get_radio_value();" style="width:8%;" type="submit" value=" Submit "/>
+           <input id="cancel1" name="cancel1" style="width:8%;" type="reset" value=" Cancel "/>
+          </div>
+         </form>
+         <br/>
+        </div>
+        <br/>
+       </div>
+      </div>
+     </section>
+     <section id="experiment-article-section-10">
+      <div class="icon" id="experiment-article-section-10-icon">
+      </div>
+      <div class="heading" id="experiment-article-section-10-heading">
+       Simulator
+      </div>
+      <div class="content" id="experiment-article-section-10-content">
+       <div class="divContent">
+        <p>
+        </p>
+        <p>
+        </p>
+        <h2>
+         <a href="http://202.141.81.60:8083/vle%20final1.html" target="_blank">
+          click here to perform experiment....
+         </a>
+        </h2>
+        <h2>
+         <strong>
+          <a href="http://202.141.81.60/che/chemical%20exe/vle.rar" target="_blank">
+           click here to download the exe file
+          </a>
+         </strong>
+        </h2>
+        <p>
+        </p>
+        <h2>
+        </h2>
+       </div>
+      </div>
+     </section>
+    </div>
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside class="default" id="lab-article-sidebar">
+     <!-- put the content that you want to appear in the 
+      sidebar -->
+    </aside>
+    <!-- Article footer can display related content and 
+    additional links -->
+    <footer class="default" id="lab-article-footer">
+     <!-- Put the content that you want to appear here -->
+    </footer>
+   </article>
+   <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+   <footer class="default" id="lab-footer">
+    <!-- Put the content here-->
+   </footer>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" CONTENT= "Electronics & Communications"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<div id="head_box" style="width:1024px; margin-left:auto; margin-right:auto;">
+<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div></div>
+<div align="left" style="position: relative; margin:auto; width: 1024px; background-color:#e3f2fc">
+<table width="100%" border="0">
+<tr><td width="50%" align="left" valign="top"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a></div></td>
+<td width="45%" align="right"> </td>
+<td width="5%" align="left"></td></tr>
+</table>
+<div class="title">Electronics & Communications</div><br><div id="tblTopic"><table width="100%"><tr><td width='1%' valign="top"><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=59&brch=163'>Systems, communication and control laboratory</a><br><span class="clsDescription">Systems, communication and control laboratory<br /><br /><a href='?sub=59&brch=163&sim=262&cnt=970'>BPSK Modulation and Demodulation(Real time experiment)</a> || <a href='?sub=59&brch=163&sim=259&cnt=358'>Amplitude Modulation and Demodulation (Real time experiment)</a> || <a href='?sub=59&brch=163&sim=1065&cnt=2404'>QPSK Modulation (Real time experiment)</a> || <a href='?sub=59&brch=163&sim=263&cnt=2407'>BPSK Modulation and Demodulation(Simulation experiment)</a> || <a href='?sub=59&brch=163&sim=261&cnt=474'>Frequency Modulation(Simulation experiment)</a> || <a href='?sub=59&brch=163&sim=612&cnt=1086'>Simple Inverted Pendulum System</a> || <a href='?sub=59&brch=163&sim=260&cnt=2644'>Amplitude Modulation (Simulation experiment)</a> || <a href='?sub=59&brch=163&sim=611&cnt=1084'>Realization of different modulation schemes using I/Q modulators</a> || <a href='?sub=59&brch=163&sim=555&cnt=1024'>	Control of Inverted Pendulum System (Real Time)</a> || <a href='?sub=59&brch=163&sim=264&cnt=1041'>Vertical take Off and landing (currently offline: Experiment will be available on request)</a> </span></td></tr><tr><td width='1%' valign="top"><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=59&brch=164'>Speech Signal Processing Laboratory</a><br><span class="clsDescription">Speech Signal Processing Laboratory<br /><br /><a href='?sub=59&brch=164&sim=371&cnt=1103'>Non-Stationary Nature of Speech Signal</a> || <a href='?sub=59&brch=164&sim=474&cnt=1105'>Sampling Frequency and Bit Resolution for Speech Signal Processing   </a> || <a href='?sub=59&brch=164&sim=613&cnt=1106'>Identification of Voice/Unvoiced/Silence regions of Speech </a> || <a href='?sub=59&brch=164&sim=614&cnt=1114'>Different Sounds In Language </a> || <a href='?sub=59&brch=164&sim=857&cnt=1650'>Short Term Time Domain Processing of Speech</a> || <a href='?sub=59&brch=164&sim=908&cnt=1676'>Short-Term Frequency Domain Processing of Speech</a> || <a href='?sub=59&brch=164&sim=615&cnt=1107'>Cepstral Analysis of Speech</a> || <a href='?sub=59&brch=164&sim=616&cnt=1088'>Linear Prediction Analysis </a> || <a href='?sub=59&brch=164&sim=1012&cnt=1848'>Estimation Of Pitch From Speech Signals</a> || <a href='?sub=59&brch=164&sim=1398&cnt=2931'>Estimation Of Formants From Speech Signals</a> || <a href='?sub=59&brch=164&sim=1399&cnt=2950'>Voice Activity Detection In Speech</a> </span></td></tr><tr><td width='1%' valign="top"><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=59&brch=165'>Digital VLSI Design Virtual lab</a><br><span class="clsDescription">Digital VLSI Design Virtual lab<br /><br /><a href='?sub=59&brch=165&sim=270&cnt=1'>MOSFET</a> || <a href='?sub=59&brch=165&sim=901&cnt=1'>CMOS Inverter</a> || <a href='?sub=59&brch=165&sim=902&cnt=1'>Ring Oscillator</a> || <a href='?sub=59&brch=165&sim=903&cnt=1'>Logic Gates</a> || <a href='?sub=59&brch=165&sim=904&cnt=1'>4x1 Multiplexer</a> || <a href='?sub=59&brch=165&sim=906&cnt=1'>Latches</a> || <a href='?sub=59&brch=165&sim=907&cnt=1'>Registers</a> </span></td></tr><tr><td width='1%' valign="top"><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=59&brch=166'>Signals and Systems Laboratory</a><br><span class="clsDescription">Signals and Systems Laboratory<br /><br /><a href='?sub=59&brch=166&sim=618&cnt=1582'>Exp-1 Signals and their properties</a> || <a href='?sub=59&brch=166&sim=623&cnt=1096'>Exp-2 System and their property</a> || <a href='?sub=59&brch=166&sim=799&cnt=1407'>Exp-3 Fourier analysis of signals</a> || <a href='?sub=59&brch=166&sim=820&cnt=1597'>Exp-4 Sampling and signal reconstruction.</a> || <a href='?sub=59&brch=166&sim=877&cnt=1610'>Exp-5 Analysis of LTI system response.</a> </span></td></tr><tr><td width='1%' valign="top"><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=59&brch=269'>Remote Triggered Fiber Optic Communication Laboratory</a><br><span class="clsDescription">Remote Triggered Fiber Optic Communication Laboratory <br /><br /><a href='?sub=59&brch=269&sim=1317&cnt=2780'>Fiber Optic Analog and Digital Link</a> || <a href='?sub=59&brch=269&sim=1372&cnt=3055'>Fiber Optic Bi-directional Communication</a> || <a href='?sub=59&brch=269&sim=1373&cnt=3289'>Wavelength Division Multiplexing</a> || <a href='?sub=59&brch=269&sim=1369&cnt=2873'>Measurement Of Bending Losses in Optical Fiber</a> || <a href='?sub=59&brch=269&sim=1370&cnt=1'>Measurement Of Numerical Aperture</a> || <a href='?sub=59&brch=269&sim=1371&cnt=1'>Study Of LED and Detector Characteristics</a> </span></td></tr></table></div>	 <div align="center">
+    </div>
+</div><div style="width:1024px; margin-left:auto; margin-right:auto;">
+	<div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</div>
+
+

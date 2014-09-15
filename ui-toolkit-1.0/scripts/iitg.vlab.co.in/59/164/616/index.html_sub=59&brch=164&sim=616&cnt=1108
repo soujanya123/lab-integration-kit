@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linear Prediction Analysis  (Theory) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Linear Prediction Analysis " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Linear Prediction Analysis </a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Linear Prediction Analysis </div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1088"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=616&cnt=1108"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1109"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=2032"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1780"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1112"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=2990"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1113"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=616&cnt=1744"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Why linear prediction analysis is important in speech?</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Speech signal is produced by the convolution of excitation source and  time varying vocal tract system components. These excitation and vocal  tract components are to be separated from the available speech signal to  study these components independently . For deconvolving the given  speech into excitation and vocal tract system components, methods based  on homomorphic analysis like cepstral analysis are developed. As the  cepstral analysis does the deconvolution of speech into source and  system components by traversing through frequency domain, the  deconvolution task becomes computational intensive process. To reduce  such type of computational complexity and finding the source and system  components from time domain itself, the <i>Linear Prediction</i> analysis is developed.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Basics of LP Analysis</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The redundancy in the speech signal is exploited in the LP analysis. The  prediction of current sample as a linear combination of past <i>p</i> samples form the basis of linear prediction analysis where <i>p</i> is the order of prediction. The predicted sample s<sup>^</sup>(n) can be represented as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation1.jpg"></p>
+<p style="text-align: justify;" class="content">where a<sub>k</sub>s are the linear prediction  coefficients and s(n) is the windowed speech sequence obtained by  multiplying short time speech frame with a hamming or similar type of  window which is given by,</p>
+<p style="text-align: justify;" class="content">&nbsp;</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation2.jpg"></p>
+<p>&nbsp;where ω(n) is the windowing sequence. The prediction error e(n) can be  computed by the difference between actual sample s(n)and the predicted  sample s<sup>^</sup>(n) which is given by,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation3.jpg"></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation4.jpg"></p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation5.jpg"></p>
+<p style="text-align: justify;">The primary objective of LP analysis is to compute the LP coefficients  which minimized the prediction error e(n). The popular method for  computing the LP coefficients by least squares auto correlation method.  This achieved by minimizing the total prediction error. The total  prediction error can be represented as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation6.jpg"></p>
+<p style="text-align: left;">This can be expanded using the equation (5) as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation7.jpg"></p>
+<p style="text-align: left;">The values of a<sub>k</sub>s which minimize the total prediction error E can be computed by finding</p>
+<p style="text-align: center; "><img alt="" src="/userfiles/7/image/speech/ex6/img14.png"></p>
+<p style="text-align: left;">and equating to zero for k=0,1,2,...p.</p>
+<p style="text-align: center; "><img alt="" src="/userfiles/7/image/speech/ex6/img15.png"></p>
+<p style="text-align: left;">for each a<sub>k</sub> give <i>p</i> linear equations with <i>p</i> unknowns. The solution of which gives the LP coefficients. This can be represented as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation8.jpg"></p>
+<p style="text-align: left;">The differentiated expression can be written as,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation9.jpg"></p>
+<p style="text-align: left;">where i=1, 2, 3...p. The equation (9) can be written in terms of autocorrelation sequence R(i) as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation10.jpg"></p>
+<p style="text-align: left;">&nbsp;</p>
+<p class="content">for i=1,2,3...p.</p>
+<p class="content">Where the autocorrelation sequence used in equation (10) can be written as follows,&nbsp;</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation11.jpg"></p>
+<p style="text-align: left;">&nbsp;for i= 1,2,3...p and N is the length of the sequence.</p>
+<p style="text-align: left;">This can be represented in the matrix form as follows,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation12.jpg"></p>
+<p style="text-align: justify;">where R is the pXp symmetric matrix of elements R(i, k) = R(|i-k|),  (1&lt;=i, k&lt;=p), r is a column vector with elements (R(1),R(2),  ...R(P)) and finally A is the column vector of LPC coefficients (a(1),  a(2), ....a(p)). It can be shown that R is <i>toeplitz</i> matrix which can be represented as,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation13.jpg"></p>
+<p style="text-align: left;">The LP coefficients can be computed as shown,</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation14.jpg"></p>
+<p style="text-align: left;">where R<sup>-1</sup> is the inverse of the matrix R</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_fig1.jpg"></p>
+<p style="text-align: center;">Figure 1: Computing the LP residual by inverse filtering</p>
+<h2>&nbsp;</h2>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Computing LP Residual</span></span></h2>
+<p>&nbsp;</p>
+<p>LP residual is the prediction error e(n) obtained as the difference between the predicted speech sample s<sup>^</sup>(n) and the current sample s(n). This is shown in equation (4).</p>
+<p style="text-align: right;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation15.jpg"></p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation16.jpg"></p>
+<p>In the frequency domain, the equation (16) can be represented as,</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation17.jpg"></p>
+<p style="text-align: left;">i.e.,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation18.jpg"></p>
+<p class="content">So LP residual can be obtained filtering the speech  signal with A(z) as indicated in figure 1. Similarly it can be shown  that the LP spectrum H(z) as,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation19.jpg"></p>
+<p style="text-align: left;">As A(z) is the reciprocal of H(z), LP residual is obtained by the inverse filtering of speech.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_figure3.jpg"></p>
+<p style="text-align: center;">Figure 2: Computation of LP residual</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;">In the similar manner, speech can be reconstructed from the LP residual by filtering using H(z) as shown in figure 3.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_fig1.jpg"></p>
+<p style="text-align: center;">Figure 3: Reconstruction of the speech signals using residual by LP filtering</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Estimating vocaltract parameters by LP analysis</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">LP analysis separates the given short term sequence of speech into its  slowly varying vocal tract component represented by LP filter (H(z)) and  fast varying excitation component given by the LP residual (e(n)). The  LP filter (H(z)) induces the desired spectral shape for the shape on the  flat spectrum (E(z)) of the noise like excitation sequence as given in  equation (20). As the LP spectrum provides the vocaltract  characteristics, the vocaltract resonances (formants) can be estimated  from the LP spectrum. Various formant locations can be obtained by  picking the peaks from the magnitude LP spectrum (|H(z)|). The figure 4  shows the first (F1), second (F2) and third formant (F3) frequencies  estimated from the peaks in the LP magnitude spectrum.</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation20.jpg"></p>
+<p style="text-align: left;">where S(z) is the spectrum of the given short time speech signal.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_figure7.jpg"></p>
+<p class="contentEquation" style="text-align: center;">Figure 4: Formant locations corresponding to peaks in LP magnitude spectrum</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Estimating pitch from LP residual</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">As the LP residual is an error signal obtained by the LP analysis, it is  noisy in nature. Figure 5 shows a 20 msec segment of residual and  corresponding speech segments from which it is obtained. As the pitch  marks are characterized by the sharp and periodic discontinuity, it  cause a large error in the computed LP residual. This large error can be  observed in the Figure 5 . So the periodicity of the error gives the  pitch period of that segment of speech and this can be computed by the  autocorrelation method. It has to be noted that for unvoiced speech  signal the residual will be like random noise without any periodicity.</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_figure5.jpg"></p>
+<p style="text-align: center;">Figure 5:The speech and residual of 20 ms voiced speech segments</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Normalized Error</span></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The normalized error can be used to find the optimal prediction order  required for the LP analysis of the given speech segment. The normalized  error can be defined as the ratio of the total minimum error to the  total energy of the signal. If Ep is the total minimum error obtained  for a prediction order p and R(1) is the total energy of the signal,  then the normalized error Vp can be represented as,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation21.jpg"></p>
+<p style="text-align: left;">By combining equations (7) and (9), the expression for total minimum error for the given prediction order p can be given by,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation22.jpg"></p>
+<p style="text-align: left;">This can be written in terms of autocorrelation sequence,</p>
+<p style="text-align: right;">&nbsp;<img alt="" src="/userfiles/7/image/speech/ex6/experiment5-theory-equation23.jpg"></p>
+<p style="text-align: left;">Figure 6 shows the normalized error curve obtained by plotting the  normalized error computed using the equation (21) versus the prediction  order. It has to be observed from the figure that there is no  significant reduction in the normalized error after certain P. Hence the  normalized error curve helps to choose the optimum prediction order for  the LP analysis.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="/userfiles/7/image/speech/ex6/experiment5_theory_figure8.jpg"></p>
+<p style="text-align: center;">&nbsp;Figure 6: Normalized error curve of voiced (blue) and unvoiced (red) speech</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

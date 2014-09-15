@@ -1,0 +1,774 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>	Control of Inverted Pendulum System (Real Time) (Procedure) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Control of Inverted Pendulum System (Real Time)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">	Control of Inverted Pendulum System (Real Time)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">	Control of Inverted Pendulum System (Real Time)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1024"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=555&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1069"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1070"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_9.png" alt=""/></div><div id="tab_name" >Webcam&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=1815"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=555&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h2>&nbsp;</h2>
+<h2>Procedure:ROTPENT Simple Modeling</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<h3>Objectives</h3>
+<p>&nbsp;</p>
+<p class="normal">Investigate various physical principles of the rotary pendulum  and experimentally determine its moment of inertia</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<h3>Method</h3>
+<p>&nbsp;</p>
+<ul>
+    <li>
+    <div class="normal">Measure the friction of the  system.</div>
+    </li>
+    <li>
+    <div class="normal">Examine the coupling effect.</div>
+    </li>
+    <li>
+    <div class="normal">Find the pendulum moment of  inertia.</div>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="heading3"><strong>Friction</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol>
+    <li>In the <em>Signal Generator </em>section set:
+    <ul>
+        <li>
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </li>
+        <li>
+        <div class="normal"><em>Amplitude</em> =&nbsp;0.00 V</div>
+        </li>
+        <li>
+        <div class="normal"><em>Frequency </em>= 0.25 Hz</div>
+        </li>
+        <li>
+        <div class="normal"><em>Offset </em>= 0.00 V</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Enable the signal generator by clicking on the <em>Start  Generator </em>button.</div>
+    </li>
+    <li>
+    <div class="normal">Change the <em>Offset </em>in steps of 0.10 V until the  pendulum begins moving. Record the voltage at which the pendulum moved.</div>
+    </li>
+    <li>
+    <div class="normal">Repeat Step 3 above for steps of&nbsp; 0.10 V.</div>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<p class="heading3"><strong>Coupling</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol>
+    <li>
+    <div class="normal">Enable the signal generator by clicking on the <em>Start  Generator </em>button.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Signal Generator </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal"><em>Amplitude</em> =&nbsp;1.00 V</div>
+        </li>
+        <li>
+        <div class="normal"><em>Frequency </em>= 0.25 Hz</div>
+        </li>
+        <li>
+        <div class="normal"><em>Offset </em>= 0.00 V</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Slowly increase the <em>Amplitude </em>until the arm begins  moving back and forth. When it begins moving, click on <em>Pause Plots </em>to  freeze the scopes and then click on <em>Stop Control </em>to cut off the voltage  being applied to the motor.</div>
+    </li>
+    <li>
+    <div class="procedure-think">What do you observe between the <em>Arm Angle (deg)  </em>and the <em>Pendulum (deg) </em>in the paused <em>Angle (deg)  </em>scope?</div>
+    </li>
+    <li>Click on the <em>Start Display </em>button to un-pause the scopes.</li>
+</ol>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="heading3"><strong>Moment of Inertia</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol>
+    <li>
+    <div class="normal">Disable the signal generator by clicking on the <em>Stop  Generator </em>button.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Pendulum Assembly Properties </em>section, enter  the correct values for: <em>Mp1</em>, <em>Mp2</em>, <em>Lp1</em>, and  <em>Lp2</em>.</div>
+    </li>
+    <li>
+    <div class="normal">Click on the <em>Calculate</em> button to evaluate the  composite center of mass, <em>lp</em>, and the moment of inertia calculated  analytically, <em>Jp</em>, found in the <em>Calculated Pendulum Parameters  </em>section.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Auto-Model Parameters </em>section, set <em>cycle  </em>to 10.</div>
+    </li>
+    <li>
+    <div class="normal">Click on the <em>Disturbance </em>toggle switch to perturb the  pendulum and click on the <em>Modeling OFF </em>button to activate procedure  that detects the frequency of the pendulum automatically.</div>
+    </li>
+    <li>
+    <div class="procedure-think">Examine the <em>Status</em> message when performing  the auto-model procedure. How does it calculate the frequency and the moment of  inertia?</div>
+    </li>
+    <li>
+    <div class="procedure-think">Compare the moment of inertia calculated  analytically, <em>Jp </em>in <em>Calculated Pendulum Parameters </em>section,  and the moment of inertia found experimentally, <em>Jp </em>in <em>Auto-Model  Results </em>section. Is there a large discrepancy between them?</div>
+    </li>
+    <li>
+    <div class="normal">Vary <em>cycles </em>in <em>Auto-Model Parameters</em> and  repeat Step 4-7.</div>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><a name="p2"></a>
+<h2>&nbsp;Procedure: ROTPENT Swing-Up Control</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<h3>Objectives</h3>
+<p class="heading3">&nbsp;</p>
+<p class="normal">To learn about balance  control of an inverted pendulum, energy  control of a pendulum, and a hybrid  swing-up controller that integrates the two together.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<title></title>
+<link href="common_styles.css" type="text/css" rel="stylesheet"><xml></xml><mshelp:attr value="qnet_interactive_guide" name="DocSet"></mshelp:attr><mshelp:attr value="kbEnglish" name="Locale"></mshelp:attr><mshelp:attr value="C" name="DevLang"></mshelp:attr><mshelp:attr value="C++" name="DevLang"></mshelp:attr><mshelp:attr value="kbOrient" name="TopicType"></mshelp:attr></p>
+<h3>Method</h3>
+<p>&nbsp;</p>
+<ul>
+    <li>
+    <div class="normal">Run default balance control.</div>
+    </li>
+    <li>
+    <div class="normal">Design and implement your own balance  controller.</div>
+    </li>
+    <li>
+    <div class="normal">Add friction compensation to the  balance control.</div>
+    </li>
+    <li>
+    <div class="normal">Run the energy-based  controller.</div>
+    </li>
+    <li>
+    <div class="normal">Run the hybrid swing-up  control.</div>
+    </li>
+</ul>
+<p class="heading3">&nbsp;</p>
+<p class="heading3">&nbsp;</p>
+<p><strong>Default Balance Control</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol class="normal-list">
+    <li>
+    <div class="normal">Activate the control by clicking on the <em>Start Control  </em>button.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Signal Generator </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </li>
+        <li>
+        <div class="normal"><em>Amplitude </em>= 0.0&nbsp;deg</div>
+        </li>
+        <li>
+        <div class="normal">Frequency = 0.10 Hz</div>
+        </li>
+        <li>
+        <div class="normal"><em>Offset =</em>&nbsp; 0.0 deg</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">In the <em>Control Parameters </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>kp_theta </em>= -2.65 V/rad</div>
+        </li>
+        <li>
+        <div class="normal"><em>kp_alpha </em>=&nbsp;40.0 V/rad</div>
+        <div class="normal">&nbsp;</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_theta </em>= -1.29 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_alpha </em>=&nbsp;6.46 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>mu </em>= 375 m/s^2/J</div>
+        </li>
+        <li>
+        <div class="normal"><em>Er </em>= 20.0 mJ</div>
+        </li>
+        <li>
+        <div class="normal"><em>Activate Swing-Up </em>= OFF (de-pressed)</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Update Control </em>in the <em>Control Parameters  </em>section to ensure this controller is implemented.</div>
+    </li>
+    <li>
+    <div class="normal">Adjust the <em>Angle/Energy (deg/mJ) </em>scope scales to see  between -200 and 200 .</div>
+    </li>
+    <li>
+    <div class="normal">Manually rotate the pendulum in the upright position until the  <em>In Range? </em>LED in the <em>Control Indicators </em>section turns bright  green. <strong>Ensure the encoder cable does not interfere with the pendulum  arm&nbsp;motion.</strong></div>
+    </li>
+    <li>
+    <div class="procedure-think">Observe what occurs to <em>Offset </em>in the  <em>Signal Generator </em>section when the balance controller is  activated.</div>
+    </li>
+    <li>
+    <div class="procedure-think">Vary <em>Offset </em>and observe the <em>Arm Angle  (deg) </em>response in the <em>Angle/Energy (deg/mJ) </em>scope. <strong>Do not  set the <em>Offset </em>too high or the encoder cable will interfere with the  pendulum arm motion.</strong></div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="procedure-think">As the pendulum is being balanced, examine the red  <em>Arm Angle (deg) </em>and blue <em>Pendulum Angle (deg) </em>responses in the  <em>Angle/Energy (deg/mJ) </em>scope.</div>
+    <div class="procedure-think">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">In the <em>Signal Generator </em>section set:</div>
+    </div>
+    <ul>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Amplitude </em>= 40.0 deg</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Frequency </em>= 0.10 Hz</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Offset =&nbsp; </em>0.0 deg</div>
+        <div class="normal">&nbsp;</div>
+        </div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Adjust the <em>Angle/Energy (deg/mJ) </em>scope scales to see  between -100 and 100&nbsp;</div>
+    </li>
+    <li>
+    <div class="procedure-think">Observe the behaviour of the system when a square  wave command is given to the arm angle. Why does the arm initially move in the  wrong direction?</div>
+    </li>
+    <li>
+    <div>&nbsp;Click on <em>Stop Control </em>to disable the balance controller.</div>
+    </li>
+</ol>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="heading3"><strong>Balance Control Design and  Implementation</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol>
+    <li>
+    <div class="normal">Ensure the control is enabled by clicking on the <em>Start  Control </em>button.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Signal Generator </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </li>
+        <li>
+        <div class="normal"><em>Amplitude </em>= 0.0&nbsp;deg</div>
+        </li>
+        <li>
+        <div class="normal"><em>Frequency</em> = 0.10 Hz</div>
+        </li>
+        <li>
+        <div class="normal"><em>Offset =</em>&nbsp; 0.0 deg</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Select the <em class="normal">Open-loop Analysis </em>tab.</div>
+    </li>
+    <li>
+    <div class="normal">Click on the <em>Update Model/Design </em>button in the  <em>Model Parameters </em>section.</div>
+    </li>
+    <li>
+    <div class="procedure-think">This shows the linear state-space model and pole-zero  plot of the open-loop inverted pendulum system. What do you notice about the  location of the open-loop poles?</div>
+    </li>
+    <li>
+    <div class="normal">Optional: In the <em>Model Parameters </em>section, enter the  pendulum moment of inertia, <em>Jp</em>, determined in the <strong>Moment of Inertia</strong> method of the <em>ROTPEN: Simple Modeling </em>experiment and click on <em>Update  Model/Design</em>.</div>
+    </li>
+    <li>
+    <div class="normal">Select the <em>Control Design </em>tab.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>LQR Weighting Matrices </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>Q(1,1)</em> = 4, i.e. set first element of <em>Q  </em>matrix to 4.</div>
+        </li>
+        <li>
+        <div class="normal"><em>R</em> = 1.00</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Update Model/Design </em>in the <em>Model  Parameters </em>section to generate the gains in the <em>LQR Gain </em>section  of the <em>Control Design </em>tab.</div>
+    </li>
+    <li>
+    <div class="procedure-think">This shows the linear state-space model and pole-zero  plot of the closed-loop inverted pendulum system. What do you notice about the  location of the closed-loop poles compared to the open-loop poles?</div>
+    </li>
+    <li>
+    <div class="normal">Select the <em>Time Analysis </em>tab&nbsp;and click on the on  <em>Update Model/Design </em>in the <em>Model Parameters </em>section.</div>
+    </li>
+    <li>
+    <div class="procedure-think">Examine the <em>Step Response </em>plot.</div>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Set Desired </em>to copy the calculated gains to  the <em>Control Parameters </em>section and click on <em>Update Control </em>to  implement your balance controller.</div>
+    </li>
+    <li>
+    <div class="normal">Select the <em>Scopes </em>tab</div>
+    </li>
+    <li>
+    <div class="normal">Manually rotate the pendulum in the upright position until the  <em>In Range? </em>LED in the <em>Control Indicators </em>section turns bright  green. <strong>Ensure the encoder cable does not interfere with the pendulum arm  motion.</strong></div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Signal Generator </em>section, click on the  <em>Disturbance </em>toggle switch. Add disturbances of different lengths by  varying how long <em>Disturbance </em>is pressed down.</div>
+    </li>
+    <li>
+    <div class="procedure-think">How does the balance controller handle disturbances?</div>
+    </li>
+    <li>
+    <div class="normal">Design a balance controller that handles disturbances well by  performing steps 8-16 for different&nbsp;values&nbsp;of the <em>Q </em>matrix. Begin by  changing the first element of Q and then change the diagonal elements&nbsp;of the Q  matrix.</div>
+    </li>
+    <li>
+    <div class="procedure-think">Examine how different elements in <em>Q</em> effect  the gains being generated and how those gains effect the system response (use  the <em>Step Response </em>simulation).</div>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Stop Control </em>to disable the balance  controller.</div>
+    </li>
+</ol>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="heading3"><strong>Balance Control with Friction  Compensation</strong></p>
+<p class="heading3">&nbsp;</p>
+<ol class="normal-list">
+    <li>
+    <div class="procedure-think">Go through steps 1-6&nbsp;in the Default Balance Control.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Signal Generator </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>Signal Type </em>= &#039;square wave&#039;</div>
+        </li>
+        <li>
+        <div class="normal"><em>Amplitude </em>= 0.0&nbsp;deg</div>
+        </li>
+        <li>
+        <div class="normal">Frequency = 0.10 Hz</div>
+        </li>
+        <li>
+        <div class="normal"><em>Offset =</em>&nbsp; 0.0 deg</div>
+        </li>
+    </ul>
+    <div class="normal">&nbsp;</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Dither Signal </em>section set:</div>
+    <ul>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Amplitude = </em>0.00 V</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Frequency </em>= 5.00 Hz</div>
+        </div>
+        </li>
+        <li>
+        <div class="normal">
+        <div class="normal"><em>Offset </em>= 0.00 V</div>
+        <div class="normal">&nbsp;</div>
+        </div>
+        </li>
+    </ul>
+    <div>&nbsp;</div>
+    </li>
+    <li>
+    <div class="procedure-think">Observe the behaviour of <em>Arm Angle (deg) </em>in  the <em>Angle/Energy (deg/mJ) </em>scope. Intuitively speaking, can you find  some reasons why the arm is oscillating?</div>
+    </li>
+    <li>
+    <div class="normal">Increase the <em>Amplitude </em>in the <em>Dither Signal  </em>section by steps of 0.05 V until you notice a change in the arm angle  response.</div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="procedure-think">
+    <div class="procedure-think">From the <em>Voltage (V) </em>scope and the pendulum  motion, what is the Dither signal doing? Compare&nbsp;the&nbsp;response of the arm with  and without the Dither signal.</div>
+    <div class="procedure-think">&nbsp;</div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Increase the <em>Frequency </em>in the <em>Dither Signal  </em>section by steps of 0.50&nbsp;Hz.</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">
+    <div class="normal">
+    <div class="procedure-think">How does this effect the pendulum arm  response?</div>
+    <div class="procedure-think">&nbsp;</div>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="procedure-think">Optional: Set the <em>Dither Signal </em>properties  according to the friction measured in the Friction&nbsp;method of the <em>ROTPEN: Simple Modeling </em>experiment. How does this effect the  pendulum arm response?</div>
+    <div class="procedure-think">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Click on <em>Stop Control </em>to disable the balance  controller.</div>
+    </div>
+    </li>
+</ol>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="normal">&nbsp;</p>
+<p class="heading3"><strong>Energy Control</strong></p>
+<p class="heading3">&nbsp;</p>
+<p class="heading3">&nbsp;</p>
+<ol class="normal">
+    <li>
+    <div class="normal">Ensure the <em>Start Control </em>button is not pushed down to  de-activate the balance controller.</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Control Parameters </em>section ensure the  following parameters are set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>kp_theta </em>= -2.65 V/rad</div>
+        </li>
+        <li>
+        <div class="normal"><em>kp_alpha </em>=&nbsp;40.0 V/rad</div>
+        <div class="normal">&nbsp;</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_theta </em>= -1.29 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_alpha </em>=&nbsp;6.46 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>mu </em>=&nbsp;375 m/s^2/J</div>
+        </li>
+        <li>
+        <div class="normal"><em>Er </em>= 0.0 mJ</div>
+        </li>
+        <li>
+        <div class="normal"><em>Activate Swing-Up </em>= OFF (de-pressed)</div>
+        </li>
+        <li>
+        <div class="normal">&nbsp;</div>
+        <div>&nbsp;</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Update Control </em>in the <em>Control Parameters  </em>section to ensure this controller is implemented.</div>
+    </li>
+    <li>
+    <div class="normal">Adjust the <em>Angle/Energy (deg/mJ) </em>scope scales to see  between -200 and 200&nbsp;</div>
+    </li>
+    <li>
+    <div class="procedure-think">Manually rotate the pendulum at different levels and  examine the blue <em>Pendulum Angle (deg) </em>and the green <em>Pendulum Energy  (mJ) </em>in the <em>Angle/Energy (deg/mJ) </em>scope. The pendulum energy is  also displayed numerically in the <em>Control Indicators </em>section.</div>
+    </li>
+    <li>
+    <div class="procedure-think">Observe the energy read when the pendulum is fully  inverted (i.e. in the upright vertical position).</div>
+    </li>
+    <li>
+    <div class="normal">Bring the pendulum down to the gantry position.</div>
+    </li>
+    <li>
+    <div class="normal">Click on the <em>Start Control </em>button and in the  <em>Control Parameters </em>set the <em>Activate Swing-Up </em>= ON (pressed)  switch.</div>
+    </li>
+    <li>
+    <div class="normal">If the pendulum is stationary, click on the <em>Disturbance  </em>button in the <em>Signal Generator </em>section to perturb the  pendulum.</div>
+    </li>
+    <li>
+    <div class="procedure-think">In <em>Control Parameters</em>, change the reference  energy <em>Er</em> between&nbsp;5.0 mJ and&nbsp;50.0 mJ. As it is varied, examine the  control signal in the <em>Voltage (V) </em>scope as well as the  blue&nbsp;<em>Pendulum Angle (deg) </em>and the red <em>Pendulum Energy (mJ) </em>in  the <em>Angle/Energy (deg/mJ) </em>scope.</div>
+    </li>
+    <li>
+    <div class="procedure-think">In <em>Control Parameters </em>fix <em>Er </em>to  20.0 mJ and vary the swing-up control gain <em>mu. </em>Examine the performance  of the energy control.</div>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Stop Control </em>to disable the energy and  balance controllers.</div>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="heading3"><strong>Hybrid Swing-Up Control</strong></p>
+<p class="heading3">&nbsp;</p>
+<p class="heading3">&nbsp;</p>
+<ol>
+    <li>
+    <div class="normal">Ensure the control is enabled by clicking on the <em>Start  Control </em>button</div>
+    </li>
+    <li>
+    <div class="normal">In the <em>Control Parameters </em>section verify the  following parameters are set:</div>
+    <ul>
+        <li>
+        <div class="normal"><em>kp_theta </em>= -2.65 V/rad</div>
+        </li>
+        <li>
+        <div class="normal"><em>kp_alpha </em>=&nbsp;40.0 V/rad</div>
+        <div class="normal">&nbsp;</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_theta </em>= -1.29 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>kd_alpha </em>=&nbsp;6.46 V/(rad/s)</div>
+        </li>
+        <li>
+        <div class="normal"><em>mu </em>=&nbsp;375 m/s^2/J</div>
+        </li>
+        <li>
+        <div class="normal"><em>Er </em>= 0.0 mJ</div>
+        </li>
+        <li>
+        <div class="normal"><em>Activate Swing-Up </em>= OFF (de-pressed)</div>
+        </li>
+        <li>
+        <div>&nbsp;</div>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <div class="normal">Click on <em>Update Control </em>in the <em>Control Parameters  </em>section to ensure this controller is implemented.</div>
+    </li>
+    <li>
+    <div class="normal">Adjust the <em>Angle/Energy (deg/mJ) </em>scope scales to see  between -200 and 200</div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Set reference energy <em>Er</em> in the <em>Control Parameters  </em>section to the energy read when the pendulum is vertically upwards (see the  Energy Control method).</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Make sure the pendulum is hanging down motionless&nbsp;and&nbsp;the  encoder cable is not interfering with the pendulum.</div>
+    <div class="normal">&nbsp;</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Set the <em>Activate Swing-Up </em>= ON (pressed) switch in  the <em>Control Parameters</em>.</div>
+    <div class="normal">&nbsp;</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Click on the <em>Disturbance </em>button in the <em>Signal  Generator </em>section to perturb the pendulum. The pendulum should swing-up to  the inverted position in a few swings. <strong>Turn off the <em>Active Swing-Up  </em>switch if the pendulum goes unstable, i.e. if the encoder cable interferes  with the pendulum arm motion.</strong></div>
+    <div class="normal">&nbsp;</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">
+    <div class="normal">Click on the&nbsp;<em>Stop Control </em>button and in the  <em>Control Parameters </em>set <em>Activate Swing-Up </em>=&nbsp;OFF&nbsp;(de-pressed)  switch to disable the energy and balance controllers .</div>
+    <div class="normal">&nbsp;</div>
+    <div class="normal">&nbsp;</div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="procedure-think">Click on <em>Start Control </em>and repeat  the&nbsp;swing-up, steps&nbsp;6-9, with different&nbsp;swing-up control gains, <em>mu</em>.  Examine the performance of the energy control.</div>
+    <div class="procedure-think">&nbsp;</div>
+    <div class="procedure-think">&nbsp;</div>
+    </div>
+    </li>
+    <li>
+    <div class="normal">
+    <div class="normal">Click on <em>Stop Control </em>to disable the energy and  balance controllers.</div>
+    </div>
+    <div>&nbsp;</div>
+    </li>
+</ol>
+<p class="normal">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,1534 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Estimation Of Pitch From Speech Signals (Procedure) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To develop methods for the estimation of speech." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Estimation Of Pitch From Speech Signals</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Estimation Of Pitch From Speech Signals</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=1848"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=1012&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=2035"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=1849"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=2991"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><span style="COLOR: rgb(51,102,255)"><span style="BACKGROUND-COLOR: rgb(255,255,255)">Procedure</span></span></h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><b style="mso-bidi-font-weight: normal"><span lang="EN-US"><span style="COLOR: rgb(51,102,255)"><span style="BACKGROUND-COLOR: rgb(255,255,255)">Pitch estimation by autocorrelation method</span></span></span></b><span lang="EN-US">&nbsp;</span></h2>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="TEXT-ALIGN: center">&nbsp;</p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">The objective of this experiment is to estimate the pitch periods of a given speech signals by auto correlation method. The first step is to divide the given speech signal into 30-40ms blocks of speech<span style="mso-spacerun: yes">&nbsp; </span>frames. <span style="mso-spacerun: yes">&nbsp;</span>The auto correlation sequence of each frame is then found.<span style="mso-spacerun: yes">&nbsp; </span>The pitch period can be computed by<span style="mso-spacerun: yes">&nbsp; </span>finding the time lag corresponds to<span style="mso-spacerun: yes">&nbsp; </span>the second largest peak from the central peak of autocorrelation sequence. The procedure to generate the 30 ms speech segment and its auto correlation&nbsp;as given in Figure 1&nbsp; is shown below.&nbsp;&nbsp;The auto correlation sequence of a 30 ms voiced and unvoiced segment of speech is given in Figure 2 and Figure 3.<span style="mso-spacerun: yes">&nbsp; </span>The pitch period can be computed by<span style="mso-spacerun: yes">&nbsp; </span>finding the time lag corresponds to<span style="mso-spacerun: yes">&nbsp; </span>the second largest peak from the central peak of autocorrelation sequence.<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>This can be found by simple peak picking algorithm.<span style="mso-spacerun: yes">&nbsp; </span>Figure&nbsp;3 illustrates the pitch period and F0 computed for the given voiced frame. The porgram also computes the pitch period from the auto correlation sequence as given in Figure 3.</span></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="TEXT-ALIGN: justify; MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p style="TEXT-ALIGN: center"><span lang="EN-US"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/prc-autocrrltn/Fig1_voiced_autocorr.png"></span></p>
+<p class="MsoNormal" style="TEXT-ALIGN: center"><span lang="EN-US">&nbsp;Figure.1</span></p>
+<p class="MsoNormal" style="TEXT-ALIGN: center">&nbsp;</p>
+<p class="MsoNormal" style="TEXT-ALIGN: center"><span lang="EN-US"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/prc-autocrrltn/Fig2_unvoiced_autocorr.png"></span></p>
+<p class="MsoNormal" style="TEXT-ALIGN: center">Figure.2</p>
+<p class="MsoNormal" style="TEXT-ALIGN: center">&nbsp;</p>
+<p class="MsoNormal" style="TEXT-ALIGN: center"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/prc-autocrrltn/Fig3.png"></p>
+<p class="MsoNormal" style="TEXT-ALIGN: center">Figure.3</p>
+<p class="MsoNormal" style="TEXT-ALIGN: center"><span lang="EN-US"><br>
+</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-IN</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>HI</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Mangal;
+mso-bidi-theme-font:minor-bidi;
+mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+<p class="MsoPlainText"><span style="font-family:&quot;Courier New&quot;">//Program to find autocorrelation of a speech segment<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_voiced.wav&#039;);//input: speech segment<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+t=(1/Fs:1/Fs:(length(y)/Fs))*1000;<br>
+subplot(2,1,1);<br>
+plot(t,y);<br>
+xtitle(&#039;A 30 millisecond segment of speech&#039;,&#039;time in milliseconds&#039;);<br>
+sum1=0;autocorrelation=0;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>for l=0:(length(y)-1)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>sum1=0;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>for u=1:(length(y)-l)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>s=y(u)*y(u+l);<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum1=sum1+s;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>end<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>autocor(l+1)=sum1;<br>
+<span style="mso-spacerun:yes">&nbsp; </span>end<br>
+kk=(1/Fs:1/Fs:(length(autocor)/Fs))*1000;<br>
+subplot(2,1,2);<br>
+plot(kk,autocor);<br>
+xtitle(&#039;Autocorrelation of the 30 millisecond segment of speech&#039;,&#039;time in milliseconds&#039;);<br>
+auto=autocor(21:160);<br>
+<span style="mso-spacerun:yes">&nbsp; </span>max1=0;<br>
+<span style="mso-spacerun:yes">&nbsp; </span>for uu=1:140<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>if(auto(uu)&gt;max1)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>max1=auto(uu);<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>end <br>
+<span style="mso-spacerun:yes">&nbsp; </span>end<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_period_To=(20+sample_no)*(1/Fs)<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_freq_Fo=1/pitch_period_To<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US"><br>
+</span></p>
+<h2><b style="mso-bidi-font-weight: normal"><span lang="EN-US"><span style="COLOR: rgb(51,102,255)">Cepstrum based pitch estimation</span></span></b></h2>
+<p class="MsoNormal" style="TEXT-ALIGN: center; MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">The objective of this experiment is to estimate the pitch by cepstral analysis.<span style="mso-spacerun: yes">&nbsp; </span>The given speech signal is divided into<span style="mso-spacerun: yes">&nbsp; </span>short segments of 15-20ms frame&nbsp;size.<span style="mso-spacerun: yes">&nbsp; </span>The cepstrum is computed from each of these frames.<span style="mso-spacerun: yes">&nbsp; </span>Figure&nbsp;4&nbsp;&nbsp;shows cepstrum of a speech segment in quefrency domain. Figure&nbsp;5&nbsp; illustrates the procedure&nbsp;for computing the pitch period by the high time liftering of the cepstrum of&nbsp;the voiced speech.<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>Figure&nbsp;6 shows the cepstrum of an unvoiced speech. </span></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/proc_mod/Fig4_voiced_cepstrum.png"></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure.4</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/proc_mod/Fig5.png"></p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure. 5</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/proc_mod/Fig6_unvoiced_cepstrum.png"></p>
+<p style="text-align: center; ">&nbsp;Fig.6</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;"><span lang="EN-US">The scilab codes to generate the Figures 4,&nbsp; 5 and 6 &nbsp;are given below.&nbsp;&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-IN</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>HI</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Mangal;
+mso-bidi-theme-font:minor-bidi;
+mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+<p class="MsoPlainText"><span style="font-family:&quot;Courier New&quot;">//Program to plot speech segment, Log magnitude spectrum and real cepstrum<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_voiced.wav&#039;);//input: speech segment<br>
+zeros2=zeros(1:(512-length(y)));<br>
+zeros3=zeros(1:(1512-length(y)));<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+t=(1/Fs:1/Fs:(length(y)/Fs))*1000;<br>
+subplot(3,1,1);plot(t,y);<br>
+xtitle(&#039;A 30 millisecond segment of unvoiced speech&#039;,&#039;time in msec&#039;);<br>
+y=[y zeros2];<br>
+yy=[y zeros3];<br>
+dfty=abs(fft(y));<br>
+dftyy=abs(fft(yy));<br>
+dfty1=dfty(1:length(dfty)/2);<br>
+dftyy1=dftyy(1:length(dftyy)/2);<br>
+tt=linspace(1/Fs,Fs/2,length(dftyy1));<br>
+dftylog=log10(dfty);<br>
+dftyylog=log10(dftyy);<br>
+dftylog1=dftylog(1:length(dftylog)/2);<br>
+dftyylog1=dftyylog(1:length(dftyylog)/2);<br>
+yy=10*dftylog1;<br>
+yyy=10*dftyylog1;<br>
+subplot(3,1,2);<br>
+plot(tt,yyy);<br>
+xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+real_ceps=abs(ifft(dftylog));<br>
+real_ceps=real_ceps(1:length(real_ceps)/2);<br>
+t=(1/Fs:1/Fs:(length(y)/Fs))*1000;<br>
+t=(t(1:length(t)/2));<br>
+subplot(3,1,3);<br>
+plot(t,real_ceps);<br>
+xtitle(&#039;Real Cepstrum&#039;,&#039;Quefrency nT(msec)&#039;);<br>
+<br>
+real_ceps_pitch=real_ceps(16:length(real_ceps));<br>
+max1=max(real_ceps_pitch);<br>
+for uu=1:length(real_ceps_pitch)<br>
+<span style="mso-spacerun:yes">&nbsp; </span>real_ceps_pitch(uu);<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>if(real_ceps_pitch(uu)==max1)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>end <br>
+<span style="mso-spacerun:yes">&nbsp; </span>end<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_period_To=(16+sample_no)*(1/Fs)<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_freq_FO=1/pitch_period_To</span></p>
+<p>&nbsp;</p>
+<h2><b style="mso-bidi-font-weight: normal"><span lang="EN-US"><span style="COLOR: rgb(51,102,255)"><span style="BACKGROUND-COLOR: rgb(255,255,255)">Pitch estimation by SIFT</span></span></span></b></h2>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">The objective of this experiment is to<span style="mso-spacerun: yes">&nbsp; </span>estimate the pitch by Simple Inverse Filtering Technique (SIFT) .<span style="mso-spacerun: yes">&nbsp; </span>The first step is to compute the Linear Prediction (LP) residual by LP analysis.<span style="mso-spacerun: yes">&nbsp; </span>The auto correlation is performed on the LP residual signal. Figure 9 shows scilab code to generate LP residual of a segment of speech and to find autocorrelation of the LP residual. Figure 7 shows the&nbsp;LP residual of a 30 ms&nbsp;voiced speech segment and its auto correlation sequence.&nbsp;&nbsp;Similarly, Figure 8 shows the&nbsp;LP residual and its auto correlation sequenced of a 30 ms unvoiced speech segment.&nbsp;Figure 9&nbsp;illustrates the&nbsp;estimation of pitch period from&nbsp;the autocorrelation&nbsp;sequenced of the LP residual.&nbsp; </span></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig7_voiced_lpresidual.png"></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure. 7</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig8_unvoiced_lpresidual.png"></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure.8</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig9.png"></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure.9</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;"><span lang="EN-US">The general scilab code to generate the Figures&nbsp;7, 8 and&nbsp;9, and compute the pitch&nbsp;is given below.&nbsp;&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm -9pt 0pt 0cm;">&nbsp;</p>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-IN</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>HI</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Mangal;
+mso-bidi-theme-font:minor-bidi;
+mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+<p class="MsoPlainText"><span style="font-family:&quot;Courier New&quot;">//[y,fs,bt]=wavread(&#039;wavfile/voiced_frame.wav&#039;);<br>
+[y,fs,bt]=wavread(&#039;/media/A03036C33036A068/scilab/female.wav&#039;);//female speech<br>
+//[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/30msec_unvoiced.wav&#039;);<br>
+y=y((Fs*.38):(Fs*.42));//female voiced<br>
+//y=y((Fs*.12):(Fs*.16));//female unvoiced<br>
+y=y(1:240);<br>
+y=y/(1.01*abs(max(y)));<br>
+t=(1/Fs:1/Fs:(length(y)/Fs))*1000;<br>
+//y=y(241:400);<br>
+N=240;<br>
+w=window(&#039;re&#039;,N);<br>
+y=y.*w;<br>
+P=10;<br>
+ycorr=corr(y,240);<br>
+ycorr=ycorr./(abs(max(ycorr)));<br>
+A=ycorr(1:P);<br>
+r=ycorr(2:(P+1));<br>
+A=toeplitz(A);<br>
+r_t=mtlb_t(r);<br>
+A=-inv(A);<br>
+L=A*r_t;<br>
+L=mtlb_t(L);<br>
+LPCoeffs(1,1:length([1,L])) = [1,L];<br>
+y5=mtlb_conv(y,LPCoeffs);<br>
+y5=y5(round(P/2):length(y5)-round(P/2)-1);<br>
+subplot(3,1,1);plot(t, y);<br>
+xtitle(&#039;30 millisecond voiced speech segment&#039;,&#039;time in millisecond&#039;,&#039;amplitude&#039;);<br>
+subplot(3,1,2);plot(t, y5);<br>
+xtitle(&#039;LP Residual&#039;,&#039;time in millisecond&#039;,&#039;amplitude&#039;);<br>
+<br>
+sum1=0;autocorrelation=0;<br>
+<br>
+y=y5;<br>
+//for i=1:window_length<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>for l=0:(length(y)-1)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>sum1=0;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>for u=1:(length(y)-l)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>s=y(u)*y(u+l);<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum1=sum1+s;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>end<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>autocor(l+1)=sum1;<br>
+<span style="mso-spacerun:yes">&nbsp; </span>end<br>
+//end<br>
+<br>
+<br>
+//tt=1/Fs:1/Fs:(length(y)/Fs);<br>
+kk=(1/Fs:1/Fs:(length(autocor)/Fs))*1000;<br>
+<br>
+subplot(3,1,3);<br>
+plot(kk,autocor);<br>
+xtitle(&#039;Autocorrelation of LP Residual&#039;,&#039;time in milliseconds&#039;);<br>
+<br>
+auto=autocor(21:240);<br>
+<span style="mso-spacerun:yes">&nbsp; </span>max1=0;<br>
+<span style="mso-spacerun:yes">&nbsp; </span>for uu=1:220<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>if(auto(uu)&gt;max1)<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>max1=auto(uu);<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>end <br>
+<span style="mso-spacerun:yes">&nbsp; </span>end<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_freq_to=(20+sample_no)*(1/Fs)<br>
+<span style="mso-spacerun:yes">&nbsp; </span>pitch_freq_fo=1/pitch_freq_to</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<p class="MsoNormal" style="MARGIN: 0cm -9pt 0pt 0cm"><span lang="EN-US">&nbsp;</span></p>
+<h2><span style="COLOR: #3366ff"><span lang="EN-US">Comparison of pitch estimation methods</span></span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span lang="EN-US">Figure 10&nbsp;shows the&nbsp; input speech signal and the pitch contours&nbsp; estimated using autocorrelation,&nbsp; cepstrum and SIFT&nbsp;based pitch estimation methods. The procedure used for&nbsp; generating the pitch contours using all these methods are given below.&nbsp;</span></p>
+<p style="text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig11_pitch_all3.png"></p>
+<p style="text-align: center; ">&nbsp;</p>
+<p style="text-align: center; ">Figure.10</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The general scilab code to generate the Figures 10, and compute the pitch&nbsp;is given below. &nbsp;</p>
+<p>&nbsp;</p>
+<p>//Code to generate the pitch contour of a speech signal using autocorrelation method</p>
+<p class="MsoPlainText"><span style="font-family:&quot;Courier New&quot;"> [y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/SA2.wav&#039;);<br>
+data=y;<br>
+Frame_size = 30;//Input: Frame-size in millisecond<br>
+Frame_shift = 10;//Input: Frame-shift in millisecond<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+window_period=Frame_size/1000;<br>
+shift_period=Frame_shift/1000;<br>
+pitch_freq=0;<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+subplot(4,1,1);<br>
+plot(t,y);<br>
+xtitle(&#039;Speech signal waveform&#039;);<br>
+window_length = window_period*Fs<br>
+sample_shift = shift_period*Fs<br>
+sum1=0;energy=0;autocorrelation=0;<br>
+for i=1:(floor((length(y))/sample_shift)-ceil(window_length/sample_shift))<br>
+<span>&nbsp; </span>k=1;yy=0;<br>
+<span>&nbsp; </span>for j=(((i-1)*sample_shift)+1):(((i-1)*sample_shift)+window_length)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>yy(k)=y(j);<br>
+<span>&nbsp;&nbsp;&nbsp; </span>k=k+1;<br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>for l=0:(length(yy)-1)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>sum1=0;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>for u=1:(length(yy)-l)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>s=yy(u)*yy(u+l);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum1=sum1+s;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>end<br>
+<span>&nbsp;&nbsp;&nbsp; </span>autocor(l+1)=sum1;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>autocorrelation(l+1)(i)= autocor(l+1);<br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>auto=autocor(21:240);<br>
+<span>&nbsp; </span>max1=0;<br>
+<span>&nbsp; </span>for uu=1:220<br>
+<span>&nbsp;&nbsp;&nbsp; </span>if(auto(uu)&gt;max1)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>max1=auto(uu);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>end <br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>pitch_freq(i)=1/((20+sample_no)*(1/Fs));<br>
+end<br>
+[rows,cols]=size( autocorrelation);<br>
+kkk=1/Fs:shift_period:(cols*shift_period);<br>
+subplot(4,1,2);plot(kkk,pitch_freq,&#039;.&#039;);xtitle(&#039;Pitch Contour obtained by autocorrelation of speech signal &#039;);<br>
+<br>
+<br>
+<br>
+///////////////////////////////////////////////////////////////////////<br>
+//Code to generate the pitch contour of a speech signal using Cepstrum pitch estimation method<br>
+y=0;y=data;<br>
+pitch_freq1=0;o=1;<br>
+Frame_size=30;pitch_freq = 0;<br>
+Frame_shift=10;<br>
+max_value=max(abs(y));<br>
+y=y/max_value;<br>
+window_period=Frame_size/1000;<br>
+shift_period=Frame_shift/1000;<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+//subplot(2,1,1);plot(t,y);xtitle(&#039;Speech signal waveform&#039;);<br>
+window_length = window_period*Fs<br>
+sample_shift = shift_period*Fs<br>
+sum1=0;energy=0;autocorrelation=0;<br>
+for i=1:(floor((length(y))/sample_shift)-ceil(window_length/sample_shift))<br>
+<span>&nbsp; </span>k=1;yy=0;<br>
+<span>&nbsp; </span>for j=(((i-1)*sample_shift)+1):(((i-1)*sample_shift)+window_length)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>yy(k)=y(j);<br>
+<span>&nbsp;&nbsp;&nbsp; </span>k=k+1;<br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp; </span>t=1/Fs:1/Fs:(length(yy)/Fs);<br>
+<span>&nbsp;&nbsp;&nbsp; </span>t=(t(1:length(t)/2))*1000;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>dfty=abs(fft(yy));<br>
+dfty1=dfty(1:length(dfty)/2);<br>
+tt=linspace(1/Fs,Fs,length(dfty1));<br>
+for i=1:length(dfty)<br>
+<span>&nbsp; </span>if (dfty(i)==0)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>dfty(i)=1D-16;<br>
+<span>&nbsp; </span>end<br>
+end <br>
+dftylog=log10(dfty);<br>
+dftylog1=dftylog(1:length(dftylog)/2);<br>
+yy=10*dftylog1;<br>
+<br>
+//xtitle(&#039;Log Magnitude Spectrum&#039;,&#039;frequency in Hz&#039;);<br>
+real_ceps=abs(ifft(dftylog));<br>
+real_ceps=real_ceps(1:length(real_ceps)/2);<br>
+//real_ceps=[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 5 4 3 2 1];<br>
+real_ceps_pitch=real_ceps(16:length(real_ceps));<br>
+<br>
+<br>
+max1=max(real_ceps_pitch);<br>
+//max1=0;<br>
+for uu=1:length(real_ceps_pitch)<br>
+<span>&nbsp; </span>uu;<br>
+<span>&nbsp; </span>real_ceps_pitch(uu);<br>
+<span>&nbsp; </span>max1;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>if(real_ceps_pitch(uu)==max1)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>//max1=real_ceps_pitch(uu);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>end <br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>pitch_freq1=1/((16+sample_no)*(1/Fs));<br>
+<span>&nbsp; </span>pitch_freq(o)= pitch_freq1;<br>
+<span>&nbsp; </span>o=o+1;<br>
+<span>&nbsp; </span>//pitch_freq(i)=1/(16+sample_no);<br>
+end<br>
+kk=1/Fs:shift_period:(length(pitch_freq)*shift_period);<br>
+subplot(4,1,3);plot(kk,pitch_freq,&#039;.&#039;);xtitle(&#039;Pitch Contour obtained by cepstrum pitch estimation method&#039;);<br>
+<br>
+/////////////////////////////////////////////////////////////////////////////////////<br>
+//Code to generate the pitch contour of a speech signal using SIFT method<br>
+y=0;y=data;<br>
+[y,Fs,bits]=wavread(&#039;/media/A03036C33036A068/scilab/SA2.wav&#039;);<br>
+Frame_size = 30;//Input: Frame-size in millisecond<br>
+Frame_shift = 10;//Input: Frame-shift in millisecond<br>
+max_value=max(abs(y));<br>
+//y=y/max_value;<br>
+window_period=Frame_size/1000;<br>
+shift_period=Frame_shift/1000;<br>
+pitch_freq=0;<br>
+t=1/Fs:1/Fs:(length(y)/Fs);<br>
+//subplot(2,1,1);<br>
+//plot(t,y);<br>
+//xtitle(&#039;Speech signal waveform&#039;);<br>
+window_length = window_period*Fs<br>
+sample_shift = shift_period*Fs<br>
+sum1=0;energy=0;autocorrelation=0;<br>
+for i=1:(floor((length(y))/sample_shift)-ceil(window_length/sample_shift))<br>
+<span>&nbsp; </span>k=1;yy=0;<br>
+<span>&nbsp; </span>for j=(((i-1)*sample_shift)+1):(((i-1)*sample_shift)+window_length)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>yy(k)=y(j);<br>
+<span>&nbsp;&nbsp;&nbsp; </span>k=k+1;<br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span><br>
+<span>&nbsp; </span>yy=yy/(1.01*abs(max(yy)));<br>
+t=(1/Fs:1/Fs:(length(yy)/Fs))*1000;<br>
+P=10;<br>
+ycorr=corr(yy,240);<br>
+ycorr=ycorr./(abs(max(ycorr)));<br>
+A=ycorr(1:P);<br>
+r=ycorr(2:(P+1));<br>
+A=toeplitz(A);<br>
+r_t=mtlb_t(r);<br>
+A=-inv(A);<br>
+L=A*r_t;<br>
+L=mtlb_t(L);<br>
+LPCoeffs(1,1:length([1,L])) = [1,L];<br>
+y5=mtlb_conv(yy,LPCoeffs);<br>
+y5=y5(round(P/2):length(y5)-round(P/2)-1);<br>
+<span>&nbsp; </span><br>
+<span>&nbsp; </span>for l=0:(length(y5)-1)<br>
+<span>&nbsp;&nbsp;&nbsp; </span>sum1=0;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>for u=1:(length(y5)-l)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>s=y5(u)*y5(u+l);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sum1=sum1+s;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>end<br>
+<span>&nbsp;&nbsp;&nbsp; </span>autocor(l+1)=sum1;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>autocorrelation(l+1)(i)= autocor(l+1);<br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>auto=autocor(21:240);<br>
+<span>&nbsp; </span>max1=0;<br>
+<span>&nbsp; </span>for uu=1:220<br>
+<span>&nbsp;&nbsp;&nbsp; </span>if(auto(uu)&gt;max1)<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>max1=auto(uu);<br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sample_no=uu;<br>
+<span>&nbsp;&nbsp;&nbsp; </span>end <br>
+<span>&nbsp; </span>end<br>
+<span>&nbsp; </span>pitch_freq(i)=1/((20+sample_no)*(1/Fs));<br>
+end<br>
+[rows,cols]=size( autocorrelation);<br>
+kkk=1/Fs:shift_period:(cols*shift_period);<br>
+subplot(4,1,4);plot(kkk,pitch_freq,&#039;.&#039;);xtitle(&#039;Pitch Contour obtained by SIFT pitch estimation method &#039;);<br>
+</span></p>
+<p class="MsoPlainText">&nbsp;</p>
+<p class="MsoPlainText">&nbsp;</p>
+<p class="MsoPlainText">&nbsp;</p>
+<p class="MsoPlainText">&nbsp;</p>
+<p class="MsoPlainText">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span lang="EN-US">&nbsp;</span></p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

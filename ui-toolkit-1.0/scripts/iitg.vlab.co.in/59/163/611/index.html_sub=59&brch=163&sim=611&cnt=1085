@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Realization of different modulation schemes using I/Q modulators (Theory) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Realization of different modulation schemes using I/Q modulators" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Realization of different modulation schemes using I/Q modulators</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Realization of different modulation schemes using I/Q modulators</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=611&cnt=1084"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=611&cnt=1085"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=611&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=611&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=611&cnt=2387"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=611&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1 class="title">I/Q Data in  Communication Systems</h1>
+<p style="text-align: justify;">&nbsp;</p>
+<p>&nbsp;<span style="font-size: small;">RF  communication systems use advanced forms of modulation to increase  the  amount of data that can be transmitted in a given amount of  frequency  spectrum. Signal modulation can be divided into two broad  categories:  analog modulation and digital modulation. <strong>Analog or digital </strong>refers  to how the data is modulated onto a sine wave. If analog audio  data is  modulated onto a carrier sine wave, then this is referred to as  analog  modulation. If analog audio data is sampled by an analog to  digital  converter (ADC) with the resulting digital bits modulated onto a   carrier sine wave, this is digital modulation because digital data is   being encoded. Both analog modulation and digital modulation are   performed by changing the carrier wave amplitude, frequency, or phase   (or combination of amplitude and phase simultaneously) according to the   message data.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Amplitude  modulation(AM), frequency modulation (FM), or phase modulation (PM) are  all examples of analog modulation.&nbsp; With amplitude modulation, the   carrier sine wave amplitude is modulated according to the message   signal. The same idea holds true for frequency and phase modulation.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece1/g.JPG" alt=""></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><strong>&nbsp;  Figure 5. Time Domain of AM, FM, and PM Signals</strong></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">Figure 5  represents various analog techniques—AM, FM, and PM—applied to a   carrier signal. In the AM case, the message signal is the blue sine   wave that forms the “envelope” of the higher frequency carrier sine   wave. In the FM case, the message data is the dashed square wave.&nbsp; As   the figure illustrates, the resulting carrier signal changes between two   distinct frequency states.&nbsp; Each of these frequency states represents   the high and low state of the message signal. If the message signal  were  a sine wave in this case, there would be a more gradual change in   frequency, which would be more difficult to see. In the PM case, notice   the distinct phase change at the edges of the dashed square wave  message  signal.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"> As such  if&nbsp; only  the carrier sine wave  amplitude changes with respect to time   (proportional to the message  signal), as is the case with AM   modulation, we should see changes in the  I/Q plane only with respect to   the distance from the origin to the I/Q  points. </span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><strong>&nbsp;<span style="font-size: small;">So Why  Use I/Q Data?</span></strong></p>
+<p><span style="font-size: small;"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Because  amplitude and phase data seem more intuitive, it would seem  that we  should use polar amplitude and phase data instead of cartesian I  and Q  data. However, practical hardware design concerns make I and Q  data the  better choice in this matter.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">It is  difficult to vary precisely the phase of a high-frequency  carrier sine  wave in a hardware circuit according to an input message  signal. A  hardware signal modulator that manipulates the amplitude and  phase of a  carrier sine wave would therefore be expensive and difficult  to design  and build, and, as it turns out, not as flexible as a circuit  that  uses I and Q waveforms. To understand how we to avoid manipulating  the  phase of an RF carrier directly, we first return to trigonometry.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece1/h.jpg" alt="" width="405" height="216"></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><strong>Figure  6. Mathematical Background of I/Q Modulation</strong></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><strong><br>
+</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">According  to the trigonometric identity shown in the first line of Figure 6,  multiply both sides of the equation by <em>A</em> and substitute 2<span style="font-size: x-small;">∏</span>f<sub>c</sub>t in place of α and φ  in place of β to arrive at the equation shown in line 2. &nbsp;Then  substitute <em>I</em> for <em>A</em> cos(φ) and <em>Q</em> for <em>A</em>  sin(φ) to represent a sine wave with the equation shown on line 3.   Remember that the difference between a sine wave and a cosine wave of   the same frequency is a 90-degree phase offset between them. The   implications of this are very important. What this essentially means is   that we can control the amplitude, frequency, and phase of a modulating   RF carrier sine wave by simply manipulating the amplitudes of separate  I  and Q input signals. With this method, we no longer have to directly   vary the phase of an RF carrier sine wave. We can achieve the same   effect by manipulating the amplitudes of input I and Q signals. Of   course, the second half of the equation is a sine wave and the first   half is a cosine wave, so we must include a device in the hardware   circuit to induce a 90-degree phase shift between the carrier signals   used for the I and Q mixers.<br>
+</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece1/j.jpg" alt=""></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><strong>Figure  7. Hardware Diagram of an I/Q Modulator</strong></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><strong><br>
+</strong></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><strong><br>
+</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Figure  7. shows a block diagram of an I/Q modulator. The circles with  an ‘X’  represent mixers—devices that perform frequency multiplication  and  either upconvert or downconvert signals (upconverting here). The I/Q   modulator mixes the I waveform with the RF carrier sine wave, and mixes   the Q signal with the same RF carrier sine wave yet with a 90-degree   phase offset. The Q signal is subtracted from the I signal (just as in   the equation shown in line 3 in Figure 6) producing the final RF   modulated waveform. In fact, the 90-degree shift of the carrier is the   source of the names for the I and Q data—I refers to in-phase data   (because the carrier is in phase) and Q refers to quadrature data   (because the carrier is offset by 90 degrees). </span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">This  technique is known  as quadrature upconversion and the same I/Q  modulator can be used for  any modulation scheme. This is because the  I/Q modulator is merely  reacting to changes in I and Q waveform  amplitudes, and I and Q data can  be used to represent any changes in  magnitude and phase of a message  signal. The flexibility and simplicity  (relative to other options) of  the design of an I/Q modulator is the  reason for its widespread use and  popularity.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

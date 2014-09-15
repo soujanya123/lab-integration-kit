@@ -1,0 +1,426 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Seperating and Throtling Calorimeter (Expt Calc) : Virtual mass transfer lab : Chemical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To determine the " /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=58">Chemical Engineering</a>-><a href="?sub=58&brch=160">Virtual mass transfer lab</a>-><a href="">Seperating and Throtling Calorimeter</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Seperating and Throtling Calorimeter</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class="current"><a href="?sub=58&brch=160&sim=1603&cnt=3350"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_991.png" alt=""/></div><div id="tab_name" >Expt Calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=3347"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Labview Calc&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=3348"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Expt Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=3352"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Downloads&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=3349"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post Expt Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=3353"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_97.png" alt=""/></div><div id="tab_name" >Help&nbsp;</div></span></a></li><li class=""><a href="?sub=58&brch=160&sim=1603&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p class="MsoNormal">&nbsp;</p>
+<h2>Experimental Calculation</h2>
+<p class="MsoNormal">&nbsp;</p>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Temperature after throttling :<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>T1</span></h3>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Gauge pressure of Steam Generator : P1</span></h3>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Gauge Pressure before Throttling : P</span></h3>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Manometer difference : H</span></h3>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Volume of moisture collected : W</span></h3>
+<h3 style="color: Red;"><span style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-bidi-font-weight:bold">Volume of dry steam copllected after throttling: W<sub>d</sub></span></h3>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">Observations:</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<table style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+    mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt" class="MsoTableGrid" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+            <td style="width:66.75pt;border:solid windowtext 1.0pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">T (<sup>0</sup>C)</b></p>
+            </td>
+            <td style="width:66.75pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">P (Kpa)</b></p>
+            </td>
+            <td style="width:66.8pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">T1(<sup>0</sup>C)</b></p>
+            </td>
+            <td style="width:66.8pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">P1(KPa)</b></p>
+            </td>
+            <td style="width:66.8pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">H(mm of Hg)</b></p>
+            </td>
+            <td style="width:66.8pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">W</b></p>
+            </td>
+            <td style="width:66.8pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><b style="mso-bidi-font-weight:normal">W<sub>d</sub></b></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1">
+            <td style="width:66.75pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">120.5</p>
+            </td>
+            <td style="width:66.75pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">117.0154</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">104.33</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">151.78</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">10</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">36.91</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">51.44</p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2;height:10.75pt">
+            <td style="width:66.75pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">123</p>
+            </td>
+            <td style="width:66.75pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">130.75</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">105.87</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">159.20</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">17.88</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">40.53</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:10.75pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">64.19</p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+            <td style="width:66.75pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">115.5</p>
+            </td>
+            <td style="width:66.75pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">120.94</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">105</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">136.94</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">20</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">29.45</p>
+            </td>
+            <td style="width:66.8pt;border-top:none;border-left:none;
+            border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal">54.9306</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><i style="mso-bidi-font-style:normal">Now let me perform calculation for 2<sup>nd</sup> reading</i>.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%">1) Dryness fraction of separating calorimeter: </span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%">X1</span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:107%"> =&nbsp;</span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast"><span style="mso-spacerun:yes"> </span></span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast"><span style="mso-spacerun:yes">W<sub>d</sub>/(W+Wd)</span></span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast"><span style="mso-spacerun:yes"> </span></span></b><span style="font-size:14.0pt;
+line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast">= 0.61</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">2) Pressure of superheated steam:</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">P2 = </span></b><span style="font-size:
+12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast">101.325 + 13.6*9.81*18/1000 = 103.73 KPa</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">3) Specific heat of steam:</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">C<sub>P</sub></span></b><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast"> = 2081.6645 J/Kg</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">4) Sensible heat of water at pressure P (From steam table):</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">H<sub>W1</sub></span></b><sub><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast"> </span></sub><span style="font-size:
+12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast">= 449961 Joule</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">5) Latent heat of wet steam entering throttling calorimeter (Steam Table):</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">L<sub>1</sub></span></b><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast"> = 2237790 J/Kg</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">6) Total heat of dry steam at pressure P<sub>2 </sub>(Steam table):</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">H<sub>2</sub></span></b><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast"> = 2655180 Joule</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">7) Saturation temperature at P2 (Steam table):</span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">T<sub>2 </sub>= </span></b><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">99.94 <sup>0</sup>C</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast">8) Dryness fraction from throttling calorimeter:</span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast"><b style="mso-bidi-font-weight:normal">X<sub>2</sub> =&nbsp;</b></span><span style="font-size:14.0pt;
+line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast"><span style="mso-spacerun:yes"> </span></span><span style="font-size:14.0pt;
+line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast"><span style="mso-spacerun:yes"><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">(H<sub>2</sub>+Cp(t1-t2)-Hw1)/L1</span></span>= </span><span style="font-size:12.0pt;line-height:107%;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast">0.976</span></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

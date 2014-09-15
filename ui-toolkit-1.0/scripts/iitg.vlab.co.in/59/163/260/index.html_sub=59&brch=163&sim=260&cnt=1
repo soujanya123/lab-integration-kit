@@ -1,0 +1,182 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Amplitude Modulation (Simulation experiment) (Theory) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Amplitude Modulation (Simulation experiment)" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Amplitude Modulation (Simulation experiment)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Amplitude Modulation (Simulation experiment)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=260&cnt=2644"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=260&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=260&cnt=2645"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=260&cnt=2646"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Experiment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=260&cnt=2647"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=260&cnt=2648"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<h1 style="text-align: justify;" class="title"><a href="http://125.20.82.167/001/view2.php?link=T0010#">In this section we provide brief theory of DSB-AM. </a></h1>
+<p style="text-align: justify;">&nbsp;</p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;"><strong>Representation of  DSB-AM signal: </strong></span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;">Mathematically, a DSB-AM wave can be represented as follows:</span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;">Let the carrier signal is denoted by <span class="style16">c(t)=A<sub>c</sub>sin(2πf<sub>c</sub>t)</span> ,                                                                      and the modulating signal is denoted by m(t).</span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;">The modulated  signal <span class="style16">C<sub>m</sub>(t)</span> &nbsp;can be written  as <span class="style16">C<sub>m</sub>(t)=A<sub>c</sub>(1+m(t))sin(2πf<sub>c</sub>t).</span></span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;"><strong>Spectrum of modulated  signal:</strong></span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;">If <span class="style16">M(f)</span> represents the Fourier transform of the modulating  signa m(t) ,then the spectrum of the amplitude modulated signal <span class="style16">C<sub>m</sub>(t)</span> can be written as</span></p>
+<p class="style17" style="text-align: justify;"><span style="font-size: small;">C<sub>m</sub>(f)=A<sub>c</sub><span class="style14">/</span>2j[δ(f-f<sub>c</sub>)-δ(f+f<sub>c</sub>)]+A<sub>c</sub><span class="style14">/</span>2j[M(f-f<sub>c</sub>)-M(f+f<sub>c</sub>)]</span></p>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;"><strong>Single tone  modulation:</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Let us consider a special case when the  modulating signal <span class="style16">m(t)</span> is given by <span class="style16">m(t)=A<sub>m</sub>sin(2πf<sub>m</sub>t)</span> and <em>f<sub>m</sub>&lt;<sub>c</sub></em></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The modulated waveform  can be represented as: <span class="style16">&nbsp;</span></span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><span class="style16">C<sub>m</sub>(t)=(A<sub>c</sub>+A<sub>m</sub>sin(2πf<sub>m</sub>t))sin(2πf<sub>c</sub>t)=A<sub>c</sub>(1+msin(2πf<sub>m</sub>t))sin(2πf<sub>c</sub>t)</span></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">Here,m                                                                       is the index of modulation and m≤l is usually used.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The modulated waveform for typical values <span class="style16">m=0.5</span>, <span class="style16">Ac=2v</span>,<span class="style16">fm=1Khz</span> and <span class="style16">fm=10Khz</span> is shown in the figure1 below.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/17.jpg" width="477" height="281"></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Figure-1: Amplitude modulated wave</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">If <span class="style16">m&gt;1</span>,   the signal is over modulated and  for such cases the  demodulated   waveform will be distorted. Figure 2  shows an over-modulated AM  wave.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/19.jpg"></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Fig.2 Over-modulated  wave</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><span class="style16">C<sub>m</sub>(t)</span> can be written as</span></p>
+<p style="text-align: justify;" class="style16"><span style="font-size: small;">C<sub>m</sub>(t)=A<sub>c</sub>sin(2πf<sub>c</sub>t)+A<sub>c</sub>msin(2πf<sub>m</sub>t)sin(2πf<sub>c</sub>t)</span></p>
+<p style="text-align: justify;" class="style16"><span style="font-size: small;">= A<sub>c</sub>sin(2πf<sub>c</sub>t)+A<sub>c</sub>m<span class="style15">/</span>2 cos (2π(f<sub>c</sub>- f<sub>m</sub>)t)-A<sub>c</sub>m<span class="style15">/</span>2 cos(2π(f<sub>c</sub>+f<sub>m</sub>)t)</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Thus we find that  for a single tone AM, the modulated signal has three frequency components,  namely, <span class="style16">f<sub>c</sub></span>,<span class="style16">(f<sub>c</sub>+f<sub>m</sub>)</span> and <span class="style16">(f<sub>c</sub>- f<sub>m</sub>).</span></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Since <span class="style16">C<sub>m</sub>(t)=(A<sub>c</sub>+A<sub>m</sub>sin(2πf<sub>m</sub>t))sin(2πf<sub>c</sub>t)=A<sub>c</sub>(1+msin(2πf<sub>m</sub>t))sin(2πf<sub>c</sub>t)</span>, the envelope of the carrier has the wave shape of  the modulating signal.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">For the Figure 3, <span class="style16">A<sub>max</sub>=A<sub>c</sub>(1+m)</span> and <span class="style16">A<sub>min</sub>=A<sub>c</sub>(1-m)</span> respectively</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/26.jpg"></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Figure-3: Envelope variation of amplitude modulated carrier</span></p>
+<p>&nbsp;</p>
+<p style="text-align: left;"><span style="font-size: small;">Therefore we can  write,</span></p>
+<p style="text-align: center;"><span style="font-size: small;">&nbsp; <img alt="" src="../../userfiles/7/image/AM_images/divide.jpg" width="108" height="51"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Given the  sinusoidally modulated wave as shown in Figure 3, the modulation index m can be  computed by measuring <span class="style16">A<sub>max</sub></span> and      <span class="style16">A<sub>min</sub></span></span></p>
+<p><span style="font-size: small;">The power in the carrier wave component is given  by</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/pc.jpg" width="61" height="49"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The power in each  of the side frequencies is given by</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/ps.jpg" width="146" height="69"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">The total power P <sub>T</sub> is given by</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img alt="" src="../../userfiles/7/image/AM_images/pt.jpg" width="174" height="52"></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify;"><span style="font-size: small;">With                                                                            m=1,  only 25% of the carrier power is present at the side  frequencies.</span></div>
+<p class="style9" style="text-align: justify;"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   The  merit of  amplitude modulated carrier is the ease with the   baseband  signal can be  recovered. The process of recovery of   modulating signal  is called demodulation.  The demodulation of DSB AM   signal can be done  either by using an envelope  detector or by passing   the amplitude  modulated signal through a non-linear  device. In this   experiment, we  shall consider demodulation using envelope  detector.</span></p>
+<br>
+<p style="text-align: justify;">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

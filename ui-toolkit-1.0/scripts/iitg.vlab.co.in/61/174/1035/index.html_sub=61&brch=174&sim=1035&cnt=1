@@ -1,0 +1,579 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Signal Conditioning Circuit for RTD (Resistance Temperature Detector) (Theory) : Electronic Instrumentation Laboratory : Electrical Engineering : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="This experiment is about to understand the behaviour of signal conditioning circuitry for RTD for temperature measurement." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=61">Electrical Engineering</a>-><a href="?sub=61&brch=174">Electronic Instrumentation Laboratory</a>-><a href="">Signal Conditioning Circuit for RTD (Resistance Temperature Detector)</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Signal Conditioning Circuit for RTD (Resistance Temperature Detector)</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=3006"><span><div id="tabspan" ><img id="tabimg" src="images/temp.gif" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class="current"><a href="?sub=61&brch=174&sim=1035&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=3"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_3.png" alt=""/></div><div id="tab_name" >Self Evaluation&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=61&brch=174&sim=1035&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<div><span style="font-size:16.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;color:#0070C0;">Theory of RTD (Resistance Temperature Detector)</span></div>
+<div>&nbsp;</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Times New Roman&quot;;color:black;">An RTD (resistance temperature detector) is a temperature detector based upon a variation in electric resistance. The commonest metal for this application is platinum. RTDs rely on the positive temperature coefficient for a conductor’s resistance. In a conductor the number of electrons available to conduct electricity does not significantly change with temperature. But when the temperature increases, the vibration of atoms around their equilibrium positions increase in amplitude. This result in a greater dispersion of electrons, which reduces their average speed. Hence, the resistance increases when the temperature rises. </span></div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Times New Roman&quot;;
+color:black">&nbsp;&nbsp;&nbsp; The relationship between temperature and resistance of RTD is given by-</span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Times New Roman&quot;;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARUAAAAkCAIAAAAo3TkJAAAC9klEQVR4nO2bOxqjIBSF7wbZB4twCayADdDbuwfblJZ27oAp+MZxAJFcHprk/FUkwMVwjjwkZAEAXOjuBgDwwcA/APCBfwDgA/8AwAf+AYAP/AMAH/gHAD7wDwB84B8A+Hyhf4wxdzfhgue38It598dP54/4R0pJAUKI1r1eJe44jlrrY8q2ba/Xa5ompZQQonarOWitYaFbYMgj3Vnx8WeaJiJSSrnLdV211kTkxa5OYdxlWYho27ZjolJqnmdrrTNk9TYz2LaNiJZlubshvwVPHunOSvlnmqb/srbXX2FcpVTqUdHXP+FYumOtNcZIKbs1BtgCeSQ6K15AKRV6roP+SuKu60pE7lkSJaeeijd4rCr8PM8zEa3rWiscSFMij0RnxQuEdbmxr/X8rSTuOI7pSVFP/3j17Jf7B3df4zhWCQcuKZFHorMiBZxTvQFrGAYhRNPnZWFcN3YlMlT3z3E+lih49tVxpQdaUyiPs86KFHCj1T5TnOdZStnaPOVxL+1R1z/elIznn57rsR+nUB5n30aSjDHeejdzmkFJLouz4x6jl2Sw2f6hk+nZW3XCPz3p559hGOjvTDG6IdaIwri8Hyjt+YT0E5fpzPkNBhXp5x8vqxCiz2vHwrjdxp+oCRkVEtFD3uf+AuX+iXaWX8BtNRyXSvlDAeNBXiWuo9v+QTj4sP2D/YNudNo/cKr1Fh4dhqDyuN32r6v4B/vXnem0f+0OoXlPfSfuYRiOkfLHlhzeihutodv702MeOmxevzWvC1/JRZuXk4iCOQWbvz/1tr921TqEEC7deXEPafM0lyAzbqjaEClleECDTojWkHkvl026jGWM8eYDnyjKzyrIlkfYWf+KR1NzyJRaLRJi3YkeEHwgOD96Czx5cM6P5vBA/1hrjTGtDxmVo7XGyucWGPJId9a3+cd+wr/Tnt/CL6b5/+cyeax/AOgGU4j9FQz/gAfCEWJiW6kpd8UF4AxoEQA+8A8AfOAfAPjAPwDwgX8A4PMHyvTUWmPTUcQAAAAASUVORK5CYII="></span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">where, </span></div>
+<div style="text-align:justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAIAAABhFeQrAAAA3UlEQVRIie3UsQ3EIAwF0L+g9/AQHoEJWIA+PTuwAqWn4ApO6EJQEiBX3AkXkYLIw7JNkL4TWO5fuMyMQxCRc27KTSl57wEYY/KrqlprAVhrH3C997t9ANBRtMZWYwyAGOPD7pGIMc7WQVUBMPPnoogQkaqOuyEEAKX7IQRm7kUbrnOuGrJt27rEtisipWnNwRh0q6YRERHNurnv5UakiZR3blaqgo6lvHPzz6HKLh8mIu8PDnHmVmNQlJJyXs+FKgeU50W+9+PyTi933L3zw+x2z8dr3L17/HJ/0n0BSxn3QsS9/mUAAAAASUVORK5CYII=" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is resistance at&nbsp;</span><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAgCAIAAADi0d0QAAABJUlEQVRYhe2VsbHDIAxAtSB7MIRG0AQsQE9P7VYtJSWdN8gvdJ8QomCb811S8CrDSbpnGWR4/AzwbYEnS0VjqWj8qkoIAY7Ytu1MXWZ2zhljJIuIYoyllLMqRNRGp5SkSt1BxJzzS/4/7SYiGmOYWZalFER8DxupGGPaZYwRAGKMnwLa0vWZiACgM973/ZpKh1p0rMLMAOC9V4PnVY6T31SccwCQUhpkXVYppQCAtfaSipzTCY+RyqDVnU3bvMNGzqh4789f3c7sZhW5foMzq2KtvV9l7v3k2NaJcoNKzrkbbieZTvyoIsMthDBRURozkauryCe/emYrMhuJqB0wzFy7pX79fi0SLXM23e8QEb339RKcUvkiS0VjqWgsFY2lorFUNP4Ah18YG87UpXcAAAAASUVORK5CYII=" alt="" align="absMiddle">&nbsp;</span></i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black"> </span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAIAAACwp+nIAAAA2klEQVRIie3Vyw3DIBAE0Glw+tgitgQqoAHuvtMDLXDcKsgBCdn4bydKLIWbETyvGcAoH2j4o09GRQSzRjKEcB0tpcQYATjn6qOZee8BeO/vojHGyWgA2F+x1RHOOQA553ei8/k551ufb2YARGTcqaokzewimlIC0LJOKYnIQXEVDSF0+2kYhiPcFqqqLaXFbXAF7VIiSfIWWlNu276cL3YBrUS3iKeKXUDrwe/qqm9S1cnklbMw6epC7wiStb8G2Li5e/3qez86hh6C7gf1ZbRs3q1P/5v+IvoCU07zOK5lHl8AAAAASUVORK5CYII=" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is resistance at </span></span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">0<sup>o</sup>C,</span> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">and</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAnUlEQVQ4jeWSvQ0DIQxGvwW9B0N4BCZggeuZxC2lS3fewCmsoCPJoShNpMQVQn48/4D4KPBfWO+diIjI3UspAACo6g5jZgCttXkGUGvd2WqtmefuZ+xBtWAikknHcUSEql6pFmyqxhh71YLhHmdzPvEuVkrJGaqqmeXla6y1lpiIEJGZzTqZ+RJz92yPmc0sIsYYucDnUr/+uX4GuwERVKhSQR8inAAAAABJRU5ErkJggg==" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is temperature coefficient of resistance. </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAnUlEQVQ4jeWSvQ0DIQxGvwW9B0N4BCZggeuZxC2lS3fewCmsoCPJoShNpMQVQn48/4D4KPBfWO+diIjI3UspAACo6g5jZgCttXkGUGvd2WqtmefuZ+xBtWAikknHcUSEql6pFmyqxhh71YLhHmdzPvEuVkrJGaqqmeXla6y1lpiIEJGZzTqZ+RJz92yPmc0sIsYYucDnUr/+uX4GuwERVKhSQR8inAAAAABJRU5ErkJggg==" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">represents the change in resistance per degree centigrade change in temperature. For example, Pt100 is platinum RTD with resistance </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAIAAAA2M5tmAAAA2UlEQVRIie3VwQ2EIBAF0N/g9DFFTAlUQAPcvdMDLXCcKtgDCasjRhfcbEyWmwSeIx8Q5QsNf/SxKDNj14gohDCOllJijACcc/VRVb33ALz3s2iMcTMUAC4tV3+Qcw5AzvlOdD8/5zz1+aoKgJnXnSJCRKo6iKaUALSsU0rMfF3soyEEs5+WZbnIHaIi0lLqboMR1KREREQ0hdaU27YvQ8VatBJmET8t1qL14Ju66ptEZDPz+Cy8e03ohiCi2l8DbFzXHbz67kfX0EPQ86B+jJazu/XRf9P59gLfb5+MxTn7sQAAAABJRU5ErkJggg==" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">of 100 Ω</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;"> at </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">0<sup>o</sup>C.&nbsp; </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">For platinum</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAnUlEQVQ4jeWSvQ0DIQxGvwW9B0N4BCZggeuZxC2lS3fewCmsoCPJoShNpMQVQn48/4D4KPBfWO+diIjI3UspAACo6g5jZgCttXkGUGvd2WqtmefuZ+xBtWAikknHcUSEql6pFmyqxhh71YLhHmdzPvEuVkrJGaqqmeXla6y1lpiIEJGZzTqZ+RJz92yPmc0sIsYYucDnUr/+uX4GuwERVKhSQR8inAAAAABJRU5ErkJggg==" alt="" align="absMiddle"> <b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">= </span></b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">0.00385 and at 100 <sup>o</sup>C, Pt100 will have a resistance of</span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVgAAAAhCAIAAAATVCSqAAAFEklEQVR4nO2cPYKmLAzHuSD34BAewRNwAXp7a1tbS0s7b8BbZMflJRLCh/s4M/lVsxhi+Ivhy2eVFwTh16M+HYAgCJ9HEoEgCJIIBEGQRCAIgpdEIAiCl0QgCIKXRCAIgpdE8BDOuU+HIFTyO58dlQiMMQqhtX6DUud5bts2z/M4jlrrlNm+79ZaiNxau+97qUEF0zRZayuizVIRLacKbQNXtdZgMI7juq7YybIs0GG01tM0RVdxRwJKWs+Ssb291tqHeng2/i5SRzCVzzyJeZ4hIPjncRygYNTR/z2XRkR/2rZNKXU9VOecUmrbNr5BBfu+K6XO8yyNNktFtJwqWRuIeVmW0CDqf9BPoHCaptDh5aSiyRFZGbu09zxPpVSXIaE0/i5SY5+c2FiJYJ5nHC7H+z+ACEZrfaUwIMrEWYMKxnEkHkyLdBXRcqpkbXDMMBaFJTBA0VWIOEtJydilvd5755wxpl+8MXQiiEpKpcY+WSHRl8dxxNnxWySCZVmUUtHMal3XK+NmDSo4jgP75EQb2eDCimg5VepEwL0zatetQcpbBbcydmwvlBzH0THmEP4bVCE19sC6UTaOyBFMfT++NLhIaQopLHqW8KLCgJA1sNamugIskXA5TNWIWWV1IshGW1elwi10gGi+Cn7gXYKpdWRAtLpC51sZO7b3to0dYSaCOqnxvVghEddAoGiONAyD1vq5ZFkKMUtMzb4gg2YNvPfjOOKWHsdBv3sV0UY2uJATbUWVIrfnea7raoyJlopwCaas67o65/DiSH0BM/NoTC7V+VbGvu0lUmE72W7QIvXtvVLK/zUjXMAE6boTRPaqLOBLlltRObPiMAyhduu6DsNQGgzfwCcSQWkzmVWYbsPOlFoywLAB70+0VxrabNsG6TKSsV3nju0lLLuQfWrtUuMqKeX/3JeoDJuWId0nS4qE76GinF/ROQd9FHJwRTB8A//KRACc5wmbx8aYaDCY5xm617IsMOrioSzkdru7Uee+7aUtW3os4fyio9QRqYMGKpphGNTXivf2+OANpDTtsjS4cM7RxwF0MLQB3bfA/g1LAwD228JpM5RcJ3DneULPIXoLLG776tx9acB/sUthOu8idURK+YJeq7VuPFp7gpSm7ZuFIY8mAmyDC9+zWYhbER1oXR6yu9m4pS06921vNv4W+Fmmi9ScuyejgR3LUJ0nJgXZkZDpAZd3PD7kT1mf2yx82/FhGOR9x2LkRHx637I06NveVCps77Gp+DmWdVJj+4IZQfgB08ULJwWECl0+KCraxHru+JAZbUWV0g+K4Mu88FQPhqnw4zw8ikROon1o32lTttcHRZ86PuwiNe0TK//HLFUfbhmN/5AdoieUTVqlGasIwnn7J8alx1rPfVDEiRY77/6JMSxKo5Mj8GCMgQy47zu2ASfgdt93rXXYi7ocH/Zqr//cB0XtUqfevpTyf81wUXRYEFW7fhEBoaivHfjrrtk/uqASRGYtPzqapqn0QxfvvTGGOEWno72MU62mm1OnQNYmvAo/OcNHVlmbbdtgWwt6VDgP5+vMkbG9vf5rq+I2pBay8bdLjQUhlP9fbF2ah/8m/vjZ3P7oSPhGPPejozfTMxHgjHCbI348zrn3fIItlGKtfW534LVIIniEN/yXDUIdv/PZPZIIfu26QBC+Ka3vp2wQCMIPoOn9xNueeNMSlwiC8DbkFRUEQRKBIAiSCARB8JIIBEHw3v8HUADbdYl4k3sAAAAASUVORK5CYII="></span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<p>&nbsp;</p>
+<div style="text-align:justify"><span style="font-size:16.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#0070C0;">Measurement of RTD with Wheatstone-Bridge Circuit</span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:16.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#0070C0;">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">Mostly RTD instruments used Wheatstone bridge circuit for measurement purpose. Bridge contains RTD at one arm and other remaining three arms connected with standard resistances. Bridge is generally a resistance measuring device which converts the resistance of RTD into electrical signal.&nbsp;&nbsp; </span></div>
+<div style="text-align:justify">&nbsp;&nbsp; </div>
+<div style="text-align:justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">Here the as mention above the equation (1) may be written as</span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAABfCAIAAAB0j/JEAAAEK0lEQVR4nO2cPZKjMBBGdUHuwSE4gk7gCzh37nhSUoeEZL4BG6jWo9FP0xJtIbq+F0zhHaBbPATyVO1nNqAFc3YDQAy41ANc6gEu9QCXeoBLPcClHuBSD3CpB7jUA1zqAS71AJd6gEs9wKUe4FIPWZfjOJqIYRju97tg+TZVqmnc3uPxiMsF/Pz85A6n5uXz+TTGWGvdx3Vdb7ebMeZ2uwkOoE2Valq2Z61d1/Xz8fV6+aW3bZumaVmW3OH7Lp/P558DjDFG8sncpko1su3Rd8AwDHTpYIcAqiFrrTEmuBHEr3KbKtUItrcsC/2Q5JQmoBqKO3bdyD5e2lSpRrA952Ycx+rSO/vnfrGua1x4mqZhGPxn+kHaVCH4rCnc9vfaW5bFWuvetfM87+6fLE2TdTnPszHms2Cb53kcR/FL3KZKDl9echIItmetXZbFzWl/OZMjKM0h6/J+vwer4cfjwT8vk+NVkgt3f7YRBxIfpdpzuEnptt33nN27wZXmv1w3wuU0TZ8Xb3ItlzhX+QWtqCIFx6VUe25Sum3mhPNLM8le6EDDMAz0griONlWSdXf/ZRNqz5+Un/PQt3hcmkN67/ix/o1JI1Kl7hkbT8p4Z6mL4E9K5nn4r1Wf9GhdseDdID5p2lRJwnEp0l48Kbdte7/fhlyjJkvvknbp3s/BjeMKTNNUVICgTZUk5u8KNvgp2F48KR1uaZP7cuJKFy18tthlsHILmnYPevdOLlrjVFf5bbT8/UETt/3ZLmqPaCx5lXziKRv/Nb9gRPxdwyP/l4nvaHGCWv3QVWNHO2gzhq4umU9XjV3AZfIx2AO9NQaX9fTW2JVc9nC9fHpr7FATeFkGG+dyaB0r/j2BrtWgUCldNdZLH+A4cKkHuNQDXOoBLvUAl3qASz3ApR7gUg9wqQe41ANc6gEu9QCXeoBLPcClHuBSD3CpB7jUA1zqAS71UOmy87wsPtdK1qKpn5ed52XxuVCyFg3lkh5M53lZfMQHQly3g8laNNl2d0OiOs/L4iM7kKJwrdJkLZpsu7shUfFou8rL4iM7kKJwLdlbP/sfeumQqNPzsqSQHUhRuFZFshZN2uVuSNS5eVmCyA6kKFyrIlmLJuGSExLVJpWLCb3Ep48VHEhpuFZFshZNYqickKgT87JkERxIabhWRbIWTSKgiBMSFdzyzfKyxJEaSEW4lviaPzwXJySqTSoXn+pnrOBASsO16pK1aMK1OCck6sS8LFmkBlIRrlWXrEXzxyUzJOrEvCxZpAZSEa5Vl6xF8+uSExJVkZfVJ4IDKQ3XOpKsRXOxv7edhexF/xK999cDprO8kBxdN9cJcKkE3x9cXhu41MNVHrAbXO4Cl6q4xBeSDS41AZd6gEs9wKUe4FIPcKkHuNQDXOoBLvUAl3qASz3ApR7gUg9wqYd/2Kyux/IxMHMAAAAASUVORK5CYII="></span></div>
+<div style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">For given values of </span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAnUlEQVQ4jeWSvQ0DIQxGvwW9B0N4BCZggeuZxC2lS3fewCmsoCPJoShNpMQVQn48/4D4KPBfWO+diIjI3UspAACo6g5jZgCttXkGUGvd2WqtmefuZ+xBtWAikknHcUSEql6pFmyqxhh71YLhHmdzPvEuVkrJGaqqmeXla6y1lpiIEJGZzTqZ+RJz92yPmc0sIsYYucDnUr/+uX4GuwERVKhSQR8inAAAAABJRU5ErkJggg==" alt="" align="absMiddle"> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">and</span>&nbsp; <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAIAAAA2M5tmAAAA2UlEQVRIie3VwQ2EIBAF0N/g9DFFTAlUQAPcvdMDLXCcKtgDCasjRhfcbEyWmwSeIx8Q5QsNf/SxKDNj14gohDCOllJijACcc/VRVb33ALz3s2iMcTMUAC4tV3+Qcw5AzvlOdD8/5zz1+aoKgJnXnSJCRKo6iKaUALSsU0rMfF3soyEEs5+WZbnIHaIi0lLqboMR1KREREQ0hdaU27YvQ8VatBJmET8t1qL14Ju66ptEZDPz+Cy8e03ohiCi2l8DbFzXHbz67kfX0EPQ86B+jJazu/XRf9P59gLfb5+MxTn7sQAAAABJRU5ErkJggg==" alt="" align="absMiddle">, <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAIAAAA2M5tmAAABCElEQVRIie2UvZHFIAyEt0H1QRGUoApogNw5sVNaUEjmDnSBZnhYwLufmZt5gTeyx+bTSisb+g/CA32gP1QIAZOIKOf8d6iqllIAMLPdttZSSgBSSu+g4+MdtJRyswYAL5SHigiA8zx3UGYGICK/gNqZEMIO6s53H9v2RYSZbUa11pnYWptLxhiJqLW2hjKziFjlHsWoWiuAnnWtNYTgiDeo2bRrWx33qqrmnN0+Hccx135BzebS0dhpT2m5BjfoaNNERC4QnVIiIiLaQkebptnIPOudWSxtqup1XS5oQ7ghLs1iadNksfTdsvScL6sUY7xBrak3YmYXukPY9MfP7AN+fQ/0gX6rL/cfcMpG+ix7AAAAAElFTkSuQmCC" alt="" align="absMiddle"> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">and</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAYCAIAAAD78wNdAAAA0klEQVRIie3VMQ6EIBAF0H9B7jGH8AhzAi7AKaampbWc0s4bsMVkN26Q0c1iY/wVmsDLN4Co1weP8acRY+xO6OcHQ1UB5Jx7xuH42GBmAETkA9tHB9gxVJWZY4wASineTHddz2BmVbXPxczjDSthYyICsCzLYMNK2LiUAiClNNLYlrCEEHoLnQe+jG0Ji4gAEJExRlui1rqu68lNfMpoS1hSSu0m7gF2sNodj/o+2E4+Ff3LY5omIgoh7PcYmMuNnHN70Y00RGSe5/b9vf9Rj7GXFzlJfg59QNaMAAAAAElFTkSuQmCC" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">and hence measuring</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;"> the </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAIAAADLgysEAAABEklEQVRIie2Usc3EIAyF34LegyEYwROwAH166rRewSVdNshfWEI5HKLkdHfSL/GqRIA/P/wS7D8UJmzC/jsshAAnIso5fx6273spBQAz22utNaUEIKX0DuziWIOVUl7KAcCw5nBBVQGs6zrawMwAVPUDMKsVQhiedHWtv8fXqKrMbDMQEb+h1upbiTESUa31GYyZVdU6bRE4SkQAtOyJSAjhmnQOM1v2bBH3JXLOXe6XZbnADGFm69RBU4yxpeM0lrdgR1smIvIB69JBRET0GHa0ZfKN+1neNNdn18dh27YueFa6G9Idcy8wb8tkcWjfgKWm82EdxBhvwexyLsTMXQi70jZd/1s5d/ZtTdiETdj39QcQ35HTnWU2oQAAAABJRU5ErkJggg==" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">(With the help of Wheatstone bridge circuit) change in temperature can be found out.</span></div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div style="text-align:justify">&nbsp;</div>
+<div><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">As shown in the fig. below</span></div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: center;"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAm0AAAEsCAIAAAAehRO9AAAgAElEQVR4nO3dZ0AU1/o/8AMKSO+KaGJXFBUsqNhAUVERCwpiAY1iolESFStYrxp7jeZGrhrbFQXRtHtNkC4gmpioxF7xGpTei1LO/8VJ9s+PsizD7M7s7vfzCneHmWcR9rvnmTNnCAUAAACuiNAFAAAAKDHkKAAAAHfIUQAAAO6QowAAANwhRwEAALhDjgIAAHCHHAUAAOAOOQoAAMAdchQAAIA75CgAAAB3yFEAAADukKMAAADcIUcBAAC4Q44CAABwhxwFAADgDjkKAADAHXIUAACAO+QoAAAAd8hRAAAA7pCjAAAA3CFHAQAAuEOOAgAAcIccBQAA4A45CgAAwJ1Ic7SsrOzUqVPfADTByZMnT58+ferUqZMnT758+VLoX2oAUE1izNGysjJvb28CwB9bW1tEKQDIgxhztKCggBDi7e19F4Crx48fr1y5khAyYMCAI0eOEEJ69Ojx+vVroX+7AUDViDFHCwsLNTQ0li5dKnQhoMS+/fbbZs2a9ejR4/nz55TSU6dOEULs7OwwKgUAfok0RzU1NRcvXix0IaCszp07Rwjp2bPn06dPJQ+ePn2aNXhfvHghXGkAoGqQo6Bq2NCze/fu//vf/2o8deLECfYUGrwAwBfkKKiUM2fOEEI6d+7M2rm1ffPNN4QQe3v71NRUBdcGACoJOQqq4/z587XbubWxAWuvXr3Q4AWApkOOgopg6WhraytLz5Y1eLt161a79wsA0CjIUVAFrJ3bsWNH2YeYJ0+eJIT07t0bDV4AaArkKCi9kJAQWdq5tbH07dWrV30nUwEAGoQcBeUmaee+evWKw7ezaUddu3bFqBQAuEGOghJjvdlOnTo1ZXUFlsQ9e/ZElAIAB8hRUFb//ve/Wf49e/asibs6e/YsX7sCAHWDHAWlxEaiPXv25NbOrY2NSjt37oxRKQA0CnIUlA87qdmlSxd+M0/S4OUrmwFAHSBHQcnIdZItm/rbq1cvNHgBQEbIUVAmbCQq14s+2ai0U6dOWO0IAGSBHAWlwUK0W7du8u67spOvMi6NBABqDjkKyoHd9Uxhi+JyXtsBANQNchSUgOQu3IqcAcROxHbq1AmrHQGAFMhREDu2pryNjY3i15SXcitTAAAGOQqiJln2T6hZP2jwAoB0yFEQLzbfx97evinL/jUdWzipc+fOiFIAqA05CiJ17NgxQkiPHj3EMGmWzXJSwFRhAFA6yFEQI8mVJ8KORKtjDV5bW1ss0QAA1SFHgVJKnz59umTJklmzZs2ePdvHx8ff3//hw4dCFcNCtE+fPuIJUYY1eLt27aqYBu/79+9LS0vfv39fUFCQn59fUVGhgIMCQGMhR4FSSgsLC/fv329qanrmzJnk5OSlS5d279793r17iq8kODiYzetJS0tT/NEbxC6G6dq1qwIyPjY21snJydbWdvz48RMnTpwxY8bNmzflfVAAaCzkKPzl/PnzAwYMKCsro5QmJycTQiIjIxVcA7vExdbWVsw3XTl37hwrUt6j0oqKik2bNvXv3z8rK6ukpGThwoVt27ZNT0+X60EBoLGQo/AXDw8PX19f9vXBgwdHjhxZWFioyAIk7VwxhyjDolQBDd5PPvlk5syZ7OsDBw5YWFggRwHEBjkKlFJaUlLSp0+fgICAlJSUn376adasWY8ePVJkAWx2bq9evd68eaPI43LGZvB26dJFfg3enJycLl26nD9/nn09derUXbt2yelYAMAZchQopfTJkyfdu3efNGlSx44dZ8+eXVxcrMijHz9+nHVKleuqEskMXjmNSlNSUqytrZctW3bixImDBw/u2bNHHkcBgCZCjgKllIaFhbVp06akpCQsLKxHjx6KXAaPrVikFO3c2s6fP88avI8fP+Z952FhYe3bt9+4caOpqWlgYCDv+wcAXiBHgVJKFy9ePH78eEppRUXF0KFDd+/erZjj/utf/2L3E1WWdm5tZ8+eJYR07NiR9+XsFy9e7OzsTCk9evRov379cnNz+d0/APACOQqUUjpmzJgvvviCfX369GkbG5uMjAx5H5S1c21sbJSrnVsbm3bUvXt3HpdoYB9odu7cSSnNzMwcOHDgsWPH+No5APAIOaru7t+/7+vra2BgMHDgwOvXr1NKs7KyhgwZ4uzsnJKSkpaW9vHHH9++fZv347Kbcvft21cZ27m1hYaGsgYvL/OzqqqqUlJSOnbsGBoaWlVVRSndvXt3z549JR84Kisrm34UAOAFclTdZWVlRUREXL9+PS4u7s8//2QPvnr1KioqKikpaeXKlVeuXFmwYAG/03fZYgv29vbK286tjY1K27dv3/RR6Q8//DBixIgOHTpMmTKFLSyVmprq4uLi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W6rSVMa0tDQWouwFgsqrkaPLli1r3bo12rlQHXIUeFNaWvrtt9+Gh4dL5t1ERES0aNHC0tLyxo0bwtbGi/T0dDs7O0LI4cOHha4FFITlaGZmJqV0+fLlaOdCbchRoA8ePLhx40ZSUlJERERUVBR7y+DLzz//rKOjY2Jiouyj0szMzIEDB/Ieoq9evUpMTLxx48bVq1cjIiKePXvG486h6TZv3qyhoVFWVrZmzZqWLVtiAXqoDTmq7qqqqs6cOdOmTZsuXbr4+fl5eXlNnjw5ISGBx0NEREQYGBgodTcsLS3N0dGREPL111/zu+fo6OjevXtbWFh89NFH8+fPHzVqVEhICNY8Eo8tW7ZoamrOmTOnXbt2da46AoAcBUopnTBhwrZt29jXPXr0GDx4ML/7j46O1tXVbdWqlTI2eN+8eSPXdm5gYKCnpyf7+pNPPtHT0ysoKJDHgYAD1te1srK6f/++0LWASCFHgT579qxLly7h4eHsn46Ojv7+/rwfJSIiQltbW+nub5yVleXg4CC/EC0rK3N2dg4MDGT/XLp0qaOj47t37+RxLODgn//8p62t7cOHD4UuBMQLOQr0zJkz3bp1KykpoZSePn160qRJL168kMeBWIPXyspKWRq8T58+ZbNz5beaxP3799u2bcs+W1y/ft3V1TUuLk5OxwIAeUCOAt27d6+1tfXs2bMXL1588ODBx48fy+9YMTExurq6LVu2VIoG75EjRwghR44ckd8hrl69amFhMXXq1Dlz5uzatYvfM9MAoADIUaDe3t5eXl6hoaGmpqY//vijvA939epVbW1tIyOjmzdvyvtYTXHt2jVTU1N530V1x44d9vb2ERERHTt23LBhg1yPBQDygBxVdxkZGZ07d2b3CvX39580aZICDnr16lUDA4OWLVuKtsGbnJxsYmJiYmIiZeXVpqusrBw7dqyfnx+l9PTp07169ap+G1cAUArIUXWXkJBga2vLLlu8e/duz549IyMjFXDcuLg4fX39li1byjWouImLizM1NTU1NZV3bdnZ2b179/7+++8ppXl5eU5OTnv27JHrEQGAd8hR9VVVVfX06VN/f39ra+vExES2CJGPj8/gwYPZtJcXL148ePBAfgVERUVpaWmJrcF77do1fX39Fi1ayPtU5Z9//nn48GEjI6MTJ06wSV4HDhxo167df/7zn9LSUkpp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"></span></div>
+<p>&nbsp;</p>
+<div><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To measure the out-put voltage of signal conditioning circuit for RTD, following equations are required-</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAmCAIAAABVvN4KAAACl0lEQVR4nO2ZsdGtIBCFt0H6oAhKoAIbICenB1NDQzI78A92xuGB7FVc0OHxRfeq7Fk5LCjCPugXeDuBQUWGuz0z3O2Z4W7PDHd7ZrjbM8Pdnhnu/sAY83YK5bRzV0oJCUKIGt3HpWWtnaYpPLJt27IszjmttRCCNWt+mtaucw4AtNb413s/TRMARD34Ea11XQFg27bwoNZ6nud933HE8ObMTjY/55yUklcMe9w5908GdbrpuZbWmqj1lu6m89DBj4bRf++9MeZi47torQFgXdc0dV6h51reewDAMj3lZyjGmwpDHb9xaiEy3FN3lVJKqUrupjExxRoz80Mta206OOj46QUXU6WJ4hx/AQCHIJVkLiK7u5hKNNsrpYQQ3ntGIRYtLH3iAl53ww4nGqanjDHEAtrO3XmeAeBYyeZ5llLWsJZF64p5XO5GE+8td5dlIebndu6GyzlirSWuBxJerZz6wwsuCl1vlZ7dtg3yy007d3E5x0Xi9IH2U1oF7tLDMRftobt4MDc5t3M3CiiEqLcb8FyrTe2m1xCtiPGRPUU0YHQXn1ePvYX9QkkV1EGxVkqbp6rT6r8bkMHdh3MpNo8Wv0rly6LV5o2Iy93crZ00wLGPLMsSChdXM278RoMDbVBKRRINtELF0yBtdjPCayB4HUrb0nlefarKTYPFtRs9vkb9K4TA4zik0vuspBXGzwlJKdOdyNP+OY1wMf80ApwVdE6o5I3oRYpLtlgop3j6FeFrlOxmvEgbd4laCTHG1Ngl5aJwJ/JFPuXu/uGv9+u6CiHufUV4ncbuNlsI2NFaE1WLfOvevrPo9sGH7o14/qwn10brLTq/vf+c4W7PDHd7ZrjbM8Pdnhnu9sxwt2eGuz0z3O2ZP8jgR5UwXv9IAAAAAElFTkSuQmCC"></div>
+<div>&nbsp;</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAIAAABl4DQWAAAA3klEQVRIie3UsQ3EIAwF0L+g9/AQHoEJWIA+PTuwAqWn4Aqf0B2JCJcQXYOLSEHhYRnHKE8Glr70WTozYxdEFEKYoJdSYowAnHP2qqreewDe+2l6jPFrAwCM1rP3nXMOQM75EX0P5ZznVEZVATDz56KIEJGq3tVTSgBqh6SUmPknuqeHEJp23LZt3D3RRaRe6WHz3NKbKyUiIpqjW2/U/6hcTf9YN6sp9IX0j3UbMk2mdqSIvHfu4lxvWqVaNX1bt9LVY+pzKPfx6E+FpT+in47i63qnESfoQxks/S/6C5kMtpFc0RtnAAAAAElFTkSuQmCC" alt="" align="absMiddle"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is the resistance of platinum, </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAIAAAA2M5tmAAAA2UlEQVRIie3VwQ2EIBAF0N/g9DFFTAlUQAPcvdMDLXCcKtgDCasjRhfcbEyWmwSeIx8Q5QsNf/SxKDNj14gohDCOllJijACcc/VRVb33ALz3s2iMcTMUAC4tV3+Qcw5AzvlOdD8/5zz1+aoKgJnXnSJCRKo6iKaUALSsU0rMfF3soyEEs5+WZbnIHaIi0lLqboMR1KREREQ0hdaU27YvQ8VatBJmET8t1qL14Ju66ptEZDPz+Cy8e03ohiCi2l8DbFzXHbz67kfX0EPQ86B+jJazu/XRf9P59gLfb5+MxTn7sQAAAABJRU5ErkJggg==" alt="" align="absMiddle"> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is the resistance at 0 <sup>o</sup>C, </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAIAAAAP9fodAAAAnUlEQVQ4jeWSvQ0DIQxGvwW9B0N4BCZggeuZxC2lS3fewCmsoCPJoShNpMQVQn48/4D4KPBfWO+diIjI3UspAACo6g5jZgCttXkGUGvd2WqtmefuZ+xBtWAikknHcUSEql6pFmyqxhh71YLhHmdzPvEuVkrJGaqqmeXla6y1lpiIEJGZzTqZ+RJz92yPmc0sIsYYucDnUr/+uX4GuwERVKhSQR8inAAAAABJRU5ErkJggg==" alt="" align="absMiddle"> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">is the temperature coefficient of platinum wire and&nbsp;</span><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAAmUlEQVQ4je3SsQ0DIQwF0L8gezCER/Ae7uld09JSuvQUSYGE0IlAuCuT3xl4sjDg9SD442c4pYRdcs5zzMzu3staKwBm7itEZGZzHEIYS1UFoKrTA5s7MzOA3uqSDW6X/Li7kO4OIMZ4B5dSAIjIHSwi48OcYSJaTGuD19NaYTO7fI8D3L5HSukOjjGupzXHjY057vxNfhG/AUxCX8ZTlkAbAAAAAElFTkSuQmCC" alt="" align="absMiddle"> </span></i><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">is the temperature.</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<h1><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black">&nbsp;2<big>. <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">Bridge output </span><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAIAAADiA+PYAAAAx0lEQVRIie3UsQ3EIAwF0L8gezCMJ2ABpqCm9Qou6bIBV7ghITGg00U6iV8Rijx9YoL6VrClLW1pS1va0t9LIYTHFzW53VyQRARAztnAjM0FiYgAeO/npVO/SUZEiCiEAICZZ6Tr46RERCKiB0hEv5K0kK699wBKKUvMrKSFdM3MAGKMhnQ/GkOmLaRxzhkf/2mex1JbSJNSApBS6iXj2gykvlCt9TiOftyHF3Qg9YU0McbLuNuMiFiSzrSRtq7VZvVv9GXekz5zuOxjFWbxswAAAABJRU5ErkJggg=="> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAABaCAIAAAB7fy77AAADpklEQVR4nO2aPXbiMBRGtcHsg0WwBFaQDaSnp07LFijdZQdOwZw5DrZ+bOnpfcb3VjNE6H16ughBEkYAY4J3AHh/kAzMQTIwB8nAHCQDc5AMzEEyMAfJwBwkA3OQDMxBMjAHycAcJANzkAzMQTIwB8nAnPeULMzwTtQD2WWKxqrnxa33Vk38tSQaq55505W3YRvTFSmvTjRWJYuvbOVt2AaSeRIzTHYb6lFenWisSpBMCtFYlcw/Xcacy47cC8rJRWNVkr2pxAYob1Ua5eSisSrJeoNkPRGNVUm5N8p7swrlhajEangfit3ACgfvlNiBrbA6gQRNb9xrey2yDfUor9G/vw1bEPM14bH7BlQSIiwOc0k4ukvW8AyrCeBVvSeOK3U9RTGsL8eVzDeAY/X+JBp+Op1i77z3+722buXztxd2PcbSN5g3JrHY6/UaQvj8/Jw+eD6fH49HbdHK528vfLwNViDR89vtFkL4/v6ePvjx8dGgaP0UW6pimBOJtl8ulxBC/bm1ULT5jEVVkcyJROftdkROstj1cy9kl9xttlWdH4YhhHC5XJ7//fn5OZ1O+Y0sA8kak11yt9lWdf5+v788/Xq9lm1mnlLJtvUiO9vaJ0Ilsc5/fX2FybcVIYRhGJoVbTXRuqoY5kRMsvP53FasP0UtJs1X5SRzItZ50+3g7fJYLHb+8XiEya2/fVGjeTNVkcyJxc4/v4ad3/SbfBM7ItnRWGz78xeXL5INw9DqbOPXSsfipefPD5UxWn2LgWTHwqXhh/5TnwOCZAs/rfwYWxOsf93NFOb0WojEn18X/rTJlhduxnSYrGqxu1RicOeE/0q7VP2TYE1f+khmVLo5c6tiIX3D+3ct8RL0kqwwjCCayaW7piOZ7DvmC5oh5QJNSd825j9dHJkelnjpp8cIIhtSNNZY8BFv+mDs34vzrJXMbIktUY4qGmuMuPIyIDG4cNrYmOz4qdPp2TqgbNi4a8kSg8unjY3Jji90ugP6J65ossVzq49ki3InDtFV1Zujb9i4O8lih0p5lzfIKitZiNA/SRq5QGP8m7NYE1tJlq37/3EkW4VcoA3076yIZHth961x2WAkW8XuW+MlWZh9OOicYUfsuzVeFxH9a5AUdAfMQTIwB8nAHCQDc5AMzEEyMAfJwBwkA3OQDMxBMjAHycAcJANzkAzMQTIwB8nAHCQDc5AMzEEyMAfJwBwkA3OQDMxBMjAHycAcJANzkAzMQTIw5xe0pCgpEalG0QAAAABJRU5ErkJggg==" alt="" align="absMiddle"></big></span></h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">Here</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAIAAABl4DQWAAAA3klEQVRIie3UsQ3EIAwF0L+g9/AQHoEJWIA+PTuwAqWn4Aqf0B2JCJcQXYOLSEHhYRnHKE8Glr70WTozYxdEFEKYoJdSYowAnHP2qqreewDe+2l6jPFrAwCM1rP3nXMOQM75EX0P5ZznVEZVATDz56KIEJGq3tVTSgBqh6SUmPknuqeHEJp23LZt3D3RRaRe6WHz3NKbKyUiIpqjW2/U/6hcTf9YN6sp9IX0j3UbMk2mdqSIvHfu4lxvWqVaNX1bt9LVY+pzKPfx6E+FpT+in47i63qnESfoQxks/S/6C5kMtpFc0RtnAAAAAElFTkSuQmCC" alt="" align="absMiddle"> <i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black;">is</span></i><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;"> the resistance of platinum wire and </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAIAAAA2M5tmAAAA2UlEQVRIie3VwQ2EIBAF0N/g9DFFTAlUQAPcvdMDLXCcKtgDCasjRhfcbEyWmwSeIx8Q5QsNf/SxKDNj14gohDCOllJijACcc/VRVb33ALz3s2iMcTMUAC4tV3+Qcw5AzvlOdD8/5zz1+aoKgJnXnSJCRKo6iKaUALSsU0rMfF3soyEEs5+WZbnIHaIi0lLqboMR1KREREQ0hdaU27YvQ8VatBJmET8t1qL14Ju66ptEZDPz+Cy8e03ohiCi2l8DbFzXHbz67kfX0EPQ86B+jJazu/XRf9P59gLfb5+MxTn7sQAAAABJRU5ErkJggg==" alt="" align="absMiddle"> <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">are the standard resistances and </span></p>
+<p><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">&nbsp;&nbsp;&nbsp; <i>E</i><b><sub> &nbsp;</sub></b>is the input voltage applied to the bridge.</span></p>
+<p>&nbsp;</p>
+<h1><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;
+color:black">&nbsp;<big>3</big></span>. <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;Lucida Bright&quot;;color:black;">Differential amplifier output </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAAjCAIAAAAPASOuAAACQElEQVRoge2XvcHjIAyGtaD38BCMwARegJ6empbWpUp3bOArdEeIAAWc5PvJ8VSJjQW8ll5kOCd9wHcv4NcwleplKtXLVKqXqVQvU6le/ioFGVprNmjbtnT3y1f4erz3FzZye2BZFgDY9706zlprjLm+uh9DjJF2ehzH0IM3pShxQgjlIERUSj27xqts29a6lZeCfDGPppRq7VTgFotyspo4WuvRN/AqEBEAvPetAVU5WsW177sxRtipwC3icRwAsK4rGxFCsNYOBX0hWuvqqhKlKIIHURxSf7RK7oJWM1ZY5btBRK21YAtnoYsgk7U2BblwOt2NpheYm7pzTsj8d6O1RkRKgfJEJjqVItHTX7IqROxfzF1c5xwApFqLMT5j5CDy8PF8b+u6Vk+r/oRSSsUY019jjGx/le2wxeVvj15pf6zXks8eQqh6MDvyWqGcc865/MoFU6/YIU2JiMLx/G5YsZz/2j02LF0RZEoNVMlQxfAJUgGzdL3AM9VXpjM5A0sNiiNHa1XGqKnzodZaAFiWha3pKykT6jzPGGPZLjzU3XvfanFGTZ3PQY7wjZ3B2c4CsuG8XZBlkj8tKFrVYagvYR92fBp6da2vv4eMNikldKoI5OkmTCdUOpuiTAs6apn5jH9S1+wm+UWnDf1wYoylfIN9aiFN9fpvxxhT2vSI+RfNy0cqBVnvfXd9KAT7nRddOebDuKLUfyjTOaoU06Uq1qfq9Zm7egdTqV6mUr1MpXqZSvUyleplKtXLVKqXPwGmCG/jywtrAAAAAElFTkSuQmCC" alt="" align="absMiddle" height="35" width="99">&nbsp; &nbsp; <!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="--" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--></h1>
+<p><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0in 5.4pt 0in 5.4pt;
+mso-para-margin:0in;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--></p>
+<p style="margin-top:12.0pt;margin-right:0in;margin-bottom:
+10.0pt;margin-left:21.0pt;text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Lucida Bright&quot;;mso-bidi-font-family:&quot;Lucida Bright&quot;;
+color:black"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span></span></span><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Lucida Bright&quot;;color:black">where</span></i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Lucida Bright&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Lucida Bright&quot;;color:black"> <i style="mso-bidi-font-style:
+normal">A </i>is voltage gain of a differential amplifier.<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

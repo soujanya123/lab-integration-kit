@@ -1,0 +1,242 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Estimation Of Pitch From Speech Signals (Theory) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To develop methods for the estimation of speech." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Estimation Of Pitch From Speech Signals</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Estimation Of Pitch From Speech Signals</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=1848"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=1012&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=2035"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=1849"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=2991"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=1012&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1><span style="color: rgb(51, 102, 255);">Theory</span></h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Speech  signal can be classified into voiced, unvoiced and silence regions. The  near periodic vibration of vocal folds is excitation for the production  of voiced speech. The random ...like excitation is present for unvoiced  speech. There is noexcitation during silence region. Majority of speech  regions are voiced in nature that includevowels,....., semivowels and  other voiced components. The voiced regions looks like a near periodic  signal in the time domain representation. In a short term .., we may  treat the voiced speech segments to be periodic for all practical  analysis and processing. The periodicity associated with such segmentsis  defined is &#039;pitch period T<sub>o</sub>&#039; in the time domain and &#039;Pitch frequency or Fundamental Frequency F<sub>o</sub>&#039; in the frequency domain. Unless specified, the term &#039;pitch&#039; refers to the fundamental frequency &#039; F<sub>o</sub>&#039;.  Pitch is an important attribute of voiced speech. It contains  speaker-specific information. It is also needed for speech coding task.  Thus estimation of pitch is one of the important issue in speech  processing.</p>
+<p>&nbsp;</p>
+<p>There are a large set of methods that have  been developed in the speech processing area for the estimation of  pitch. Among them the three mostly used methods include, autocorrelation  of speech, cepstrum pitch determination and single inverse ....  technique (SIFT) pitch estimation. One success of these methods is due  to the involvment of simple steps for theestimation of pitch. Even  though autocorrelation method is of theoritical interest, it produce a  frame work for SIFT methods.</p>
+<p><span style="color: rgb(51, 102, 255);"><br>
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Pitch estimation by Autocorrelation method</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch_new/Fig1_voiced_autocorr.png"></p>
+<p style="text-align: center;">Fig.1</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The information about pitch period &#039;T<sub>o</sub>&#039;<sub> </sub>is  more pronounced in the autocorrelation sequence of voiced speech  compared to the speech segment itsely. Fig 1 shows a 30 msec segment of  voiced speech and its autocorrelation sequence. Since autocorrelation  sequence is symmetric with respect to zero lag, only postiove lag values  are shown in the figure. The &#039;T<sub>o</sub>&#039; information is more  pronounced in the autocorrelation sequence compared to speech. By that  we mean, the second largest peak is the autocorrelation sequence,  represents T<sub>o </sub>and<sub> <br>
+</sub>can be picked up easily by a simple peak picking algorithm compared to finding &#039;T<sub>o</sub>&#039;  from the speech segment itself. Hence autocorrelation method is  preferred over other direct methods of pitch estimation from speech.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch_new/Fig2_unvoiced_autocorr.png"></p>
+<p style="text-align: center;">Fig.2</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch_new/Fig3.png"></p>
+<p style="text-align: center;">Fig.3</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Fig  2 shows a 30 msec segment of unvoiced speech and its autocorrelation  sequence. There is no prominent peak as in the case of voiced speech.  This is the fundamental distinction between voiced and unvoiced speech.  Further, human speech pitch is typically in the range 100-400 H<sub>z</sub>  and accordingly the pitch in the range 2.5-10 msec. Therefore for the  estimation of pitch the largest peak in the partial autocorrelation  sequence starting from 2.5 msec lag is ..... out and its distance with  respect to zero lag is measured as pitch peak &#039;T<sub>o </sub>&#039;. This is illustrated in Fig 3. Once we know T<sub>o </sub>, then pitch can be computed as ..... , where F<sub>s </sub> isthe sampling frequency of the speech signal and &#039;T<sub>o </sub>&#039; is pitch period in samples.</p>
+<p>&nbsp;</p>
+<p>For instance, if T<sub>o </sub> = 10 msec, F<sub>s</sub>&nbsp; = 8000 H<sub>z</sub> , then T<sub>0</sub> in samples= 10*8=80. F<sub>0</sub> = 8000/80 = 100 H<sub>z&nbsp; <br>
+</sub></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);">Cepstrum Pitch Determination</span></h2>
+<p>&nbsp;</p>
+<p>The  main limitation of pitch estimation by the auto correlation of speech  is that there may be peaks larger than the peak corresponding to the  pitch period T<sub>0</sub> due to the .... of the vocal tract, As a  result there may be picking of .... peaks and hence wrong estimation of  pitch. The approach to minimize such errors is to separate the vocal  tract and excitation source related information in the speech signal and  there use the source information for pitch estimation. The ceptral  analysis of speech provides such an approach.</p>
+<p>&nbsp;</p>
+<p>The  ceptrum of speech is defined as the inverse Fourier transform of the log  magnitude spectrum. The cepstrum projects all the slowly varying  components in log magnitude spectrum to the low frequency region and  fast varying components to the high frequency regions. In the log  magnitude spectrum, the slowly varying components represent the envolope  corresponds to the vocal tract and the fast varying components to the  excitation source. As a result the vocal tract and excitation source  components get represented naturally in the spectrum of speech.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch_new/Fig4_voiced_cepstrum%282%29.png"></p>
+<p style="text-align: center;">Fg.4</p>
+<p>&nbsp;</p>
+<p>Fig.  4 shows a 30 msec segment of voiced speech, its log magnitude spectrum  and ceptrum. The initial few values in the cepstrum typically 13-15  cepstral values represent the vocal tract information. The large peak  present after these initial values represent the excitation information.  In particular, the pitch period T<sub>0</sub> starting from the zeroth  value in number of samples. As a result the peaks that may be occuring  in case of autocorrelation analysis get naturally eliminatedin cepstrum  pitch determination. Hence the merit of the cepstrum method.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch_new/Fig5_unvoiced_cepstrum.png"></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">Fig.5</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Fig.  5 shows a 30 msec segment of unvoiced speech, its log magnitude  spectrum and cepstrum. The initial 13-15 values represent the vocal  tract information and later ... about the excitation source. By  comparing Fig 4 and Fig. 5 it may be observed that there is no prominent  peak in case of ceptrum of unvoiced speech after the 13-15 initial  cepstral values. This is the main distinction between cepstrum of voiced  and unvoiced speech. This observation also ... a method for cepstrum  pitch determination. For the estimation of pitch, the target peak in the  cepstral sequence after initial 2 msec&nbsp; .....16 cepstral values, gives  the estimation of pitch period in case of voiced speech. This is  illustrated in Fig. 6.</p>
+<p>&nbsp;</p>
+<p style="text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig6.png"></p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; "><img alt="" height="0" width="0" src="/userfiles/7/image/vsspl/proc_mod/Fig6_unvoiced_cepstrum.png"></p>
+<p style="text-align: center; ">&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>The largest peak location in samples gives T<sub>0</sub> and thus pitch is computed as F<sub>0</sub>= F<sub>s</sub> / T<sub>0</sub>.  By computing Figs. 6 and Fig. 8, it can be further observe that, the  cepstral approach does not have large peaks as in the autocorrelation  case that may interfere with the estimation of pitch</p>
+<p style="text-align: center;">&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><span style="background-color: rgb(255, 255, 255);">Pitch estimation by SIFT method:</span></span></h2>
+<p>&nbsp;</p>
+<p>The  SIFT method is yet another mostly used pitched estimation method. This  is based on the linear prediction (LP) analysis of speech. The SIFT in  turn employs the autocorrelation method for the estimation of pitch.  However, the main discussion is, it performs autocorrelation of the LP  residual than speech directly. For the optimal LP ..., more of the vocal  tract information is modeled by the LP coefficients and hence the LP  residual mostly contains the excitation source information. The  autocorrelation of LP residual will therefore have unambiguous peaks  representing the pitch period &#039;T<sub>0</sub>&#039; information.</p>
+<p style="text-align: center;">&nbsp;<img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/Fig7_voiced_lpresidual.png"></p>
+<p style="text-align: center;">Fig.7</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;<img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/Fig8_unvoiced_lpresidual.png"></p>
+<p>&nbsp;</p>
+<p style="text-align: center; ">Fig.8</p>
+<p style="text-align: center; ">&nbsp;</p>
+<p style="text-align: center; ">&nbsp;</p>
+<p style="text-align: center; ">&nbsp;</p>
+<p style="text-align: center; "><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/pitch%20proc%20new/Fig9.png"></p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; ">&nbsp;</p>
+<p class="MsoNormal" style="margin-top: 0cm; margin-right: -9pt; margin-bottom: 0pt; margin-left: 0cm; text-align: center; ">Figure.9</p>
+<p style="text-align: center; ">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>In  case of LP analysis, the vocal tract information is modelled in terms  of LP coefficient (LPC) as a process of the prediction of current sample  of a combination of ... &#039;p&#039; samples. The ... LPCs represents the  coefficients of the LP filter . The LP filter is the representation of  vocal tract. The corresponding inverse filter can be constructed using  the inverse property. By passing the speech signal through the inverse  filter results in the LP residual as the output. Fig. 7 shows a 30 msec  segment of voiced speech, its LP residual and the autocorrelation of the  LP residual. As can be observed, there is a prominent peak at the pitch  period &#039;T<sub>0</sub>&#039; and there are no other peaks that interfere with its peak. This is the merit of SIFT over autocorrelation of speech.</p>
+<p>&nbsp;Fig.  8 shows 30 msec segment of unvoiced speech, its LP residual and the  autocorrelation of the LP residual. There is no prominent peak as in the  case of voiced speech shown in Fig. 7 . Thus, a single peak picking can  be employed for the estimation of pitch period &#039;T<sub>0</sub>&#039; as illustrated in Fig. 8 . Once &#039;T<sub>0</sub>&#039; is known, then F<sub>0</sub> = F<sub>s</sub>/ T<sub>0</sub> , where both F<sub>s </sub> and T<sub>0</sub> in samples.</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(51, 102, 255);"><br>
+</span></h2>
+<h2><span style="color: rgb(51, 102, 255);">Comparision of Pitch estimation methods:</span></h2>
+<p>&nbsp;</p>
+<p style="text-align: center; ">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: rgb(51, 102, 255);"><img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/Fig10_all.png"></span></p>
+<p style="text-align: center;">&nbsp;Fig.10</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Fig.  10 shows a 30 msec segment of voiced samples. Its autocorrelation  sequence, cepstral sequence and autocorrelation sequence by the SIFT  method. All the methods show a peak at the pitch period &#039;T<sub>0</sub>&#039;.  Cepstral and the SIFT method sequences have less ambiguity compared to  autocorrelation of speech. Hence either cepstrum or SIFT method is  equally preferable for the estimation of pitch. In case of speech  coding, the mostly used are in LP analysis and hence SIFT method is  prefered over Cepstrum pitch estimation. Alternatively, in tasks like  speaker recognition, since cepstral analysis is used for the feature  extraction tasks, ceptrum pitch estimation may be employed.</p>
+<p style="text-align: center;">&nbsp;<img alt="" height="401" width="800" src="/userfiles/7/image/vsspl/ptch%20estmtn/Fig11_pitch_all3.png"></p>
+<p style="text-align: center;">Fig.11</p>
+<p>&nbsp;</p>
+<p>Apart  from the avarage pitch value, the other interse is in plotting time  varying pitch values resulting in pitch contour information. Fig. 11  shows a speech signal, its pitch contour by autocorrelation of speech,  cepstrum and SIFT methods. The random values in the pitch contours  compared to the unvoiced and silence regions. The random values in the  unvoiced and silence regions. The continuous segments correspond to the  voiced regions. Most of the random values can be eliminated by the  voiced/ unvoiced classification. In name of the voiced regions, the  autocorrelation of speech has same random values due to the sp... peak  picking.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

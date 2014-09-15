@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Short-Term Frequency Domain Processing of Speech (Post Quiz) : Speech Signal Processing Laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="To understand the limitation of DTFT for the spectral analysis of speech" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=164">Speech Signal Processing Laboratory</a>-><a href="">Short-Term Frequency Domain Processing of Speech</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Short-Term Frequency Domain Processing of Speech</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=164&sim=908&cnt=1676"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Aim&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2878"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Pre Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2034"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulation&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=164&sim=908&cnt=2905"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Post Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=2988"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=164&sim=908&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divQuiz" ><div id="displayQuiz" ><form name="form11" id="form11" method="post"><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">1)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The log magnitude spectrum as compared to linear magnitude spectrum has better visibility of</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12770" style="vertical-align:middle" type="radio" name="ans0"  value="12770"> </input><label for="ans12770" id="textAnsChoice">High frequency components</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12771" style="vertical-align:middle" type="radio" name="ans0"  value="12771"> </input><label for="ans12771" id="textAnsChoice">Low frequency components</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12772" style="vertical-align:middle" type="radio" name="ans0"  value="12772"> </input><label for="ans12772" id="textAnsChoice">Mid frequency components</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12773" style="vertical-align:middle" type="radio" name="ans0"  value="12773"> </input><label for="ans12773" id="textAnsChoice">None of the above</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint10" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">2)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">As plotted in figure 1, the limitating of DTFT of speech signal is</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12774" style="vertical-align:middle" type="radio" name="ans1"  value="12774"> </input><label for="ans12774" id="textAnsChoice">Only high frequency components are visible</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12775" style="vertical-align:middle" type="radio" name="ans1"  value="12775"> </input><label for="ans12775" id="textAnsChoice">Only low frequency components are visible</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12776" style="vertical-align:middle" type="radio" name="ans1"  value="12776"> </input><label for="ans12776" id="textAnsChoice">Timing information is missing</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12777" style="vertical-align:middle" type="radio" name="ans1"  value="12777"> </input><label for="ans12777" id="textAnsChoice">Presence of two sided spectrum</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint11" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">3)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">As plotted in Figure 2, the spectrum of voiced and unvoiced segments differ in</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12778" type="radio" name="ans2"  value="12778"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12778">Trend in the spectrum</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12779" type="radio" name="ans2"  value="12779"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12779">Presence and absence of pitch & harmonics structure</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12780" type="radio" name="ans2"  value="12780"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12780">Both first and second choices</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12781" type="radio" name="ans2"  value="12781"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12781">Only second choice</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint12" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">4)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The STFT of the speech signal in Figure 3, has hilly structures at different frequencies across time indicating</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12782" style="vertical-align:middle" type="radio" name="ans3"  value="12782"> </input><label for="ans12782" id="textAnsChoice">Time varying nature of spectral information</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12783" style="vertical-align:middle" type="radio" name="ans3"  value="12783"> </input><label for="ans12783" id="textAnsChoice">Time invariant nature of spectral information</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12784" style="vertical-align:middle" type="radio" name="ans3"  value="12784"> </input><label for="ans12784" id="textAnsChoice">Time varying amplitude in the speech signal</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12785" style="vertical-align:middle" type="radio" name="ans3"  value="12785"> </input><label for="ans12785" id="textAnsChoice">High frequency regions in the speech signal</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint13" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">5)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">Compared to true spectrum, the convolved spectrum observed in Figure 4, is different in term of</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12794" type="radio" name="ans4"  value="12794"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12794">Reduction of spectral amplitude in the main lobe</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12795" type="radio" name="ans4"  value="12795"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12795">Leakage of spectral amplitude into the side lobes</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12796" type="radio" name="ans4"  value="12796"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12796">Both first and second choices</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12797" type="radio" name="ans4"  value="12797"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12797">Only second choice</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint14" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">6)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">As given in Figure 5, compared to rectangular,hamming and hanning window functions have</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12798" style="vertical-align:middle" type="radio" name="ans5"  value="12798"> </input><label for="ans12798" id="textAnsChoice">Reduced main lobe amplitude</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12799" style="vertical-align:middle" type="radio" name="ans5"  value="12799"> </input><label for="ans12799" id="textAnsChoice">Increased main lobe width</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12800" style="vertical-align:middle" type="radio" name="ans5"  value="12800"> </input><label for="ans12800" id="textAnsChoice">Increased peak to side lobe ratio</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12801" style="vertical-align:middle" type="radio" name="ans5"  value="12801"> </input><label for="ans12801" id="textAnsChoice">All of the above</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint15" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">7)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">While performing spectral analysis of speech using window functions ,</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12830" type="radio" name="ans6"  value="12830"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12830">Speech is applied with window function and then spectrum is computed</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12831" type="radio" name="ans6"  value="12831"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12831">Spectrum is computed and then window function is applied</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12832" type="radio" name="ans6"  value="12832"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12832">Window function is applied while observing a particular frequency component</label></td></tr><tr><td align="right" width="32px" id="textAnsChoice" style="vertical-align:middle"><input id="ans12833" type="radio" name="ans6"  value="12833"> </input></td><td id="textAnsChoice" style="padding-left:3px;"><label for="ans12833">Independent of window function</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint16" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">8)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">The difference in the short term spectra of voiced and unvoiced segments for different windowing functions is</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12834" style="vertical-align:middle" type="radio" name="ans7"  value="12834"> </input><label for="ans12834" id="textAnsChoice">Size of window</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12835" style="vertical-align:middle" type="radio" name="ans7"  value="12835"> </input><label for="ans12835" id="textAnsChoice">Type of window</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12836" style="vertical-align:middle" type="radio" name="ans7"  value="12836"> </input><label for="ans12836" id="textAnsChoice">Both size & type of window</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12837" style="vertical-align:middle" type="radio" name="ans7"  value="12837"> </input><label for="ans12837" id="textAnsChoice">Under enhance of window functions</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint17" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><table border="0" style="width:100%" ><tr><td width="2%" valign="top"></td><td width="5%" style="width:1%;vertical-align:top;" ><b><span id="questionNum">9)</span></b></td><td width="70%" style="vertical-align:top;" colspan="2"><span id="question">As given in Figure 8, the increase in the size of the window functions increases</span></td><td colspan="3" width="3%">&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td width="80%" colspan="5" ><table border="0" width="100%" align="left"><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12846" style="vertical-align:middle" type="radio" name="ans8"  value="12846"> </input><label for="ans12846" id="textAnsChoice">Spectral resolution</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12847" style="vertical-align:middle" type="radio" name="ans8"  value="12847"> </input><label for="ans12847" id="textAnsChoice">Looses timing information</label></td></tr><tr><td id="textAnsChoice" style="padding-left:20px;" align='left' width='50%'><input id="ans12848" style="vertical-align:middle" type="radio" name="ans8"  value="12848"> </input><label for="ans12848" id="textAnsChoice">Smoothing of the spectral information</label></td><td id="textAnsChoice" style="padding-left:20px;" align='left' ><input id="ans12849" style="vertical-align:middle" type="radio" name="ans8"  value="12849"> </input><label for="ans12849" id="textAnsChoice">All of the above</label></td></tr></table></td></tr> </table><div id="hint"><div id="textHint18" style="padding-left:50px; color:#F00;"></div></div><hr id="horizontalLine" /><input type="hidden" align="middle" id="loadTime" name="loadTime" value=1383132185/><br /><div style="padding-left:40px;"><input type="submit" name="submit1" id="submit1" value="&nbsp;Submit&nbsp;" style="width:8%;" onclick="get_radio_value();"  />&nbsp;&nbsp;<input type="reset" name="cancel1" id="cancel1" value="&nbsp;Cancel&nbsp;" style="width:8%;"  /></div></form><br /></div><br /></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,460 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Simple Inverted Pendulum System (Procedure) : Systems, communication and control laboratory : Electronics & Communications : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Control of inverted pendulum" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=59">Electronics & Communications</a>-><a href="?sub=59&brch=163">Systems, communication and control laboratory</a>-><a href="">Simple Inverted Pendulum System</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Simple Inverted Pendulum System</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class=""><a href="?sub=59&brch=163&sim=612&cnt=1086"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_99.png" alt=""/></div><div id="tab_name" >Introduction&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=612&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class="current"><a href="?sub=59&brch=163&sim=612&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=612&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=612&cnt=2403"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >QUIZ&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=612&cnt=2388"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_993.png" alt=""/></div><div id="tab_name" >Slot Booking Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=59&brch=163&sim=612&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><h1 class="title">Modeling</h1>
+<p style="text-align: center;"><span style="font-size: small;">Click the  RUN button and observe the graphs in the table below.</span></p>
+<p>&nbsp;<span style="font-size: small;">For this  example‚ let’s assume that</span><br>
+<span style="font-size: small;">  M,mass of the cart =0.5 kg</span><br>
+<span style="font-size: small;">  m,mass of the pendulum =0.5 kg</span><br>
+<span style="font-size: small;">  b, friction of the cart =0.1 N/m/sec</span><br>
+<span style="font-size: small;"> l, length to pendulum center of mass=0.3 m</span><br>
+<span style="font-size: small;"> I,inertia of the pendulum =0.006 kg*m<sup>2</sup></span><br>
+<span style="font-size: small;"> F=force applied to the cart</span><br>
+<span style="font-size: small;"> x=cart position coordinate</span><br>
+<span style="font-size: small;"> Θ=pendulum angle from the vertical</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;">The  linear state space equation can be represented as follows:</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/z.gif" alt="" width="406" height="188"></span></p>
+<p style="text-align: left;"><span style="font-size: small;">After solving the value of these  equations, the state space model gives the impulse response graph as  shown below.</span></p>
+<table width="200" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><img src="/userfiles/7/image/ece2/x.jpg" alt="" width="385" height="400"></td>
+            <td>&nbsp;</td>
+            <td><img src="/userfiles/7/image/ece2/c.jpg" alt="" width="382" height="400"></td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: left;">&nbsp;</p>
+<table style="width: 769px; height: 28px;" border="0">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: small;">Impulse  response of the pendulum.</span></td>
+            <td style="text-align: center;"><span style="font-size: small;">Impulse  Response of the system</span></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;<span style="font-size: small;">The  impulse response graph clearly shows that the system is unstable in open  loop.</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<h1 class="title">PID Controller</h1>
+<p style="text-align: center;"><span style="font-size: small;">Click the RUN button and follow the steps mentioned below.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><br>
+</span></p>
+<p><span style="font-size: small;"><em>The Manual Tuning technique is  used to derive the best tuning parameters to obtain stability for the  system.</em>The design criteria (with the pendulum receiving a 1N  impulse force from the cart) are:</span></p>
+<p><br>
+<span style="font-size: small;"> <img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Settling time of less than 5 seconds.</span><br>
+<span style="font-size: small;"> <img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Pendulum should not move more than 0.05  radians away from the vertical.</span></p>
+<p><span style="font-size: small;"><br>
+</span></p>
+<p><span style="font-size: small;">1. Setting k<sub>p</sub>=1, k<sub>d</sub>  =1and k <sub>i </sub>=1  the following velocity response plot is  obtained from the impulse disturbance.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/v.jpg" alt=""></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Impulse  response of the pendulum with   k<sub>p</sub>=1, k<sub>d</sub> =1and k <sub>i  </sub>=1</span></p>
+<p>&nbsp;<span style="font-size: small;">This response is  still not stable</span></p>
+<p><span style="font-size: small;"> 2. So Increasing the proportional  control oo the system and setting k<sub>p</sub>=100, k<sub>d</sub> =1and  k <sub>i </sub>=1 the following velocity response plot is obtained.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/21.jpg" alt="" width="470" height="301"></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;" class="style1">Impulse response of the pendulum with   k<sub>p</sub>=100, k<sub>d</sub>  =1and k <sub>i </sub>=1</span></p>
+<p>&nbsp;<span class="style1">&nbsp;</span><span style="font-size: small;">3.The   settling time is acceptable at about 2 seconds. Since the steady-state   error has already been reduced to zero, no more integral control is   needed. The integral gain constant can be removed to observe that the   small integral control is needed. The overshoot is too high. To   alleviate this problem, increase the  k<sub>d</sub> variable. With k<sub>d</sub>=20,a  satisfactory result is obtained and the following velocity response  plot is observed:</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/b.jpg" alt=""></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Impulse response of the stable system  (pendulum) with k<sub>p</sub>=100, k<sub>d</sub> =20and k <sub>i </sub>=1</span></p>
+<div style="text-align: center;"><span style="font-size: small;"><br>
+</span></div>
+<div style="text-align: justify;"><span style="font-size: small;">As it  is seen, the overshoot has been reduced so that the pendulum does not  move more than 0.05 radians away from the vertical.</span></div>
+<div style="text-align: justify;"><span style="font-size: small;"><br>
+</span></div>
+<p style="text-align: justify;">&nbsp;<span style="font-size: small;"><br>
+</span></p>
+<h1 class="title">Using State Space  Method</h1>
+<div class="entry">
+<p>&nbsp;<span style="font-size: small;">Click the RUN Continously button and  follow the steps mentioned below.</span></p>
+</div>
+<p style="text-align: center;"><img src="/userfiles/7/image/ece2/n.jpg" alt="" width="164" height="112"></p>
+<p style="text-align: justify;"><span style="font-size: small;" class="style1">The design criteria for this system with the cart receiving a  0.2 m step input are as follows:</span></p>
+<p style="text-align: justify;"><span style="font-size: small;" class="style1"><br>
+</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Settling time for x and Θ of less than 5  seconds.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Rise time for x of less than 1 second.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Overshoot of theta less than 20 degrees  (0.35 radians).</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img alt="" src="http://125.20.82.167:8080/new_pages_bpsk/ece/menu_data/bullet_conti.jpg" width="8" height="8">Steady-state error within 2%.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">1. Step  response of the system using LQR controller with x=1, y=1 is shown in  the figure below.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/m.jpg" alt="" width="900" height="226"></span></p>
+<p>&nbsp;</p>
+<div class="style31"><span style="font-size: small;">This  plot is not  satisfactory. The pendulum and cart’s overshoot appear  fine, but their  settling times need improvement and the cart’s rise time  needs to go  down. The cart is not near the desired location but has in  fact moved  in the other direction.</span></div>
+<div class="style31"><span style="font-size: small;"><br>
+</span></div>
+<div class="style1"><span style="font-size: small;">2.Increasing  x  makes the settling and rise times go down, and lowers the angle the   pendulum moves.Using x=5000 and y=100, the following and step response   is obtained.</span></div>
+<div class="style1">&nbsp;</div>
+<div class="style1" style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/l.jpg" alt="" width="900" height="228"></span></div>
+<p>&nbsp;</p>
+<p><span style="font-size: small;" class="style34">Step response of the system using LQR  controller with x=5000, y=100.</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<div class="style1"><span style="font-size: small;">By  increasing the  values of x and y the control effort used is more but the  tracking  error is less .It also improves the response. The system  response has a  settling time of under 2 seconds.</span></div>
+<div class="style1"><span style="font-size: small;"><br>
+</span></div>
+<div class="style1"><span style="font-size: small;"><strong>2. Adding  Reference input</strong></span></div>
+<div class="style1" style="text-align: center;"><span style="font-size: small;"><strong><img src="/userfiles/7/image/ece2/k.jpg" alt="" width="900" height="230"></strong></span></div>
+<p><span style="font-size: small;">Step  response of the system with LQR control adding the reference input with  x=5000 and y=100 </span></p>
+<p style="text-align: center;"><span style="font-size: small;"><br>
+</span></p>
+<div class="style1"><span style="font-size: small;">Now,  the  steady-state error is within the limits, the rise and settling  times  are met and the pendulum’s overshoot is within range of the design   criteria.</span></div>
+<div class="style1"><span style="font-size: small;"><br>
+</span></div>
+<div class="style1"><strong><span style="font-size: small;">3.Observer  Design</span></strong></div>
+<div class="style1" style="text-align: center;"><strong><span style="font-size: small;"><img src="/userfiles/7/image/ece2/jh.jpg" alt="" width="900" height="221"></span></strong></div>
+<div style="text-align: center;" class="style1"><span style="font-size: small;"><span class="style34">Step response of the  system from the observer point of view</span>.</span></div>
+<div style="text-align: center;" class="style1"><span style="font-size: small;"><br>
+</span></div>
+<div class="style1"><span style="font-size: small;">This  response is  about the same as before. All of  the design  requirements  have been  met with the minimum amount of  control effort,  so no more  iteration  is needed.</span></div>
+<div class="style1"><span style="font-size: small;"><br>
+</span></div>
+<h1 class="title">Using Frequency  Response Method</h1>
+<p><span style="font-size: small;">Click the RUN button and observe the  graphs in the table below.</span>&nbsp;</p>
+<p><span style="font-size: small;">The design  criteria (with the  pendulum receiving a 1N impulse force from the cart) are:</span></p>
+<ul type="disc">
+    <li class="style1"><span style="font-size: small;">Settling time of less  than 5       seconds. </span></li>
+    <li class="style1"><span style="font-size: small;">Pendulum should not  move more       than 0.05 radians away from the vertical. </span></li>
+</ul>
+<p><span style="font-size: small;"><strong><span class="style35">Observe  plots for various transfer functions. </span></strong></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><strong><span class="style35"><img src="/userfiles/7/image/ece2/hg.jpg" alt="" width="710" height="500"></span></strong></span></p>
+<p>&nbsp;</p>
+<div><span style="font-size: small;"><span class="style1">1. For </span><span class="style34">Transfer  Function=1, enter 1 0 0 for numerator and 1 0  for denominator. </span></span></div>
+<div><span style="font-size: small;" class="style34"><br>
+</span></div>
+<div><span style="font-size: small;"><em>&nbsp;&nbsp;&nbsp; The  system is unstable in  closed loop </em>(no  encirclements of -1).</span></div>
+<div><span style="font-size: small;">2.Transfer  function =(1/s);</span><br>
+<span style="font-size: small;">&nbsp;&nbsp; Gain……………1</span></div>
+<div><span style="font-size: small;">&nbsp;&nbsp; Here enter 1 0 0 for numerator  and 0 1 for denominator and observe the response.</span></div>
+<p><span style="font-size: small;"><em>Notice  that here the nyquist  diagram encircles the -1  point in a clockwise fashion. Now we  have two  poles in the right-half  plane</em></span></p>
+<p style="text-align: center;"><span style="font-size: small;"><em>(Z= P  + N = 1 + 1). </em></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><span style="font-size: small;">3. For  Transfer Function=</span></p>
+<p style="text-align: left;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/A.gif" alt="" width="21" height="30"></span></p>
+<p><span style="font-size: small;">Gain  ........1</span></p>
+<p style="text-align: justify;"><span style="font-size: small;">&nbsp;&nbsp;&nbsp; Here  enter 1 1 0 for numerator and 0 1 for denominator and observe the  response.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">&nbsp;&nbsp;&nbsp; The  encirclement around -1 is still  clockwise. We are going to need to add a  second zero.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/M.gif" alt="" width="47" height="32"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;">Gain…………………..1;</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">Here  enter 1 2 1 for numerator and 0 1 for denominator and observe the  response.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">We still  have one clockwise  encirclement of the -1 point.However, if we  add  some gain, we can make the  system stable by shifting the nyquist  plot  to the left, moving the  anti-clockwise circle around -1, so that N  =  -1.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">5.Transfer  function=</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/R.gif" alt="" width="47" height="32"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;"> Gain……………..10</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/gf.JPG" alt="" width="498" height="428"></span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/I.gif" alt="" width="55" height="38"></span></p>
+<p class="style36"><span style="font-size: small;">As  you can see, the  system is now stable.</span></p>
+<p class="style36">&nbsp;<span style="font-size: small;">6. Try  different  combinations of poles and gains,  a very reasonable  response acn be  obtained. </span><br>
+<span style="font-size: small;">&nbsp;&nbsp; Transfer   Function=</span></p>
+<p><span style="font-size: small;"><img src="/userfiles/7/image/ece2/T.gif" alt="" width="65" height="32"></span></p>
+<p><span style="font-size: small;"> Gain………………10</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/fd.JPG" alt="" width="515" height="453"></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small;"><img src="/userfiles/7/image/ece2/G.gif" alt="" width="88" height="44"></span></p>
+<p><span style="font-size: small;">The response has met our design  goals.  Feel free to vary the parameters and observe what happens.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/ds.JPG" alt=""></span></p>
+<p><img src="/userfiles/7/image/ece2/W.gif" alt="" width="88" height="44"></p>
+<p class="style1"><span style="font-size: small;">Thus, the cart moves  in the negative  direction and stabilizes at about  -0.18 meters. This  design might work  pretty well for the actual controller,  assuming that  the cart had that  much room to move. In this the cart’s position has  also been stabilized .</span></p>
+<h1 class="title">Using Root Locus  Method</h1>
+<p style="text-align: center;"><img src="/userfiles/7/image/ece2/sa.jpg" alt="" width="164" height="112"></p>
+<p><span style="font-size: small;">The design  criteria (with the  pendulum receiving a 1N impulse force from the cart) are:ï»¿</span></p>
+<p>&nbsp;</p>
+<ul type="disc">
+    <li class="style1"><span style="font-size: small;">Settling time of less  than 5       seconds.</span></li>
+    <li class="style1"><span style="font-size: small;">Pendulum should not  move more       than 0.05 radians away from the vertical.</span></li>
+</ul>
+<p>&nbsp;&nbsp;</p>
+<p><span style="font-size: small;" class="style33">The  open loop system  is designed as discussed previously in theory of modeling of inverted   pendulum.</span></p>
+<p>&nbsp;&nbsp;<strong><span style="font-size: small;">1.Root Locus</span></strong></p>
+<p style="text-align: center;"><strong><span style="font-size: small;"><img src="/userfiles/7/image/ece2/aq.JPG" style="width: 538px; height: 517px;" alt=""></span></strong></p>
+<p style="text-align: center;"><span style="font-size: small;">Root  locus of the plant in  unstable state.</span></p>
+<p style="text-align: justify;">&nbsp;&nbsp;<span style="font-size: small;">As we  can see, one of the roots of  the closed-loop transfer function is  in  the right-half-plane. This means that  the system will be unstable.   Part of the root locus lies between the origin and  the pole in the   right-half-plane. No matter what gain we chose, we will always  have a   closed-loop pole in this region, making the impulse response unstable.    To solve this problem, we need to add another pole at the origin so all   the  zeros and poles at the origin will cancel each other out and   multiple roots  will be created in this right-half-plane region.</span></p>
+<p style="text-align: justify;">&nbsp;<span style="font-size: small;">2. Click  the button below Root locus to obtain root locus with extra pole at the  origin.</span></p>
+<p style="text-align: justify;"><span style="font-size: small;"><br>
+</span><span style="font-size: small;" class="style1">&nbsp;We should get the following  root locus plot with multiple  roots in the right-half plane:</span></p>
+<p style="text-align: center;"><span style="font-size: small;" class="style1"><img src="/userfiles/7/image/ece2/qw.JPG" style="width: 507px; height: 501px;" alt=""></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Root  locus of the  plant with extra pole at the origin.</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<h2 class="style26"><span style="font-size: small;">3.Lead-lag  controller</span></h2>
+<p><span style="font-size: small;">Now Select Lead-Lag controller from  the <strong>combo box </strong>and observe the impulse response of the  pendulum and cart’s position.</span></p>
+<table width="200" border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td><img src="/userfiles/7/image/ece2/we.JPG" alt="" width="300" height="212"></td>
+            <td>&nbsp;</td>
+            <td><img src="/userfiles/7/image/ece2/er.JPG" alt="" width="300" height="207"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: small;"><em>Impulse response of pendulum angle.</em><em> <br>
+            </em></span></td>
+            <td>&nbsp;</td>
+            <td style="text-align: center;"><span style="font-size: small;"><em>Impulse response of cart position</em></span></td>
+        </tr>
+    </tbody>
+</table>
+<p class="style1">&nbsp;</p>
+<p class="style1">&nbsp;<span style="font-size: small;"><em> </em></span><span style="font-size: small;" class="style1">As observed, the cart moves at first, then is   stabilized at near zero  for almost five seconds, and then goes   unstable. It is possible that friction  (which was neglected in the   modeling of this problem) will actually cause the  cart’s position to be   stabilized.</span></p>
+<p style="text-align: justify;">&nbsp;<span style="font-size: small;" class="style1"><br>
+</span></p>
+<h1 class="title">Using Digital  Controller</h1>
+<div class="entry">
+<p style="text-align: justify;"><span style="font-size: small;">Click the RUN button and follow the steps mentioned below. <br>
+</span></p>
+<p style="text-align: justify;">&nbsp;<span style="font-size: small;">In this  digital  control version of the inverted pendulum problem, we  will use  the state-space  method to design the digital controller.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small;">The  linear state space equation can be represented as follows:</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/rt.GIF" alt="" width="406" height="188"></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;">where, </span></p>
+<table align="center" border="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">M</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">mass of the cart</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">0.5 kg</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">m</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">mass of the pendulum</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">0.5 kg</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">b</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">friction of the cart</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">0.1 N/m/sec</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">l</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">length to pendulum center of mass</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">0.3 m</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">I</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">inertia of the pendulum</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">0.006 kg*m<sup>2</sup></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">u</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">step force applied to the cart</span></p>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">x</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">cart position coordinate</span></p>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+            <p><span style="font-size: small;">&nbsp;Θ</span></p>
+            </td>
+            <td>
+            <p><span style="font-size: small;">pendulum angle from vertical</span></p>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;" class="style1"><span style="font-size: small;">Outputs  are the cart displacement (x in meters) and the  pendulum deflection angle ( Θ in radians). </span><br>
+<span style="font-size: small;"> The design  requirements are</span></p>
+<p style="text-align: justify;" class="style1">&nbsp;</p>
+<ul type="disc">
+    <li class="style1"><span style="font-size: small;">Settling time for x  and Θ less than 5 seconds </span></li>
+    <li class="style1"><span style="font-size: small;">Rise time for x of  less than 1       second </span></li>
+    <li class="style1"><span style="font-size: small;">Overshoot of Θ less  than 0.35 rad (20 deg) </span></li>
+    <li class="style1"><span style="font-size: small;">Steady-state error of  x and phi       less than 2% </span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-size: small;">1.Setting x=1 and y=1,the following  step response is obtained.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/ty.JPG" alt="" width="427" height="314"></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Step  response of the system with LQR control setting x=1,y=1.</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: small;"><em>The   pendulum’s and cart’s overshoot appear fine, but their settling  times  need  improvement, and the cart’s rise time needs to be  decreased. Also  the cart has,  in fact, moved in the opposite direction.  For now, we  will concentrate on  improving the settling times and the  rise times,  and fix the steady-state error  later. </em></span></p>
+<p style="text-align: justify;">&nbsp;<span style="font-size: small;">2.Setting  the weighting factors x  =5000 and y=100, the following step response  graph is obtained.</span></p>
+<p style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/yu.JPG" alt="" width="425" height="316"></span></p>
+<p style="text-align: center;"><span style="font-size: small;">Step  response of  the system with LQR control setting x=5000,y=100.</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p class="style1"><span style="font-size: small;">From this  plot, all  design requirements are satisfied except the steady-state  error of the  cart position (x).</span></p>
+<p class="style1">&nbsp;</p>
+<div style="text-align: center;"><span style="color: rgb(153, 51, 0); font-size: small;"> Study the theory for more detailed understanding of  the system.</span></div>
+<div style="text-align: justify;"><span style="font-size: small;">3.  With the previous values of x=5000 and y=100,select from the<span class="style35"> combo box</span>, step response due to Reference input  and Observer design .</span></div>
+<div style="text-align: center;"><span style="font-size: small;"><img src="/userfiles/7/image/ece2/ui.JPG" alt="" width="429" height="319"></span></div>
+</div>
+<p>&nbsp;<span style="font-size: small;">Both the reponse are identical since  observer  knows the plant exactly and has the same initial condition.</span></p>
+<p style="text-align: justify;">&nbsp;</p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

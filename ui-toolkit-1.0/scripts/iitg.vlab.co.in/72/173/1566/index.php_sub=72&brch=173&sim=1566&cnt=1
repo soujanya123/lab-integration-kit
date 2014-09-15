@@ -1,0 +1,315 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Mendel's Law (Theory) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Independent assortment of genetic characters" /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Mendel's Law</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Mendel's Law</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=173&sim=1566&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=1566&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=1566&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=1566&cnt=3358"><span><div id="tabspan" ><img id="tabimg" src="images/temp.gif" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=1566&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=1566&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><strong><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">MENDEL’S EXPERIMENTS</span></strong><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;</span></b></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;</span></b></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">How are traits passed from parents to offspring? The answer is by gene transmission. Genes are located on chromosomes and consist of DNA. They are passed from parents to their offspring through reproduction. Genes also contain information about a specific characteristic or trait and can either be dominant or recessive. Each gene has a designated place on every chromosome, called a locus. All copies of a gene are not identical and alternative forms of a gene is called alleles that lead to the al</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">ternative or different form of one trait. Alleles are helpful in identification of the two members of a gene pair, which produce opposite contrasting phenotypes, e.g., b is an allele of B and vice versa. When the two alleles of a gene are identical, the individual is homozygous for that trail, and on the other hand, if there are two different alleles, the individual is heterozygous. A homozygous pair can be either dominant (AA, BB) or recessive (aa, bb). Heterozygous pairs are made up of one dominant and one recessive allele (Aa, Bb). In heterozygous individuals, only one allele, the dominant one, is able to express itself, while the other allele, the recessive, is hidden but still present. The dominant genes are denoted by upper case letters and recessive genes are denoted by lower case letters. The word genotype was created to identify genes of an individual and phenotype for the external appearance of the trait and genes.<o:p></o:p></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Phenotype and genotype are terms used to describe the difference between the visible expressions of the trait versus the actual gene makeup. An individual, which expresses a dominant trait may carry a recessive allele, but the recessive expression is hidden by its dominant partner. Mendel&#039;s observations from these experiments can be summarized in two principles:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">&nbsp;</span></p>
+<ol>
+    <li><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+    mso-fareast-font-family:&quot;Times New Roman&quot;">The principle of segregation<o:p></o:p></span></li>
+    <li><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+    mso-fareast-font-family:&quot;Times New Roman&quot;">The principle of independent assortment</span><span style="font-family: Arial, sans-serif; font-size: 10pt;">&nbsp;</span></li>
+</ol>
+<p>&nbsp;</p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The principle of segregation states that for any particular trait, the pair of alleles of each parent separate and only one allele passes from&nbsp; each&nbsp; parent on to an offspring. Which allele in one parent&#039;s pair of alleles is inherited is a matter of chance. We now know that this &nbsp; segregation of&nbsp; alleles occurs during the process of sex cell formation, i.e., during meiosis. The principle of independent assortment&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;states &nbsp; &nbsp;that the different&nbsp; pairs of alleles are passed to offspring independently of each other. The result is that new combinations of &nbsp;genes are&nbsp;&nbsp;&nbsp;&nbsp; possible in the offspring&nbsp; that are not present in either parent. For example, the inheritance of the ability to produce purple flowers instead</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;of white ones in a pea plant does&nbsp; not make it more likely that it will also inherit the ability to produce yellow pea seeds in contrast to green&nbsp;&nbsp;&nbsp;&nbsp; ones. Similarly, the principle of independent&nbsp; assortment also explains why the human inheritance of a particular eye colour do</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">not increase&nbsp;&nbsp;&nbsp; or decrease the likelihood of having six fingers on&nbsp; each hand. In the present day, we know this is due to the fact that the genes for independently assorted traits are located on different chromosomes.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">THE MONOHYBRID CROSS</span></strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Monohybrid cross involves single pair of contrasting characters and such crosses form the basics of Mendelian genetics. These crosses&nbsp; occur&nbsp; in all major groups of sexually reproducing organisms. In a monohybrid cross between two homozygous individuals with respect to&nbsp; flower colour,&nbsp; the appearance of the colour is the phenotype and the letters representing it are the genotypic alleles. Uppercase letters&nbsp; <o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">represent the dominant trait,&nbsp; the red colour, and lowercase letters represent the recessive trail, the white colour.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Trait: Flower colour</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Dominant trait: Red colour<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Recessive trait: White colour<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The above cross represents two homozygous individuals, one with the dominant trait (red flowering plant, RR) and the other with the&nbsp;&nbsp; contrasting&nbsp; recessive trait (while flowering plant, rr). The F1 generation of these resulted in all heterozygous red flowering individuals (Rr).&nbsp;&nbsp; The F1 generation is&nbsp; self crossed to produce the F2 generation and the results are homozygous and heterozygous red flowering&nbsp; plants<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">(RR, Rr) and homozygous white&nbsp; flowering plants (rr). It is important to point out here that Mendel&#039;s experiment and his resultant&nbsp; statistical analysis showed that the total offspring of&nbsp; the F2 generation was 75% red flowering plants and 25% white flowering plants or a 3:1 ratio. <o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If two homozygous traits are crossed, the phenotype of the F1 is called the dominant trait. When two F&#039;l plants are crossed, the F2 phenotype&nbsp; will have representatives of the dominant trait and the recessive trait (the recessive trait will remain hidden in the F1 and reappears in the F2).&nbsp; The phenotypic ratio in the F2 will be 3:2:1, dominant to recessive.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Therefore, the F2 generation of a rnonohybrid cross, with dominance,&nbsp; will result in Phenotypic ratio of 3:1 G</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">enotypic ratio of 1:2:l<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;MONOHYBRID CROSS FOR SEED COLOR<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> In one of his experiments, Mendel crossed a pure bred green-seeded plant with a pure bred yellow-seeded plant in the P generation. The resulting offspring, the F1, had all yellow seeds. The F1 was self-crossed to give rise to the F2 generation. Of these offspring, 3/4 had yellow seeds while 1/4 had green seeds. This is the 3:1 phenotypic ratio. Mendel showed that this ratio was consistent for all monohvbrid crosses.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Trait: Seed colour<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Dominant trait: Yellow colour<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Recessive trait: Green colour<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">P: yellow seeds x green seeds<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F1: 100% yellow seeds<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F2: % yellow seeds: 1/4 green seeds<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel defined the yellow seed phenotype as dominant, and the green seed phenotype as recessive. The dominant phenotype is the one that appears in the F1 whereas the recessive phenotype is the one that disappears in the F1 but reappears in the F2. Reciprocal crosses produced the same results.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The 1:2:1 Genotypic Ratio<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When Mendel self pollinated the F2 plants, he discovered that the green seeded F2 gave rise to green seeded offspring only, whereas V: of the yellow-seeded plants in the F2 generation gave rise to yellow-seeded offspring only, V: of the F2 yellow-seeded plants gave rise to an interesting mixture: 1/4 green-seeded, 3/4 yelIow-seeded. Mendel regarded the F2, which gave rise to a mixture of offspring, as impure dominants.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F2 : lmpure dominant yellow seeded (self-crossed)<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F3 : 3/4 yellow seeds : 1/4 green seeds<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">As the ‘impure dominant’ represented % of the yellow-seeded F2, or 3/3 of the original 3/; yellow-seeded plants, it is understandable that the impure dominants comprise 1/2 of all of the F2 generation. -1/4 yellow seeds: 1/4 pure dominant, 1/2 impure dominant V4 green seeds: ‘A pure recessive.</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Therefore, Mendel concluded that there was a l:2:l genotypic ratio underlying&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">the 3:1 phenotypic ratio. Nowadays the term, heterozygous, is used to describe the<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">impure dominant plants.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">DOMINANT GENES<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If a gene (A) is completely dominant, AA and Aa are phenotypically alike. Pheno</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">types specified by single gene substitutions are called dominants and those that re</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">quire homozygous combinations for expression are called recessives. Dominants are&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">easier to find than recessives, for dominants are fully expressed when paired with&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">either allele. The genotype of an individual may be homozygous or heterozygous&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">if they express a dominant trait. The dominant trait will be expressed in all genera</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">tions.</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The criteria for the identification of dominant genes are:</span></p>
+<ul>
+    <li><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+    Symbol"><span style="font-size: 7pt; font-family: &#039;Times New Roman&#039;;">&nbsp;&nbsp;</span></span><!--[endif]--><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If the trait is dominant, it will be expressed in all generations.</span></li>
+    <li><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The trait is pgssed from the affected parent to about 50% of his/her children.<o:p></o:p></span></li>
+</ul>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Any parent that does not express the trait does not transmit it to any of his/her children. Both males and females can express and transmit </span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">the trait. <o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">RECESSIVE GENES<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Recessive genes are expressed only in homozygous (aa) individuals, though there are more heterozygous (Aa) carriers than homozygous (aa) individuals who actually express the trait. All three genotypes (AA, aa, Aa) are possible throughout any population. Even in carriers that are not henotypically expressed (Aa), the recessive allele can be identified in a cross. <o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The three criteria for identifying recessive genes: <o:p></o:p></span></p>
+<p><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol">·<span style="font-size: 7pt; font-family: &#039;Times New Roman&#039;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The first appearance of the recessive trait within a family usually is in the children of the unaffected parents.<o:p></o:p></span></p>
+<p><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol">·<span style="font-size: 7pt; font-family: &#039;Times New Roman&#039;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">25% of the children will express the trait.<o:p></o:p></span></p>
+<p><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol">·<span style="font-size: 7pt; font-family: &#039;Times New Roman&#039;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Both males and females can express the trait unless it is a recessive sex linked gene.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel conducted a series of monohybrid crosses (testing one trait at a time) and for each of the seven phenotypes, he crossed two plants of opposite phenotypes. Time and again, Mendel found that in the first generation of these crosses, all of the F1 were identical to one of the parents. For example, when testing the shape of the seed, crossing one pure-bred round seed with a pure-bred wrinkled seed, all of the&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">offspring were round. The one trait in this case, a wrinkled seed not expressed in the offspring, he called a recessive trait. In each of these crosses, the round trait was dominant over the wrinkled trait and is said to be the dominant trait. This conclusion is now referred to as Mendel’s Law of Dominance.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">During the experiments, Mendel also observed that the sex of the parent was immaterial for the dominant or recessive trait exhibited in the offspring. A cross between a male round seed with a female wrinkled seed would offer identical results to a female round seed crossed with a male wrinkled seed. This is known as Mendel ‘s Law of Parental Equivalence.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">MENDEL&#039;S LAW OF SEGREGATION<o:p></o:p></span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Accxirding to the law of segregation, each member of a pair of alleles maintains its own position, regardless of whether it is dominant or recessive. At reproduction, only one allele of a pair is transmitted to each gamete, and that choice is entirely random.&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel performed cross-pollination between a true-breeding yellow pod plant and a true-breeding green pod plant. In the F1 generation it was observed that all of the resulting offspring were green.&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">All the green F 1 plants were then allowed to self-pollinate. These offspring were referred as the F2 generation. Mendel noticed a 3:1 ratio in pod colour; about 3/4 of the F2 plants had green pods and about ‘/4 had yellow pods.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">These experiments led to the formulation of Mendel’s law of segregation. This law states that allele pairs separate or segregate during gamete formation and random ly unite during fertilization. There are four main theories involved in this scheme.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">These are:<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">1. There are two different forms for one gene. This means that a gene can exist in more than one form. For example, the gene that determines pod oolour can either be (G) for green pod colour or (g) for yellow pod colour.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">2. Organisms inherit two alternative forms of a gene called alleles, one from each parent for each attribute or trait. Each of the F1 plants in Mendel’s experiment received one allele from the green pod parent plant and one allele from the yellow pod parent plant. True-breeding green pod plants have (GG) alleles for&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">pod colour, true-breeding yellow pod plants have (gg) alleles, and the resulting Fl plants have (Cg) &nbsp;alleles.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">3. When gametes are produced, allele pairs separate or segregate so that there is a single allele for each trait. According to this, the sex cells contain only half the compliment of genes. When gametes fuse during fertilization, the resulting pod colour, true-breeding yellow pod plants have (gg)alleles, and the resulting F1 plants have (Cg) alleles.&nbsp;<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When gametes are produced, allele pairs separate or segregate so that there is a single allele for each trait. According to this, the sex cells contain only half the compliment of genes. When gametes fuse during fertilization, the resulting offspring contain two sets of alleles, one allele from each parent. For example, the sex cell for the green pod plant had a single (G) allele and the sex cell for the yellow pod plant had a single (g) allele. After fertilization, the resulting Fl plants had two alleles (Cg).<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When the two alleles of a pair are different, one is dominant and the other is recessive. This means that one trait is expressed while the other is concealed. For example, the F1 plants (Gg) were all green because the allele for Eileen pod colour (G) was dominant over the allele for yellow pod colour (g). When the F1 plants were allowed to self-pollinate, V4 of the F2 generation plant pods were yellow.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">This trait had been masked because it is recessive. The alleles for green pod colour are (CG) and (Cg). The alleles for yellow pod colour are (gg).<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">TERMS TO BE KNOW IN MENDELIAN GENETICS<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Alleles:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> these are the different forms of a gene. T and t are different alleles of the gene that determine the height of the pea plant. Alleles occupy the same locus or position on chromosomes.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Allelic pair:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the combination of two alleles which comprise the gene pair.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Autosomal:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a locus on any chromosome excluding a sex chromosome.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Backcross:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the cross of an F1 hybrid to one of the homozygous parents; for pea plant height the cross would be Dd x DD or Dd x dd; most often, a backcross is a cross to a fully recessive parent.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Co-dominant alleles:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> two different alleles at one locus that are responsible for different phenotypes. Both the alleles affect the phenotype of the heterozygote.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Complete linkage:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> complete linkage describes the inheritance patterns for two genes on the same chromosome when the observed frequency for crossover between the loci is zero.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Dioecious:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> conditions where organisms produce only one type of gamete (for example in humans).<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Dominant trail</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: a trait expressed preferentially over another trait.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Drosophila melanogaster:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the fruit fly, a favorite organism for genetic analysis.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Epistasis:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a condition where one gene masks the expression of a different gene for a different trait.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F 1 generation</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: offspring of a cross between true breeding organisms, homozygous for the trait under consideration.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F2 generation</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: offspring of a cross involving the F1 generation.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Gene:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a unit of inheritance that is directly responsible for one trait or character.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Genotype:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the genetic constitution of an organism with respect to a trait. For any single trait on an autosomal chromosome, an individual can be homozygous for the dominant trait, heterozygous, or homozygous for the recessive trait.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Hemizygous:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> if there is only one copy of a gene for a particular trait in a diploid organism, The organism is hemizygous for the trait, and will display a recessive phenotype. X-linked genes in fly or human males are hemizygous.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Heterozygous:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> differing alleles for a trait in an individual, such as Tt for the height of the plant.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Homologous chromosomes</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: the pair of chromosomes in a diploid individual that have the same genetic content. One member of each homologous pair of chromosomes is inherited from each parent.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Homozygous:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a condition when both alleles for a trait are the same in an individual. They can be homozygous dominant (W), or homozygous recessive (yy).<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Hybrid:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a heterozygous condition. Usually it is referring to the offspring of two true-breeding (homozygous) individuals differing in the traits of interest.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">lncomplete dominance</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: it refers to an intermediate phenotype in Fl but parental phenotypes reappear in F2. The flowers of the snapdragon plant can be red, pink, or white. Colour is determined at a single locus. The genotype RR results in red flowers and rr results in white flowers. The heterozygote genotype of Rr results in pink flowers. When the heterozygote has a different, intermediate phenotype compared to the&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">homozygous dominant or homozygous recessive individuals, this is said to be called as incomplete dominance.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Lethal alleles</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: mutated genes that are capable of causing death.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Linkage:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the sets of genes that are on the same chromosome and are physically linked to one another tend to be inherited together. Three inheritance patterns are possible: non-linkage, Partial linkage, and complete linkage.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel’s law of independent assortment of alleles:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> this law states that alleles of different genes are assorted independently of one another during the fonnation of gametes.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel’s law of segregation:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> this law states that the alleles segregate from one another during the formation of gametes.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Monoecious:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the condition where organisms produce both male and female gametes (for example in garden pea).<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Monohybrid cross</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: cross involving parents differing in only one trait.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mutation</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: change in the DNA sequence of a gene to some new, heritable form. Non-linkage: non-linkage describes the inheritance patterns for two genes on the same chromosome, when the expected frequency for crossover between the loci is at least one. The observed inheritance patters for non-linked genes on the same chromosome is the same for two genes on different chromosomes.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Partial linkage</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: partial linkage describes one of the inheritance patterns for two genes on the same chromosome, when the expected frequency for crossover between the loci is greater than zero but less than one. From partial linkage analysis, we can learn about the order and spacing of genes on the same chromosome.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Phenotype:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the physical appearance of an organism with respect to a trait, i.e., yellow (Y) or green (y) seeds in garden peas.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Pleiotropic:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a condition where a single gene determines more than one phenotype for an organism.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Punnett squares:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> a probability diagram illustrating the possible offspring of a mating.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Pure breeding:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> pure breeding plants and their offspring consistently breed true for the character trait being studied. This indicates that pure-, or true-, breeders are homozygous for that specific trait.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Recessive trait:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> an allele whose expression is suppressed in the presence of a dominant allele.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Reciprocal cross:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> using male and female gametes for two different traits, alternating the source of gametes.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Sex chromosomes</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: chromosomes other than the autosomes. Sex determination is based on sex chromosomes.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Sex-linked</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: a gene coded on a sex chromosome, such as the X-chromosome linked genes of flies and man.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Test cross:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> generally a cross involving a homozygous recessive individual. When a single trait is being studied, a test cross is a cross between an individual with the dominant phenotype but of unknown genotype (homozygous or heterozygous) with a homozygous recessive individual. If the unknown is heterozygous, then approximately So% of the offspring should display the recessive phenotype.<o:p></o:p></span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">True-breeding</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">: homozygous for the true-breeding trait.</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Wild-type allele:</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> the non-mutant form of a gene, encoding the normal genetic function.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><strong><font face="Arial, sans-serif">TERMINOLOGY</font></strong></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">P - This letter is used to denote the parental generation.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Fl - This term stands for the first filial generation, the offspring that result from the parental cross.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">F2, F3, etc. - Each successive filial generation is labeled according to the order in which it appears.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">PUNNET SQUARES<o:p></o:p></span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The Punnett square is a mathematical tool used by geneticists to show allelic combinations of gametes and to predict offspring ratios. It was designed by Reginald Punnett and helps to detennine the probability of an offspring having a particular genotype.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">TYPICAL MONOHYBRID CROSS<o:p></o:p></span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">An organism is said to be homozygous for a trait when both the alleles of a gene pair are the same. lt can be homozygous dominant (TT) or homozygous recessive (It). When the two alleles in a gene pair are not the same, for example, when the genotype is Tt, the organism is heterozygous, or hybrid for that trait. When working with only one trait, this condition is called a monohybrid. If we consider two traits, we would&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">call the combination a dihybrid and so on. The term ‘genotype’ is used to refer to the allele combinations of an organism. The Punnett square is used to predict the results of a monohybrid cross between the homozygous dominant tall male with a homozygous recessive dwarf female. For this we draw a square and divide it into four parts. The alleles contributed by the homozygous dominant male parent are shown by writing a capital letter T above each column (see diagram). Whereas the alleles contributed by the homozygous recessive female parent are represented by writing a lower case t next to each row. These letters represent the alleles donated by the Parent (P) generation. The information that will be put inside each square represents the possible zygote allelic combination. We call this generation the first filial (F1) generation.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">In this case the organisms in the F1 generation are TI or heterozygous.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Let us take another example in which the male and female organisms are heterozygotes having the genotype Tt. Both of them can produce the gametes that contain either the T or t alleles. (T denoting the dominant allele and t indicating the recessive allele). The probability of an individual offspring having the genotype TT is 25%, Tt is 50%, and ft is 25%.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">THE DIHYBRID CROSS<o:p></o:p></span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel knew nothing about Punnett squares and did not understand the connection between genes and chromosomes and was able to consider heredity in terms of the phenotypes resulting from his crosses. When he analyzed genes for single traits, he typically used a monohybrid cross.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When he analyzed genes involving two traits, he termed it as dihybrid. A dihybrid cross is outlined in the following manner. The terms are similar to a monohybrid cross. There are some slight differences. In a dihybrid cross, the recessive allele in the heterozygous condition does not affect the phenotype.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When looking at two traits together, he used basically the same procedure except that he started out with parents that were true breeding for alternate forms of twotraits. One trait might be flower colour; the other trait might be flower position.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">For example, he might have a parent pea plant that was true breeding for red colour and terminal flowers, which he crossed with a plant that was pure breeding for white colour and axial flowers.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> <o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Trait 1: Flower colour &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Domimmt: Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Recessivc: White</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Trail 2: Flower position &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dominant: Terminal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Recessim-: Axial<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">In the above cross, two homozygous individuals are crossed, one with two dominant traits (red, terminal flowers, RRTT) and one with the contrasting recessive traits (white, axial flowers, rrtt), resulting in all heterozygous red terminal flowers in F1 generation. The F 1 generation is crossed to produce the F2 generation and the results are a little different than in a monohybrid cross. in the monohybrid F2 there were only two phenotypes. In a dihybrid cross there are four phenotypes, homozygous and heterozygous red, terminally flowered plants (RT), red, axially flowered plants (R_tt), white, terminally flowered plants (rrT_) and homozygous white axially flowered plants (rrtt). Mendel’s analysis of this type of cross showed that there was a ratio of 9 red terminal to 3 red axial to 3 white terminal to 1 white axial or a 9:3:3:1 ratio.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">In summary, the F2 generation of a dihybrid cross, with dominance in the two traits will result in a:</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Phenotypic ratio of 9:3:3:1<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Genotypic ratio of 1:2:2:1:4:1:2:2:l<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">This type of experimental dihybrid cross led to the Law of Independent Assortment, which states that, "the emergence of one trait will not affect the emergence of another". Or, the members of an allelic pair segregate independently of members of another allelic pair. All possible allelic combinations can occur in the reproductive cells.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">MENDEL&#039;S LAW OF INDEPENDENT ASSORTMENT<o:p></o:p></span></b></p>
+<p><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></b></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel carried out dihybrid crosses (mating of parent plants that differ in two traits) in plants that were tnie-breeding for two traits. For example, a plant that had green pod colour and yellow seed colour was cross-pollinated with a plant that had yellow pod colour and green seeds. ln this cross, the traits for gteen pod colour (GG) and yellow seed colour (YY) are dominant. Yellow pod colour (gg) and gree</span>Mendel <span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">carried out dihybrid crosses (mating of parent plants that differ in two traits) in plants that were tnie-breeding for two traits. For example, a plant thathad green pod colour and yellow seed colour was cross-pollinaled with a plant that had yellow pod colour and green seeds. in this cross, the traits for green pod colour (GG) and yellow seed colour (YY) are dominant. Yellow pod colour (gg) and green seed colour (yy) are recessive. The resulting offspring in the F1 generation were all heterozygous for green pod&nbsp;<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">colour and yellow seeds (GgYy).<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel then allowed all of the F1 plants to self-pollinate. He referred to these offspring as the F2 generation. Mendel noticed a 9:3:3:1 ratio. About 9 of the F2 plants had green pods and yellow seeds, 3 had green pods and green seeds, 3 had yellow pods and yellow seeds and 1 had a yellow pod and green seeds.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Mendel performed similar experiments focusing on several other traits like seed colour and seed shape, pod colour and pod shape, and flower position and stem length. He noticed the same ratios in each case. From these experiments, Mendel formulated what is now known as Mendel&#039;s law of independent assortment. This law states that allele pairs separate independently during the formation of gametes.<o:p></o:p></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Therefore, traits are transmitted to offspring independently of one another.<o:p></o:p></span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p>
+<p><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&nbsp;</span></p></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

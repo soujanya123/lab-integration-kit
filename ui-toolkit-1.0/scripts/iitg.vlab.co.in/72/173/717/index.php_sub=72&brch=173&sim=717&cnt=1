@@ -1,0 +1,485 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Calculation of Indices (Theory) : Virtual Anthropology Lab : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title><META NAME="description" content="Calculation of various craniometric indices." /><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+.title {
+	padding-left:0px !important;
+	}
+.breadcum {
+	margin-left:0px !important;
+	}
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+<link href="theme/iitg/css/tabs.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="js/grid/gt_grid.css" />
+<script type="text/javascript" src="js/grid/gt_msg_en.js"></script>
+<script type="text/javascript" src="js/src/gt_const.js"></script>
+<script type="text/javascript" src="js/grid/gt_grid_all.js"></script>
+<script type="text/javascript" src="js/grid/flashchart/fusioncharts/FusionCharts.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table id="expandables" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td bgcolor="#deeefb">
+  		<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div>        </td>
+    </tr>
+    <tr>
+    	<td>
+    	<table align="center" cellpadding="0" cellspacing="0" style="min-width:1024px;">
+        	<tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td bgcolor="#e8f2fb" align="left"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=173">Virtual Anthropology Lab</a>-><a href="">Calculation of Indices</a></div></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" align="right"></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            	<td colspan="3" bgcolor="#e8f2fb" style="white-space:nowrap;"><div class="title">Calculation of Indices</div></td>
+                <td bgcolor="#e8f2fb" style="color:#e8f2fb;">.</td>
+            </tr>
+            <tr>
+            	<td height="89" bgcolor="#e8f2fb" style="color:#e8f2fb;">
+                	.
+                </td>
+            	<td colspan="3" rowspan="2"><div class="div1Style" ><table id="tabtable" border="0px" cellpadding="0px" cellspacing="0px" width="100%"><tr><td id="lcurve" width="21px" height="145px"></td><td id="mcurve" rowspan="2"><div id="ddtabs2" class="glowingtabs"><ul><li class="current"><a href="?sub=72&brch=173&sim=717&cnt=1"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_1.png" alt=""/></div><div id="tab_name" >Theory&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=2"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_2.png" alt=""/></div><div id="tab_name" >Procedure&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=4"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_4.png" alt=""/></div><div id="tab_name" >Simulator&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=1785"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_94.png" alt=""/></div><div id="tab_name" >Quiz&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=5"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_5.png" alt=""/></div><div id="tab_name" >Assignment&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=6"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_6.png" alt=""/></div><div id="tab_name" >Reference&nbsp;</div></span></a></li><li class=""><a href="?sub=72&brch=173&sim=717&cnt=7"><span><div id="tabspan" ><img id="tabimg" src="theme/iitg/images/tab_icon_image/content_7.png" alt=""/></div><div id="tab_name" >Feedback&nbsp;</div></span></a></li></ul></div></td><td id="rcurve" width="21px" height="145px"></td></tr><tr><td></td><td></td></tr></table><div class="divContent"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><span style="color: rgb(153, 51, 0);">CRANIOMETRY</span></h1>
+<p>&nbsp;</p>
+<p>Craniometry is concerned with the  technique of measurement on the cranium and face of the skeleton.&nbsp;  Craniometry&nbsp; includes measurement of different types, for example liner,  angular, depth, volume, arc, etc. and hence, different types of  instrument are needed to take different types of measurements. Some  measurement are taken directly taken on the skull, while others are  measured on the tracking of the skull. Direct measurements are taken  allowing the skull to rest on a pad or by mounting it on a craniphore.  Tracing is done with help of a set of instruments designed for the  purpose.</p>
+<p>Cranial landmark are well defined and  are easier to locate in comparison to those used in somatometry. As in  somatometry, in Craniometry also it is always necessary to have full  knowledge about the landmarks, to locate them accurately, and then to  take the measurement correctly following the standard technique.</p>
+<p>In times of measuring a skull record  should be kept as regards its identification (skulls preserved in Museum  and laboratory are appropriately numbered and that must be noted) as  well as the date and the place of taking measurement along with the  investigator‘s name.</p>
+<p>In order to take measurement, more  particular measurement, the skulls must be oriented on a fixed plane,  which must be well defined and accepted by all workers.One of this plane  is the FRANKFURT HORIZONATL (F.H) PLANE. This is an&nbsp;internationally  accepted standard procedure. When the right and left porion (the deepest  point on the upper margin of the external auditory meatus) and the  orbital, preferably the left one, if not the two (the deepest on the  inferior margin if the orbit ) of the skull are on the same&nbsp; horizontal  plane, it is said to be on the Frankfurt horizontal plane. This plane is  used as a constant plane in measuring and describing a skull.</p>
+<p>Another plane known as NASION-INION  PLANE is used to take a few angular measurements. When the nasion and  inion are on the same horizontal plane, it is called nasion-inion plane.</p>
+<p>Numerous measurements and indices  have been proposed by different scholars. Here, however a limited&nbsp;  number of those have been included.</p>
+<p>The shape and size of the skull of  man and his near relatives, the primates – both living and extinct – can  be obtained by Craniometry. The values thus obtained can be fruitfully  and meaningfully compared. This sort of study comparatively anatomy  helps to establish the phylogenic relationship among them and thereby to  learn about the evolutionary trends in man and primates. The  correlations among the different parts of the skull can be established  through Craniometry , and such the missing portions of a skull can be  reconstructed . Moreover a skull can be reconstructed from the available  measurements of the skull even if it destroyed or lost.</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(153, 51, 0);">INSTRUMENTS</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><span style="color: rgb(153, 51, 0);">Spreading Caliper (of Martin):</span></h3>
+<p>The spreading caliper consists of two long arms, the upper half of which are curved outwards, while the ends of the other half are screwed together in such a manner so that the free parts of the arms can be moved freely. One end of a straight scale is fixed at the middle of one the arms keeping the other end free. The scale passes through asocket fixed on the other arm. The free ends of the two long arms are provided either with small knob- like structures or with pointed ends. The first type is used for taking measurements on the body, while the second type is used for measurements on the skeleton. The scale is graduated proportionately to the distances between the two freeends of curved arms. This instrument is used for taking such measurements on head, face, etc., wherecurved areas are involved. The spreading calipers are of two sizes. The larger one is called Pelvimeter, which is commonly used for taking measurements on the pelvic region.</p>
+<h3><br>
+<span style="color: rgb(153, 51, 0);">Sliding Caliper (of Martin):</span></h3>
+<p><br>
+<br>
+The sliding caliper consists of a long straight scale graduated on both the sides and two cross bars. One of the crossbars is fixed at one end of the scale, while the other parallel to the first one can be slided over the scale with the help of a socket provided with ascrew to be used to fix the socket at any place. Each crossbar has two ends, of whichone is blunt, and the other is sharp and pointed. The blunt and the sharp ends are usedfor taking measurements on the body and the respectively.The scale is graduated starting from the fixed end upto 200 mm. Again, from the free end also it is graduated upto 50 mm. The second graduation is used while taking certain depth measurements, when the movable socket is fitted on the scale in the reverse order.</p>
+<p>&nbsp;</p>
+<h2><span style="color: rgb(153, 51, 0);">Measurements of the Cranium</span></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="957" cellspacing="3&gt; &lt;tbody&gt; &lt;tr&gt;  &lt;td&gt;&lt;img src=" height="308">
+    <tbody>
+        <tr>
+            <td><img alt="" width="191" height="257" src="http://202.141.81.60/Anthro/sto/skull1.png"></td>
+            <td><img alt="" width="298" height="225" src="http://202.141.81.60/Anthro/sto/skull2.png"></td>
+            <td><img alt="" width="304" height="202" src="http://202.141.81.60/Anthro/sto/skull3.png"></td>
+        </tr>
+        <tr>
+            <td><span style="font-size: small;"><strong>fig1.</strong> Landmarks on Norma Frontalis</span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fig2.</strong> Landmarks on Norma Lateralis</span></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fig3.</strong> Landmarks on Norma Verticals</span></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+    <li>Maximum Cranial Length (g-op): The straight distance from the glabella to the opisthocranion. Glabella (g) is the most prominent point between the two superaorbital ridges above the fronto-nasal suture in the mid-sagittal plane. Opisthocranion (op) is the most posterior point from the glabella in the mid-sagittal plane, excluding the inion.
+    <p>Instrument used: Spreading Caliper.</p>
+    </li>
+    <li>Maximum Cranial Breadth (eu-eu): The straight distance between the two euryon points. Euryon (eu)   is the most lateral point on the skull, which can only be determained   by measuring the maximum cranial breadth, as it is variable.
+    <p>Instrument used: Spreading Caliper.</p>
+    </li>
+    <li>Basion-Bregma or Basilo-Bregmatic Height (ba-b): The straight distance from the basion to bregma. Basion (ba) is the lowest point on the external surface of the anterior margin of foramen magnum in the mid-sagittal plane. Bregma (b) is the meeting point of the sagittal and coronal sutures.
+    <p>Instrument used: Sliding Caliper.</p>
+    </li>
+    <li>Upper Facial Height (n-pr): The straight distance from the nasion (n) to prosthion (pr). Nasion (n) is the meeting point of the fronto-nasal and inter-nasal sutures. If   this junction is not in the mid-sagittal plane, then the mid-sagittal   plane of the fronto-nasal suture is taken as the nasion. Prosthion (pr) is the lowest point of the intermaxillary suture on the alveolar border between the two middle incisors.
+    <p>Instrument used: Sliding Caliper.</p>
+    </li>
+    <li>Nasal Breadth (al-al): The maximum breadth between the two lateral margins of the nasal apertures.
+    <p>Instrument used: Sliding Caliper.</p>
+    </li>
+    <li>Nasal Height (n-ns): The straight distance from the nasion to nasospinale. Nasospinale (ns) is the point where a line touching the lower margin of the nasal aperture crosses the mid-sagittal plane
+    <p>Instrument used: Sliding Caliper.</p>
+    </li>
+    <li>Bizygometic Breadth (zy-zy): The straight distance from one zygion to the other.Zygion (zy) is the most lateral point of the zygomatic arch.&nbsp;
+    <p>Instrument used: Sliding Caliper.</p>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Indices</h2>
+<p>&nbsp;</p>
+<p>As in   the case of head of a person,  in the case of the skull also many  indices  can be calculated obtain  the relationship between two absolute   measurements. Here, however  mention of a few important indices with   their respective formulae and  classification will be made.</p>
+<p>&nbsp;</p>
+<ol>
+    <li>
+    <h3><span style="color: rgb(153, 51, 0);"><span style="background-color: rgb(255, 255, 255);">Cranial Index     </span></span></h3>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Classes</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">Ranges (According to Garson)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Ultradolichocranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">-64.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Hyperdolichocranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">65.0 – 69.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Dolichocraniual</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">70.0 – 74.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Mesocranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">75.0 – 79.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Brachycranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">80.0 – 84.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Hyperbrachycranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">85.0 – 89.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="373">
+                <p><span style="font-size: small;">Ultrabrachycranial</span></p>
+                </td>
+                <td valign="top" width="365">
+                <p><span style="font-size: small;">90.0 +</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    </li>
+    <li>
+    <h3>Length- Height Cranial Index or Vertical Index</h3>
+    <p>Basion – Bregma Height&nbsp; x 100 / Max. Carnial Length</p>
+    <p>&nbsp;</p>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Classes</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Ranges(according&nbsp; to Martin and Saller)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Chamaecrianial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">- 69.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Orthocranial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">70.0 – 74.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Hypsicranial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">75.0 +</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    </li>
+    <li>
+    <h3>Breadth – Height Carnial Index or Transverse Vertical Index</h3>
+    <p>&nbsp;</p>
+    <p>Basion – Bregma Height x 100 / Max. Cranial Breadth</p>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Classes</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Ranges(according&nbsp; to Martin and Saller)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Tapeinocranial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">-91.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Metriocranial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">92.0 – 97.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Acrocranial</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">98.0 +</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    </li>
+    <li>
+    <h3>Upper Facial Index</h3>
+    <p>Upper Facial Height x 100 / Bizygomatic Breadth</p>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Classes</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Ranges(according&nbsp; to Martin and Saller)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Hypereuryne</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">-44.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Euryene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">45.0 – 49.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Mesene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">50.0 – 54.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Lepetene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">55.0 – 59.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Hyperieptene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">60.0 +</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    </li>
+    <li>
+    <h3>Nasal Index</h3>
+    <p>Upper Facial Height x 100 / Bizygomatic Breadth</p>
+    <table border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Classes</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Ranges(according&nbsp; to Martin and Saller)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Hypereuryne</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">-44.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Euryene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">45.0 – 49.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Mesene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">50.0 – 54.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Lepetene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">55.0 – 59.9</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">Hyperieptene</span></p>
+                </td>
+                <td valign="top" width="399">
+                <p><span style="font-size: small;">60.0 +</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    </li>
+</ol></div></div></td>
+                <td height="89" bgcolor="#e8f2fb" id="top_rightc" style="color:#e8f2fb;">.....</td>
+            </tr>
+            <tr>
+            	<td width="23" id="side_left" style="color:#e8f2fb;">.....</td>
+                <td width="23" id="side_right" style="color:#e8f2fb;">.....</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+    	<td><div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</td>
+    </tr>
+</table>
+</body>
+</html>
+

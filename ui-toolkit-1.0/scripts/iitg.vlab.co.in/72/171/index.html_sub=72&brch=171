@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ergonomics Lab for Assessing Physical Aspects of Design : Other Laboratories (Design & Humanities) : IIT GUWAHATI Virtual Lab </title>  <META NAME="description" CONTENT= "Ergonomics Lab for Assessing Physical Aspects of Design"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="shortcut icon" type="image/x-icon" href="theme/iitg/images/favicon.ico">
+<link href="theme/iitg/css/main.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+.slideshow { margin: auto; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/top_up-min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+
+</head>
+<body bgcolor="#FFFFFF">
+<div id="head_box" style="width:1024px; margin-left:auto; margin-right:auto;">
+<div id="header_main" align="center"><img align="right" style="padding-right:20px; margin-top:8px;" src="theme/iitg/images/logo.png"/></div>
+ <div id="header"  >      
+		<div class="menu">   
+        <ul><li><a href="index.php">Home</a></li><li><a href="?pg=topMenu&id=5">Download  </a></li><li><a href="?pg=topMenu&id=6">Slot Booking  </a></li><li><a href="?pg=topMenu&id=41">Feedback.  </a></li><li><a href="?pg=forum">Forum</a></li><li><a href="?pg=bindex&bsub=contact">Contact us</a></li><li><a href="javascript: authenticate()">Login</a></li></ul>		<div class="clear"></div>        
+		</div>
+        <div class="searchbox">								
+		<form action="http://iitg.vlab.co.in/" id="cse-search-box">
+		<div>
+		<input type="hidden" name="pg" value="bindex" />
+		<input type="hidden" name="bsub" value="search" />
+		<input type="hidden" name="lan" value="en-IN" />
+		<input type="hidden" name="cx" value="008976432297318053942:3gnilsveije" />
+		<input type="hidden" name="cof" value="FORID:11" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" size="15" />
+		<input class="srchButton" type="submit" name="sa" value="Search" />
+		</div>
+		</form>
+		</div> </div></div>
+<div align="left" style="position: relative; margin:auto; width: 1024px; background-color:#e3f2fc">
+<table width="100%" border="0">
+<tr><td width="50%" align="left" valign="top"><div class="breadcum">you are here-><a href="?">home</a>-><a href="?sub=72">Other Laboratories (Design & Humanities)</a>-><a href="?sub=72&brch=171">Ergonomics Lab for Assessing Physical Aspects of Design</a></div></td>
+<td width="45%" align="right"> </td>
+<td width="5%" align="left"></td></tr>
+</table>
+<div class="title">Ergonomics Lab for Assessing Physical Aspects of Design</div><br><div class="clstopicDesc">Ergonomics Lab for Assessing Physical Aspects of Design</div><br /><div id="tblExperiment"><table width="100%"><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=816&cnt=1511'>Introduction to Ergonomics </a><br><span class="clsDescription">General Theory, methods and its application</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=829&cnt=1532'>1.Static anthropometry, standing heights</a><br><span class="clsDescription">This experiment focuses on standing height measurement landmarks, reference data pack and animated experiments.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=834&cnt=1534'>2. Arm forward reaches, standing erect and forward bend</a><br><span class="clsDescription">This experiment focuses on comfortable arm reaches, standing erect and forward bending measurement landmarks, reference data pack and animated experiments.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=835&cnt=1541'>3. Sitting Antropometry, static heights</a><br><span class="clsDescription">This experiment focuses on sitting height measurement landmarks, reference data pack and animated experiments.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=836&cnt=1553'>4. Horizontal work surface at around elbow height</a><br><span class="clsDescription">The experiment aims at understanding the various horizontal work surfaces are in effect in our daily life, may be the office table, kitchen platform, console or any interactive work counter and various work component layout there in.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=839&cnt=1559'>5. Effective work platform height, standing</a><br><span class="clsDescription">This study aims at understanding the various work surface heights relevant to normal work platform, table, kitchen platform, or any interactive work counters, with the reference data set in Indian population.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=841&cnt=1566'>6.Effective vertical work surface</a><br><span class="clsDescription">The experiment aims at understanding the various vertical work surfaces are in effect in our daily life, may be the office table, kitchen platform, console or any interactive work counter and various work component layout there in.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=842&cnt=1572'>7. Hand dimension</a><br><span class="clsDescription">This experiment focuses on hand dimension measurement landmarks, reference data pack and animated experiments.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=858&cnt=1598'>8. Human dimensional consideration for general seating</a><br><span class="clsDescription">The experiment focuses on anthropometric considerations for seating.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=1010&cnt=1'>9. Squatting posture</a><br><span class="clsDescription">This experiment focuses on various dimension in squatting postures.</span></td></tr><tr><td valign="top" width='1%'><img src='images/temp.gif' width='48' height='48' /></td><td><a href='?sub=72&brch=171&sim=1076&cnt=1'>10. Body movement ranges </a><br><span class="clsDescription">This experiment focuses on body movement ranges with special emphasis on head, leg, arm and hip.</span></td></tr></table></div>	 <div align="center">
+    </div>
+</div><div style="width:1024px; margin-left:auto; margin-right:auto;">
+	<div style="margin:auto; width: inherit; height:28px; background-color:#e3f2fc;" align="center">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+        	<td width="19" height="29"><img src="theme/iitg/images/foot_left.gif"/></td>
+            <td height="29" bgcolor="#0f8de1" align="center" style="color:#FFF;"><a href="http://virtual-labs.ac.in/licensing/" target="_new" style="color:#FFF">Copyright @ 2013 Under the NME ICT initiative of MHRD (Licensing Terms)</a></td>
+            <td width="19" height="29"><img src="theme/iitg/images/foot_right.gif"/></td>
+        </tr>
+    </table>
+</div>
+</div>
+<div align="center">&nbsp;Powered by Amrita Virtual Lab Collaborative Platform [ Ver 00.3.2 ]</div>
+<script type="text/javascript" src="js/javascript_functions.js"></script>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://ahs.amrita.ac.in/logs/" : "http://ahs.amrita.ac.in/logs/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://ahs.amrita.ac.in/logs/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+<script type="text/javascript">
+var _gap = _gap || [];
+_gap.push(["_setAccount", "UA-254910-22"]); 
+_gap.push(["_setDomainName", ".vlab.co.in"]);
+_gap.push(["_trackPageview"]);
+_gap.push(["_gapTrackBounceViaTime", 20]); 
+_gap.push(["_gapTrackBounceViaScroll", 50]); 
+_gap.push(["_gapTrackReads", 30, 30]); 
+_gap.push(["_gapTrackLinkClicks"]);
+
+(function() {
+    var gap = document.createElement("script");
+    gap.async = true;
+    gap.type = "text/javascript";
+    gap.src = "/js/gap.min.js"; 
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gap, s);
+})();
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box2&lang=en"></script>
+
+</body>
+</html>
+</div>
+
+
