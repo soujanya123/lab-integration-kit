@@ -6,7 +6,7 @@ yum install gcc python-devel
 
 p=$(pwd)
 
-cp ubuntu-12.04-custom-x86_64.tar.gz /root/vz/template/cache
+sudo cp ubuntu-12.04-custom-x86_64.tar.gz /vz/template/cache
 echo "Installing Python"
 yum groupinstall "Development tools"
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel

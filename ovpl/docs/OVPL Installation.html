@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>OVPL Installation</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-09-15 14:09:11 IST"/>
+<meta name="author" content="introspector"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">OVPL Installation</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 OVPL Installation Process </a>
+<ul>
+<li><a href="#sec-1.1">1.1 Setting up the proxy if required. </a></li>
+<li><a href="#sec-1.2">1.2 Update the package manager </a></li>
+<li><a href="#sec-1.3">1.3 Install Git on your system </a></li>
+<li><a href="#sec-1.4">1.4 Cloning The Lab Integration Kit (LIK) </a></li>
+<li><a href="#sec-1.5">1.5 Installing OpenVZ </a></li>
+<li><a href="#sec-1.6">1.6 Installing OVPL Dependencies </a></li>
+<li><a href="#sec-1.7">1.7 Installing OVPL </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> OVPL Installation Process </h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Setting up the proxy if required. </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<ul>
+<li>
+Updates may fail if the proxy is set to the network
+</li>
+<li>
+Contact the admin to know the proxy and set it to the $http<sub>proxy</sub> variable
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Update the package manager </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<ul>
+<li>
+Update the package manager by running the command,
+</li>
+</ul>
+
+<p>yum update -y
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Install Git on your system </h3>
+<div class="outline-text-3" id="text-1.3">
+
+<ul>
+<li>
+Install git and get familiar with basic commands
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Cloning The Lab Integration Kit (LIK) </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<ul>
+<li>
+Clone the directory "ovpl" from Github LIK repository.
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> Installing OpenVZ </h3>
+<div class="outline-text-3" id="text-1.5">
+
+<ul>
+<li>
+The first step is to install openVZ
+</li>
+<li>
+Go to "ovpl" directory and in "scripts" directory, You will find a script named, "openVZ<sub>install</sub>.sh" which installs OpenVZ on Your CentOS.
+</li>
+<li>
+To run this script, go to that directory in terminal and run the following command:
+
+</li>
+</ul>
+
+
+<pre class="example">sudo sh openVZ_install.sh
+</pre>
+
+
+
+<ul>
+<li>
+Restart the system and login with openVZ kernel
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.6" class="outline-3">
+<h3 id="sec-1.6"><span class="section-number-3">1.6</span> Installing OVPL Dependencies </h3>
+<div class="outline-text-3" id="text-1.6">
+
+<ul>
+<li>
+Before starting the instalaltion, we need to install all the dependencies 
+</li>
+<li>
+Go to OVPL directory and in "dependencies" directory, You will find a script named, "dependencies.sh" which installs all the dependencies required to install OVPL.
+</li>
+<li>
+To run this script, go to that directory in terminal and run the following command,
+
+</li>
+</ul>
+
+
+<pre class="example">sudo sh dependencies.sh
+</pre>
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.7" class="outline-3">
+<h3 id="sec-1.7"><span class="section-number-3">1.7</span> Installing OVPL </h3>
+<div class="outline-text-3" id="text-1.7">
+
+<ul>
+<li>
+Go to 
+</li>
+</ul>
+
+<p>../ovpl/src/src/adapters/
+</p>
+<p>
+and run AdapterServer.py as a background process.
+</p>
+
+
+<pre class="example">python AdapterServer.py &amp;
+
+</pre>
+
+
+
+
+<ul>
+<li>
+Now, go to ovpl/src/src and run ControllerServer.py. Now You are ready to deploy the lab.
+</li>
+<li>
+Go to browser and type, "127.0.0.1:8080", you will see a test page.
+</li>
+<li>
+Enter lab id and URL and submit it.
+</li>
+<li>
+You can see the deployment status of the lab in the terminal. The IP address of the container is prompted in the terminal where the lab is being deployed.
+</li>
+<li>
+Lab can be hence used from the given IP.
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: introspector
+<a href="mailto:introspector@introspector-Lenovo-G570">&lt;introspector@introspector-Lenovo-G570&gt;</a>
+</p>
+<p class="date"> Date: 2014-09-15 14:09:11 IST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
