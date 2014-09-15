@@ -1,0 +1,23 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/khushpreet/Desktop/integration-tool-kit/docs/documentation.org
+
+
+* Why to use these scripts?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2014-09-15 Mon 15:07
+  :ARCHIVE_FILE: ~/Desktop/integration-tool-kit/docs/documentation.org
+  :ARCHIVE_OLPATH: How to use the template?
+  :ARCHIVE_CATEGORY: documentation
+  :END:
+Manual approaches to restructure the lab contents are error-prone and inefficient. 
+So it becomes imperative to develop an automated algorithm to efficiently restructure
+the lab contents from different lab formats to a common UI.
+A lot of manual effort is required to map the UI content from a given lab to the
+new UI format of the Virtual-lab. We thus provide a scheme called "CHANGER" to automate
+this process. For a given lab, it enables agility and convenience from getting the
+contents and transferring them to the UI format (or the Blue-icon theme) of the Virtual-labs.
+
+
+

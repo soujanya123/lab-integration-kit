@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>docs</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="docs"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-09-15T14:52+0530"/>
+<meta name="author" content="khushpreet"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">docs</h1>
+</p>
+<p></p>
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction to UI Toolkit</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>The UI Toolkit consists of the UI 1.0 template and the helper scripts that 
+extracts the content of labs hosted with Amrita UI format to UI 1.0.
+</p>
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Why is this needed?</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>For two reasons: One is uniformity i.e uniform user interface for authoring
+and interacting with the virtual labs. Also, effective use of these labs
+depends on simple and uniform web interfaces and a homogeneous hosting framework.
+Secondly, if better versions of the template are created in the future, the lab
+content can be automatically transferred.
+</p>
+<p> 
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> When should we use it?</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>Once your sources are ready with the content i.e (theory, procedures, experiments
+(simulations), quiz, images, videos etc). 
+</p>
+<p>
+Before we move on to the procedure, it is essential to understand the structure
+of UI template 1.0.
+</p>
+<p>
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> The UI Template structure</h2>
+<div class="outline-text-2" id="text-2">
+
+<p></p>
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> <a href="#file">file:</a>html-lab-page-design.png</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>This is the general structure of the template
+</p>
+<p>
+</p></div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> <img src="html-id-specific-lab-page-design.png"  alt="html-id-specific-lab-page-design.png" /></h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p>This is how the html page of the lab should look like with respect to id.
+</p>
+<p>
+</p></div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> <img src="html-id-specific-experiment-page-design.png"  alt="html-id-specific-experiment-page-design.png" /></h3>
+<div class="outline-text-3" id="text-2-3">
+
+<p>This is how the html page of the experiment should look like with respect to id.
+</p>
+<p>
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> How to use the template?</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>Case 1: Newly built labs
+Mention the lab name under header and place the tabs content under
+article followed by sections and order the articles accordingly.
+Also, list out the experiments in content.html.
+#image
+This is the procedure that needs to be followed for any newly
+built lab.
+</p>
+<p>
+Case 2: Labs hosted with Amrita Format(Collaborator Framework)
+For converting the labs that are using Amrita format, we have scripts in the UI
+toolkit that automatically extracts and converts them to UI 1.0.
+</p>
+<p>
+</p>
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Why to use these scripts?</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<p>Manual approaches to restructure the lab contents are error-prone and inefficient. 
+So it becomes imperative to develop an automated algorithm to efficiently restructure
+the lab contents from different lab formats to a common UI.
+</p>
+<p>
+A lot of manual effort is required to map the UI content from a given lab to the
+new UI format of the Virtual-lab. We thus provide a scheme called "CHANGER" to automate
+this process. For a given lab, it enables agility and convenience from getting the
+contents and transferring them to the UI format (or the Blue-icon theme) of the Virtual-labs.
+</p>
+<p>
+</p></div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Understanding Amrita Format</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>The input is the Collaborator framework which doesn't provide a uniform and comprehensive
+tool for complete development. It lacks published document structure which hinders
+the portability of labs.
+</p>
+<p>
+An examined structure of the Collaborator framework is given below:

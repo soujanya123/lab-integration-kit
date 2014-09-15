@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>documentation</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="documentation"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-09-15T15:14+0530"/>
+<meta name="author" content="khushpreet"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">documentation</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Introduction to UI Toolkit</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Why is this needed?</a></li>
+<li><a href="#sec-1-2">1.2 When should we use it?</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 The UI Template structure</a>
+<ul>
+<li><a href="#sec-2-1">2.1 file:html-lab-page-design.png</a></li>
+<li><a href="#sec-2-2">2.2 file:html-id-specific-lab-page-design.png</a></li>
+<li><a href="#sec-2-3">2.3 file:html-id-specific-experiment-page-design.png</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 How to use the template?</a>
+<ul>
+<li><a href="#sec-3-1">3.1 Case 1: Newly built labs</a></li>
+<li><a href="#sec-3-2">3.2 Case 2: Labs hosted with Amrita Format(Collaborator Framework)</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Procedure for using scripts</a>
+<ul>
+<li><a href="#sec-4-1">4.1 organize.sh</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1 Denition</a></li>
+<li><a href="#sec-4-1-2">4.1.2 Method</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2">4.2 transfer.py</a>
+<ul>
+<li><a href="#sec-4-2-1">4.2.1 Denition</a></li>
+<li><a href="#sec-4-2-2">4.2.2 Method</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-3">4.3 link<sub>changer</sub>.sh</a>
+<ul>
+<li><a href="#sec-4-3-1">4.3.1 Definition</a></li>
+<li><a href="#sec-4-3-2">4.3.2 Method</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Necessary Instructions</a>
+<ul>
+<li><a href="#sec-5-1">5.1 Download and store the content</a>
+<ul>
+<li><a href="#sec-5-1-1">5.1.1 Create a folder called "map"</a></li>
+<li><a href="#sec-5-1-2">5.1.2 Move into the folder "map"</a></li>
+<li><a href="#sec-5-1-3">5.1.3 Getting the content from Amrita's url</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-2">5.2 Organize the downloaded content</a></li>
+<li><a href="#sec-5-3">5.3 Execute the transfer of contents for a lab</a>
+<ul>
+<li><a href="#sec-5-3-1">5.3.1 Go inside the subject-&gt;branch-&gt;lab-&gt;experiment</a></li>
+<li><a href="#sec-5-3-2">5.3.2 Download a blank repository having the desired theme</a></li>
+<li><a href="#sec-5-3-3">5.3.3 Transfr the content into blue icon theme format</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-4">5.4 Update the links to the images</a></li>
+<li><a href="#sec-5-5">5.5 Observe the UI transfer(mapping)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction to UI Toolkit</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>The UI Toolkit consists of the UI 1.0 template and the helper scripts that 
+extracts the content of labs hosted with Amrita UI format to UI 1.0.
+</p>
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Why is this needed?</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>For two reasons: One is uniformity i.e uniform user interface for authoring
+and interacting with the virtual labs. Also, effective use of these labs
+depends on simple and uniform web interfaces and a homogeneous hosting framework.
+Secondly, if better versions of the template are created in the future, the lab
+content can be automatically transferred.
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> When should we use it?</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>Once your sources are ready with the content i.e (theory, procedures, experiments
+(simulations), quiz, images, videos etc). 
+Before we move on to the procedure, it is essential to understand the structure
+of UI template 1.0.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> The UI Template structure</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> <a href="#file">file:</a>html-lab-page-design.png</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>This is the general structure of the template
+</p></div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> <img src="html-id-specific-lab-page-design.png"  alt="html-id-specific-lab-page-design.png" /></h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p>This is how the html page of the lab should look like with respect to id.
+</p></div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> <img src="html-id-specific-experiment-page-design.png"  alt="html-id-specific-experiment-page-design.png" /></h3>
+<div class="outline-text-3" id="text-2-3">
+
+<p>This is how the html page of the experiment should look like with respect to id.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> How to use the template?</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Case 1: Newly built labs</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<p>Mention the lab name under header and place the tabs content under
+article followed by sections and order the articles accordingly.
+Also, list out the experiments in content.html.
+#image
+This is the procedure that needs to be followed for any newly
+built lab.
+</p></div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Case 2: Labs hosted with Amrita Format(Collaborator Framework)</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>For converting the labs that are using Amrita format, we have scripts in the UI
+toolkit that automatically extracts and converts them to UI 1.0.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Procedure for using scripts</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>Let me start with an example, say for the lab chosen at a random is given 
+by the following url:
+(<a href="http://iitkgp.vlab.co.in/?sub=39&amp;brch=124&amp;brch=124&amp;sim&amp;sim=922&amp;cnt=1">http://iitkgp.vlab.co.in/?sub=39&amp;brch=124&amp;brch=124&amp;sim&amp;sim=922&amp;cnt=1</a>)
+Here the breakup of the url is as per the following scheme,
+firstly the labs are classified under subjects or domains 
+indicated by "sub" and then each branch or lab under those 
+domains is indicated by a seperte "brach" number. After that each 
+experiment in the lab is indicated by a simulator number named in the
+url as "sim". Lastly the count or "cnt" number indicates the breakup 
+of pages under each experiment, namely theory, introduction etc.
+</p>
+<p>
+As per the given url in the example we have sub=39, as the "Electrical Engineering"
+domain and brch=124, as the "analog signals, network and measurement laboratory",
+finally the sim=922, refers to the experiment named "Verification of Superposition 
+Theorem" and cnt=1, indicated the "Theory" page under it. 
+</p>
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> organize.sh</h3>
+<div class="outline-text-3" id="text-4-1">
+
+
+</div>
+
+<div id="outline-container-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> Denition</h4>
+<div class="outline-text-4" id="text-4-1-1">
+
+<p>Shell script to get the contents from the lab url and store them in an 
+organized format as university ! subject ! branch ! labs ! experiments.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> Method</h4>
+<div class="outline-text-4" id="text-4-1-2">
+
+<p>Here the structure of the lab is analyzed and accordingly the script breaks 
+up the url and creates folders recursively in an organized format as per
+that in the above denition.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> transfer.py</h3>
+<div class="outline-text-3" id="text-4-2">
+
+
+</div>
+
+<div id="outline-container-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> Denition</h4>
+<div class="outline-text-4" id="text-4-2-1">
+
+<p>Python based script to transfer the contents under one lab­experiment in an 
+automated way to the requisite UI format say the new Blue­icon theme format.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> Method</h4>
+<div class="outline-text-4" id="text-4-2-2">
+
+<p>A Python library called "Beautiful Soup", designed to parse lxml, html5 files 
+and tree traversals has been here used to parse the contents of each 
+lab­experiment's html files. These parsed contents are mapped to the Blue­icon 
+theme format and copied into the "content.html" by use of python commands. 
+Ref: <a href="http://www.crummy.com/software/BeautifulSoup/">http://www.crummy.com/software/BeautifulSoup/</a>
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> link<sub>changer</sub>.sh</h3>
+<div class="outline-text-3" id="text-4-3">
+
+
+</div>
+
+<div id="outline-container-4-3-1" class="outline-4">
+<h4 id="sec-4-3-1"><span class="section-number-4">4.3.1</span> Definition</h4>
+<div class="outline-text-4" id="text-4-3-1">
+
+<p>Shell script to link the images downloaded in the userles folder to contents.html of the
+lab-experiments mapped using the former scheme.
+</p></div>
+
+</div>
+
+<div id="outline-container-4-3-2" class="outline-4">
+<h4 id="sec-4-3-2"><span class="section-number-4">4.3.2</span> Method</h4>
+<div class="outline-text-4" id="text-4-3-2">
+
+<p>Here the script replaces the path of the images inside each content.html le for all
+experiments in the lab with the appropriate and desired path of the new directory after
+the mapping is over.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Necessary Instructions</h2>
+<div class="outline-text-2" id="text-5">
+
+<p>The following instructions are needed to be followed the task of succesfully porting the content from
+one under the Amrita model theme to be blue icon one.
+</p>
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Download and store the content</h3>
+<div class="outline-text-3" id="text-5-1">
+
+
+</div>
+
+<div id="outline-container-5-1-1" class="outline-4">
+<h4 id="sec-5-1-1"><span class="section-number-4">5.1.1</span> Create a folder called "map"</h4>
+<div class="outline-text-4" id="text-5-1-1">
+
+<p>&gt; mkdir map
+</p></div>
+
+</div>
+
+<div id="outline-container-5-1-2" class="outline-4">
+<h4 id="sec-5-1-2"><span class="section-number-4">5.1.2</span> Move into the folder "map"</h4>
+<div class="outline-text-4" id="text-5-1-2">
+
+<p>&gt; cd map
+</p></div>
+
+</div>
+
+<div id="outline-container-5-1-3" class="outline-4">
+<h4 id="sec-5-1-3"><span class="section-number-4">5.1.3</span> Getting the content from Amrita's url</h4>
+<div class="outline-text-4" id="text-5-1-3">
+
+<p>Run the wget command under the some directory.
+&gt; wget -r -e robots=off <a href="http://iitkgp.vlabs.co.in">http://iitkgp.vlabs.co.in</a>
+Note: It is neessary to override robots.txt file to download the images
+along with the other contents of the lab.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Organize the downloaded content</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<p>Run the organize .sh file and prior to that give it execute permission.
+&gt; chmod 777 organize.sh
+&gt; ./organize.sh
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Execute the transfer of contents for a lab</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<p>Given a lab we have to run the code manually for each page and more 
+precisely for all the "cnt" number in our case under each experiment(sim).
+The command to do it articulately are given in following subsections:
+</p>
+</div>
+
+<div id="outline-container-5-3-1" class="outline-4">
+<h4 id="sec-5-3-1"><span class="section-number-4">5.3.1</span> Go inside the subject-&gt;branch-&gt;lab-&gt;experiment</h4>
+<div class="outline-text-4" id="text-5-3-1">
+
+<p>use cd command followed by path name.
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3-2" class="outline-4">
+<h4 id="sec-5-3-2"><span class="section-number-4">5.3.2</span> Download a blank repository having the desired theme</h4>
+<div class="outline-text-4" id="text-5-3-2">
+
+<p>&gt; svn co svn+ssh://&lt;username&gt;@svn.virtual-labs.ac.in/labs/&lt;labname&gt;/svn/&lt;Repository Name&gt;
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3-3" class="outline-4">
+<h4 id="sec-5-3-3"><span class="section-number-4">5.3.3</span> Transfr the content into blue icon theme format</h4>
+<div class="outline-text-4" id="text-5-3-3">
+
+<p>Give execute permissions to the python script "transfer.py" and then run the following commands
+&gt; ./transfer.py Input the source filename and the destination filenames.
+</p>
+<p>
+Note: The source filename is usually the html or php page you want to transfer the contents from and here the destination filename refers to the contents.html downloaded as a part of the sample repository, after svn checkout, which is already in the blue-icon theme format.
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Update the links to the images</h3>
+<div class="outline-text-3" id="text-5-4">
+
+<p>Run the last script, by using the command, "&gt; ./link_changer.sh". Don't forget to provide execute permission to the shell script before running it.
+</p>
+<p>
+Note: You also need to copy the whole user files folder got after running the wget command, inside each experiment's images folder.
+</p></div>
+
+</div>
+
+<div id="outline-container-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Observe the UI transfer(mapping)</h3>
+<div class="outline-text-3" id="text-5-5">
+
+<p>Run the make and build to observe the transfer incorporated by the former commands.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-09-15T15:14+0530</p>
+<p class="author">Author: khushpreet</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
