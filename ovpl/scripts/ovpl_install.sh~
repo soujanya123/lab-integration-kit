@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+
+python AdapterServer.py &
+python ControllerServer.py

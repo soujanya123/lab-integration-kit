@@ -1,0 +1,51 @@
+==Lab deployment==
+
+
+Step 01: Installation of openvz
+-------------------------------------------------
+Install openvz by running the script: install.sh
+
+
+
+step 02: Getting OS template 
+--------------------------------------------------------------
+2.1:
+ssh to base-4 machine [http://10.4.12.24]
+
+2.2:
+use scp command and copy ubuntu kernel image to your local machine
+scp /path/to/file username@0.0.0.0:/path/to/destination
+
+2.3:
+copy ubuntu to mentioned directory to create a container
+cp ubuntu-12.04-custom-x86_64.tar.gz /vz/template/cache
+
+
+
+
+Step 03: Creation of ID
+------------------------------------------
+vzctl create $unique-id-for-vm \
+--ostemplate $template-name-here \
+--conf $configuration-name-here \
+--ipadd $ip-address-of-vm \
+--onboot yes \
+--hostname $hostname-of-vm
+
+Example:
+vzctl create 101 \
+--ostemplate ubuntu-12.04-custom-x86_64 \
+--conf basic \
+--ipadd 127.0.0.0 \
+--hostname ovpl
+
+
+
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+1. Install Git
+2. 
